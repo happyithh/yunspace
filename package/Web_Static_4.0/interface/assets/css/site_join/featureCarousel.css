@@ -1,0 +1,61 @@
+/********************
+ * FEATURE CAROUSEL *
+ ********************/
+#featureCarousel {
+    height: 550px;
+    width:1180px;
+    position:relative;
+    margin: auto;
+}
+#featureCarousel img {
+    border:0;
+}
+#featureCarousel .feature {
+    position:absolute;
+    top:-1000px;
+    left:-1000px;
+    cursor:pointer;
+}
+#featureCarousel .feature > div {
+    position:absolute;
+    bottom:-20px;
+    left:600px;
+    background-color:black;
+    width: 350px;
+    min-height: 310px;
+    padding: 10px;
+}
+#featureCarousel .feature > div p {
+    margin:0;
+    padding:5px;
+    font-size:14px;
+    line-height: 28px;
+    color:white;
+}
+#featureCarousel .feature > div p span{
+    font-weight: bold;
+    font-size: 16px;
+}
+#featureCarousel .blipsContainer {
+    position:absolute;
+    color:white;
+    right:545px;
+    top:500px;
+    padding:0;
+    margin:0;
+}
+#featureCarousel .blipsContainer .blip {
+    margin:3px;
+    height:25px;
+    width:25px;
+    color:white;
+    text-align:center;
+    font-size:12px;
+    background-color: #bcbcbc;
+    line-height: 25px;
+}
+#featureCarousel .blipsContainer .blipSelected {
+    color:white;
+    font-weight:bold;
+    background-color:#008de9;
+}

@@ -1,0 +1,32 @@
+.zan{
+    font-size:16px;
+}
+.fail{
+    font-size:16px;
+}
+.article-li-footer p:first-of-type{
+    font-size:13px;
+    max-width:120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+.loading{
+    width:100px;
+    height:44px;
+    margin:0 auto;
+    position: relative;
+}
+.article-li-header{
+    max-height:40px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+.more_data{
+    display: inline-block;
+    width:100%;
+    line-height:44px;
+}
+.none{
+    display: none!important;
+}

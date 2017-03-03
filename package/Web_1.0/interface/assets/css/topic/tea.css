@@ -1,0 +1,35 @@
+.tea-head{ width: 100%;}
+.tea-head img{ max-width: 100%; height: auto; display: block;}
+.tea-main{ width: 1180px; margin: auto;}
+.tea-word{ height: 451px; margin-top:50px; background: url("../../img/tea/tea_08.jpg") no-repeat center; position: relative;}
+.tea-word1{ width: 280px; text-align: center; line-height: 22px; font-size: 12px; color: #71624f; position: absolute; top: 125px; left: 150px;}
+.tea-word2{ width: 200px; text-align: center; line-height: 22px; font-size: 12px; color: #71624f; position: absolute; top: 125px; left: 790px;}
+.tea-word3{ width: 220px; text-align: center; line-height: 22px; font-size: 12px; color: #71624f; position: absolute; top: 370px; left: 180px;}
+.tea-word4{ width: 280px; text-align: center; line-height: 22px; font-size: 12px; color: #71624f; position: absolute; top: 370px; left: 750px;}
+.tea-title{ width: 1120px; text-align: right; color: #5e472b; font-size: 26px; line-height: 38px; font-weight: bold; margin: 40px 0px;}
+.tea-topic{ margin-bottom: 50px;}
+.tenant-one{ width: 100%; background-color: #f0f0f0; padding: 40px 0px;}
+.tenant-two{ width: 100%; background-color: #fff; padding: 40px 0px;}
+.tenant-pic{ text-align: center;}
+.tenant-word{ text-align: center; color: #71624f; font-size: 14px; line-height: 30px; margin: 20px 0px;}
+.tenant-price{ width: 330px; margin: auto; color: #71624f; font-size: 14px; font-weight: bold;}
+.tenant-price span{ color: #e73684; font-size: 18px;}
+.m-pirce{ display: inline-block; font-size: 12px; margin-left: 5px;}
+.discount{ display: inline-block; font-size: 12px; margin-left: 5px; color: #fff; line-height: 19px; font-weight: normal;
+    background: url("../../img/tea/tea_24.png"); width: 42px; height: 19px; text-align: center;}
+.tea-more{ width: 160px; height: 40px; color: #fff; background-color: #1bd6b1; line-height: 40px; text-align: center;
+    font-size: 16px; display: block; margin: 30px auto;}
+.tea-more:hover{ color: #fff;}
+.tea-more:visited{ color: #fff;}
+
+.form-media{ background-color: #fff; margin: 30px 0px; width: 100%; padding:30px 0px;}
+.form-media-indside{ width: 840px; margin: auto; background-color: #fff; padding: 60px 225px; box-shadow: 0 0 5px #ccc;}
+.form-media-indside p1{ font-size: 18px; color: #626262; font-weight: bold; display: block; text-align: center;}
+.form-media-indside p2 { font-size: 14px; color: #626262; text-align: center; display: block; margin-top: 10px;
+    padding-bottom: 15px; border-bottom: 1px dotted #ddd; margin-bottom: 40px;}
+.form-item{ height: 40px; margin: 10px 0px;}
+.form-item label{ color: #626262;}
+.form-item input{ height: 40px; width: 320px; border: 1px solid #ccc; margin-left: 10px;}
+.button{ width: 200px; height: 44px; background-color: #1bd6b1; color: #fff; font-size: 16px; letter-spacing: 3px;
+    text-align: center; border: none; margin: auto; display: block; margin-top: 60px;}
+.textarea{ border: 1px solid #ccc; margin-left: 10px; width: 320px;}

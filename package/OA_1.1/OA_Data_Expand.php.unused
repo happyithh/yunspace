@@ -1,0 +1,562 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: yl
+ * Date: 15-9-1
+ * Time: 上午10:50
+ * 旧供应商数据处理，转换为有效供应商
+ */
+class OA_Data_Expand{
+    static function handle()
+    {
+        $_REQUEST['action']=empty($_REQUEST['action'])?'list':$_REQUEST['action'];
+        switch ($_REQUEST['action']) {
+            case 'list':
+                self::getDataList();
+                break;
+            case 'get_data':
+                self::updateExpandTemp();
+                break;
+            case 'add_expand':
+                self::addExpandInfo();
+                break;
+            case 'add_expand_submit':
+                self::addExpandSubmit();
+                break;
+            case "pull_down":
+                self::pullDownVendor();
+                break;
+            case 'exists':
+                self::checkPhoneExists();
+                break;
+            case 'no_expect':
+                self::expandNoExpect();
+                break;
+            case 'update_product':
+                self::updateProduct();
+                break;
+            case 'send_msg_again':
+                self::sendMsgAgain();
+                break;
+            case 'abandon_vendor':
+                self::abandonVendor();
+                break;
+            default:
+                self::getDataList();
+                break;
+        }
+    }
+
+    //查询拓展列表放入拓展中间表
+    static function updateExpandTemp(){
+        Core::output('');
+        Data_Mysql_Table_Vendor_Expand_Temp::select();
+        //获取待拓展列表数据
+        $children = Data_Mysql_Table_Product_Category::getChildren(Data_Config_Site::$staticConfig['space_id']);
+        $children[] = Data_Config_Site::$staticConfig['space_id'];
+        $condition[]='({table}.vendor_account_id =0 OR LENGTH({prefix}account.phone) != 11 OR ({prefix}account.phone NOT LIKE "13%" AND {prefix}account.phone NOT LIKE "14%" AND {prefix}account.phone NOT LIKE "15%" AND {prefix}account.phone NOT LIKE "17%" AND {prefix}account.phone NOT LIKE "18%"))';
+        $condition['{table}.status >= ? ']=0;
+        $condition[] = '{prefix}product_info_update.category_id in (' . implode(',', $children) . ')';
+        $condition[] = '{prefix}product_info_update.status >= 0';
+        $condition[]="{prefix}vendor_expand_temp.vendor_id IS NULL";
+        $table="{table} LEFT JOIN {prefix}product_info_update ON {table}.id = {prefix}product_info_update.vendor_id LEFT JOIN {prefix}account ON {table}.vendor_account_id={prefix}account.id LEFT JOIN {prefix}vendor_expand_temp ON {table}.id={prefix}vendor_expand_temp.vendor_id";
+        $data=Data_Mysql_Table_Vendor_Info::subTable('_update')->select('{table}.id as vendor_id,{table}.attr,{table}.vendor_name,{prefix}account.username,{prefix}account.id as account_id,{prefix}account.phone,{prefix}account.attr as account_attr',$condition,'GROUP BY {table}.id',1000,$table);
+        if(empty($data)){
+            Func_Output::json('error','','没有可更新的数据了');
+        }
+        //将数据放入中间表中
+        foreach($data as $k=>$v){
+            if(!empty($v['attr'])){
+                $v['attr']=json_decode($v['attr'],1);
+                $v['city']=$v['attr']['城市'];
+            }
+            if(!empty($v['account_attr'])){
+                $v['account_attr']=json_decode($v['account_attr'],1);
+                $v['email']=$v['account_attr']['email'];
+            }
+            unset($v['attr']);
+            unset($v['account_attr']);
+            Data_Mysql_Table_Vendor_Expand_Temp::insert($v);
+        }
+        Func_Output::json('success','',' 数据已更新');
+    }
+
+    static function getDataList()
+    {
+        //获取待拓展列表
+        $_REQUEST['handle_type']=empty($_REQUEST['handle_type'])?'no_phone':$_REQUEST['handle_type'];
+        $data=array();
+        switch($_REQUEST['handle_type']){
+            case 'no_phone':
+                if(!empty($_REQUEST['vendor_name'])){
+                    if(is_numeric($_REQUEST['vendor_name'])){
+                        $condition['vendor_id']=$_REQUEST['vendor_name'];
+                    }else{
+                        $condition['vendor_name']=$_REQUEST['vendor_name'];
+                    }
+                }
+                if(isset($_REQUEST['modulo_value'])){
+                    $condition['vendor_id % 20 = ?']=$_REQUEST['modulo_value'];
+                }
+                if(!empty($_REQUEST['city']) && $_REQUEST['city']!="全部"){
+                    $condition['city']=$_REQUEST['city'];
+                }
+                $condition[]='phone = "" ';
+                $condition['status']=0;
+                $data=Data_Mysql_Table_Vendor_Expand_Temp::page(0,20,'vendor_id as id,vendor_name,city,email',$condition,'ORDER BY update_time DESC');
+                break;
+            case 'error_phone':
+                //获取所有联系方式不是手机号的账户
+                if(!empty($_REQUEST['vendor_name'])){
+                    if(is_numeric($_REQUEST['vendor_name'])){
+                        $condition['vendor_id']=$_REQUEST['vendor_name'];
+                    }else{
+                        $condition['vendor_name']=$_REQUEST['vendor_name'];
+                    }
+                }
+                if(isset($_REQUEST['modulo_value'])){
+                    $condition['vendor_id % 20 = ?']=$_REQUEST['modulo_value'];
+                }
+                if(!empty($_REQUEST['city']) && $_REQUEST['city']!="全部"){
+                    $condition['city']=$_REQUEST['city'];
+                }
+                $condition['status']=0;
+                $condition[]='phone != "" ';
+                $data=Data_Mysql_Table_Vendor_Expand_Temp::page(0,20,'vendor_id as id,vendor_name,username,phone,city,email',$condition,'ORDER BY update_time DESC');
+                break;
+            case 'overdue':
+                //获取所有过期未激活的供应商（status=0,发送短信时间大于一天，id相当于vendor_id）
+                if(!empty($_REQUEST['vendor_name'])){
+                    if(is_numeric($_REQUEST['vendor_name'])){
+                        $condition['id']=$_REQUEST['vendor_name'];
+                    }else{
+                        $condition['vendor_name']=$_REQUEST['vendor_name'];
+                    }
+                }
+                if(!empty($_REQUEST['phone'])){
+                    $condition['phone']=$_REQUEST['phone'];
+                }
+                if(isset($_REQUEST['modulo_value'])){
+                    $condition['id % 20 = ?']=$_REQUEST['modulo_value'];
+                }
+                if(!empty($_REQUEST['city']) && $_REQUEST['city']!="全部"){
+                    $condition['attr_index']['城市']='+'.$_REQUEST['city'];
+                }
+                $condition['status = ?']=0;
+                $condition['create_time < ?']=time()-(1*24*3600);
+                $data_obj=Data_Mysql_View_Vendor_Expand::page(0,20,'id,city,username,phone,vendor_name,create_time,admin_id',$condition,'ORDER BY create_time DESC');
+                foreach($data_obj['rows'] as $k=>$v){
+                    $data['rows'][$k]['id']=$v->id;
+                    $data['rows'][$k]['username']=$v->username;
+                    $data['rows'][$k]['phone']=$v->phone;
+                    $data['rows'][$k]['vendor_name']=$v->vendor_name;
+                    $data['rows'][$k]['create_time']=$v->create_time;
+                    $data['rows'][$k]['admin_id']=$v->admin_id;
+                    $data['rows'][$k]['city']=$v->city;
+                }
+                $data['page']=$data_obj['page'];
+                break;
+            case 'no_expect':
+                //获取所有无意向的拓展供应商
+                if(!empty($_REQUEST['vendor_name'])){
+                    if(is_numeric($_REQUEST['vendor_name'])){
+                        $condition['id']=$_REQUEST['vendor_name'];
+                    }else{
+                        $condition['vendor_name']=$_REQUEST['vendor_name'];
+                    }                }
+                if(!empty($_REQUEST['phone'])){
+                    $condition['phone']=$_REQUEST['phone'];
+                }
+                if(isset($_REQUEST['modulo_value'])){
+                    $condition['id % 20 = ?']=$_REQUEST['modulo_value'];
+                }
+                if(!empty($_REQUEST['city']) && $_REQUEST['city']!="全部"){
+                    $condition['attr_index']['城市']='+'.$_REQUEST['city'];
+                }
+                $condition['status < ?']=0;
+                $data_obj=Data_Mysql_View_Vendor_Expand::page(0,20,'id,city,username,phone,vendor_name,create_time,admin_id,email',$condition,'ORDER BY create_time DESC');
+                foreach($data_obj['rows'] as $k=>$v){
+                    $data['rows'][$k]['id']=$v->id;
+                    $data['rows'][$k]['username']=$v->username;
+                    $data['rows'][$k]['phone']=$v->phone;
+                    $data['rows'][$k]['vendor_name']=$v->vendor_name;
+                    $data['rows'][$k]['create_time']=$v->create_time;
+                    $data['rows'][$k]['admin_id']=$v->admin_id;
+                    $data['rows'][$k]['email']=$v->email;
+                    $data['rows'][$k]['city']=$v->city;
+                }
+                $data['page']=$data_obj['page'];
+                break;
+            case "abandon":
+                //获取所有拓展丢弃的供应商
+                if(!empty($_REQUEST['vendor_name'])){
+                    if(is_numeric($_REQUEST['vendor_name'])){
+                        $condition['{table}.id = ?']=$_REQUEST['vendor_name'];
+                    }else{
+                        $condition['{table}.vendor_name = ?']=$_REQUEST['vendor_name'];
+                    }
+                }
+                if(isset($_REQUEST['modulo_value'])){
+                    $condition['{table}.id % 20 = ?']=$_REQUEST['modulo_value'];
+                }
+                if(!empty($_REQUEST['city']) && $_REQUEST['city']!="全部"){
+                    $condition['attr_index']['城市']='+'.$_REQUEST['city'];
+                }
+                $condition['{table}.status = ? ']=-3;
+                $data=Data_Mysql_Table_Vendor_Info::subTable('_update')->page(0,20,'{table}.id,{table}.vendor_name,{table}.city,{prefix}account.username,{prefix}account.id as account_id,{prefix}account.phone,{prefix}account.attr as account_attr',$condition,'ORDER BY {table}.update_time DESC','{table} LEFT JOIN {prefix}account ON {table}.vendor_account_id = {prefix}account.id');
+                if(!empty($data['rows'])){
+                    foreach($data['rows'] as $k=>$v){
+                        if(!empty($v['account_attr'])){
+                            $attr=json_decode($v['account_attr'],1);
+                            $data['rows'][$k]['email']=$attr['email'];
+                        }
+                    }
+                }
+                break;
+            default:
+                Func_Header::notFound();
+                break;
+        }
+
+        //定义组别
+        for($i=1;$i<20;$i++){
+            $group[$i]="第".$i."组";
+        }
+        $group[0]="第20组";
+        Tpl_Smarty::assign('group',$group);
+        Tpl_Smarty::assign('_vendor_attr',Data_Config_Vendor_Attr::all());
+        Tpl_Smarty::assign('is_admin', Admin_Authority::checkUrl(Core::$urls['route'] . 'send_msg', 0));
+        Tpl_Smarty::assign('_data',$data);
+        Tpl_Smarty::display('OA_Static','data_expand/data_list.tpl');
+    }
+    static function addExpandInfo()
+    {
+        if(empty($_REQUEST['vendor_id'])){
+            Func_Header::back('参数错误！！');
+        }
+        //获取供应商信息
+        $condition['{table}.id = ?']=$_REQUEST['vendor_id'];
+        $data=Data_Mysql_Table_Vendor_Info::subTable('_update')->select('{table}.id,{table}.vendor_name,{prefix}account.username,{prefix}account.phone,{prefix}account.attr as account_attr',$condition,'',1,'{table} LEFT JOIN {prefix}account ON {table}.vendor_account_id = {prefix}account.id');
+        if(empty($data[0])){
+            Func_Header::back('数据不存在！');
+        }
+        if(!empty($data[0]['account_attr'])){
+            $data[0]['account_attr']=json_decode($data[0]['account_attr'],1);
+            $data[0]['email']=$data[0]['account_attr']['email'];
+        }
+
+        //获取供应商下的所有上线的场地信息
+        $children = Data_Mysql_Table_Product_Category::getChildren(Data_Config_Site::$staticConfig['space_id']);
+        $children[] = Data_Config_Site::$staticConfig['space_id'];
+        $condition_product[] = 'category_id in (' . implode(',', $children) . ')';
+        $condition_product["status >= ?"] = 0;
+        $condition_product['vendor_id'] =$_REQUEST['vendor_id'];
+        $product=Data_Mysql_Table_Product_Info::subTable('_update')->select('id,product_name,price,product_size',$condition_product,'',10);
+        Tpl_Smarty::assign('product',$product);
+        Tpl_Smarty::assign('vendorInfo',$data[0]);
+        Tpl_Smarty::display('OA_Static','data_expand/add_expand.tpl');
+    }
+    static function addExpandSubmit(){
+        $request = Func_Input::filter(array(
+            'phone' => 'phone',
+            'vendor_id'=>'int',
+            'username'=>'string',
+            'email'=>'email',
+            'data_product'=>'array',
+        ), $_REQUEST);
+        if(empty($request['phone'])){
+            Func_Header::back('请正确填写手机号！');
+        }
+        if(empty($request['vendor_id'])){
+            Func_Header::back('参数缺失！');
+        }
+//        if(empty($request['username'])){
+//            $request['username']=$request['phone'];
+//        }
+        $password = rand(10000, 99999) . rand(111, 999);
+        $status = Api_Account_Register::quickRegister(array(
+            'phone' => $request['phone'],
+            'password' => $password,
+            'username'=>empty($request['username'])?$request['phone']:$request['username'],
+            'email'=>$request['email'],
+        ));
+        //获取供应商信息
+        $cols_update = array('id,vendor_name,admin_id,city,attr,attr_index,addr,base_info,categories_id,media,des,logo,vendor_remarks,create_time,update_time');
+        $data_update = Data_Mysql_Table_Vendor_Info::subTable('_update')->select($cols_update, array('id' => $request['vendor_id']));
+        if(!empty($data_update[0])){
+            $data_update[0]['status']=1;
+        }
+        if(empty($status['status']) && !empty($status['data'])){
+            //已有账号
+            $accountInfo=$status['data'];
+            //判读该账号是否已绑定供应商
+            $rs_vendor=Data_Mysql_Table_Vendor_Info::select('id,vendor_account_id',array('vendor_account_id'=>$accountInfo['id']));
+            if(empty($rs_vendor[0])){
+                //如果没有绑定，则绑定供应商到原有账户
+                Data_Mysql_Table_Vendor_Info::subTable('_update')->update(array('id'=>$request['vendor_id']),array('vendor_account_id'=>$accountInfo['id'],'status'=>1));
+                $data_update[0]['vendor_account_id']=$accountInfo['id'];
+                Data_Mysql_Table_Vendor_Info::update($data_update[0]);
+                $vendor_id=$request['vendor_id'];
+            }else{
+                //将原供应商与该账户解除绑定,原供应商删除（status=-3），将该供应商绑定到该账号上,
+                Data_Mysql_Table_Vendor_Info::update(array('id'=>$rs_vendor[0]['id']),array('vendor_account_id'=>0,'status'=>-3));
+                Data_Mysql_Table_Vendor_Info::subTable('_update')->update(array('id'=>$rs_vendor[0]['id']),array('vendor_account_id'=>0,'status'=>-3));
+
+                Data_Mysql_Table_Vendor_Info::subTable('_update')->update(array('id'=>$request['vendor_id']),array('vendor_account_id'=>$accountInfo['id'],'status'=>1));
+                $data_update[0]['vendor_account_id']=$accountInfo['id'];
+                Data_Mysql_Table_Vendor_Info::update($data_update[0]);
+                $vendor_id=$request['vendor_id'];
+            }
+
+            //更新账号名称和邮箱
+            if(!empty($request['email'])){
+                $update_account['attr']['email']=$request['email'];
+            }
+            if(!empty($request['username'])){
+                //判断该名称是否已存在
+                $username_exists=Data_Mysql_Table_Account::select('id,username,phone',array('username'=>$request['username']));
+                if(!empty($username_exists[0])){
+                    if($username_exists[0]['phone']==$request['phone']){
+                        //名称已存在，且手机号码相同，则为同一个用户，不更改账户名
+                        $update_account['username']=$request['username'];
+                    }else{
+                        //名称已存在，且手机号码不同，则为不同用户，账户名更改为手机号
+                        $update_account['username']=$request['phone'];
+                    }
+                }else{
+                    $update_account['username']=$request['username'];
+                }
+            }else{
+                //名称为空时，名称为手机号
+                $update_account['username']=$request['phone'];
+            }
+
+            $rs=Data_Mysql_Table_Account::update(array('id'=>$accountInfo['id']),$update_account);
+            if(!empty($rs[0])){
+                $accountInfo['username']=$update_account['username'];
+            }
+            if($request['vendor_id']==$rs_vendor[0]['id']){
+                $msg='已将该供应商放入发送短信列表';
+            }else{
+                $msg='已将该供应商绑定到账户【'.$accountInfo['username'].'】';
+            }
+
+            //添加拓展日志
+            $log_data=array(
+                'vendor_id'=>$vendor_id,
+                'account_id'=>$accountInfo['id'],
+                'admin_id'=>$_SESSION['administrator']['id'],
+                'admin_name'=>$_SESSION['administrator']['username'],
+                'email'=>empty($request['email'])?"":$request['email'],
+            );
+            Data_Mysql_Table_Expand_Log::delete(array('vendor_id'=>$vendor_id));
+            Data_Mysql_Table_Expand_Log::insert($log_data);
+
+
+            //如果手机号没有发送短信，则删除拓展表的过期数据
+            $have_send=Data_Mysql_Table_Vendor_Expand::select("id,vendor_id",array('phone'=>$request['phone']));
+            if(empty($have_send[0])){
+                $msg='已将该供应商放入发送短信列表';
+                Data_Mysql_Table_Vendor_Expand::delete(array('vendor_id'=>$vendor_id));
+            }else{
+                $msg='该供应商已发送过激活短信';
+            }
+
+            $url_back=empty($_REQUEST['url_back'])?"?handle_type=".$_REQUEST['handle_type']:$_REQUEST['url_back'];
+            //更新产品信息
+            self::updateProduct($request['data_product']);
+            //更新拓展中间表的状态
+            Data_Mysql_Table_Vendor_Expand_Temp::update(array('vendor_id'=>$vendor_id),array('status'=>1));
+
+            Func_Header::to(' '.$msg,$url_back);
+        }elseif(!empty($status['status']) && !empty($status['data'])) {
+            //创建新的账户
+            $accountInfo=$status['data'];
+            //绑定供应商账户
+            Data_Mysql_Table_Vendor_Info::subTable('_update')->update(array('id'=>$request['vendor_id']),array('vendor_account_id'=>$accountInfo['id'],'status'=>1));
+            $data_update[0]['vendor_account_id']=$accountInfo['id'];
+            Data_Mysql_Table_Vendor_Info::update($data_update[0]);
+//            给新建的账户发送随机密码的短信
+//            Func_Message::sendSMS($request['phone'], array($request['phone'], $password), 23705);
+
+            //添加拓展日志
+            $log_data=array(
+                'vendor_id'=>$request['vendor_id'],
+                'account_id'=>$accountInfo['id'],
+                'admin_id'=>$_SESSION['administrator']['id'],
+                'admin_name'=>$_SESSION['administrator']['username'],
+                'email'=>empty($request['email'])?"":$request['email'],
+            );
+            Data_Mysql_Table_Expand_Log::delete(array('vendor_id'=>$request['vendor_id']));
+            Data_Mysql_Table_Expand_Log::insert($log_data);
+
+            //如果手机号没有发送短信，则删除拓展表的过期数据
+            $have_send=Data_Mysql_Table_Vendor_Expand::select("id,vendor_id",array('phone'=>$request['phone']));
+            if(empty($have_send[0])){
+                Data_Mysql_Table_Vendor_Expand::delete(array('vendor_id'=>$request['vendor_id']));
+            }
+
+            $url_back=empty($_REQUEST['url_back'])?"?handle_type=".$_REQUEST['handle_type']:$_REQUEST['url_back'];
+            //更新产品信息
+            self::updateProduct($request['data_product']);
+            //更新拓展中间表的状态
+            Data_Mysql_Table_Vendor_Expand_Temp::update(array('vendor_id'=>$request['vendor_id']),array('status'=>1));
+            Func_Header::to(' 已为该供应商创建新的账户【'.$accountInfo['username'].'】',$url_back);
+        }else{
+            Func_Header::back($status['msg']);
+        }
+    }
+
+    //下移，更改update_time退后一个月
+    static function pullDownVendor(){
+        Core::output("");
+        if(empty($_REQUEST['vendor_id'])){
+            Func_Header::back('参数缺失！！');
+        }
+        q($_REQUEST);
+        if(!empty($_REQUEST['handle_route'])){
+            $rs_update=Data_Mysql_Table_Vendor_Info::query("UPDATE {table} SET update_time = update_time - (1*30*24*3600) WHERE id = ?",array($_REQUEST['vendor_id']));
+        }else{
+            $rs_update=Data_Mysql_Table_Vendor_Expand_Temp::query("UPDATE {table} SET update_time = update_time - (1*30*24*3600) WHERE vendor_id = ?",array($_REQUEST['vendor_id']));
+        }
+        if(empty($rs_update[0])){
+            Func_Output::json('error','','下移失败！');
+        }else{
+            Func_Output::json('success','','下移成功！');
+        }
+
+    }
+
+    //判断手机号是否已绑定供应商
+    static function checkPhoneExists(){
+        Core::output('');
+        $request=Func_Input::filter(array(
+            'phone'=>'phone',
+            'vendor_id'=>'int',
+            'handle_type'=>'string'
+        ));
+        if(!empty($request['phone'])){
+            $cols='{table}.id,{table}.username,{prefix}vendor_info.vendor_name,{prefix}vendor_info.id as vendor_id';
+            $condition['phone']=$request['phone'];
+            $table='{table} LEFT JOIN {prefix}vendor_info ON {table}.id = {prefix}vendor_info.vendor_account_id';
+            $rs=Data_Mysql_Table_Account::select($cols,$condition,'',1,$table);
+
+            if(!empty($rs[0]) && $rs[0]['vendor_id']){
+                if(!empty($request['vendor_id']) && $request['vendor_id']==$rs[0]['vendor_id']){
+                    $msg="是否要再次放入发送短信列表中激活?";
+                }else{
+                    //判断该手机号是否已经激活
+                    $phone_active=Data_Mysql_View_Vendor_Expand::select("id,vendor_name",array('phone'=>$request['phone'],"status"=>1));
+                    if(!empty($phone_active[0])){
+                        $vendor_name=$phone_active[0]->vendor_name;
+                        $msg="该手机号已激活供应商【".$vendor_name."】，是否要更改绑定的供应商并重新激活?";
+                    }else{
+                        $msg="该手机号已有账号：【".$rs[0]['username']."】,且已绑定供应商：【".$rs[0]['vendor_name']."】，是否要更改绑定的供应商？";
+                    }
+                }
+                Func_Output::json('success',$rs[0],$msg);
+            }else{
+                Func_Output::json('error','','手机号没有绑定账户');
+            }
+        }
+        Func_Output::json('error','','手机号不正确！');
+    }
+    //无意向
+    static function expandNoExpect(){
+        Core::output("");
+        if(empty($_REQUEST['vendor_id'])){
+            Func_Header::back('参数缺失！！');
+        }
+        $rs=Data_Mysql_Table_Vendor_Expand::update(array("vendor_id"=>$_REQUEST['vendor_id']),array('status'=>-1));
+        $rs=Data_Mysql_Table_Expand_Log::update(array("vendor_id"=>$_REQUEST['vendor_id']),array('status'=>-1));
+        if(empty($rs[0])){
+            Func_Output::json('error','','无意向修改失败！');
+        }
+        Func_Output::json('success','','无意向修改成功！');
+    }
+    //更新产品信息
+    static function updateProduct($data=array()){
+        foreach($data as $k=>$v){
+            $request=Func_Input::filter(array(
+                'product_id'=>'int',
+                'product_name'=>'string',
+                'price'=>'int',
+                'product_size'=>'int',
+            ),$v);
+            if(empty($request['product_id'])){
+                Func_Output::json('error','','参数错误！！');
+            }
+            $product_data['product_name']=$request['product_name'];
+            $product_data['price']=$request['price']*100;
+            $product_data['product_size']=$request['product_size'];
+            $product_data['status']=1;
+            Data_Mysql_Table_Product_Info::subTable('_update')->update(array('id'=>$request['product_id']),$product_data);
+            //将产品上线
+            $cols = array("id ,category_id,logo, product_name,price,addr,product_size,attr,attr_index,attr_new,des,media,media_num,vendor_id,create_time,admin_id,order_lv,create_by_quick,status");
+            $online_data=Data_Mysql_Table_Product_Info::subTable("_update")->select($cols,array('id'=>$request['product_id']));
+            Data_Mysql_Table_Product_Info::update($online_data[0]);
+        }
+    }
+    //丢弃供应商
+    static function abandonVendor(){
+        Core::output('');
+        $request=Func_Input::filter(array(
+            'vendor_id'=>'int',
+        ));
+        if(empty($request['vendor_id'])){
+            Func_Output::json('error','','参数错误！！');
+        }
+        $rs_update=Data_Mysql_Table_Vendor_Info::subTable('_update')->update(array('id'=>$request['vendor_id']),array('status'=>-3));
+        Data_Mysql_Table_Vendor_Info::update(array('id'=>$request['vendor_id']),array('status'=>-3));
+        Data_Mysql_Table_Vendor_Expand_Temp::update(array('vendor_id'=>$request['vendor_id']),array('status'=>-1));
+        Data_Mysql_Table_Expand_Log::update(array('vendor_id'=>$request['vendor_id']),array('status'=>-1));
+        if(!empty($rs_update[0])){
+            Func_Output::json('success','','供应商已丢弃！！');
+        }else{
+            Func_Output::json('success','','丢弃失败！！');
+        }
+    }
+
+    //重新发送短信
+    static function sendMsgAgain(){
+        Core::output('');
+        if(empty($_REQUEST['vendor_id'])){
+            Func_Output::json('error','','参数缺失！！');
+        }
+        //获取拓展表中的数据
+        $expand=Data_Mysql_Table_Vendor_Expand::select('*',array('vendor_id'=>$_REQUEST['vendor_id']));
+        if(empty($expand[0])){
+            Func_Output::json('error','','数据不存在！！');
+        }
+        $expand_info=$expand[0];
+        $children = Data_Mysql_Table_Product_Category::getChildren(Data_Config_Site::$staticConfig['space_id']);
+        $children[] = Data_Config_Site::$staticConfig['space_id'];
+            $condition_product[] = 'category_id in (' . implode(',', $children) . ')';
+            $condition_product['vendor_id'] = $_REQUEST['vendor_id'];
+            $condition_product['status'] = 1;
+            $product_info=Data_Mysql_Table_Product_Info::select('id,product_name',$condition_product);
+            if(!empty($product_info[0])){
+                $account_id=Func_String::encrypt($expand_info['account_id'],"account");
+                $phone=Func_String::encrypt($expand_info['phone'],"phone");
+                $product_id=$product_info[0]['id'];
+                //生成短网址
+                $dwz_data=array(
+                    'account_id' => $expand_info['account_id'],
+                    'access_url' => "http://".Core::$urls['host']."/static/api/common/account/activate.jsonp?account_id=".$account_id."&phone=".$phone."&product_id=".$product_id,
+//                    'access_url' => "http://".Core::$urls['host']."/service_info/".$product_info[0]['id'].'.html',
+                    'overdue_time' =>24*60,
+                );
+                $dwz_rs=Api_Get_Login_DWZ::getLoginLink($dwz_data);
+                if(!empty($dwz_rs['status'])){
+                    $urls=$dwz_rs['data'];
+                    $msg="云·Space是国内专业的活动场地服务平台,我们将向您的场地【".$product_info[0]['product_name']."】推荐活动需求,您可以前往云·Space查看并完善您的场地信息（快速入口： ".$urls." )。24小时之后需输入以下";
+                    Func_Message::sendSMS($expand_info['phone'], array($msg,rand(100000, 999999)), 35370);
+                }
+                //更新当前激活日期
+                Data_Mysql_Table_Vendor_Expand::update(array('vendor_id'=>$expand_info['vendor_id']),array('create_time'=>time()));
+                Func_Output::json('success','','短信已发送！');
+            }else{
+                Func_Output::json('success','','请先审核供应商的场地');
+            }
+        }
+}

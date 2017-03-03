@@ -1,0 +1,34 @@
+.form-group {
+    margin-bottom: 10px!important;
+}
+body{
+    font-family: "微软雅黑", 'microsoft yahei', Arial, sans-serif;
+}
+body h4{
+    font-weight: bolder;
+}
+.readdata p{ padding:0 }
+.label.label-sm{
+    font-size: 14px;
+    padding: 2px 4px 3px 4px;
+}
+.abtn{ padding: 0; margin-left: 20px}
+.abtn a{display: block; padding: 6px 12px; text-decoration: none}
+.well{
+    margin-bottom: 10px!important;
+}
+.message_time{ padding-left: 15px}
+.mb10{ margin-bottom: 10px;}
+.dgc{ padding-top: 25px; background-color: #fff; border: 1px solid #ddd; border-top: none;}
+.hr1{ margin: 15px;}
+.portlet-body{ padding: 15px 15px 30px 15px;}
+.total{ font-weight: bold;}
+.block{
+    display: block!important;
+}
+.show-reason{
+    z-index:555;width:300px;position:absolute;left:100px;-webkit-box-sizing: border-box;
+    text-align: center;padding:10px 3px;background:#fff;display: none;
+    border:1px solid #AAAAAA;border-radius: 5px;background: #ededef;color:#000000
+
+}

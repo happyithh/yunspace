@@ -1,0 +1,48 @@
+*{ padding: 0px; margin: 0px; font-size: 14px; font-family: 微软雅黑,microsoft yahei,Arial,sans-serif;}
+a{ text-decoration: none;}
+img{ border: 0px;}
+ul { list-style: none;}
+.clear{ clear: both;}
+.jicai{ width: 100%; text-align: center; height: auto; overflow: hidden;}
+.jicai img{ max-width: 100%; height: auto; display: block;}
+.bg1{ background-color: #fff; padding: 60px 0px;}
+.title-big{ text-align: center; color: #333; font-size: 36px; font-weight: bold;}
+.title-small{ text-align: center; color: #333; font-size: 20px; margin: 25px 0px; line-height: 38px;}
+.title-small span{ font-size: 24px; color: #f96e11;}
+.content{ width: 1030px; margin:auto; overflow: hidden; height: auto;}
+.icon_title_big{ font-size: 30px; color: #333; text-align: center; margin-top: 30px;}
+.icon_title_small{ font-size: 22px; color: #333; text-align: center; margin-top: 25px; line-height: 38px;}
+.icon_content{ width: 1215px; height: auto; overflow: hidden; margin:40px 0;}
+.icon_content li{ width: 220px; float: left; margin-right: 175px;}
+.bg2{ background-color: #f9fafa; padding: 60px 0px;}
+.icon_title_fu{ font-size: 18px; color: #999; text-align: center; margin-top: 30px;}
+.title1{ font-size: 24px; font-weight: bold; color: #549d1a; text-align: center; border-bottom: 1px dashed #d0d2d2; padding-bottom: 20px;}
+.title2{ font-size: 24px; font-weight: bold; color: #28cca6; text-align: center; border-bottom: 1px dashed #d0d2d2; padding-bottom: 20px;}
+.title3{ font-size: 24px; font-weight: bold; color: #434c75; text-align: center; border-bottom: 1px dashed #d0d2d2; padding-bottom: 20px;}
+.content1{ font-size: 14px; color: #333; line-height: 30px; text-align: center; margin-top: 15px;}
+.content2{ font-size: 12px; color: #999; line-height: 24px; text-align: center; margin-top: 5px;}
+.end{ width: 100%; background: url("../../img/jicai/index_24.jpg") center; height: 536px; position: relative;}
+.btn{ width: 212px; height: 56px; margin:auto; padding-top: 350px;}
+.note{ position: absolute; right: 30px; bottom: 25px; font-size: 14px; color: #333;}
+.form_content{ width: 390px; margin:60px auto;}
+.form_title{ font-size: 18px; color: #222; padding-bottom: 20px;}
+.form_list{ margin-top: 30px;}
+.form_left{ float: left; color: #222; font-size: 14px; width: 90px; line-height: 30px;}
+.form_left span{ color: #ff0000;}
+.form_right{ float: left;}
+.form_right input{ width: 275px; height: 30px; border: 1px solid #d6d6d6; padding-left: 10px;}
+.button { margin-left: 90px;}
+.button button{ width: 285px; height: 48px; background-color: #0cb7eb; line-height: 48px; color: #fff; text-align: center; font-size: 18px; border: none; cursor: pointer;}
+.form_right .input[class*="error"]{border: 1px solid #ff0000; background: url("../../img/jicai/error.png") no-repeat 98% 10px ;
+    background-size: 18px;}
+.form_right .input[class*="correct"]{border: 1px solid #ddd; background: url("../../img/jicai/correct.png") no-repeat 98% 10px ;
+    background-size: 18px;}
+.alert{ position: absolute; width: 30%; height: 260px; background-color: #fff; top: 30%; left: 35%;
+    z-index: 999; display: none;}
+.p1{ width: 150px; margin:12% auto 0 auto;}
+.p1_left{ float: left;}
+.p1_right{ float: left; margin-left: 10px; font-size: 22px; color: #222;}
+.p2{ font-size: 15px; color: #666; margin-top: 30px; text-align: center;}
+.p3{ float: right; cursor: pointer;}
+.mark{ width: 100%; height: 1170px; background: rgba(0,0,0,0.3); position: absolute; top: 0px; left: 0px; z-index: 888; display: none;}
+

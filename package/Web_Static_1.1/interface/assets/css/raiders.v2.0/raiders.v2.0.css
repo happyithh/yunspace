@@ -1,0 +1,84 @@
+.raider-container{ width: 1180px; margin:0 auto 30px auto; position: relative;}
+.raider-topic{ margin-top: 20px;}
+.topic-area1{ float: left; margin-right: 12px;}
+.topic-area2{ float: left; margin-right: 11px;}
+.topic-area3{ float: left;}
+.topic1,.topic2,.topic3,.topic4,.topic5,.topic6{ position: relative;}
+.topic2{ float: left; margin-right: 12px; margin-top: 8px;}
+.topic3{ float: left; margin-top: 8px;}
+.topic5{ margin-top: 8px;}
+.topic-word{ position: absolute; bottom: 25px; left: 20px; font-size: 16px; color:#fff; width: 210px;}
+.topic-word1{ position: absolute; bottom: 25px; left: 20px; font-size: 16px; color:#fff; width: 260px;}
+.topic-word a,.topic-word1 a{ font-size: 16px; color: #fff;}
+.topic-tag1{ position: absolute; top: 0px; left: 0px; width: 76px; height:22px; background-color: #4286f5; text-align: center;
+    font-size: 12px; color: #fff; line-height: 22px;}
+.topic-tag2{ position: absolute; top: 0px; left: 0px; width: 76px; height:22px; background-color: #c942f5; text-align: center;
+    font-size: 12px; color: #fff; line-height: 22px;}
+.topic-tag3{ position: absolute; top: 0px; left: 0px; width: 76px; height:22px; background-color: #f5b442; text-align: center;
+    font-size: 12px; color: #fff; line-height: 22px;}
+.topic-tag4{ position: absolute; top: 0px; left: 0px; width: 76px; height:22px; background-color: #42c9f5; text-align: center;
+    font-size: 12px; color: #fff; line-height: 22px;}
+.topic-tag5{ position: absolute; top: 0px; left: 0px; width: 76px; height:22px; background-color: #f58142; text-align: center;
+    font-size: 12px; color: #fff; line-height: 22px;}
+.hhead{ margin: 20px 0;}
+#radier-guide-top{ position: fixed; top: 0; z-index: 9999; width: 1180px;}
+.radier-guide-top-left{ float: left; box-shadow: 0 0 4px #ccc;}
+.radier-guide-top-right{ float: right; box-shadow: 0 0 4px #ccc;}
+.raider-left{ float: left; width: 910px; margin-right: 20px;}
+.raider-right{ float: right;}
+.raider-guide{ width: 908px; height: 40px; border: 1px solid #ededed; background-color: #fff;}
+.raider-guide li{ float: left; width: 113px; text-align: center; line-height: 40px;}
+.raider-guide li a{ display: block; width: 100%; color: #333;}
+.raider-guide li .active{ border-top: 2px solid #06e1e1; color: #06e1e1; line-height: 38px;}
+.raider-guide li a:hover{ color: #06e1e1;}
+.raider-news-list{ margin-top: 20px;}
+.raider-news-list li{ padding:20px; background-color: #fbfbfb; height: 120px; margin-bottom: 20px; overflow: hidden; border: 1px solid #f0f1ef;}
+.raider-news-list li:hover{ box-shadow: 0 0 8px #97f2f2;}
+.raider-news-pic{ float: left; position: relative;}
+.raider-news-pic img{ width: 180px; height: 120px;}
+.raider-news-content{ float: left; margin-left: 20px;}
+.raider-news-content a{ color: #333; font-size: 18px;}
+.raider-heading{ font-size: 18px; color: #25252d;}
+.radier-cue{ color: #999; font-size: 12px; margin: 15px 0px;}
+.raider-content{ width: 660px; color: #666; line-height: 28px; height: 50px; overflow: hidden;}
+.yourlike{ width: 208px; border: 1px solid #ededed; padding: 20px; margin-top: 20px;}
+.yourlike-title{ color: #333; font-size: 15px;}
+.yourlike-content li{ position: relative; margin-top: 20px;}
+.yourlike-content img{ width: 209px; height: 149px;}
+.yourlike-word{ position: absolute; bottom: 4px; left: 0px; color: #fff; padding-left: 20px; height: 30px; line-height: 30px;
+    font-size: 12px; background-color: rgba(0,0,0,0.5); width: 189px;}
+.botb{ margin-top: 20px; position: relative;}
+.botb-rag{ position: absolute;top: 0px; left: 0px; width: 53px; height: 22px; line-height: 22px;
+    text-align: center; color: #fff; background-color: #f92977; font-size: 12px;}
+.botb-word{ position: absolute; left: 0px; bottom: 20px; font-size: 16px; text-align: center; color: #fff; width: 250px; }
+.raider-search{ height: auto; overflow: hidden;}
+.raider-search-input{ float: left; width: 140px; height: 40px; border: 1px solid #eee; padding-left: 15px;}
+.raider-search-button{ float: left; height: 42px; width: 93px; border: none; text-align: center;
+    background: url("../../img/raiders.v2.0/radier-s-b.jpg"); font-size: 15px; color: #fff;}
+
+
+.brand_list{ width: 940px; margin-top: 20px;}
+.brand_list li{ width: 156px; margin-right: 32px; float: left; margin-bottom: 30px;}
+.brand_list_pic{ width: 155px; height: 155px; border: 1px solid #e0e0e0;}
+.brand_list_pic img{ width: 155px; height: 155px;}
+.brand_list_name{ text-align: center; font-size: 14px; color: #666; margin-top: 5px;}
+.brand_list_name a{ color: #666;}
+
+
+.library_list_container{ border: 1px solid #efefef; height: auto; overflow: hidden; margin-top: 30px;}
+.library_list_title{ height: 28px; padding: 5px 0px; border-bottom: 1px dashed #efefef; line-height: 30px;}
+.library_type{ width: 80px; border-right:1px solid #e5e5e5; float: left; text-align: center; font-size: 12px; color: #333;}
+.library_name{ width: 470px; border-right: 1px solid #e5e5e5; float: left; padding-left: 10px; font-size: 12px; color: #333;}
+.library_classify{ width: 120px; border-right: 1px solid #e5e5e5; float: left; padding-left: 10px; font-size: 12px; color: #333;}
+.library_download{ width: 90px; border-right: 1px solid #e5e5e5; float: left; padding-left: 10px; font-size: 12px; color: #333;}
+.library_size{ float: left; padding-left: 10px; font-size: 12px; color: #333;}
+.library_list_content1{ height: 30px; padding: 5px 0px; line-height: 30px; background-color: #fff;}
+.library_list_content2{ height: 30px; padding: 5px 0px; line-height: 30px; background-color: #fbfbfb;}
+.library_type_c{ width: 80px; float: left; text-align: center;}
+.library_type_c img{ padding-top: 5px;}
+.library_name_c{ width: 470px; float: left; padding-left: 10px; font-size: 14px; color: #333;}
+.library_name_c span{ font-size: 12px; color: #999; padding-left: 5px;}
+.library_classify_c{ width: 120px; float: left; padding-left: 10px; font-size: 14px; color: #333;}
+.library_download_c{ width: 90px; float: left; padding-left: 10px; font-size: 12px; color: #999;}
+.library_size_c{ float: left; padding-left: 10px; font-size: 12px; color: #999;}
+.library_list_outside{ margin-top: 20px; border: 1px solid #efefef;}

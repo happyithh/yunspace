@@ -1,0 +1,20 @@
+.radio-inline{
+    margin-right:10px;
+    padding-left:0;
+    margin-left:0!important;
+}
+.dropdown-menu-one{
+    min-width:100%;
+    text-align:center;
+}
+.dropdown-menu-one a{
+    padding-left:0!important;
+}
+textarea.form-control{
+    max-height:200px;
+    max-width: 984px;
+}
+textarea.cus{
+    max-width: 333px!important;
+    max-height:200px;
+}

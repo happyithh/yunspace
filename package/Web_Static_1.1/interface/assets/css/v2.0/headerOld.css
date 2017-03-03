@@ -1,0 +1,18 @@
+.top{ width: 100%; min-width: 1180px; background-color: #f2f2f2; height: 32px;}
+.top_center{ width: 1180px; margin: auto;}
+.city_guide{ float: left; overflow:visible !important; width:auto;display:block; margin:auto;}
+.city_guide li{ float: left; width: 80px; text-align: center; line-height: 32px;}
+.city_guide li a{ color: #666; display: block; width: 100%;}
+.city_guide li .city_active{ background-color: #fff;}
+.city_guide>li>a{ font-size: 12px;}
+.city-more{ line-height: 40px;}
+.hide{ display: none;}
+.dropDown{ z-index:12000!important;}
+.city-select{ width:400px; border:1px solid #f5f5f5; background:#fff; position:absolute;box-shadow:1px 1px 1px #ddd;}
+.dropDown li{ cursor:pointer;}
+.city-select li{ font-size: 12px!important; line-height: 32px!important;}
+.par4{ font-size: 12px; line-height: 32px;}
+.city-more span{ font-weight: bold; line-height: 32px; font-size: 12px;}
+.d_icon{ background: url(../../img/home.v2.0/d_icon1.png) no-repeat; width: 12px; height: 32px;}
+.u_icon{ background: url(../../img/home.v2.0/u_icon1.png) no-repeat; width: 12px; height: 32px;}
+.service{ line-height: 32px; height: 32px; font-size: 12px;}

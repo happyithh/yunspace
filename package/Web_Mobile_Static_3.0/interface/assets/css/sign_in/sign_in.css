@@ -1,0 +1,332 @@
+body{
+    background: #fff;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,textarea{ -webkit-appearance: none; }
+.state p{
+    float: left;
+    font-size: 15px;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.state h3{
+    float: left;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 15px;
+    color: #333;
+}
+.icon-state-shen{background: #ff85d8;}
+.icon-state-dai{background: #ffc13d;}
+.icon-state-hv{background: #3baeff;}
+.icon-state-refuse{background: #fa4b54;}
+.icon-in{
+    color: #999;
+    font-size: 18px;
+    font-family: "宋体";
+    position: absolute;
+    right: 0;
+    top:40%;
+}
+
+.tab-list{
+    width: 100%;
+    height: 43px;
+    background: #fff;
+}
+.tab-list a{
+    float: left;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+.tab-list a.current{
+    color: #00c3c3;
+    border-bottom: 3px solid #00c3c3;
+}
+
+.column{
+    display: block;
+    background: #fff;
+    margin-bottom: 15px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+
+
+.column-title{
+    padding: 15px 0;
+    margin: 0 15px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.state{
+    width: 60%;
+}
+.column-title .time{
+    color: #666;
+    font-size: 13px;
+    line-height: 24px;
+}
+.column-cont{
+    padding: 15px 0;
+    margin: 0 15px;
+    position: relative;
+}
+.column-cont p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5em;
+}
+.column-cont p span{
+    color: #999;
+}
+
+.new-built-wrap{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(0,0,0,0.5);
+}
+.new-built{
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}
+.new-built span{
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+}
+.new-built .icon-bulit{
+    float: left;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("img/icon_built.png") no-repeat;
+    background-size: 100%;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.sign-submit{
+    background: #00c3c3;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: none;
+    position: fixed;
+    bottom: 0;
+}
+
+.sign-fill-title{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.sign-fill-title p{
+    color: #333;
+    font-size: 16px;
+    line-height: 45px;
+}
+.sign-fill-title .icon-back{
+    float: left;
+    display: block;
+    margin-top: 14px;
+    margin-left: 15px;
+    width: 17px;
+    height: 17px;
+    background: url("img/icon_back.png") no-repeat;
+    background-size:auto 100%;
+}
+.sign-time-cont{
+    padding: 15px;
+}
+.sign-time-cont li{
+    margin-bottom: 15px;
+    position: relative;
+}
+.sign-time-cont li label{
+    float: left;
+    font-size: 15px;
+    width: 22%;
+    line-height: 35px;
+}
+.sign-time-cont li .ipt-dtl{
+    float: right;
+    width: 77%;
+    min-height: 34px;
+    padding:6px 10px;
+    line-height: 20px;
+    border-radius: 3px;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+}
+.icon-calendar{
+    display: inline-block;
+    width: 29px;
+    height: 20px;
+    background: url("img/icon_calendar.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 1px;
+    top: 8px
+}
+.icon_calendar{
+    background: url("img/icon_calendar.png") no-repeat right 6px;
+    background-size: auto 20px;
+}
+.sign-time-cont li .ipt-trea{
+    outline: none;
+    min-height: 80px;
+}
+@media(max-width:351px) {
+    .sign-time-cont li label{
+        width: 26%;
+    }
+    .sign-time-cont li .ipt-dtl{
+        width: 73%;
+    }
+}
+
+/******待签到页面******/
+.sign-title{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 15px;
+    background: #fff;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.sign-title .state{
+    margin-top: 10px;
+}
+.sign-cont{
+    background: #fff;
+    border-top: 1px solid #e1e1e1;
+    padding: 20px 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.sign-cont-ul li{
+    margin-bottom: 10px;
+}
+.sign-cont-ul li span{
+    float: left;
+    display: inline-block;
+    width: 24%;
+    color: #999;
+    font-size: 15px;
+}
+.sign-cont-ul li .dtl{
+    float: right;
+    width: 75%;
+    font-size: 15px;
+    color: #666;
+}
+.btn-goout{
+    display: block;
+    width: 80%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 3px;
+    background: #00c3c3;
+    border: none;
+    margin: 30px auto;
+    outline: none;
+}
+@media(max-width:351px) {
+    .sign-cont-ul li span{
+        width: 26%;
+    }
+    .sign-cont-ul li .dtl{
+        width: 73%;
+    }
+}
+
+.refuse-reason{
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    box-sizing: border-box;
+    background: #fff;
+    margin-top: -16px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.refuse-reason p{
+    margin: 0 15px;
+    border-top: 1px solid #e1e1e1;
+    font-size: 15px;
+}
+.li-map{
+    position: relative;
+}
+.li-map .dtl{
+    position: relative;
+}
+.sign-map{
+    height: 150px;
+    border: 1px solid #ddd;
+}
+.sign-map-adress{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

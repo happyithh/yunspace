@@ -1,0 +1,5 @@
+.page-controller-content{ position: absolute; top:0;left: 100%; box-sizing: border-box; -ms-box-sizing: border-box; -mos-box-sizing: border-box; -webkit-box-sizing: border-box; height: 100%; width: 100%;
+    transition: all 400ms; -moz-transition: all 400ms; -webkit-transition: all 400ms; z-index: 5000; background-color: #ffffff;overflow: auto; position: fixed;}
+.page-controller-content[class*="active"]{ transform: translateX(-100%); -moz-transform: translateX(-100%); -webkit-transform: translateX(-100%); position: absolute;}
+.page-controller-mask{background: rgba(0,0,0,0.5); display: none;width: 100%; height: 100%;position: fixed;top: 0;left: 0;z-index: -1;}
+.page-controller-mask[class*="active"]{display: block;z-index:5000;}

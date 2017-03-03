@@ -1,0 +1,27 @@
+* {margin:0; padding:0;font-family: 微软雅黑,microsoft yahei,Arial,sans-serif;}
+li {list-style-type:none;}
+img {border:0 none;}
+a{text-decoration: none; }
+.pointer { cursor:pointer; }
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+.top{
+    background: #4e6db0;height: 46px;
+}
+.wrapper{
+    width: 1180px;margin: auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.none{
+  display: none;
+}

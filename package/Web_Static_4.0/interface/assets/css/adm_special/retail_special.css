@@ -1,0 +1,462 @@
+html,body{
+    background: #f2f2f2;
+    font-family: 微软雅黑, microsoft yahei, Arial, sans-serif;
+    color: #222;
+}
+p{line-height: 1.5em;}
+.hide{display: none;}
+.container-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*logo标题部分*/
+.logo-title{
+    width: 500px;
+    height: 200px;
+    margin: 40px auto;
+    background: #fff;
+}
+.logo-title-comn{
+    padding: 30px 45px 22px;
+}
+.logo-adm-wrap{
+    width: 86px;
+    height: 96px;
+    padding: 3px 45px 1px 0;
+    margin-right: 40px;
+    border-right: 2px solid #808080;
+}
+.logo-yun-wrap{
+    width: 228px;
+    height: 75px;
+    padding: 12px 0;
+}
+.logo-title h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/******页面正文部分******/
+.section{padding-top: 40px;}
+.section>h2{
+    font-weight: normal;
+    font-size:32px;
+    color:#e73b72;
+    line-height:30px;
+    margin-bottom: 40px;
+}
+.section>h2 .line{
+    background:#000;
+    width:200px;
+    height:3px;
+    display: inherit;
+    margin-top: 10px;
+}
+.section p{
+    font-size:18px;
+}
+
+/*关于ADM-star*/
+.section-aboutadm .left,
+.section-aboutadm .right{
+    width: 440px;
+}
+.section-aboutadm .logo{
+    width: 200px;
+    height: 208px;
+    padding: 66px 52px;
+}
+.section-aboutadm .logo:hover{
+}
+
+.section-aboutadm .left p{
+    margin-bottom: 26px;
+}
+.section-aboutadm .right h6{
+    font-size: 18px;
+}
+.section-aboutadm .right p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/*2016生活创新展-star*/
+.section-exhibition .cont{
+    width: 1200px;
+    height: 600px;
+    background: url("../../img/retail_special/img-exhibition.jpg") no-repeat center;
+    position: relative;
+}
+.section-exhibition .text{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+.section-exhibition .text-p{
+    padding: 60px 50px;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.section-exhibition p{
+    margin-bottom: 20px;
+}
+.section-exhibition .text-bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/*2016亚洲设计管理论坛-star*/
+.section-forum .img-big-wrap{
+    width: 100%;
+    height: 475px;
+}
+.section-forum .img-big-wrap,
+.section-forum .text-wrap,
+.section-forum .img-people{
+    margin-bottom: 10px;
+}
+.section-forum .img-small-wrap{
+    width: 400px;
+    height: 267px;
+}
+.section-forum .text{
+    background:#f8d099;
+    width:730px;
+    height:206px;
+    padding: 30px;
+}
+.section-forum .text h5{
+    font-size: 32px;
+    margin-top: 26px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+.img-people{
+    width: 1210px;
+}
+.img-people img{
+    float: left;
+    width: 292px;
+    height: 292px;
+    display: block;
+    margin-right: 10px;
+}
+
+/*云SPACE与ADM-star*/
+.section-yunadm .img-wrap{
+    width: 595px;
+    height: 397px;
+    margin-right: 20px;
+}
+.section-yunadm .text{
+    width: 585px;
+    height: 397px;
+}
+.section-yunadm .text h5{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+.section-yunadm .text p{
+    font-size: 17px;
+}
+
+/*它们通过云SPACE来到2016ADM-star*/
+.section-yun2016adm .cont{
+    width: 1212px;
+}
+.section-yun2016adm li{
+    width: 392px;
+    height: 260px;
+    position: relative;
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.section-yun2016adm li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.section-yun2016adm li>a img{
+    width: 100%;
+}
+.section-yun2016adm li>a p{
+    width: 94%;
+    padding: 0 3%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    transition:All 0.5s ease;
+    -webkit-transition:All 0.5s ease;
+    -moz-transition:All 0.5s ease;
+    -o-transition:All 0.5s ease;
+}
+.section-yun2016adm li>a .text-bg{
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    transition:All 0.5s ease;
+    -webkit-transition:All 0.5s ease;
+    -moz-transition:All 0.5s ease;
+    -o-transition:All 0.5s ease;
+}
+.section-yun2016adm li:hover>a .text-bg{
+    height: 100%;
+
+}
+.section-yun2016adm li:hover>a p{
+    bottom: 100px;
+}
+
+.loadmore-btn{
+    display: block;
+    background:url("../../img/retail_special/icon-more.png") no-repeat 200px center #fff;
+    border:2px solid #000000;
+    width:296px;
+    height:46px;
+    line-height: 46px;
+    font-size:24px;
+    color:#000;
+    margin: 20px auto;
+    text-align: center;
+    text-indent: -20px;
+    transition:All 0.5s ease;
+    -webkit-transition:All 0.5s ease;
+    -moz-transition:All 0.5s ease;
+    -o-transition:All 0.5s ease;
+}
+.loadmore-btn:hover{
+    background:url("../../img/retail_special/icon-more-white.png") no-repeat 200px center #000;
+    color: #fff;
+}
+
+/*我要参展ADM-star*/
+.error{
+    float: left;
+    font-size: 14px;
+    color: red;
+}
+.section-admform li{
+    background:#fff;
+    border:1px solid #ccc;
+    width:548px;
+    height:48px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.section-admform li.red{
+    border-color: #e73b72;
+    transition:All 0.5s ease;
+    -webkit-transition:All 0.5s ease;
+    -moz-transition:All 0.5s ease;
+    -o-transition:All 0.5s ease;
+}
+.section-admform li.left{
+    margin-right: 40px;
+}
+.section-admform li .red{
+    float: left;
+    display: inline-block;
+    line-height: 52px;
+    color:#e73b72;
+    font-size: 16px;
+    margin-right: 3px;
+}
+.section-admform li p{
+    float: left;
+    line-height: 48px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.section-admform li input{
+    float: left;
+    width: 450px;
+    height: 48px;
+    line-height: 48px;
+    border: none;
+    outline: none;
+}
+.section-admform .center{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.section-admform .fill-btn{
+    display: block;
+    background:#272335;
+    width:160px;
+    height:50px;
+    font-size: 18px;
+    color: #fff;
+    margin: 15px auto;
+    cursor: pointer;
+    outline: none;
+    transition:All 0.3s ease;
+    -webkit-transition:All 0.3s ease;
+    -moz-transition:All 0.3s ease;
+    -o-transition:All 0.3s ease;
+}
+.section-admform .fill-btn:hover{
+    background:#fff;
+    color: #272335;
+    border:1px solid #272335;
+}
+.section-admform .center p{
+    font-size:18px;
+    color:#e73b72;
+    line-height:30px;
+}
+/*表单状态弹窗*/
+.pop-wrapper .text{
+    background:#fff;
+    border:3px solid #e73b72;
+    width:294px;
+    height:144px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    margin-left:-147px;
+    margin-top:-180px;
+    z-index: 2;
+}
+.pop-wrapper .text h2{
+    font-size: 24px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 38px;
+}
+.pop-wrapper .text p{
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.pop-wrapper .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+/******零售专题-详情页面******/
+.section-vinci{
+    margin-bottom: 100px;
+}
+.section-vinci p{
+    margin-bottom: 24px;
+}
+
+.my-video-dimensions{
+    width: 100%;
+    height: 674px;
+}
+.video-js{width: 100%;height: 100%;}
+.video-js .vjs-big-play-button{
+    width: 220px;
+    height: 220px;
+    background: url("../../img/retail_special/icon-pausebtn.png") no-repeat center;
+    border: none;
+    left: 50%;
+    top: 50%;
+    margin-left: -110px;
+    margin-top: -110px;
+}
+.vjs-big-play-button:before{
+    content: "";
+    display: none;
+}
+.top-back{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.top-back .bg{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+.top-back .btn-back{
+    display: block;
+    background:url("../../img/retail_special/icon-back.png") no-repeat 19px center #e63a71;
+    width:80px;
+    height:30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-indent: 20px;
+    position: absolute;
+    left: 20px;
+    top:20px;
+    z-index: 101;
+}
+.retail-show a:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

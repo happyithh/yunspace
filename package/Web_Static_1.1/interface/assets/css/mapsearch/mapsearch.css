@@ -1,0 +1,743 @@
+/******布局******/
+.header-find-room{display: none;}
+.top{position: fixed;top:0;z-index: 1005;}
+.city_guide{position: absolute;left: 35px;}
+.service{position: absolute;right: 36px;}
+
+.header3-bg{position: fixed;top:32px;z-index: 1000;width:100%;height:90px;background: #fff;}
+.logo1{position: absolute;left: 35px;}
+.search-bg{position: absolute;right: 35px;}
+
+.guide4_outside .guide4{position: static;}
+.guide4_outside{position: fixed;top:32px;z-index: 1000;}
+.guide4_left{position: absolute;left: 170px;}
+.guide4_right-bg{position: absolute;right: 35px;}
+
+.pt{
+    width: 30px;
+    height: 30px;
+    background: url("../../img/mapsearch/pton.png") no-repeat center;
+}
+.pton .pt{background: url("../../img/mapsearch/pt.png") no-repeat center}
+.pt-click .pt{background: url("../../img/mapsearch/pt.png") no-repeat center!important;}
+.pt-detail{
+    background: #fe6a3a;
+    padding: 6px 8px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ff8861;
+    position: absolute;
+    box-shadow:0px 1px 4px #aaa;
+    margin-bottom: 30px;
+    text-align: center;
+    white-space: nowrap;
+    top: -40px;
+}
+.pt-wrap{
+    position: relative;
+    display: block;
+}
+
+.pton .pt-detail{
+    display: block!important;
+}
+.pt-click .pt-detail{
+    display: block!important;
+}
+.jiao{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 宋体;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom:-11px;
+    color: #fe6a3a;
+    text-shadow:0px 2px 3px #bbb;
+}
+
+.mapsearch{
+    position: absolute;
+    top: 72px;
+    bottom: 0px;
+    left: 0px;
+    right: 806px;
+    min-width: 374px;
+}
+.mapsearch-content{
+    width: 760px;
+    height: 100%;
+    padding: 0 23px;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    border-right: 1px solid #C7C7C7;
+    background: #fff;
+}
+.mapsearch-cont{
+    margin-top: 72px;
+}
+
+/******左侧地图******/
+#searchForm  .map-range-room{
+    position: absolute;
+    right: 50%;
+    margin-right: -230px;
+    top:10px;
+    opacity: 1;
+    width: 55%;
+    min-width: 560px;
+    max-width: 620px;
+    background: rgba(0,0,0,0.3);
+}
+#searchForm  .map-range-room div{
+    font-size: 14px;
+}
+/*按钮样式，已暂时去掉*/
+/*.map-range-room .r-r-button{*/
+    /*width:20%;*/
+    /*margin-left: 3%;*/
+/*}*/
+/*.map-range-room .r-r-button button{*/
+    /*font-size: 18px;*/
+    /*background: #06e1e1;*/
+    /*outline: none;*/
+/*}*/
+/*.map-range-room .r-r-button span{font-size: 16px;}*/
+/*.map-range-room .r-r-button .icon-search{*/
+    /*width: 16px;*/
+    /*height: 16px;*/
+    /*display: inline-block;*/
+    /*background: url("../../img/mapsearch/icon_search.png") no-repeat center;*/
+    /*vertical-align: middle;*/
+    /*margin-right: 5px;*/
+/*}*/
+#searchForm .map-range-room .r-r-s-title{
+    padding-left: 5%;
+}
+#searchForm .r-r-s-title .par2{font-size: 14px;}
+
+/******右侧内容******/
+/**筛选列表**/
+.mcont-screening{
+    width: 100%;
+    padding-top: 15px;
+}
+.mcont-screening dl{
+    width: 100%;
+    margin-bottom: 6px;
+    font-size:12px;
+    position: relative;
+}
+.mcont-screening dl dt{
+    float: left;
+    color: #000;
+    font-size: 100%;
+    line-height: 22px;
+    min-width: 60px;
+}
+.mcont-screening dl dd{
+    float: left;
+    width: 85%;
+    height: 22px;
+    overflow: hidden;
+}
+.mcont-screening dl dd.hauto{
+    height: auto;
+}
+.mcont-screening dl dd a{
+    float: left;
+    display: inline-block;
+    padding: 0 6px;
+    height: 22px;
+    line-height: 22px;
+    color: #666;
+    margin: 0 5px;
+    font-size:12px;
+}
+.mcont-screening dl dd a:hover,.mcont-screening dl dd a.on{
+    background: #06e1e1;
+    border-radius: 3px;
+    color: #fff;
+}
+.a_downup{
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.a_down{
+    background: url("../../img/mapsearch/down.png") no-repeat right center;
+}
+.a_up{
+    background: url("../../img/mapsearch/up.png") no-repeat right center;
+}
+
+
+.mcont-screening .dlchoice{
+    padding-top: 10px;
+    border-top: 1px solid #e9e9e9;
+}
+.mcont-screening .dlchoice dt{color: #999;margin-bottom: 10px;}
+.mcont-screening .dlchoice .hv-choice-list{
+    width: 75%;
+    height: auto;
+}
+.mcont-screening .dlchoice .hv-choice-list a{
+    border: 1px solid #06e1e1;
+    color: #06e1e1;
+    margin-bottom: 5px;
+}
+.mcont-screening .dlchoice .hv-choice-list a:hover{
+    background: #fff;
+    color: #06e1e1;
+}
+.c-close{
+    display: inline-block;
+    width: 8px;
+    padding-left: 2px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #06e1e1;
+}
+.mcont-screening .dlchoice .choice-more{
+    float: right;
+    width: 95px;
+    height: 24px;
+    border: 1px solid #e9e9e9;
+    border-top: 0;
+    margin-top: -10px;
+    margin-right: 1px;
+    background: #f4f4f4;
+}
+.mcont-screening .dlchoice .choice-more a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #666;
+    line-height: 24px;
+}
+.mcont-screening .dlchoice .choice-more a:hover{
+    background: #f4f4f4;
+    color: #24252f;
+}
+.mcont-screening .dlchoice .choice-more a i{
+    vertical-align: middle;
+}
+.icon-putaway{
+    display: inline-block;
+    width: 9px;
+    padding-left: 5px;
+    height: 7px;
+    background: url("../../img/mapsearch/icon_putaway.png") no-repeat right center;
+    vertical-align: middle;
+}
+.slidehide{display: none;}
+
+
+
+/**内容列表**/
+.mcont-list-title{
+    width: 100%;
+    height: 40px;
+    background: #f4f4f4;
+}
+.mcont-list-title .sort a{
+    float: left;
+    display: block;
+    width: 75px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    background: #eee;
+    font-size: 12px;
+    border-right: 1px solid #fff;
+}
+.mcont-list-title .sort a span{font-size: 12px;}
+.mcont-list-title .sort .active{
+    color: #24252f;
+    background: #ddd;
+}
+.mcont-list-title .back-list{
+    display: block;
+    line-height: 40px;
+    color: #666;
+    padding: 0 20px;
+}
+.mcont-list-title .back-list span{display: inline-block;vertical-align: middle;}
+.icon-sort{
+    display: inline-block;
+    width: 9px;
+    height: 12px;
+    background: url("../../img/mapsearch/icon_sort.png") no-repeat;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.icon-list{
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    background: url("../../img/mapsearch/icon_list.png") no-repeat right center;
+    margin-right: 5px;
+
+}
+
+.mcont-list-cont>li{
+    width: 100%;
+    padding: 18px 0;
+    border-bottom: 1px dashed #e0e0e0;
+    cursor: pointer;
+    position: relative;
+}
+.mcont-list-cont > li:hover{
+    box-shadow:-10px 0 10px red, /*左边阴影*/
+    10px 0 10px yellow, /*右边阴影*/
+    0 -10px 10px blue, /*顶部阴影*/
+    0 10px 10px green; /*底边阴影*/
+}
+.mcont-list-cont>li:hover{
+    background: #f4f4f4;
+}
+.mcont-list-cont>li>a{display: block;}
+.mcont-img{
+    float: left;
+    width: 210px;
+    height: 140px;
+    margin-right: 20px;
+}
+.mcont-img img{
+    width: 100%;
+    height: 100%;
+}
+.mcont-details{
+    float: left;
+    width: 50%;
+    padding-top: 3px;
+}
+.mcont-details h2{
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #24252f;
+    font-size: 18px;
+    line-height: 1.3em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.mcont-details>p{
+    font-size: 12px;
+    margin-top: 12px;
+    color: #24252f;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.mcont-details .m-tag{
+    margin-top: 15px;
+}
+.mcont-details .m-tag span{
+    display: inline-block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    border: 1px solid #999;
+    color: #666;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.mcont-price{
+    float: right;
+    color: #06e1e1;
+    margin-right: 14px;
+    margin-top: -10px;
+}
+.mcont-price strong{
+    font-size: 30px;
+    font-family: Constantia;
+}
+.mcont-price span{
+    font-size: 14px;
+}
+/*筛选条件无结果时*/
+.mcont-none{
+    padding: 30px 0;
+    border-bottom: 1px dashed #ddd;
+}
+.mcont-logo{
+    width: 145px;
+    height: 40px;
+    margin: 0 auto 15px;
+}
+.mcont-none p{text-align: center}
+.mcont-btn{
+    display: block;
+    width: 190px;
+    height: 40px;
+    background: #fe6a3a;
+    text-align: center;
+    line-height: 40px;
+    margin: 25px auto 0;
+    color: #fff;
+}
+/*.mcont-btn:hover{background:#0fcfd1;}*/
+.recommend-title{
+    height: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+/**选项预览**/
+.m-preview{
+    width: 610px;
+    height: 655px;
+    position: absolute;
+    right:808px;
+    bottom: 0;
+    background: #fff;
+    z-index: 1000;
+    border: 1px solid #f0f0f0;
+    /*display: none;*/
+}
+.m-preview .close{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url("../../img/mapsearch/icon_close.png") no-repeat right center;
+    position: absolute;
+    right: 15px;top:20px
+}
+.m-preview h1{
+    font-weight: normal;
+    text-align: center;
+    height: 65px;
+    line-height: 65px;
+    margin-top: 25px;
+}
+.m-preview h1 a{
+    color: #24252f;
+    font-size: 24px;
+}
+.m-preview h1 a:hover{
+    color: #06e1e1;
+}
+.mpw-cont{
+    width: 506px;
+    margin: 0 auto;
+    padding:10px 0;
+}
+.m-preview .m-banner{
+    width: 506px;
+    height: 290px;
+    margin: 0 auto;
+}
+.m-preview .text{height: 45px;}
+.m-preview .text .tit{
+    float: left;
+    display: block;
+    line-height: 45px;
+}
+.m-preview .text p{
+    float: left;
+    color: #999;
+    font-size: 12px;
+    line-height: 35px;
+}
+.m-preview .text p strong{
+    color: #06e1e1;
+    font-size: 30px;
+    font-family: Constantia;
+}
+.m-preview .text p span{
+    color: #06e1e1;
+}
+.m-preview .text .collect{
+    float: right;
+    color: #999;
+    line-height: 42px;
+    cursor: pointer;
+}
+.m-preview .text .collect span{
+    vertical-align: middle;
+}
+.m-preview .text .icon-collect{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+}
+.colt1{
+    background: url("../../img/mapsearch/icon_heart1.png") no-repeat;
+}
+.colt2{
+    background: url("../../img/mapsearch/icon_heart2.png") no-repeat;
+}
+.m-preview .ads-text .tit{
+    float: left;
+    display: block;
+    line-height: 22px;
+}
+.m-preview .ads-text p{
+    float: left;
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+}
+.m-preview .m-tag{margin-top: 15px;}
+.m-preview .m-tag span{
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    border: 1px solid #c2c2c2;
+    color: #999;
+    margin-right: 5px;
+}
+.m-preview .k-text{
+    margin-top: 15px;
+}
+.m-preview .k-text p span{
+    display: inline-block;
+    margin-top: 5px;
+    color: #999;
+    font-size: 12px;
+    min-width: 120px;
+    margin-right: 3px;
+}
+.m-preview .m-btn{
+    display: block;
+    width: 178px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin: 30px auto 10px;
+    background: #06e1e1;
+}
+.m-preview .m-btn:hover{
+    background:#0fcfd1;
+}
+
+
+.sr-only{display: block;font-size: 50px;line-height: 290px;}
+.r-r-p{width:6%;line-height: 40px;}
+#searchForm .r-r-p2{width:12%;}
+.r-r-select{width:28%;}
+.distance{width:18%;}
+.map-area{width: 18%;padding-right: 1%;}
+
+
+/*搜索框样式,后期的改动（覆盖上边已有的样式）*/
+.map-range-room{
+    min-width: 490px;
+    width: 50%;
+}
+.r-r-select{width:36%;}
+.r-r-p{width:6%;}
+#searchForm .r-r-p2{width:12%;}
+.map-area{width: 22%;}
+.distance{width: 21%;}
+.anchorBL{display:none}
+body{
+    min-width: 1200px!important;
+}
+
+/*区域css*/
+.area-detail{
+    background: url("../../img/mapsearch/area_bg.png") no-repeat center;
+    width: 80px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+.area-detail-on.area-detail{
+    background: url("../../img/mapsearch/area_hover_bg.png") no-repeat center;
+}
+@media(max-width: 1441px) {
+    .mapsearch-content{
+        width: 600px;
+    }
+    .mapsearch{right: 644px;}
+
+    .m-preview{
+        width: 510px;
+        height: 600px;
+        right: 710px;
+    }
+    .m-preview .m-banner{
+        width: 436px;
+        height: 250px;
+    }
+    .m-banner .carousel{height: 250px;}
+    .sr-only{line-height: 250px;}
+    .mpw-cont{
+        width: 436px;
+    }
+    .m-preview h1{margin-top: 10px;}
+    .carousel .carousel-control{
+        width: 8%;
+        left: -35px;
+    }
+    .carousel .carousel-control.right{
+        width: 8%;
+        right: -35px;
+    }
+    .m-preview .m-btn{
+        margin: 15px auto 0;
+    }
+    #searchForm   .mcont-screening .dlchoice .hv-choice-list{width: 70%;}
+
+    /*搜索框样式*/
+    #searchForm   .range-room{height: 50px;min-width: 420px;}
+    #searchForm   .range-room-con{padding:5px 10px;}
+    /*.map-range-room{*/
+        /*min-width: 420px;*/
+        /*margin-right: -35%;*/
+        /*width: 60%;*/
+    /*}*/
+    /*.map-range-room .r-r-button{display: none;}*/
+    /*.r-r-select{width:36%;}*/
+    /*.r-r-p{width:6%;}*/
+    /*.r-r-p2{width:12%;}*/
+    /*.map-area{width: 22%;}*/
+    /*.distance{width: 21%;}*/
+    /*.map-range-room{*/
+        /*height: 198px;*/
+        /*width: 80%;*/
+        /*min-width: 280px;*/
+        /*max-width: 450px;*/
+        /*margin-right: -42%;*/
+    /*}*/
+    /*.map-range-room .r-r-button{*/
+        /*width: 40%;*/
+        /*margin-left: 30%;*/
+        /*margin-top: 5px;*/
+    /*}*/
+    /*.r-r-p{width:18%;line-height: 40px;}*/
+    /*.r-r-p2{width:18%;}*/
+    /*.r-r-select{width:73%;}*/
+    /*.map-area{width: 72%;margin-left: 19%;}*/
+    /*.distance{width:73%;}*/
+
+
+    .mcont-details{width: 36%;}
+    .mcont-details .m-tag span{
+        height:20px;
+        line-height: 20px;
+        padding: 0 5px;
+    }
+    .pagers a{padding:3px 9px;}
+}
+@media(max-width: 1300px) {
+    #searchForm .map-range-room{
+        margin-right: -42%;
+    }
+}
+@media(max-width: 1150px) {
+    #searchForm .map-range-room{
+        min-width: 200px;
+        margin-right: -35%;
+        width: 65%;
+    }
+    #searchForm  .range-room{height: 95px;}
+    #searchForm  .r-r-select{width:58%;margin-bottom: 5px;background: #f9f9f9;}
+    #searchForm  .r-r-p{width:6%;background: #f9f9f9;}
+    #searchForm  .r-r-p2{width:20%;}
+    #searchForm  .map-area{width: 35%;}
+    .distance{width: 79%;}
+    #searchForm  .map-range-room .r-r-s-title{
+        background: #f9f9f9;
+    }
+    #searchForm  .r-r-s-title input{background: #f9f9f9;}
+}
+/*加载中样式*/
+.loading{
+    width: 120px;
+    height: 35px;
+    background: #27272b;
+    background: rgba(39,39,43,0.8);
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top:95px;
+    z-index: 100000;
+}
+.load-gif{
+    width: 15px;
+    height: 15px;
+    margin-left: 16px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.loading p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.header-find-room-ie{
+    background: #000;
+    filter:alpha(opacity=50);
+    overflow: visible;
+}
+.cover-body-ie{
+    background: #000;
+    filter:alpha(opacity=50);
+}
+.d-s-input-ie{
+    padding-top: 5px;
+}
+.input-ie9-10{
+    padding-bottom: 13px!important;
+}
+.product-name-title-ie{
+    background:#fff;filter:alpha(opacity=90);
+}
+.input-ie9{
+    padding-bottom:13px!important;
+}
+.product-name-title-ie-active{
+    height:100%;background: #000;filter:alpha(opacity=50);
+}
+.cov-des{
+    filter:alpha(opacity=0)
+}
+.cov-ie{
+    background: #000;filter:alpha(opacity=50)
+}
+.r-r-s-title input{
+    width: 92%;
+    line-height: 30px;
+    border: 0;
+    padding: 0 3px;
+    outline: none;
+}
+
+
+.sidebar-fu{display: none;}
+
+.mapInnerPiece{
+    background:#00a2d4;color:#fff;border:1px solid #333 ;
+
+    width : 20px; height : 20px;border-radius: 50%;text-align: center;
+    line-height: 20px;
+}
+.mapInnerPiece.hover{
+    background:#06e1e1;
+    color:#fff;
+}
+.r-r-s-title input{height: 30px;line-height: 30px;}
+#searchForm .map-area{height: 30px;margin-top:5px;}

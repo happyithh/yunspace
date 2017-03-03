@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#dHomePageCarousel { 
+	background:url("../../img/contact/pic_bg.gif") no-repeat scroll 0 0 transparent;
+	height:600px;
+	width:1050px;
+	position:relative;
+	margin:180px auto;
+}
+#dLocalHomesCarousel {
+	height:260px;
+	margin:0px 2px 3px 1px;
+	overflow:hidden;
+	position:relative;
+}
+.divCarouselInfo {
+	color:#3C404E;
+	font-size:12px;
+	width:410px;
+
+	line-height:16px;
+	margin:30px auto 0 auto;
+
+	position:relative;
+}
+.imgBorder{
+	position:absolute;
+	cursor:pointer;
+    z-index: 999;
+}
+#imgBig{
+    -webkit-filter: brightness(100%) !important;
+}
+
+.imgBorder:hover {
+	cursor:pointer;
+	position:absolute;
+    z-index: 999;
+}
+.btnCarouselLT {
+	background:url("../../img/contact/left.png") no-repeat scroll left top transparent;
+	display:block;
+	height:51px;
+	overflow:hidden;
+	position:absolute;
+	cursor:pointer;
+	top:-130px;
+	width:24px;
+    left:-390px!important;
+    z-index: 9999!important;
+}
+.btnCarouselRT {
+	background:url("../../img/contact/right.png") no-repeat scroll right top transparent;
+	display:block;
+	height:51px;
+	overflow:hidden;
+	position:absolute;
+	cursor:pointer;
+	width:24px;
+    top: -130px;
+    right:-360px!important;
+    z-index: 5555;
+}
+
+img {
+	border:medium none;
+}
+
+.author{ width:700px; margin:0 auto; height:auto; text-align:center;}
+
+#fadeSec{ width: 100%;}
+#adname{ font-size: 20px; font-weight: bold; color: #fff; text-shadow: 0 1px 1px #d4ac43;}
+#adtel{ font-size: 16px; font-weight: bold; color: #fff; text-shadow: 0 1px 1px #d4ac43;}
+#adaddr{ font-size: 16px; font-weight: bold; color: #fff; text-shadow: 0 1px 1px #d4ac43;}
+.org{ font-size: 14px; color: #fff; line-height: 22px; text-shadow: 0 1px 1px #d4ac43;}
+.org1{ font-size: 14px; color: #fff; line-height: 22px; text-shadow: 0 1px 1px #d4ac43;}
+#brief{ position: relative;}
+#brief1{ position: absolute; width: 410px; height: 250px; top: 0; left: 0; z-index: 8888;}
+
+@media (max-width: 1600px){
+    .divCarouselInfo{ width: 410px; margin: 10px auto 0 auto;}
+    #dHomePageCarousel{ margin: 150px auto;}
+    .btnCarouselLT{ top: -110px; }
+    .btnCarouselRT{ top: -110px; }
+    #brief1{ width: 410px; height: 210px;}
+}
+
+@media (max-width: 1390px){
+    .divCarouselInfo{ width: 900px; margin: 10px auto 0 auto;}
+    #dHomePageCarousel{ margin: 100px auto;}
+    .btnCarouselLT{ top: -110px; left: -120px!important;}
+    .btnCarouselRT{ top: -110px; right:-90px!important;}
+    #brief1{ width: 900px; height: 210px;}
+}

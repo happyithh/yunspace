@@ -1,0 +1,273 @@
+*{
+  -webkit-font-smoothing:antialiased;
+}
+.content{
+  max-width: 1024px;
+  margin:0 auto;
+  overflow: hidden;
+}
+.person-page-header{
+  width:100%;
+  height:430px;
+  max-width: 1024px;
+  background: #ddd;
+}
+.header-cover{
+  position: absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.5);
+}
+.header-body{
+  width:100%;
+  height:100%;
+  position: relative;
+}
+.person-page-bg{
+    position: relative;
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.person-page-bg .img{
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: -960px;
+    text-align: center;
+}
+
+.person-page-bg img{
+    width:auto;
+    height:100%;
+}
+
+.header-body-tx{
+  /*position: absolute;
+  top:90px;
+  left:50%;*/
+  margin:0 auto;
+  margin-top: 45px;
+  width:81px;
+  height:81px;
+  border-radius: 40.5px;
+  background:rgba(255,255,255,0.3);
+  box-sizing: border-box;
+  padding-top: 3px;
+}
+.header-body-tx .tx-img{
+  margin: 0 auto;
+  background: #000;
+  width:75px;
+  height:75px;
+  border-radius: 37.5px;
+  overflow: hidden;
+}
+.header-body-tx .tx-img img{
+  width:100%;
+  height:100%;
+}
+.header-body-name{
+  margin-top:15px;
+  text-align: center;
+}
+.header-body-name span{
+  color:#fff;
+  font-size: 10px;
+}
+.header-body-like{
+  width:100%;
+  text-align: center;
+  margin-top: 23px;
+}
+.header-body-like img{
+  width:20px;
+  height:20px;
+}
+.like-name{
+  margin-top: 23px;
+  width:100%;
+  text-align: center;
+}
+.like-name span{
+  font-size: 13px;
+  color:#fff;
+}
+
+.like-des-input{
+  width:90%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.5);
+  padding:2px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 17px
+}
+.like-des-input input{
+  background: transparent!important;
+  border: 0px;
+  width:100%;
+  line-height:30px;
+  outline: none;
+}
+.comment-input{
+  margin-bottom:15px;
+  position:relative
+}
+.is-login{
+  margin-top: 34px;
+}
+.get-code{
+  width:90%;
+  margin:0 auto;
+}
+.login-input{
+  position: relative;
+  margin:0px;
+  margin:0 auto;
+  margin-bottom: 15px;
+}
+.clear-input{
+  position: absolute;
+  width:30px;
+  text-align: center;
+}
+.clear-input span{
+  line-height: 30px;
+  color:#fff;
+}
+.login-input:first-of-type .clear-input{
+  right:20px;
+}
+.login-input:last-of-type .clear-input{
+  right:10px;
+}
+.login-code{
+  border-top-right-radius:0px;
+  border-bottom-right-radius:0px;
+  padding-right:10px;
+  width:70%;
+  float:left;
+}
+.send-code{
+  float: left;
+  width:30%;
+  line-height: 34px;
+  font-size: 12px;
+  color:#fff;
+  display: block;
+  box-sizing: border-box;
+  background:#76c2e7 ;
+  border-top-right-radius:17px;
+  border-bottom-right-radius:17px;
+}
+.like-des-button{
+  width:100%;
+  text-align: center;
+  /*margin-top: 20px;*/
+}
+.get-code span{
+  cursor:pointer;
+  text-align: center;
+  /*margin-top: 20px;*/
+}
+.like-des-button button{
+  display: inline-block;
+  width:90px;
+  height:30px;
+  border-radius: 15px;
+  background: rgba(122,122,250,0.8);
+  color:#fff;
+}
+.zan{
+  padding:10px;
+  border-bottom: 1px solid #f5f5f5;
+  position: relative;
+}
+.zan-who{
+  width:85%;
+}
+.zan-who-list{
+  width:100%;
+  height:36px;
+  overflow: hidden;
+}
+.zan-who-list li{
+  width:34px;
+  float:left;
+  height:100%;
+  box-sizing: border-box;
+  padding-top:5px;
+  /*margin:0 auto;*/
+}
+.zan-who-list li img{
+  display: inline-block;
+  width:26px;
+  height:26px;
+  border-radius: 13px;
+  background: #ddd;
+}
+.zan-num{
+  width:15%;
+  text-align: center;
+  /*border-right: 1px solid #f0f0f0;*/
+  box-sizing: border-box;
+}
+.zan-num span{
+  font-size: 10px;
+  color:#666;
+  line-height: 37px;
+}
+.zan-icon{
+  width:15%;
+  text-align: center;
+}
+.zan-icon span{
+  font-size: 15px;
+  color:#666;
+  line-height: 37px;
+}
+.back-num{
+  position: absolute;
+  padding:0px 10px;
+  left:0px;
+  bottom:-7px;
+  background: #fff;
+}
+.back-num span{
+  font-size: 10px;
+  color:#999;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+color: #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #fff;
+}
+.comment-error{
+  position: fixed;
+  background: #ff0000;
+  line-height: 30px;
+  font-size: 13px;
+  color:#fff;
+  text-align: center;
+  width:80%;
+  left:10%;
+  top:-50px;
+  border-radius: 5px;
+}
+.none {
+  display: none;
+}
+

@@ -1,0 +1,84 @@
+body{
+    background: #f5f5f5;
+    overflow: hidden
+}
+.header{padding-top:85px;width:100%;}
+.logo{width:100%}
+.logo_img{width:100px;height:103px;margin:0 auto;display: block;}
+.footer{width:100%;margin-top:85px;}
+form{width:100%}
+.form_input{margin-bottom:5px;box-shadow: 1px 1px 1px #eeeeee; width: 100%; overflow: hidden;  }
+.form_btn{width:96%;margin-bottom:5px;}
+.input{width:90%; padding:5px 5%; font-size: 14px;}
+.form_link{float:right;margin-right:15px;line-height: 30px;font-size: 10px;color:#17a8d5}
+.form_button{width:94%;height:50px;background: #bc2e56;margin-left:5%;line-height:50px;color:#ffffff;font-size:16px;}
+.link{width:100%}
+.link_a{width:100%;display: block;line-height: 50px;color:#999999;font-size: 16px;}
+
+.user-panel{  }
+.pan{width:100%; position: fixed; left: 100%;}
+.active{position:absolute; left:0!important;transition: all 400ms; -moz-transition: all 400ms; -webkit-transition: all 400ms;}
+.active-end{left:-100%!important;}
+
+.col-6{width:60%}
+.col-3{width:25%}
+.col-5{width:50%}
+.background1{background: #ffffff}
+.margin-top1{margin-top:50px; }
+.send_code{display: block;background: #17d2b5;border-radius: 0;height:50px; right:5%; top:0;color:#ffffff; font-size: 14px;}
+.background2{background: #b5bfd2}
+
+.cover{width:25%;height:200%;background: rgba(0,0,0,0.5);z-index:99;display: none}
+.modal{width:50%;height:100px;left:50%;top:300px;margin-left:-25%;background:rgba(255,255,255,0.5);z-index:8888;border-radius: 5px;display: none}
+.modal-title{width:100%;color:#5c4255;text-align: center;line-height:60px;border-bottom: 1px solid #000000;font-size: 18px;}
+.ok{width:100%;line-height: 40px;font-size: 13px;}
+
+.cover2{width:25%;height:200%;-webkit-transform:translate(300%,0);-webkit-transform:translate(300%,0);transform:translate(300%,0);
+         -moz-transform:translate(300%,0);-o-transform:translate(300%,0);background: rgba(0,0,0,0.5);z-index:99;display: none}
+.modal2{width:90%;height:100px;left:50%;top:250px;margin-left:-45%;background:rgba(255,255,255,1);z-index:8888;border-radius: 5px;display: none}
+.modal-title2{background: #ffffff;text-align: center;padding-top:20px;margin-top: 10px;font-weight: bold;color: #16d3b5;line-height: 26px;}
+.icon-style{background: #17d1b9;text-align: center;font-size: 20px;width:26px;display: inline-block;border-radius: 13px;color:#FFFFff}
+.close-reset{width:30px;height:30px;right:3px;top:3px;font-weight: bold;line-height: 30px;text-align: center}
+.handle-margin{margin-top: 15px;}
+
+.header{padding-top:42px;width:100%;}
+.footer{width:100%;margin-top:42px;}
+.margin-top1{margin-top:25px; }
+.padding-small{padding-top: 30px;}
+.margin-small{margin-top: 30px;}
+.logo_img_small{width:70px;height:70px;}
+
+
+/*快捷登录*/
+.cover-agreement{
+    position: fixed;width:100%;height:100%;left:0px;top:0px;background: rgba(0,0,0,0.5);display: none;
+}
+.agreement{
+    position: fixed;width:70%;height:80%;background: #fff;border-radius: 5px;left:50%;top:110%;margin-left: -40%;opacity:0;
+    padding:5%  5%;transition: all 0.4s;-webkit-transition: all 0.4s;-o-transition: all 0.4s;-moz-transition: all 0.4s;
+}
+.agreement-content{
+    position: relative;height:100%;
+}
+.close-agreement{
+    position: absolute;
+    display: block;width:20px;height:20px;right:-15px;top:-15px;text-align: center;
+}
+.close-agreement span {
+    font-size: 20px;
+}
+.ct{
+    height:100%;overflow: auto;
+}
+.ct p{
+    line-height: 20px;
+}
+h2{
+    padding-top: 20px;text-align: center;padding: 10px;
+}
+.text{
+    line-height: 20px!important;font-size: 13px;
+}
+.text-title{
+    font-size: 15px;line-height: 25px;margin-top: 10px;margin-bottom: 5px;
+}

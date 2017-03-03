@@ -1,0 +1,188 @@
+/*立即咨询弹窗-开始*/
+.hide{display: none}
+.consult{
+    width: 370px;
+    height: 335px;
+    padding: 30px;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    margin-left: -215px;
+    top:50%;
+    margin-top:-200px;
+    z-index: 112;
+    overflow: hidden;
+}
+.consult .close{
+    right:15px;
+    top:15px;
+}
+.consult h2{
+    font-size: 12px;
+    color: #F7782F;
+    margin-top: 5px;
+}
+.inquiry-ul-contleft li{
+    float: left;
+    width: 348px;
+    padding: 10px;
+    margin-right: 30px;
+    background: #fff;
+    border: 1px solid #ededed;
+    margin-top: 11px;
+    position: relative;
+}
+.inquiry-ul-contleft li label{
+    font-size: 12px;
+    color: #626262;
+    display: block;
+    padding: 1px 0;
+    font-weight: bold;
+}
+.inquiry-ul-contleft li .fill{
+    width: 100%;
+    font-size: 12px;
+    color: #b9b9b9;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.inquiry-ul-contleft .li-textrea{
+    width: 348px;
+}
+.inquiry-ul-contleft .li-textrea textarea{
+    min-height: 50px;
+}
+.consult .inquiry-btn{
+    display: block;
+    width: 275px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px auto;
+    background: #f26617;
+}
+.inquiry-btn:hover{background: #f7782f;}
+.inquiry-btn.invalid{
+    background-color: #A09D9C;
+}
+
+.inquiry-ul-contleft .focused{
+    background-color:#f5f5f5;
+    border:1px solid #dfdcdc;
+    transition:background 0.3s ease;
+    -webkit-transition:background 0.3s ease;
+}
+.inquiry-ul-contleft .focused .fill{
+    background-color:#f5f5f5;
+    color:#626262;
+    transition:background 0.3s ease;
+    -webkit-transition:background 0.3s ease;
+}
+.inquiry-ul-contleft .focused label{color:#b9b9b9;}
+.inquiry-ul-contleft .focused ::-moz-placeholder { color: #626262; }
+.inquiry-ul-contleft .focused ::-webkit-input-placeholder { color:#626262; }
+.inquiry-ul-contleft .focused :-ms-input-placeholder { color:#626262; }
+
+
+.consult-versic h2 span{
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.consult-versic li label{
+    font-size: 12px;
+    color: #626262;
+    display: block;
+    padding: 3px 0;
+    font-weight: bold;
+}
+.consult-versic li .fill{
+    float: left;
+    width: 75%;
+    font-size: 12px;
+    color: #b9b9b9;
+    border: none;
+    outline: none;
+    margin-top: 2px;
+}
+.consult-versic li .resend{
+    color: #333;
+    font-size: 12px;
+    border: 0;
+    background: #fff;
+}
+.consult-code{padding: 20px;}
+.consult-code p{
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+}
+.consult-code .img-w{
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+}
+.consult-code .img-w img{width:100%;height: 100%;}
+.consult-btn{width: 70%;margin: 10px auto 0;}
+.consult-btn button{
+    display: block;
+    border: none;
+    width: 45%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.consult-btn1{background: #ddd;color: #333;}
+.consult-btn2{background: #fe6a3a;color: #fff;}
+
+.look-price-title{margin: 15px 0;}
+.look-price-title h5{
+    font-size: 12px;
+    color: #22c1f8;
+    margin-bottom: 10px;
+}
+.look-price-title p{
+    font-size: 12px;
+    color: #626262;
+}
+.look-price-btn button{
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #fff;
+    outline: none;
+}
+.consult-look-price .gray{background: #e0e0e0;}
+.consult-look-price .blue{background: #22c1f8;}
+.consult-look-price .li-code{
+    position: relative;
+    margin-top: 30px;
+}
+.consult-look-price .get-code{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 136px;
+    height: 100%;
+    line-height: 52px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+}
+/*立即咨询弹窗-结束*/

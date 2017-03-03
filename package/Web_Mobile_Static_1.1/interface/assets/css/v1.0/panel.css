@@ -1,0 +1,14 @@
+.panel-top { position: relative; top: 0; left: 0; width: 100%; height: 40px; text-align: center; background-color: #25252f;}
+.panel-top .top_left { position: absolute; left: 0; box-sizing: border-box; -ms-box-sizing: border-box; -mos-box-sizing: border-box; -webkit-box-sizing: border-box;height: 100%;}
+.panel-top img{height: 100%;}
+.panel-top .top_title { font-size: 16px; color: #fff; width: 90px; margin: auto; line-height: 40px;}
+.panel-top .top_right { position: absolute; right: 0; top:0;box-sizing: border-box; -ms-box-sizing: border-box; -mos-box-sizing: border-box; -webkit-box-sizing: border-box;height: 100%; }
+.left-panel { position: fixed; top:0;left: -100%; box-sizing: border-box; -ms-box-sizing: border-box; -mos-box-sizing: border-box; -webkit-box-sizing: border-box; height: 100%; width: 100%;
+    transition: all 400ms; -moz-transition: all 400ms; -webkit-transition: all 400ms; z-index: 5000; }
+.left-panel[class*="active"] { transform: translateX(100%); -moz-transform: translateX(100%); -webkit-transform: translateX(100%); }
+.left-panel .swiper-container { width:100%;height:100%; overflow: hidden}
+.left-panel .swiper-container img { width:100%;}
+
+.right-panel { position: fixed; top:0;left: 100%; box-sizing: border-box; -ms-box-sizing: border-box; -mos-box-sizing: border-box; -webkit-box-sizing: border-box; height: 100%; width: 100%;
+    transition: all 400ms; -moz-transition: all 400ms; -webkit-transition: all 400ms; z-index: 5000; background-color: #ffffff;overflow: auto}
+.right-panel[class*="active"] { transform: translateX(-100%); -moz-transform: translateX(-100%); -webkit-transform: translateX(-100%); }

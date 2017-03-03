@@ -1,0 +1,20 @@
+@media (max-width: 520px) {
+    .list_none {
+        display: none;
+    }
+    .list_size {
+        font-size: 13px;
+    }
+    .table-responsive table tbody tr td {
+        white-space: inherit !important;
+    }
+    .nav>li>a{
+        padding: 2px 6px;
+    }
+}
+.list_size{
+    font-size: 13px;
+}
+.list_none{
+    font-size: 13px;
+}

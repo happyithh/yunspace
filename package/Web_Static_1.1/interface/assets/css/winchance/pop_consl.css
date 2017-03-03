@@ -1,0 +1,155 @@
+
+.popup_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: #000;
+    background:rgba(0, 0, 0, 0.4);
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    z-index:100;
+    left:0;top:0;
+}
+.pop-consl{
+    display: none;
+    width: 600px;
+    background: #fff;
+    box-shadow: 1px 2px 10px #666;
+    border-radius: 5px;
+    position: fixed;
+    top:100px;
+    left: 50%;
+    margin-left: -305px;
+    z-index: 1000;
+}
+.pop-viewpdf{
+    display: none;
+    width: 600px;
+    padding: 20px 0;
+    background: #fff;
+    box-shadow: 1px 2px 10px #666;
+    border-radius: 5px;
+    position: fixed;
+    top:100px;
+    left: 50%;
+    margin-left: -305px;
+    z-index: 1000;
+}
+@media(max-width: 1441px){
+    .pop-consl{top:60px;}
+}
+.pop-consl .close,.pop-viewpdf .close{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: url("../../img/winchance/icon_close.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.consl{
+    width: 560px;
+    margin:20px 20px 10px;
+}
+.consl th{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+.consl td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.consl td .imp{color: #f10b0b;font-size: 18px;vertical-align: middle;margin-right: 3px;}
+.consl td .ipt-text{
+    width: 99%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: -1px -1px 1px #f5f5f5 inset;
+}
+.consl td .txtra{
+    width: 99%;
+    min-height: 80px;
+    padding-top: 5px;
+    line-height: 20px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: -1px -1px 1px #f5f5f5 inset;
+}
+.consl td .consl-code img{
+    width: 120px;
+    height: 120px;
+    margin-left: 115px;
+}
+.consl .bdn td{border: none;}
+
+.conls-btn{
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+}
+.conls-btn .btn{
+    float: right;
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 20px;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.conls-btn .btn-confirm{
+    background: #4bc5c5;
+    color: #fff;
+}
+
+
+.pdf-dload{
+    display: block;
+    width: 250px;
+    height: 40px;
+    padding: 10px 0;
+    background: #00c3c3;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #fff;
+}
+.pdf-dload strong{
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+.pdf-dload span{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

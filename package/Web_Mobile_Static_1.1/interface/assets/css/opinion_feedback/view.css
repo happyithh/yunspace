@@ -1,0 +1,79 @@
+/*初始化*/
+*{ margin: 0; padding: 0;}
+body{color:#24252f;font-size: 14px;font-family: "微软雅黑", 'microsoft yahei', Arial;}
+h1,h2,h3,h4,h5,h6,b,strong{font-size:100%;}
+li{ list-style-type: none;}
+a{text-decoration: none;}
+img {border:none;}
+input,select,textarea{outline: none;}
+textarea{line-height: 20px;}
+
+.view-title{
+    background: #eee;
+    width: 100%;
+    padding:20px 15px;
+    box-sizing: border-box;
+}
+.view-title h2{
+    font-size: 16px;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+.comn{
+    padding:0 15px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.comn h3{
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.contr textarea{min-height: 120px}
+.contr textarea,.contr input{
+    width: 100%;
+    padding:15px 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+}
+.view-btn-wrap{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.view-btn{
+    width: 100%;
+    background: #01c3c3;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

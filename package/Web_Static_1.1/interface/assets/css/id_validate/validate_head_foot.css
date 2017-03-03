@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.foot-bg{
+    width: 100%;
+    min-width: 1180px;
+    background: #25252f;
+    position: relative;
+}
+.foot{
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+}
+.foot{height: 68px;}
+.foot p{float: left;line-height: 68px;color: #fff;}
+.foot .up{
+    width: 48px;
+    height: 48px;
+    display: block;
+    position: absolute;
+    right: 8px;
+    top:50%;
+    margin-top: -24px;
+    cursor: pointer;
+}

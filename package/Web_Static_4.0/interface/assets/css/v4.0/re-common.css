@@ -1,0 +1,58 @@
+.re-header{
+    background: #fff;
+}
+.re-header-body{
+    width:1180px;
+    margin:0 auto;
+    height:50px;
+}
+.re-logo{
+    display: table;
+    width:95px;
+    height:50px;
+}
+.logo-img{
+    display:table-cell;;
+    vertical-align: middle;
+}
+.re-logo img{
+    width:95px;
+    height:20px;
+    background: none!important;
+}
+.nav-list{
+    margin-left:145px;
+}
+.nav-list li{
+    padding:0 22px;
+}
+.nav-list li:hover{
+    background:#2aacff ;
+}
+.nav-list li:hover a{
+    color:#fff;
+}
+.nav-list .active{
+    background:#2aacff ;
+}
+.nav-list .active>a{
+    color:#Fff;
+}
+.nav-list li >a {
+    display: inline-block;
+    line-height:50px;
+    color:#000;
+}
+.re-tel{
+    width:120px;
+}
+.re-tel .p1{
+    font-size:12px;
+    color:#ababab;
+    line-height:20px;
+}
+.re-tel .p2{
+    font-size:17px;
+    color:#222;
+    line-height:28px;
+}

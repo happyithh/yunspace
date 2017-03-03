@@ -1,0 +1,8 @@
+/*.favorite-off{  background: url(../../img/service_info.v1.0/favorite.png) no-repeat center top 7px; background-size: 20px; }*/
+/*.favorite-in{  background: url(../../img/service_info.v1.0/favorite-in.png) no-repeat center top 7px; background-size: 20px; }*/
+/*.tel{ background: url(../../img/service_info.v1.0/phone.png) no-repeat center top 7px; background-size: 20px;}*/
+.favorite-in p,.favorite-off p,.tel p{ margin-top: 22px; color: #000000}
+.favorite-msg{position: fixed; background:rgba(0, 0, 0, 0.6) none repeat scroll 0 0 !important; color: #fff;top:50%;left:25%;width: 50%; border-radius: 10px; text-align: center;
+    transition: all 600ms; -moz-transition: all 600ms; -webkit-transition: all 600ms;opacity: 0; z-index: -1}
+.favorite-msg[class*="active"]{opacity: 1; z-index: 5000}
+.favorite-msg p{margin: 20px;font-size: 20px;}

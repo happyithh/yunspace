@@ -1,0 +1,227 @@
+*{ margin: 0; padding: 0;}
+li{ list-style-type: none}
+a{ text-decoration: none}
+body .con a{color: #000}
+.content a{color: #000}
+.content a:hover{color: #00c3c3}
+a:hover{ text-decoration: none}
+body{font-family: "微软雅黑", 'microsoft yahei', Arial, sans-serif; position: relative;}
+.top{ line-height: 70px}
+.fl{ float: left; }
+.logo img{ width: 145px}
+.fr{ float: right;}
+.content{ position: relative;}
+.clear{ clear:both; }
+.register_person{
+	width:488px;
+	margin:0 auto;
+	
+}
+.reg_header{
+	width:488px;
+	height:80px;
+	padding-left:50px;
+	padding-top:20px;
+}
+
+.one{
+	background:#24252f;
+	float:left;
+	width:36px;
+	height:36px;
+	padding-left:14px;
+	color:#ffffff;
+	line-height:35px;
+    border-radius:18px;
+}
+.two{
+	background:#999999;
+	float:left;
+	width:36px;
+	height:36px;
+    padding-left:14px;
+	color:#ffffff;
+	line-height:35px;
+    border-radius:18px;
+}
+.reg_header p{
+	float:left;
+	font-size:18px;
+	line-height:35px;
+	margin-left:7px;
+}
+.reg_header p:last-child{
+	color:#999999;
+}
+.reg_header img{
+	float:left;
+	margin-top:15px;
+	margin-left:20px;
+	margin-right:20px;
+}
+.reg_body{
+	width:488px;
+	height:620px;
+	border:1px solid #ccc;
+	border-radius:3px;
+}
+
+.reg_page{ height: auto; overflow: hidden;}
+
+.reg_page a{
+	display:block;
+	float:left;
+	width:240px;
+	font-size:18px;
+	line-height:60px;
+	text-align:center;
+	margin-bottom:22px;
+}
+.reg_page a:first-child{
+	background:#ccc;
+	border-radius:2px;
+	color:#ffffff;
+}
+
+.form_input {
+    width: 385px;
+    height: 50px;
+    margin: auto;
+    margin-top: 6px;
+    clear: both;
+}
+
+.form_input p {
+    float: left;
+    font-size: 16px;
+    line-height: 45px;
+}
+
+.form_input input {
+    float: right;
+    width: 283px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 12px;
+}
+
+.form_input input:disabled {
+    color: #ccc;
+}
+
+.auth_code input {
+    width: 172px;
+}
+
+.auth_code a {
+    display: block;
+    float: right;
+    line-height: 45px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background: #24252f;
+    color: #fff !important;
+    margin-left: 11px;
+}
+
+.auth_code a.disabled {
+    background: #ddd;
+    cursor: default;
+}
+
+.checkbox input {
+    float: left;
+    display: block;
+    width: 20px;
+    height: 50px;
+}
+
+.checkbox p {
+    line-height: 55px;
+}
+
+.checkbox a {
+    line-height: 55px;
+    color: #3366cc;
+}
+
+.form_submit{
+	width:385px;
+	margin:0 auto;
+}
+.form_input select{
+     width:283px;
+     height:50px;
+     float:right;
+     border:1px solid #ccc;
+     border-radius:3px;
+ }
+.form_submit button{
+	background:#24252f;
+	border:0px;
+	color:#fff;
+	width:100%;
+	height:57px;
+	font-size:16px;
+}
+.reg_log{
+	width:488px;
+	height:100px;
+	margin:0 auto;
+	margin-top:20px;
+	text-align:center;
+}
+
+.reg_log a{	
+	color:#3366cc;
+}
+
+.reg_form .input{
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 45px;
+    padding-left: 5px;
+}
+
+.reg_form .p{
+    font-size: 16px;
+    line-height: 55px;
+}
+
+.left{ float: left; width: 30%;}
+.right{ float:right; width:70%;}
+
+@media (max-width: 968px){
+    .left{ float:none; width:100%;}
+    .right{ float:right; width:100%;}
+    .clear{ clear: none;}
+}
+
+
+@media (max-width: 560px){
+    .register_person{ width: 100%; padding-right: 10px;}
+    .reg_header{ display: none; float: none;}
+    .reg_body{ width: 100%; height: auto; overflow: hidden;}
+    .reg_page a{ width: 50%;}
+}
+
+@media (max-width:1024px) {
+    .reg_body{ width: 100%; height: auto; overflow: hidden; padding-bottom: 20px;}
+    .form_submit{ width: 100%; padding: 0px 15px; }
+}
+
+@media (min-width:1024px) {
+    .reg_form{ padding: 0px 25px;}
+    .form_submit{ width: 100%; padding: 0px 15px;}
+}
+
+@media (max-width: 408px){
+    .checkbox a{ line-height: 18px;}
+    #tnc{ margin-top:-12px;}
+}
+
+@media (max-width:1024px){
+    .reg_log{ width: 100%; height: auto; overflow: hidden;}
+}

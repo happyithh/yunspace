@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*初始化*/
+body{background:#fff;color: #25252f;}
+h1,h2,h3,h4,h5,h6,b,strong{font-size:100%;}
+.hide{display:none;}
+.inbk{display: inline-block;}
+input,select{outline: none;}
+/*文字颜色*/
+.green{color:#00c3c3;}
+.magenta{color: #ff308d;}
+.blue{color: #2284e9;}
+.black{color: #000;}
+.gray{color: #666;}
+.dk-blue{color: #004986;}
+/*按钮背景颜色*/
+.bg-green{background:#00c3c3; color: #fff;}
+.bg-magenta{background: #ff308d; color: #fff;}
+.bg-blue{background: #2284e9; color: #fff;}
+.bg-black{background: #323340;color: #fff;}
+.bg-write{background: #fff;border: 1px solid #2b2c42;color: #25252f;}
+.bg-gray{background: #dcdcdc;color:#6b6b6b;}
+/*按钮hover状态背景颜色*/
+.bg-green:hover{background:#0fcfd1;}
+.bg-magenta:hover{background: #f20c74;}
+.bg-blue:hover{background: #0471e2;}
+.bg-black:hover{background: #414253;}
+.bg-write:hover{background: #2b2c42;color:#fff;border: 1px solid #2b2c42;}
+/*线框按钮状态背景颜色*/
+.line-ipt-green{border:1px solid #00c3c3;color: #00c3c3;padding: 2px 10px;font-size: 12px;}
+.line-ipt-magenta{border:1px solid #ff308d;color: #ff308d;padding: 2px 10px;font-size: 12px;}
+.line-ipt-blue{border:1px solid #2284e9;color: #2284e9;padding: 2px 10px;font-size: 12px;}
+.line-ipt-black{border:1px solid #040404;color: #040404;padding: 2px 10px;font-size: 12px;}
+/*页面位置*/
+.site_location{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+}
+.site_location a{color: #25252f;}
+.site_location span{margin: 0 3px;}
+.site_location p{color: #666;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

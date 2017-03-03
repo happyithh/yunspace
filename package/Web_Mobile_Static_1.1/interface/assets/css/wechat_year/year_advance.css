@@ -1,0 +1,62 @@
+.none{
+    display: none;
+}
+.clear{
+    clear: both;
+}
+.content-fix{
+    position:fixed;left:0px;top:0px;width:100%;height:100%;overflow: auto;
+}
+.content{
+    position: absolute;left:0px;top:0px;
+}
+.year_body{
+    max-width: 768px;overflow: hidden;background: #fff;
+}
+.year_body1{
+    /*position: absolute;left:0px;top:0px;*/
+    padding-bottom:40px;background: #f5f5f5;overflow: hidden;
+}
+.year_body2{
+    /*position: fixed;top:100%;left:0px;*/padding-bottom: 40px;
+}
+.year_body_advance{
+    width:100%;float: left;position: relative;
+}
+.year_body_advance img{
+    width:100%;height:auto;background: #000;float: left;
+}
+.year_body_rule{
+   padding:20px 15px;
+}
+.year_body_rule_header{
+    position: relative;
+}
+.year_body_rule_line{
+    background: #d3d3d3;width:100%;height:1px;
+}
+.year_body_rule_title{
+    width:75px;font-size: 14px;position: absolute;left:50%;margin-left: -37.5px;
+    line-height: 20px;top:-10px;background: #fff;text-align: center;
+}
+.year_body_rule_con{
+    padding:20px 0px;
+}
+.year_body_rule_text{
+    font-size: 13px;line-height: 200%;
+}
+.year_body_rule_index{
+    font-size: 13px;color:#ef3451;line-height: 200%;
+}
+.year_body_advance_bottom{
+    position: fixed;background: #f6304b;height:50px;bottom:0px;width:100%;padding-top: 8px;box-sizing: border-box;z-index:999;
+}
+.year_body_advance_bottom div{
+    text-align: center;
+}
+.year_body_advance_bottom > div:first-of-type{
+    font-size: 10px;color:#ffb0b3;line-height: 150%;
+}
+.year_body_advance_bottom > div:nth-of-type(2){
+    font-size: 15px;color:#fff;line-height: 100%;
+}

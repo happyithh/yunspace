@@ -1,0 +1,165 @@
+.login_body{
+    margin-left: -20px;
+    margin-right:-8px;
+}
+
+
+.login_banner img{
+    width:802px;
+    height:410px;
+}
+
+.login_banner{
+    height:410px;
+    float:left;
+    width: 66%;
+}
+
+
+.login_form{
+    float:right;
+    height:410px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding: 0px 20px;
+    width: 34%;
+}
+
+.login_header{
+    width:290px;
+    height:43px;
+    margin-left:22px;
+    margin-bottom:15px;
+}
+
+.control_form{
+    width:290px;
+    height:54px;
+    margin-left:22px;
+    margin-bottom:20px;
+}
+.login_header h3{
+    font-size:20px;
+    line-height:43px;
+}
+.control_form input{
+    width:290px;
+    height:54px;
+    border:1px solid #e4e4e4;
+    border-radius:3px;
+    padding:0 10px;
+}
+/*.control_form button{
+	width:290px;
+	height:54px;
+    background:#24252f;
+	color:#fff;
+	font-size:18px;
+	border:0px;
+}*/
+.butt_1{
+    float:right;
+    width:100%;
+    height:54px;
+    background:#24252f;
+    color:#fff;
+    font-size:16px;
+    border:0px;
+}
+.butt_2{
+    width:100%;
+    height:54px;
+    background:#24252f;
+    color:#fff;
+    font-size:18px;
+    border:0px;
+}
+.login_forget{
+    width:100%;
+    height:50px;
+}
+.login_forget a{
+    display:block;
+    color:#d3b88f;
+    width:100%;
+    text-align:center;
+    text-decoration:underline;
+
+}
+
+.form_line{
+    border-bottom:1px solid #ccc;
+}
+
+.reg a{
+    display:block;
+    width:100%;
+    height:30px;
+    border:1px solid #000000;
+    border-radius:5px;
+    margin-top:15px;
+    margin-left:20px;
+    text-align:center;
+    line-height:30px;
+}
+
+.reg a:hover{
+    border:3px solid #000;
+}
+
+
+.disabled{
+    background:#00c3c3;
+    font-size:13px;
+}
+
+.col-md-4{ padding-left: 25px; padding-right: 25px;}
+
+.form-group-log{ margin: 15px 20px; height: auto; overflow: hidden;}
+
+.form-log{ border-radius: 2px; height: 50px; box-shadow: 0px 0px 0px; border: 1px solid #e0e0e0;}
+
+.login_outside{ width: 1170px; margin: auto; }
+.enroll_l{ float: left; margin-right: 5px; width: 47%;}
+.enroll_r{ float: right; margin-left: 5px; width: 47%;}
+.clear{ clear: both;}
+
+@media (max-width: 1024px){
+      .login_banner{ display: none;}
+      .login_body{ margin-left: 10px; margin-right: 10px;}
+      .login_form{
+        height:auto;
+        border:1px solid #ccc;
+        border-radius:3px;
+        padding: 0px 20px 20px;
+        width: 100%;
+        margin-right: 0px;
+      }
+    .login_outside{ width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

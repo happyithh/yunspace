@@ -1,0 +1,77 @@
+.clear{ clear: both;}
+.ew_back{
+    width: 100%;
+    height: 100%;
+    background-color: #eaf8fb;
+}
+.ew{
+    width: 50%;
+    margin: auto;
+    padding: 60px 0px;
+}
+.ew img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.ew_word{
+    width: 580px;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+}
+.ew_w{
+    float: left;
+    font-size: 15px;
+    color: #3fc1de;
+    margin-right: 100px;
+}
+.ew_w span{
+    font-size: 24px;
+    font-weight: bold;
+}
+.ew_btn{
+    float: left;
+    width: 210px;
+    height: 45px;
+     border-radius: 3px;
+    border: 1px solid #3fc1de;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+    display: block;
+    color: #3fc1de;
+}
+.ew_a{
+    display: block;
+    font-size: 12px;
+    color: #9bc174;
+    margin-left: 15px;
+    float: left;
+    margin-top: 30px;
+}
+.ew_guide{
+    width: 770px;
+    margin:40px auto 20px auto;
+    height: auto;
+    overflow: hidden;
+}
+.ew_guide_left{
+    float: left;
+    color: #9ac7d2;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.ew_guide_right{
+    float: left;
+    margin-top: -4px;
+}
+.ew_guide_right li{
+    float: left;
+}
+.ew_guide_right li a{
+    color: #739aa3;
+    font-size: 12px;
+    padding: 0 12px;
+    display: inline-block;
+}

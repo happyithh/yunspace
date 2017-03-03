@@ -1,0 +1,81 @@
+body{overflow: auto;background-color: #f2f2f4; height: 100%; position: relative; font-family: "微软雅黑", 'microsoft yahei', Arial;}
+* { margin: 0; padding: 0; font-size: 1em;  }
+/*::-webkit-scrollbar { width: 0; height: 0; }*/
+a{text-decoration: none; }
+/* enter */
+.broke-news-wrapper{display:block; height: 100%; padding-top:50px;position: relative;}
+.mask-layer{position:fixed;height: 100%; width: 100%; background-color: #000000; opacity: 0; filter:alpha(opacity=0);z-index: -1; top: 0}
+.mask-layer[class*="active"]{z-index: 500;opacity: 0.7; filter:alpha(opacity=70);}
+.broke-news-logo{background: url("../../img/broke_the_news.v1.0/logo.png") no-repeat center; background-size: contain; margin: auto auto 16px auto;width: 60%;height: 76px; top:50px;}
+.broke-news-text-content{ display: block;}
+.broke-news-text-content p{text-align: center; color: #6c6c6c; font-size: 12px; margin-bottom: 5px;}
+.broke-news-button{display:block;width: 140px; background-color: #fc335f; color: #fcfbff; height: 36px; line-height: 36px; font-size: 14px; border-radius: 20px; text-align: center; margin: 50px auto 14px auto}
+.broke-news-button[class*="disabled"]{background-color: #e4e2e3 !important; color: #b9b7b8 !important}
+.broke-news-href-to-broke{display: block; font-size: 12px; color: #f73a64; text-align: center}
+.broke-news-href-to-broke:hover{text-decoration: underline}
+.broke-news-info-content{position:fixed;display:block;border: 2px solid #e96b77; margin: 10px; background-color: #ffffff; box-sizing: border-box; -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box; text-align: center; overflow: scroll; transition: all 800ms; -moz-transition: all 800ms; -webkit-transition: all 800ms; opacity: 0; filter:alpha(opacity=0);z-index: -1;top:100%}
+.broke-news-info-content[class*="active"]{opacity: 1; filter:alpha(opacity=100);z-index: 1000;top:0;}
+.broke-news-info-content .broke-news-info-title{line-height: 40px; font-size: 12px;}
+.broke-news-info-content .broke-news-info-title .icon{position: absolute; top: 0; right: 0;line-height:20px;height: 28px; width: 30px; font-size: 20px; padding-top:16px;
+    padding-right: 20px;text-align: right; z-index: 5000;}
+.broke-news-info-content td{font-size: 12px; text-align: left; padding-left: 5px; padding-right: 5px;line-height: 16px;}
+.broke-news-info-content .broke-news-info-header{color: #f82f7d;}
+.broke-news-info-content .broke-news-info-text{color:#000000}
+.broke-news-info-content .broke-news-info-space-rows{height: 20px;}
+@media all and (min-width: 350px) {
+    .broke-news-logo{height: 96px; top:50px;}
+    .broke-news-text-content p{font-size: 14px;}
+    .broke-news-button{width: 160px; font-size: 16px;}
+    .broke-news-href-to-broke{font-size: 14px;}
+}
+/* form */
+.broke-news-form{ width: 100%;box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing:border-box; padding: 10px 20px 0 20px; text-align: left;background-color: #fff;}
+.broke-news-form-banner{width: 100%;}
+.broke-news-form .broke-news-form-header{color: #5c81c7; line-height: 26px;}
+.broke-news-form .broke-news-form-space-rows{height: 10px;}
+.broke-news-form input,.broke-news-form select{width: 100%; border: 1px solid #bfbfbf; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing:border-box; height: 40px;
+    font-size: 13px; padding-left: 16px;-moz-user-select: auto; -webkit-user-select: auto; -ms-user-select: auto;
+    -khtml-user-select: auto; user-select: auto;}
+.broke-news-form .phone-num{width: 95%; float: right}
+.broke-news-form .broke-news-form-warning{color: #fc0204; font-size: 12px; line-height: 20px;}
+.broke-news-form .broke-news-form-rule{background: url("../../img/broke_the_news.v1.0/r_hook.png") no-repeat left ; background-size: 16px 16px; padding-left: 20px; line-height: 40px;
+    font-size: 12px}
+.broke-news-form .broke-news-form-rule[class*="unset"]{background: url("../../img/broke_the_news.v1.0/b_hook.png") no-repeat left ; background-size: 16px 16px;}
+.broke-news-form .toggle-rule{position: absolute; width: 40px; height: 40px;left: 10%}
+.broke-news-form .broke-news-form-rule span{color: #fa3260}
+.broke-news-form .tb-btn{display:block;width: 60%; background-color: #fc335f; color: #fcfbff; height: 38px; line-height: 38px; font-size: 14px; border-radius: 19px; text-align: center; margin:auto}
+.broke-news-form-info{position:fixed;display:block;border: 2px solid #e96b77; margin: 0 10%; background-color: #ffffff; box-sizing: border-box; -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box; text-align: center; overflow: scroll; transition: all 800ms; -moz-transition: all 800ms; -webkit-transition: all 800ms; opacity: 0; filter:alpha(opacity=0);z-index: -1;top:100%;
+    padding: 0 20px}
+.broke-news-form-info[class*="active"]{opacity: 1; filter:alpha(opacity=100);z-index: 1000;top:50%;margin-top:-90px; }
+.broke-news-form-info .broke-news-form-info-icon{background: url("../../img/broke_the_news.v1.0/g_hook.png") no-repeat center ; height: 24px; background-size: contain;margin-top: 30px;}
+.broke-news-form-info .broke-news-form-info-title{font-size: 14px; line-height: 30px;}
+.broke-news-form-info .broke-news-form-info-content{font-size: 12px; line-height: 20px; color: #838383;text-align: left}
+.broke-news-form-info .broke-news-form-info-usage{font-size: 12px; line-height: 16px; color: #f40500;text-align: left; margin: 10px auto}
+.broke-news-form-info .show-my-news-button{display:block;width: 140px; background-color: #fc335f; color: #fcfbff; height: 36px; line-height: 36px; font-size: 14px; border-radius: 6px; text-align: center;
+    margin:20px auto 20px auto;}
+.broke-news-form-info .icon{position: absolute; top: 0; right: 0;line-height:20px;height: 38px; width: 30px; font-size: 20px; padding-top:6px;padding-right:10px;text-align: right}
+/* mine */
+.broke_news_mine_content{width: 100%;box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing:border-box; padding: 0 20px; text-align: left;background-color: #fff;}
+.content-bottom{margin-bottom: 40px;}
+.broke_news_mine_usage{font-size: 12px; background-color: #faf8e1; color: #898582; padding: 10px 0; text-align: center;margin-bottom: 10px;}
+.broke_news_mine_content table{width: 100%; border-collapse: collapse; border-spacing: 0;}
+.broke_news_mine_content td{border-bottom: 1px solid #eeeeee; height: 44px;line-height: 44px; font-size: 14px}
+.broke_news_mine_content .hard-td{border-bottom: 1px solid #d2d2d2;}
+.broke_news_mine_content .broke_news_mine_title{color: #dc024c;text-align: left}
+.broke_news_mine_content .broke_news_mine_title i{ padding:10px;color: #dc024c;}
+.broke_news_mine_content .broke_news_mine_title label{display: block; border-left: 1px solid #e50150; padding-left: 14px; height: 16px; line-height: 16px}
+.broke_news_mine_content .broke_news_mine_tb_usage{font-size: 12px; text-align: left; line-height: 22px;padding-top: 12px;padding-bottom: 12px}
+.broke_news_mine_bottom{height: 36px; background-color: #e50150; position: fixed; bottom: 0; width: 100%}
+.broke_news_mine_bottom .b_n_btn{float: left; width: 50%; line-height: 36px; text-align: center; font-size: 14px; color: #f4fff9}
+.broke_news_mine_bottom .divide{position: absolute; height:24px; bottom: 6px; width: 1px;left: 50%; background-color: #fff3fe; opacity: 0.7; filter:alpha(opacity=70)}
+.broke-news-mine-month{position:fixed;padding: 26px 40px; background-color: #f4f4f4; color: #6c6c6c;transition: all 800ms; -moz-transition: all 800ms; -webkit-transition: all 800ms; opacity: 0; filter:alpha(opacity=0);
+    z-index: -1;top:-172px; }
+.broke-news-mine-month[class*="active"]{opacity: 1; filter:alpha(opacity=100);z-index: 1000;top:44px;}
+.broke-news-info-content[class*="active"]{opacity: 1; filter:alpha(opacity=100);z-index: 1000;top:0;}
+.broke-news-mine-month .broke-news-mine-month-space{height: 12px; border: none;background-color: #f4f4f4;}
+.broke-news-mine-month table{width: 100%;border-collapse: collapse; border-spacing: 0; font-size: 14px}
+.broke-news-mine-month td{background-color: #FFF; border: 1px solid #e4e4e4; line-height: 30px;}
+.broke-news-mine-month td span{font-size: 14px;}
+.broke-news-mine-month .border-none{border: none; background-color: #f4f4f4;}

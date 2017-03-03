@@ -1,0 +1,54 @@
+/*初始化*/
+*{ margin: 0; padding: 0;}
+body{color:#24252f;font-size: 14px;font-family: "微软雅黑", 'microsoft yahei', Arial;}
+h1,h2,h3,h4,h5,h6,b,strong{font-size:100%;}
+li{ list-style-type: none;}
+a{text-decoration: none;}
+img {border:none;}
+input,select{outline: none;}
+textarea{border-radius:10px; border: 1px solid #e3e3e3;line-height: 20px;padding:5px;}
+.fl{ float: left;}
+.fr{ float: right;}
+.break {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.clearfix:after{content:'\20';display:block;height:0;clear:both;visibility:hidden;}
+.hide{display:none;}
+.block{display: block;}
+
+/*文字颜色*/
+.green{color:#00c3c3;}
+.magenta{color: #ff308d;}
+.blue{color: #2284e9;}
+.black{color: #3f3f3f;}
+.gray{color: #686868;}
+.dk-blue{color: #004986;}
+.orange{color: #fe6a3a;}
+/*按钮背景颜色*/
+.bg-green{background:#00c3c3; color: #fff;text-align: center;}
+.bg-magenta{background: #ff308d; color: #fff;text-align: center;}
+.bg-blue{background: #2284e9; color: #fff;text-align: center;}
+.bg-black{background: #323340;color: #fff;text-align: center;}
+.bg-white{background: #fff;border: 1px solid #e7e7e7;color: #25252f;text-align: center;}
+.bg-gray{background: #dcdcdc;color:#6b6b6b;text-align: center;}
+.bg-orange{background: #fe6a3a;color:#fff;text-align: center;}
+/*按钮hover状态背景颜色*/
+.bg-green:hover{background:#0fcfd1;}
+.bg-magenta:hover{background: #f20c74;}
+.bg-blue:hover{background: #0471e2;}
+.bg-black:hover{background: #414253;}
+.bg-write:hover{background: #2b2c42;color:#fff;border: 1px solid #2b2c42;}
+.bg-orange:hover{background: #e65120;}
+/*按钮visited访问后状态文字颜色*/
+.bg-green:visited{color:#fff;}
+.bg-magenta:visited{color:#fff;}
+.bg-blue:visited{color:#fff;}
+.bg-black:visited{color:#fff;}
+.bg-write:visited{color: #25252f;}
+.bg-gray:visited{color:#6b6b6b;}
+.bg-orange:visited{color:#fff;}
+
+
+
+
+@media(max-width:320px) {
+    p,span,a{font-size: 12px;}
+}

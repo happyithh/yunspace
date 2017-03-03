@@ -1,0 +1,36 @@
+
+.nav-list li{
+    float: left;
+}
+.nav-list a{
+    color: #fff;
+    line-height: 46px;
+    padding: 0 12px;
+    font-size: 13px;
+    /*margin: 0 12px;*/
+}
+.nav-list li.active a{
+    background: #6a96ef;
+    display: inline-block;
+
+}
+.nav-list i{
+   margin-right: 10px;
+}
+.n-nav li{
+    float: left;.nav-list
+a
+}
+.n-nav{
+    margin-top: 30px;
+}
+.n-nav li a{
+    padding: 8px 12px;
+    color: #333333;
+    font-size: 12px;
+    margin: 6px 12px;
+}
+.n-nav li.active a{
+    background: #6a96ef;
+    color: #fff;
+}

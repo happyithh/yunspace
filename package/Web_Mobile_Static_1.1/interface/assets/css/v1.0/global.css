@@ -1,0 +1,33 @@
+*{ margin: 0; padding: 0;}
+ul li{ list-style-type: none;float:left}
+a{color: #008bff; text-decoration: none }
+.fl{ float: left;}
+.fr{ float: right;}
+p,span,a{font-size: 14px;}
+p,span,a,button,h1,h2,h3,h4,h5,h6,input{font-family:  "微软雅黑", 'microsoft yahei', Arial}
+a,button{border:0px;text-align: center}
+table { table-layout:fixed; word-break: break-all; word-wrap: break-word; text-align:center}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {color: #cfdce8;}
+.absolute { position:absolute; }
+.relative { position:relative; }
+.wrapper { clear:both; overflow:hidden; }
+.o-hidden { overflow:hidden; }
+.invisible { visibility:hidden; }
+.hidden { display:none; }
+.block { display:block; }
+.clear { clear:both; height:0px; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden; }
+.clearfix:after{content:'\20';display:block;height:0;clear:both;visibility:hidden;}
+.break { word-break:break-all; word-wrap:break-word; }
+.nobreak { word-break:keep-all; word-wrap:normal; }
+.img {border:0 none;}
+input,select{outline: none;}
+input{border:0px;background:#ffffff;line-height: 30px;height: 40px;padding:5px 10px;}
+input[type="submit"]{border:0px;background: #8187bd;text-align: center}
+textarea{border-radius:10px; border: 1px solid #e3e3e3;line-height: 20px;padding:5px;}
+@media(max-width:320px) {
+    p,span,a{font-size: 12px;}
+}
+

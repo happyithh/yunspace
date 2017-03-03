@@ -1,0 +1,52 @@
+.clear{ clear: both;}
+.container{padding: 30px 0;position: relative;overflow: visible;width: 1180px;margin: auto;}
+.news-content{ width: 810px; float: left;}
+/*类别切换*/
+.news-content .news_tabs{ margin-top: 30px;}
+.news_tabs li{ float: left; margin-right: 20px; font-size: 12px;margin-bottom: 8px;}
+.news_tabs li a{ color: #a9a9a9;}
+.news_tabs li .news_tabs_active{ color:#4f5157;}
+/*最新消息列表*/
+.news_list{ height: auto; overflow: hidden; padding: 25px 0 20px 0; border-bottom: 1px solid #f0f0f0;}
+.news_title_outside{ margin-bottom: 12px; height: auto; overflow: hidden; width: 780px;min-height: 68px;}
+.news_title_outside1{ margin-bottom: 12px; height: auto; overflow: hidden; width: 545px; min-height: 68px;}
+.news_title_top{ width: 40px; height: 20px; background: url(../baike.v1.0/img/top_tag.png) no-repeat 0px 2px; margin-right: 10px; display: inline-block;}
+.news_title_tag{ color: #4f5157; font-size: 14px; margin-right: 5px; font-weight: bold; display: inline-block; vertical-align:middle; margin-top: -10px;}
+.news_title_tag a{ color: #4f5157;}
+.news_title{ font-size: 20px; font-weight: bold; color:#4f5157; line-height: 32px; width: 660px;}
+.news_title a{ color: #4f5157;}
+.news_pic_outside{ margin:20px 0;}
+.news_pic li{ float:right; margin-right: 2px; width: 200px; height: 100px;}
+.news_pic li img{ width: 200px; height: 100px;}
+.news_des{ height: auto; overflow: hidden;}
+.news_gb{ float: left;}
+.news_good{ cursor: pointer; margin-left: 15px; float: left; width: 20px; height: 20px; color: #bbb; font-size: 14px; padding-left: 20px; background: url(../baike.v1.0/img/icon_good.png) no-repeat;}
+.news_good_active{ background: url(../baike.v1.0/img/icon_good_active.png) no-repeat!important;}
+.news_bad{ cursor: pointer; float: left; min-width: 20px; width:auto; height: 20px;overflow: hidden; color: #bbb; font-size: 14px; padding-left: 25px; background-image: url(../baike.v1.0/img/eyes.png);background-position:0px -3px;background-repeat:no-repeat }
+/*.news_bad_active{ background: url(../baike.v1.0/img/eyes.png) no-repeat 0px 3px!important;}*/
+.user_time{ float: right; color: #bbb; font-size: 14px;}
+.user_time span{ padding: 4px;}
+.news_title_left{ float: left; width: 588px; margin-right: 20px;}
+.news_pic_one{ float: left; width: 200px; height: 100px;}
+.news_pic_one img{ width: 200px; height: 100px;}
+.pagers{ text-align: left;}
+.news_content_right{ float: right; height: auto; overflow: hidden;width:323px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

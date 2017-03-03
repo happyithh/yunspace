@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+}
+select,button{
+    outline: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.h-container{
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+.h-table{
+    border: 1px solid #ddd;
+    background: #fff;
+    width: 100%;
+}
+.h-table th{
+    background: #f0f0f0;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding: 0 10px;
+    font-weight: normal;
+}
+.h-table td{
+    padding: 10px;
+}
+.h-table td p{
+    margin-right: 20px;
+    float: left;
+    line-height: 24px;
+}
+.h-table select{
+    float: left;
+    min-width: 120px;
+    border: 1px solid #ddd;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+}
+.h-table .time select{
+    margin-right: 30px;
+}
+.h-table .time .time-ipt{
+    min-width: 100px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+.h-table .search-btn{
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    background:#0075b0;
+    font-size: 13px;
+    border: none;
+    margin: 6px auto;
+    cursor: pointer;
+}
+.statistical-numbs{
+    margin-top: 20px;
+}
+.statistical-numbs h2{
+    font-size: 16px;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+}
+.statistical-numbs table{
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: content-box;
+    padding-bottom: 15px;
+}
+.statistical-numbs table th{
+    color: #555;
+    font-size: 15px;
+    padding: 10px 0;
+    text-align: center;
+}
+.statistical-numbs table td{
+    text-align: center;
+    padding: 15px 0;
+    border-right: 1px dotted #ccc;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+.table-responsive{
+    margin-top: 20px;
+}
+.table-responsive .title{
+    font-size: 16px;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.table-responsive .title h2{
+    font-size: 16px;
+    margin-right: 10px;
+}
+.table-responsive .export{
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 12px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 13px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+.table-responsive .static{
+    padding: 4px 15px 4px 5px;
+    border: 1px solid #ccc;
+}
+.statistical-details table{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-left: none;
+}
+.statistical-details table th{
+    color: #333;
+    font-size: 14px;
+    padding: 10px 0;
+    border-left: 1px solid #ddd;
+}
+.statistical-details table td{
+    text-align: center;
+    padding: 10px 0;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 14px;
+}
+.statistical-details table .look-detail{
+    padding: 5px 8px;
+    display:inline-block;
+    background: #5ac1df;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}

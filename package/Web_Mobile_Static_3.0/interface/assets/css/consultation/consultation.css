@@ -1,0 +1,247 @@
+*{
+  -webkit-font-smoothing:antialiased;
+  font-family: '微软雅黑'
+}
+.none{
+  display: none!important;
+}
+.content{
+  max-width: 1024px;
+  margin:0 auto;
+}
+.con-header{
+  width:100%;
+  height:430px;
+  max-width: 1024px;
+  background: #ddd;
+  position: relative;
+}
+.con-header-body{
+  position: absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.3);
+}
+.con-img{
+  position: relative;
+  width:100%;
+  height:100%;
+  margin:0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+.con-img .img{
+  width: 1920px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  margin-left: -960px;
+  text-align: center;
+}
+.con-img img{
+  width:auto;
+  height:100%;
+}
+.con-title{
+  width:95%;
+  text-align: center;
+    margin:90px auto 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+.con-title span{
+  color:#fff;
+  font-size: 25px;
+}
+.con-des{
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+  margin-top: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    color: #fff;
+}
+.con-des span{
+  color:#fff;
+  font-size: 13px;
+  line-height: 200%;
+}
+.con-data{
+  width:40%;
+  margin:0 auto;
+  margin-top: 75px;
+}
+.con-date-look,
+.con-date-person{
+  width:50%;
+  display: inline-block;
+  text-align: center;
+}
+.con-date-look span,
+.con-date-person span{
+  color:#fff;
+  font-size: 10px;
+  line-height: 100%;
+}
+.con-date-look span:first-of-type,
+.con-date-person span:first-of-type{
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 15px;
+  line-height: 150%;
+}
+.page-title{
+  background:#f5f5f5;
+  text-align: center;
+  position: relative;
+  height:40px;
+}
+.page-title .line{
+  position: absolute;
+  top:50%;
+  left:0px;
+  width:100%;
+  height:1px;
+  background: #d3d1d2;
+}
+.page-title span:last-of-type{
+  position: absolute;
+  left:50%;
+  width:75px;
+  margin-left: -47.5px;
+  line-height: 40px;
+  color:#5a5a5a;
+  display: inline-block;
+  padding:0px 10px;
+  background:#f5f5f5;
+}
+.article-list{
+  border-bottom:5px solid #f5f5f5;
+}
+.article-li{
+    height:96px;
+  background: #fff;
+  position: relative;
+  padding:8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: 10px solid #f5f5f5;
+}
+.article-li:last-of-type{
+  border-bottom: 0px;
+}
+.article-li a{
+  display: inline-block;
+  min-width: 100%;
+  min-height: 48px;
+}
+.article-li-header{
+  line-height: 150%;
+  font-size: 13px;
+  color: #333;
+    max-width:100%;
+    word-break:break-all;
+}
+.article-li-body-one{
+  width:100%;
+}
+.article-li-body-img{
+  width:100%;
+  margin-top: 5px;
+}
+.article-li-body-img img{
+  display: inline-block;
+  width:31.5%;
+  height:auto;
+  margin-right: 1%;
+}
+.article-li-body-img img:last-of-type{
+  margin-right: 0px
+}
+.article-li-body-two{
+  position: absolute;
+  right:10px;
+  top:10px;
+}
+.article-li-body-only{
+  width:90px;
+  height:60px;
+  background: #000;
+}
+.article-li-body-only img{
+  width:100%;
+  height:100%;
+}
+.article-li-footer{
+  margin-top: 5px;
+    position: absolute;
+    bottom:8px;
+    left:8px;
+}
+.article-li-footer p:first-of-type,
+.article-li-footer p:nth-of-type(2),
+.article-li-footer p:last-of-type{
+  display: inline-block;
+  font-size:10px;
+  color:#d4d4d4;
+  margin-right: 10px;
+}
+.padding-right{
+  padding-right: 106px;
+}
+.load-more-article{
+  line-height: 40px;
+  color:#d4d4d4;
+  background: #f5f5f5;
+  text-align: center;
+  font-size: 13px;
+}
+.loading{
+  width:100px;
+  height:44px;
+  margin:0 auto;
+  position: relative;
+}
+.more_data{
+  display: inline-block;
+  width:100%;
+  line-height:44px;
+}
+.header{
+  position: fixed;
+  top:0px;
+  left:0px;
+  background: #eee;
+  width:100%;
+  height:44px;
+  z-index:1000;
+  text-align: center;
+}
+.header .title{
+  line-height:44px;
+  width:80%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  font-size:15px;
+}
+.header a{
+  display: inline-block;
+  float: left;
+  width:44px;
+  height:100%;
+  text-align: center;
+}
+.header a>span{
+  color:#222;
+  font-size:20px;
+  line-height:44px;
+}

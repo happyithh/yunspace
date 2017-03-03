@@ -1,0 +1,10 @@
+.msg-content{display:inline-block;width:100%;height:auto; background-color: #f2f2f2; text-align: center;}
+.msg-content .msg-content-outside{display:inline-block;width:79.5%;height:auto; background-color: #ffffff;margin: 40px auto; border: 1px solid #d0d0d0}
+.msg-content .msg-info{margin:200px auto;width: 500px; height: 100px;}
+.msg-content .msg-info .icon{display: block;float: left;margin: 0 20px;}
+.msg-content .msg-info img{width:96px;}
+.msg-content .msg-info .msg{display: block;float: left;margin: 0; text-align: left;height: 100px;}
+.msg-content .msg-info .msg .title{margin-top:15px; font-size: 24px;color: #39d6b9}
+.msg-content .msg-info .msg .back_info{display:block;font-size: 15px; margin-top: 15px;margin-bottom: 0px;}
+.msg-content .msg-info .msg .back_info #time{color: #ff0000}
+.msg-content .msg-info .msg .back_info a{color: #3ad5bb; text-decoration: underline}

@@ -1,0 +1,7 @@
+.filter-content{  padding: 20px 10px 0px 10px;}
+#industry input{position: relative;float: left; height: 30px;width:22%;margin-bottom: 20px;line-height: 30px; box-sizing: border-box; -ms-box-sizing: border-box;
+    -mos-box-sizing: border-box; -webkit-box-sizing: border-box; font-size: 14px; outline: none; line-height: 30px; border: 1px solid #cccccc;padding-left: 5px; padding-right: 5px; }
+#industry .middle-line{float: left;width:10%;height: 30px;color: #ddd; margin: 0px 0px 20px 0px; line-height: 30px; text-align: center;font-size: 14px;}
+#industry .unit{float: left;height: 30px;width:10%;color: #000; margin: 0px 2px 20px 2px; line-height: 30px;text-align: center;font-size: 14px;}
+#industry .btn-confirm{float: left;height: 30px; width: 15%; color: #fff; margin-bottom: 20px; line-height: 30px; background-color: #00c3c3; border: none;}
+#industry .btn-clear{float: right;height: 30px; width: 15%; color: #fff; margin-bottom: 20px; line-height: 30px; background-color: #696969; border: none;}

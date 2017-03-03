@@ -1,0 +1,75 @@
+@media (max-width: 520px) {
+
+    .list_none {
+        display: none;
+    }
+    .list_size {
+        font-size: 13px;
+    }
+    .contact {
+        width: 8%;
+        word-break:break-all;
+    }
+    .id{
+        width: 8%;
+        word-break:break-all;
+    }
+    .demand{
+        width: 20%;
+        word-break:break-all;
+    }
+    .steprecord{
+        word-break:break-all !important;
+
+    }
+    .record>div{
+        padding: 8px 6px;
+        float: left;
+    }
+    /*.demand span span{*/
+        /*width: 10% !important;*/
+        /*word-break:break-all !important;*/
+    /*}*/
+    .admin{
+        width: 6%;
+        word-break:break-all;
+    }
+
+    .table-responsive table tbody tr td {
+        white-space: inherit !important;
+        font-size:12;
+    }
+    .table-responsive table thead tr th {
+        font-size: 12px!important;
+        width: 3%;
+        word-break:break-all;
+    }
+    .table-responsive{
+        overflow-x: hidden !important;
+    }
+    .nav>li>a{
+        padding: 2px 6px;
+    }
+    .table-responsive table tbody tr th{
+        font-size:12 !important;
+
+    }
+
+    .sizeset{
+        width: 1%;
+        word-break:break-all;
+    }
+    .sizeset1{
+        width: 2%;
+        word-break:break-all;
+    }
+}
+.list_size{
+    font-size: 13px;
+}
+.list_none{
+    font-size: 13px;
+}
+.table-responsive table tbody tr td a {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,57 @@
+body{overflow: auto;background-color: #fff}
+* { margin: 0; padding: 0; font-size: 1em; z-index: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;
+    -khtml-user-select: none; user-select: none;}
+ul,li{list-style: none;width: auto;display: block;margin: auto}
+table{ border-collapse: collapse; border-spacing: 0; }
+td{width: 100px; text-align: center; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+.dp-border-none{ border: none; }
+.dp-table-controller{cursor: pointer; font-weight: bolder;color:#666;}
+.dp-table-controller:hover{ color: #333333;}
+.dp-table-input{ padding: 10px 0; font-size: 14px;color: #666;}
+.dp-table-input label{float: left; margin-right: 20px; text-align: left}
+.dp-table-input input{background:#fff;width: 130px;height: 30px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; padding: 5px; line-height: 30px;font-size: 14px; outline: none;margin:0 10px; color: #777;border:1px solid #ddd;border-radius: 3px;vertical-align: middle;}
+.dp-table-input .dp-cancel-date{width: 30px;height: 30px;float: left;  background-color: #cccccc;line-height: 30px; font-size: 18px; cursor: pointer ;
+    border-top-right-radius: 2px; border-bottom-right-radius: 2px; -moz-border-radius-topright: 2px; -moz-border-radius-bottomright: 2px;
+    -webkit-border-top-right-radius: 2px; -webkit-border-bottom-right-radius: 2px;}
+.dp-table-usage{ padding: 15px 0 0 0; font-size: 14px; line-height: 30px;color: #666}
+.dp-table-usage label{float: left;text-align: left}
+.dp-table-usage div{background-size: contain; width: 20px; height: 20px; float: left; margin-right: 15px; margin-top: 5px;}
+.dp-header-date{ text-align: center; font-size: 18px; line-height: 50px;}
+.dp-header-date span{font-size: 18px; }
+.dp-weekend{ background-color: #dddddd !important; }
+.dp-header{ line-height: 26px;background: #fbfbfb;color: #bbb;border-bottom: 1px solid #f2f2f2;}
+.dp-date{ line-height: 48px; font-size: 16px; cursor: pointer;background: #fbfbfb; }
+.dp-date[class*="disabled"]{ cursor: not-allowed !important;}
+.dp-current{ background-color: #f5ebeb !important; }
+.dp-pre-date{ background-color: #fbfbfb !important; font-size: 16px; color: #bbb; }
+.dp-pre-date:hover{ cursor: not-allowed !important; }
+.dp-pre-month,.dp-next-month{ font-size: 14px; color: #bbb; }
+.dp-selected{ background: url("../../img/order_user/bg.png") no-repeat center #fbfbfb; background-size: contain; color: #ffffff}
+.dp-part-selected{ background: url("../../img/order_user/bg.png") no-repeat center #fbfbfb  !important; background-size: contain  !important; color: #ffffff}
+.dp-part-selected table{color: #333;}
+.dp-used{ background: url("../../img/order_user/bg-selected.png") no-repeat center #fbfbfb; background-size: contain; color: #ffffff;cursor: not-allowed !important;}
+.dp-detail-clock{position:absolute;font-size: 12px; display: inline-block; background-color: #f2f2f2; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; padding: 5px; margin-left: -27px; margin-top: 40px}
+.dp-detail-clock[class*="dp-border-right"]{  margin-left: -186px; }
+.dp-detail-clock[class*="dp-display-reversal"]{ margin-top: -168px; }
+.dp-detail-clock:before{ content: ''; display: inline-block; border-left: 14px solid transparent; border-right: 14px solid transparent; border-bottom: 14px solid #eeeeee; position: absolute;
+    margin-top: -14px; margin-left: -100px; }
+.dp-detail-clock[class*="dp-border-right"]:before,.dp-detail-clock[class*="dp-border-right"]:after { margin-left: 60px !important; }
+.dp-detail-clock[class*="dp-border-no-before"]:before { display:none !important; }
+.dp-detail-clock[class*="dp-border-no-after"]:after { display:none !important; }
+.dp-detail-clock:after{ content: ''; display: inline-block; border-left: 14px solid transparent; border-right: 14px solid transparent; border-top: 14px solid #f2f2f2; position: absolute;margin-top: 0px; margin-left: -100px; }
+.dp-detail-clock td{width: 50px; line-height: 24px; border: none;}
+.dp-detail-clock td:hover{background-color: #777777; color: #ffffff; cursor: pointer}
+
+.data-cont{display: inline-block; padding:20px 10px 10px; min-width: 200px;}
+.date-tit-h{
+    float: left;
+    width: 82px;
+    text-align: left;
+    line-height: 30px;
+    color: #24252f;
+    margin-top: 29px;
+}
+.data-picker{
+    background: #fbfbfb;
+    color: #24252f;
+}

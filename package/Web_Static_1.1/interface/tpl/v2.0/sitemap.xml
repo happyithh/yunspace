@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset>
+    {foreach $data as $k=>$v}
+        <url>
+            <loc>{$v['0']}</loc>
+            <lastmod>{$v['1']}</lastmod>
+            <changefreq>{$v['2']}</changefreq>
+            <priority>{$v['3']}</priority >
+        </url>
+    {/foreach}
+</urlset>

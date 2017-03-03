@@ -1,0 +1,485 @@
+.w-1180{
+    width: 1180px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+/*筛选分类*/
+.wch-screening{
+    width: 1180px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+.wch-screening .first{
+    border-top: 0;
+}
+.hvselected{
+    width: 1150px;
+    padding: 10px 0;
+    margin: 0 15px;
+    line-height: 24px;
+    border-bottom: 1px solid #ddd;
+}
+.hvselected .selected{
+    height: 24px;
+    padding: 0 5px 0 8px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
+.hvselected .selected span{
+    display: inline-block;
+}
+.hvselected .selected .shut{
+    padding: 0 2px;
+    cursor: pointer;
+}
+.hvselected .empty{
+    display: inline-block;
+    color: #666;
+}
+.classifying{
+    width: 1150px;
+    padding: 15px 0;
+    margin: 0 15px;
+    border-top: 1px solid #ddd;
+}
+.classifying .cont-tit{
+    width: 6.8%;
+    height: 25px;
+    line-height: 25px;
+    border-right:1px solid #ddd;
+}
+.classifying .cont-tit .wicon{
+    float: left;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../../img/winchance/leibie.png") no-repeat;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+.classifying .cont{
+    width: 78%;
+    margin-top: -8px;
+}
+.classifying .cont a{
+    float: left;
+    display: block;
+    margin-left: 40px;
+    line-height: 25px;
+    color: #333;
+    margin-top: 8px;
+}
+.classifying .cont a:hover{
+    color: #f28e8e;
+}
+.classifying .multiselect{
+    display: inline-block;
+    background: #dcdcdc;
+    color: #333;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 8px;
+}
+.classifying .more{
+    display: inline-block;
+    color: #333;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 18px 0 8px;
+    position: relative;
+}
+.classifying .more .icon-updown{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-left: 2px;
+    background: url("../../img/winchance/icon-pull.png") no-repeat;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+}
+.classifying .more .icon-up{
+    transform: rotate(-180deg);
+    transition: all 0.3s ease-in;
+    top: 7px;
+}
+
+
+
+.col-title{
+    width: 100%;
+    height: 50px;
+    padding:20px 0;
+    background: none;
+}
+.col-title .icon{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.w-pink{color: #f28e8e;}
+.w-green{color: #94dcd1;}
+.w-yellow{color: #fec52d;}
+.w-dlgreen{color: #4bc5c5;}
+.w-purple{color: #9696d8;}
+.w-pink .icon{background: url("../../img/winchance/tit-icon1.png") no-repeat center #f28e8e;}
+.w-green .icon{background: url("../../img/winchance/tit-icon2.png") no-repeat center #94dcd1;}
+.w-yellow .icon{background: url("../../img/winchance/tit-icon3.png") no-repeat center #fec52d;}
+.w-dlgreen .icon{background: url("../../img/winchance/tit-icon4.png") no-repeat center #4bc5c5;}
+.w-purple .icon{background: url("../../img/winchance/tit-icon5.png") no-repeat center #9696d8;}
+.col-title .txt{
+    float: left;
+    margin-left: 1.7%;
+    width: 94%;
+    height: 49px;
+    border-bottom: 1px solid #ddd;
+}
+.w-pink .txt{border-color: #f28e8e;}
+.w-green .txt{border-color: #94dcd1;}
+.w-yellow .txt{border-color: #fec52d;}
+.w-dlgreen .txt{border-color: #4bc5c5;}
+.w-purple .txt{border-color: #9696d8;}
+.col-title .txt h2{
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.w-banner{
+    width: 1180px;height: 360px;
+    overflow: hidden;
+    margin:20px auto;
+    margin-top:25px;
+}
+.col-cont{padding-bottom: 20px;}
+
+/*合作活动*/
+.col-act .col-title{padding-bottom: 0;}
+.col-act-kinds{
+    margin-left: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+.col-act-kinds a{
+    float: left;
+    display: block;
+    padding: 0 10px;
+    color: #666;
+}
+.col-act-kinds span{
+    float: left;
+    display: inline-block;
+    color: #999;
+}
+.col-act .col-cont{
+    height: 310px;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 20px 0;
+}
+.col-cont-img{
+    float: left;
+    width: 810px;
+    height: 310px;
+    position:relative;
+    overflow:hidden;
+    background:#fff;
+    text-align:center;
+}
+.col-ct-dtls{
+    float: right;
+    width: 350px;
+    height: 100%;
+}
+.col-ct-tit{
+    width: 100%;
+    height: 80px;
+    background: #f6f6f6;
+    position: relative;
+}
+.col-ct-tit h3{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px 10px;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.col-ct-tit>p{
+    font-size: 14px;
+    color: #666;
+    padding: 0 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.col-ct-tit .xuanf{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 76px;
+    width: 300px;
+    padding: 10px 25px;
+    height: auto;
+    line-height: 22px;
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.col-ct-mk{
+    padding: 16px 20px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.col-ct-mk span{
+    font-size: 14px;
+    color: #a9a9a9;
+    margin-right: 2px;
+    padding: 2px 7px;
+    border: 1px solid #e5e5e5;
+}
+.col-ct-dtls>p{
+    font-size: 14px;
+    line-height: 18px;
+    color: #999;
+    padding: 4px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.col-ct-btn{
+    padding: 5px 20px 0;
+}
+.col-ct-btn .btn{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 44px;
+    line-height: 45px;
+    font-size: 16px;
+    text-align: center;
+    text-indent: 15px;
+}
+.col-ct-btn .btn-hz{
+    color: #fff;
+    background: url("../../img/winchance/icon-tk.png") no-repeat 30px center #f28e8e;
+}
+.col-ct-btn .btn-hz:hover{background-color: #f17070;}
+.col-ct-btn .btn-dn{
+    font-size: 14px;
+    color: #666;
+    background: url("../../img/winchance/icon-dn.png") no-repeat 25px center #fff;
+}
+.col-more{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    background: #eee;
+    color: #666;
+    text-align: center;
+}
+.col-more:hover{background: #e2e2e2;}
+.col-act-more{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: url("../../img/winchance/more_bg.jpg") no-repeat center;
+}
+.carousel-bg{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.2;
+    filter:alpha(opacity=40);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+
+/*其他进行中的活动*/
+.col-act-list{
+    width: 1195px;
+}
+.col-act-list li{
+    float: left;
+    width: 224px;
+    height: 186px;
+    margin-right: 15px;
+    position: relative;
+}
+.col-act-list .img img{
+    width: 100%;
+    height: 100%;
+}
+.col-act-list .text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 58px;
+    color: #fff;
+}
+.col-act-list .text>a{color: #fff;}
+.col-act-list .text h5,
+.col-act-list .text p{
+    position: relative;
+    z-index: 2;
+    padding: 0 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.col-act-list .text h5{
+    line-height: 22px;
+    padding-top: 10px;
+    font-size: 14.2px;
+    font-weight: normal;
+}
+.col-act-list .text p{font-size: 12.2px;}
+.col-act-list .text .shade{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+}
+
+/*云·space的优势*/
+.col-adg-ct h3{
+    font-size: 24px;
+    color: #333;
+    width: 98px;
+    margin: 0 auto;
+    padding:20px 0 5px;
+    border-bottom: 5px solid #bfbfbf;
+    font-weight: normal;
+}
+.col-adg-ul{
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.col-adg-pt .col-adg-ul{
+    width: 1175px;
+    border-bottom: 2px dotted #ddd;
+}
+.col-adg-ul li{
+    float: left;
+    width: 235px;
+    text-align: center;
+}
+.col-adg-ul li p{
+    font-size: 18px;
+    color: #666;
+    line-height: 24px;
+    margin-top: 25px;
+    vertical-align: bottom;
+}
+.col-adg-td{padding-top: 20px;}
+.col-adg-td .col-adg-ul{
+    width: 930px;
+}
+.col-adg-td .col-adg-ul li{
+    width: 310px;
+}
+.col-adg-td .col-adg-ul li span{
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+/*合作案例*/
+.col-case-bg{
+    background: #f7f7f7;
+    padding: 20px 0 20px;
+}
+.col-case .col-cont{width: 1200px;}
+.col-case .col-cont li{
+    float: left;
+    background: #fff;
+    margin-right: 20px;
+    padding: 20px;
+    width: 540px;
+    height: 218px;
+    cursor: pointer;
+}
+.col-case .col-cont li:hover{
+    box-shadow:0 0 8px #999;
+}
+.col-case .col-cont li a{color: #333;}
+.col-case .col-cont .img{
+    float: left;
+    width: 280px;
+    height: 218px;
+}
+.col-case .col-cont .img img{
+    width: 100%;
+    height: 100%;
+}
+.col-case .col-cont .text{
+    float: right;
+    width: 240px;
+    height: 100%;
+}
+.col-case .col-cont .text h5{
+    font-size: 18px;
+    font-weight: normal;
+    line-height:30px;
+    margin-bottom: 12px;
+}
+.col-case .col-cont .time{
+    font-size: 12px;
+    color: #999;
+}
+.col-case .col-cont .text>p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    margin-top: 12px;
+    height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*--更多合作活动页面--*/
+.site_location{
+    width: 1180px;
+    margin: 0 auto;
+    height: 55px;
+    line-height: 55px;
+}
+.site_location a{color: #666;}
+.site_location span{margin: 0 3px;}
+
+.col-act-title{
+    text-align: center;
+    padding-bottom:25px;
+}
+.col-act-title h2{
+    font-size: 24px;
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 3px solid #f28e8e;
+}
+
+
+
+
+
+
+
+
+
+

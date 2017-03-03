@@ -1,0 +1,64 @@
+.clear,.f-cl{ clear:both;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+.money_a { margin-bottom: 30px;}
+/*-----我的钱包----*/
+.top_a {height: 50px; border-bottom: 2px solid #808080;}
+.top_a h4 { font-weight:bold; color:#000;}
+.top_a span { line-height:40px; padding-left: 15px}
+
+.top_b { padding-top: 15px;}
+.top_b_1 { border-bottom: 1px solid #e8e8e8; padding-bottom:15px;}
+.b_b { margin-top: 10px;}
+.b_b1 span { font-weight: bold; color: #4d4d4d; font-size: 24px; padding-top: 10px; padding-right: 15px;}
+.b_b2 { padding-left: 180px;}
+.b_b2 a { padding: 5px 15px; background:#2c99ff; color: #ffffff; }
+.b_b2 span { padding-left: 15px; color: #2c99ff;}
+.b_c { padding:15px 0px;}
+
+
+/*-----账户收支明细----*/
+.top_a  a { line-height:40px; padding-left: 15px;}
+.sz_a1 { padding: 15px 0px; }
+.sz_a1 select { width: 150px; height: 30px; margin-right: 15px; }
+.sz_a1 span b { font-size: 18px; }
+
+/*-----账户提现----*/
+.top_a span b { font-size: 18px;}
+.wd { margin: 15px;}
+.wd_b1_b p{  border:1px solid #e8e8e8; height: 40px; background: #fcfcfd; padding-left:10px; line-height: 40px;}
+.wd_b1_a { font-size: 14px; text-align: right;  width: 100px; margin-right: 20px;}
+.wd_b1_b { width: 600px;}
+.wd_b2 { margin-top: 20px; }
+.wd_b2 a { font-size:18px; padding: 5px 15px; background:#2c99ff; color: #ffffff;}
+.wd_b3 span { padding-left: 15px;}
+.wd_b4 span { color: #2c99ff; font-size: 14px; font-weight: bold;}
+
+.money_a button { font-size:18px; padding:10px 72px;  border-radius: 0; background: #fafafa;}
+.money_a button.btn-default {background:#f54545; color: #ffffff;}
+.money_a a:hover{ text-decoration: none; }
+/*-----确认账户提现信息----*/
+.cf_b1{padding-top: 20px;}
+.cf_b1_b b { font-size: 16px}
+.con_b2 span{  color: #2c99ff; font-size: 16px; font-weight: bold;}
+.con_b3 {font-size: 14px; color:#f54545; }
+.con_b4 input { padding-left: 10px; width: 200px; margin-bottom: 10px;}
+.con_b4 a { padding-left: 15px; }
+
+/*-----选择银行卡付款----*/
+.ch { padding-top: 15px; }
+.ch_b { background: #f3f6fd; padding: 5px 0px;line-height: 40px;}
+.ch_b h4 { padding-left: 20px; }
+.ch_b h5 { padding-right: 20px;}
+.ch_b h5 span { font-size:24px; font-weight: bold; padding-right: 10px; color: #f54545}
+.ch_c { margin-top: 30px; border-top: 1px solid #e8e8e8;  padding-left: 20px;}
+.ch_c p {padding-top:15px;  }
+.ch_ca {padding-bottom:20px; border-bottom:1px solid #e8e8e8; }
+.ch_ca b { font-size: 14px; color:#f54545;  }
+.ch_ca li { padding-top: 15px;float: left; margin-right:15px; list-style: none}
+.ch_ca input { margin-right: 10px;}
+.sz_a1b {padding-top: 10px;}
+
+
+

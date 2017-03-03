@@ -1,0 +1,210 @@
+
+.bottom-nav-area{position:fixed;bottom:0;width:100%;height:52px;z-index: 1000;}
+.bottom-nav-area .normal-block{float: left;width:17%;height:100%;padding:7px;box-sizing: border-box; -ms-box-sizing: border-box; -mos-box-sizing: border-box;
+    -webkit-box-sizing: border-box;text-align: center; background-color: #fafafa}
+.bottom-nav-area .normal-block p{font-size: 14px;color: #000;}
+.bottom-nav-area .active .normal-block p{font-size: 14px;color: #ff2f8d;}
+.bottom-nav-area .active .normal-block .icon{color: #ff2f8d;}
+.bottom-nav-area .normal-block a{color: #000000}
+.bottom-nav-area .block-right-border{ color: #000000}
+.bottom-nav-area .normal-block span{color: #000;}
+.bottom-nav-area .larger-block{float: left;width:31%;height:100%;box-sizing:border-box;-ms-box-sizing: border-box; -mos-box-sizing: border-box; -webkit-box-sizing: border-box;
+    text-align: center; background-color: #6997ef}
+.bottom-nav-area .larger-block a{color: #ffffff}
+.bottom-nav-area .larger-block p{font-size: 16px;line-height:52px;color: #ffffff; margin: auto}
+.bottom-nav-area .btn-reserve{
+    float: left;
+    width: 18%;
+    display: inline-block;
+    line-height: 52px;
+    background-color: #ff0051;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+/*分享*/
+.share{
+    width: 100%;
+    padding: 20px 15px;
+    background: #fff;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear; /* Firefox 4 */
+    -webkit-transition: all 0.3s linear; /* Safari 和 Chrome */
+    -o-transition: all 0.3s linear; /* Opera */
+    bottom: -150px;
+}
+.share-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    z-index: 999;
+}
+.shareOn{
+    bottom: 0;
+    /*animation: shareOn 0.5s linear;*/
+    /*-moz-animation: shareOn 0.5s linear;	*//* Firefox */
+    /*-webkit-animation: shareOn 0.5s linear;	*//* Safari 和 Chrome */
+    /*-o-animation: shareOn 0.5s linear;	*//* Opera */
+}
+@keyframes shareOn
+{
+    from {bottom: -138px;}
+    to {bottom: 0;}
+}
+@-moz-keyframes shareOn /* Firefox */
+{
+    from {bottom: -138px;}
+    to {bottom: 0;}
+}
+
+@-webkit-keyframes shareOn /* Safari and Chrome */
+{
+    from {bottom: -138px;}
+    to {bottom: 0;}
+}
+
+@-o-keyframes shareOn /* Opera */
+{
+    from {bottom: -138px;}
+    to {bottom: 0;}
+}
+.share h5{
+    font-size: 15px;
+    padding-left: 5%;
+    margin-bottom: 15px;
+}
+.share-list li{
+    float: left;
+    width: 25%;
+    min-height: 42px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.share-list li>span{
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+}
+.share-list .bdsharebuttonbox li>a{
+    display: inline-block;
+    width: 100%;
+    min-height: 42px;
+    margin: 0;
+    background-size:auto 100%;
+    background-position: center 0;
+}
+.bdshare-button-style1-32 li>a.bds_weixin{
+    background-image:url(../../img/encyclopedias/friends-weixin.png);
+}
+.bdshare-button-style1-32 li>a.bds_tsina{
+    background-image:url(../../img/encyclopedias/sina.png);
+}
+.bdshare-button-style1-32 li>a.bds_sqq{
+    background-image:url(../../img/encyclopedias/friends-qq.png);
+}
+.bdshare-button-style1-32 li>a.bds_qzone{
+    background-image:url(../../img/encyclopedias/qq-space.png);
+}
+
+
+/*收藏星星移动*/
+.js-star-move{
+    display: none;
+    position: fixed;
+}
+.icon-star{
+    display: none;
+    color:#ff2f8d;
+    position: fixed;
+    left: 28%;
+    bottom: 23px;
+}
+.icon-star:before{
+    content: "\f2fc";
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.starOn{
+    left: 86%;
+    bottom: 170px;
+    animation: starOn 0.5s ease-in;
+    -moz-animation: starOn 0.5s ease-in; /* Firefox 4 */
+    -webkit-animation: starOn 0.5s ease-in; /* Safari 和 Chrome */
+    -o-animation: starOn 0.5s ease-in; /* Opera */
+}
+@keyframes starOn
+{
+    0%{left: 28%;bottom: 75px;}
+    25%{left: 33%;bottom: 100px;}
+    50%{left: 47%;bottom: 145px;}
+    75%{left: 72%;bottom: 180px;}
+    100%{left: 86%;bottom: 170px;}
+}
+@-moz-keyframes starOn /* Firefox */
+{
+    0%{left: 28%;bottom: 75px;}
+    25%{left: 33%;bottom: 100px;}
+    50%{left: 47%;bottom: 145px;}
+    75%{left: 72%;bottom: 180px;}
+    100%{left: 86%;bottom: 170px;}
+}
+
+@-webkit-keyframes starOn /* Safari and Chrome */
+{
+    0%{left: 28%;bottom: 75px;}
+    25%{left: 33%;bottom: 100px;}
+    50%{left: 47%;bottom: 145px;}
+    75%{left: 72%;bottom: 180px;}
+    100%{left: 86%;bottom: 170px;}
+}
+
+@-o-keyframes starOn /* Opera */
+{
+    0%{left: 28%;bottom: 75px;}
+    25%{left: 33%;bottom: 100px;}
+    50%{left: 47%;bottom: 145px;}
+    75%{left: 72%;bottom: 180px;}
+    100%{left: 86%;bottom: 170px;}
+}
+
+
+
+@media (max-width: 375px){
+    .bottom-nav-area .larger-block a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 320px){
+    .modal-p-title{width:90%;margin:0 auto;display: block;line-height: 20px;color:#666666;font-size: 15px;}
+    .modal-submit{line-height: 40px;font-size: 15px;}
+    .modal-p-title{margin-bottom: 5px;}
+    .modal-p1{height:auto!important;}
+    .modal-schedule{width:90%;height:250px;left:5%;top:30%;z-index:8000;background: #FFFFff}
+    .modal-icon-style{width:6%}
+    .normal-block a p span{font-size: 10px;}
+    .normal-block p{font-size: 10px;}
+    .larger-block p a{font-size: 14px;}
+    .bottom-nav-area .larger-block a{
+        font-size: 13px;
+    }
+}

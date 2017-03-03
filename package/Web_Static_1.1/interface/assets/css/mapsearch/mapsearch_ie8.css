@@ -1,0 +1,48 @@
+
+    .ie .mapsearch-content{
+        width: 600px;
+    }
+    .ie .mapsearch{right: 644px;}
+
+    .ie .m-preview{
+        width: 510px;
+        height: 600px;
+        right: 710px;
+    }
+    .ie .m-preview .m-banner{
+        width: 436px;
+        height: 250px;
+    }
+    .ie .m-banner .carousel{height: 250px;}
+    .ie .sr-only{line-height: 250px;}
+    .ie .mpw-cont{
+        width: 436px;
+    }
+    .ie .m-preview h1{margin-top: 10px;}
+    .ie .carousel .carousel-control{
+        width: 8%;
+        left: -35px;
+    }
+    .ie .carousel .carousel-control.right{
+        width: 8%;
+        right: -35px;
+    }
+    .ie .m-preview .m-btn{
+        margin: 15px auto 0;
+    }
+    .ie .mcont-screening .dlchoice .hv-choice-list{width: 70%;}
+
+    /*搜索框样式*/
+    .ie .map-range-room{height: 50px;width:55%;max-width: 500px;left: 10%;margin-left: 5%;background: #999;}
+    .ie .range-room-con{padding:5px 10px;}
+
+    .ie .mcont-details{width: 36%;}
+    .ie .mcont-details .m-tag span{
+        height:20px;
+        line-height: 20px;
+        padding: 0 5px;
+    }
+    .ie .pagers a{padding:3px 9px;}
+    .ie .r-r-s-title input{background: #f5f5f5;border: 1px solid #f0f0f0;}
+    .ie .map-area{background: #f5f5f5;border: 1px solid #f0f0f0;}
+

@@ -1,0 +1,475 @@
+
+.clear{
+    clear: both;
+}
+.none{
+    display: none;
+}
+.cover{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #000;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    width: 100%;
+    height: 100%;
+    z-index:80;
+}
+.yun-icon:before{
+    background-image: url(../../img/site_join/icon.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    content: "";
+    margin-right: 8px;
+}
+.icon-1:before{
+    background-position:-25px -126px;
+    vertical-align:-3px;
+}
+.crumb{
+    width: 1180px;
+    margin: auto;
+    height: 60px;
+    line-height: 60px;
+    color: #666666;
+    margin-left: -15px;
+}
+.crumb a{
+    color: #666666;
+    font-size: 14px;
+    margin: 0 15px;
+}
+.crumb a.active{
+    color: #4e6db0;
+}
+.head{
+    width: 100%;
+    height: 577px;
+    overflow: hidden;
+    background: url("../../img/site_join/j_banner.jpg") no-repeat center;
+}
+.head img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.wrapper1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.content1{
+    width: 100%;
+    background-color: #f9f9f9;
+    padding-top:80px;
+    padding-bottom: 40px;
+}
+.word1{
+    font-size: 16px;
+    color: #7f7f7f;
+    line-height: 35px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.heading1{
+    width: 1183px;
+    height: auto;
+    overflow: hidden;
+    margin:auto;
+    text-align: center;
+}
+.word2{
+    font-size: 24px;
+    color: #181818;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.wrapper2{
+    width: 100%;
+    background-color: #008de9;
+    height: auto;
+    overflow: hidden;
+}
+.topside{
+    width: 100%;
+    background: url(../../img/site_join/index_09.jpg) center;
+    height: 92px;
+}
+.word3{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.word3 span{
+    font-weight: bolder;
+    color: #ffea00;
+}
+.topbottom{
+    width: 100%;
+    height: 163px;
+    background: url(../../img/site_join/index_17.jpg) center;
+}
+.topside1{
+    width: 100%;
+    height: 121px;
+    background: url(../../img/site_join/index_23.jpg) center;
+}
+.content2{
+    width: 100%;
+    background-color: #227dd6;
+    padding-top:80px;
+    padding-bottom: 40px;
+}
+.word4{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.sidebottom{
+    width: 100%;
+    height: 119px;
+    background: url(../../img/site_join/index_32.jpg) center;
+}
+.content3{
+    width: 1180px;
+    margin:0 auto 20px auto;
+}
+.icon{
+    width: 190px;
+    text-align: center;
+    height: 200px;
+    padding-top: 190px;
+}
+.word5{
+    width: 265px;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    line-height: 36px;
+}
+.icon1{
+    width: 190px;
+    text-align: center;
+    height: 2px;
+}
+
+
+.j-1032{
+    width: 1032px;
+    margin: 0 auto;
+}
+.j-785{
+    width: 785px;
+    margin: 30px auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 2em;
+    text-indent: 2em;
+}
+.opacity-bg{
+    background: #fff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 5px;
+}
+.j-header{
+    padding: 125px 0;
+}
+.j-header-text{
+    width: 48%;
+    text-align: center;
+}
+.j-header-text h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.j-header-text h2 span{
+    color: #ffea00;
+}
+.j-header-text h5{
+    font-size: 22px;
+    color: #fff;
+    font-weight: normal;
+}
+.j-header-text p{
+    color: #fff;
+    font-size: 18px;
+}
+.j_joinbtn-wrapper{
+    width: 160px;
+    height: 46px;
+    margin: 130px auto 30px;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+.j_joinbtn{
+    display: block;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #ffea00;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.j-login-wrapper{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    padding: 28px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.j-login-wrapper>.opacity-bg{
+    border-radius: 20px;
+}
+.j-login-wrapper h3{
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.j-login-wrapper h3 span{
+    color: #ffea00;
+}
+.j-login{
+    padding: 0 15px;
+}
+.j-login .ipt-waper{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.j-login .ipt-waper input{
+    position: relative;
+    z-index: 1;
+    background: none;
+    width: 96%;
+    padding-left: 4%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+}
+.j-login .ipt-waper .opacity-bg{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+.j-login .ipt-waper input::-webkit-input-placeholder {
+    color: #fff !important; /* WebKit browsers */
+}
+.j-login .ipt-waper input:-moz-placeholder {
+    color: #fff; /* Mozilla Firefox 4 to 18 */
+}
+.j-login .ipt-waper input::-moz-placeholder {
+    color: #fff; /* Mozilla Firefox 19+ */
+}
+.j-login .ipt-waper .send-code{
+    width: 135px;
+    height: 44px;
+    background: #008de9;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    z-index: 2;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    outline: none;
+}
+.j-login .rember{
+    margin-bottom: 0;
+}
+.j-login .rember .ckbox{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.j-login .rember p{
+    color: #fff;
+    font-size: 14px;
+}
+.j-login .rember span{
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.error-block{
+    height: 30px;
+}
+.display-hide{
+    display: none;
+}
+/*.j-login .rember .span:hover{*/
+    /*text-decoration: underline;*/
+/*}*/
+.btn-login-reg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #008de9;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.j-login .text-wrap{
+    position: relative;
+    z-index: 2;
+}
+.j-login .text{
+    color: #fff;
+    font-size: 14px;
+}
+.j-login .text:hover{
+    text-decoration: underline;
+}
+.j-login-title{
+    padding-left: 12px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.j-login-app{
+    width: 64px;
+    height: 66px;
+    background: url(../../img/site_join/app001.png);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 111;
+}
+.j-login-title-app{
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin-bottom:20px;
+    margin-top: 25px;
+}
+.app-er img{
+   margin:auto;
+}
+.j-login-pc{
+    width: 64px;
+    height: 66px;
+    background: url(../../img/site_join/pc001.png);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 111;
+}
+.app_sao{
+    font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+    margin-top: 20px;
+    text-align: center;
+}
+.j-login-icon-back{
+    width: 64px;
+    height: 65px;
+    background: url(../../img/site_join/icon_back.png);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 11;
+}
+.fei-word{
+
+    /*-webkit-transition:all 0.5s;*/
+    animation:  myfirst 0.1s linear  ;
+    -moz-animation: myfirst 1s linear  ;	/* Firefox */
+    -webkit-animation: myfirst 0.3s linear  ;	/* Safari 和 Chrome */
+    -o-animation: myfirst 1s linear  ;
+}
+.fei-word-back{
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+@keyframes myfirst {
+    0% { left: 220px; }
+    12.5%{ left: 212px; }
+    25%{ left: 220px; }
+    37.5%{ left: 228px; }
+    50%{ left: 220px; }
+    62.5%{ left: 212px; }
+    75%{ left: 220px; }
+    87.5% { left:228px; }
+    100% { left:220px; }
+}
+
+@-webkit-keyframes myfirst {
+    0% { left: 220px; }
+    12.5%{ left: 212px; }
+    25%{ left: 220px; }
+    37.5%{ left: 228px; }
+    50%{ left: 220px; }
+    62.5%{ left: 212px; }
+    75%{ left: 220px; }
+    87.5% { left:228px; }
+    100% { left:220px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

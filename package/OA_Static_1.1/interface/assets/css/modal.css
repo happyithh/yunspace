@@ -1,0 +1,71 @@
+body{
+    position: relative;
+}
+/*移动*/
+.cover{
+    width:100%;height:100%;background: rgba(0,0,0,0.5);z-index:555;position: fixed;top:0px;left:0px;
+    display: none;
+}
+.modal-move{
+    width:80%;height:30%;z-index: 888;position: fixed;left:50%;margin-left:-40%;top:50%;margin-top:-30%;background: #FFFFff;
+    display: none;
+}
+@keyframes showModalMove{
+    0%{
+        display: block;
+        width:50%;
+        height:20%;
+        left:50%;margin-left:-25%;top:50%;margin-top:-30%;
+    }
+    80% {
+        display: block;
+        width:85%;
+        height:35%;
+        left:50%;margin-left:-42.5%;top:50%;margin-top:-30%;
+    }
+    100%{
+        display: block;
+        width:80%;
+        height:30%;
+        left:50%;margin-left:-40%;top:50%;margin-top:-30%;
+    }
+}
+/*PC*/
+.modal-pc{
+    width:300px;height:200px;z-index: 888;position: fixed;left:50%;margin-left:-150px;top:50%;margin-top:-100px;background: #f5f5f5;
+    display: none;
+}
+.modal-content{
+    position: relative;width:100%;height: 100%;
+}
+.modal-title{
+    height:100%;width:100%;margin-bottom: 45px;text-align: center;line-height: 155px;color:#666666;font-size: 20px;
+}
+.modal-ok{
+    position: absolute;bottom:0px;left:0px;width:100%;
+}
+.modal-ok a{
+    display: block;width:100%;line-height: 30px;font-size: 20px;color:#ffffff;text-align: center;border-top:1px solid #DDDDDD;background: #DDDDDD;
+    font-family: '微软雅黑', 'microsoft yahei', Arial, sans-serif;
+}
+@keyframes showModalPc{
+    0%{
+        display: block;
+        width:250px;
+        height:180px;
+        left:50%;margin-left:-125px;top:50%;margin-top:-90px;
+    }
+    80% {
+        display: block;
+        width:320px;
+        height:220px;
+        left:50%;margin-left:-160px;top:50%;margin-top:-110px;
+    }
+    100%{
+        display: block;
+        width:300px;
+        height:200px;
+        left:50%;margin-left:-150px;top:50%;margin-top:-100px;
+    }
+}
+

@@ -1,0 +1,125 @@
+input,textarea,select{-webkit-appearance:none;outline: none;}
+.dmd-tend-my{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.dmd-tend-my table{
+    width: 100%;
+    margin-bottom: 65px;
+}
+.dmd-tend-my td{
+    font-size: 16px;
+    color: #333;
+    min-height: 30px;
+    line-height: 30px;
+    padding: 5px 0;
+}
+.dmd-tend-my .gray{color: #999;}
+.dmd-tend-my .td-slt select{
+    width: 100%;
+    padding-left: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 40px;
+    background: #fff;
+    font-size: 16px;
+}
+.dmd-tend-my .td-slt .rt{
+    position: absolute;
+    right: 1px;
+    top: 6px;
+    display: block;
+    width: 40px;
+    height: 38px;
+    background: #dfdfe1;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.dmd-tend-my .td-slt .jiao{
+    position: absolute;
+    right: 13px;
+    top:18px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #666;
+}
+.dmd-tend-my .td-txt{
+    width: 45%;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    font-size: 15px;
+}
+.span-txt{
+    margin-left: 3px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 40px;
+}
+.dmd-tend-my .td-mark p{
+    display: block;
+    position: relative;
+    color: #666;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 10px;
+    background: #eee;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.dmd-tend-my .td-mark p .icon-close-d{
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url("../../img/demand_tender.v1.0/icon_close-d.png") no-repeat;
+    position: absolute;
+    right: -3px;
+    top:-8px;
+    background-size: 100%;
+}
+.dmd-my-submit{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fe6a3a;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border:none;
+    position: fixed;
+    bottom: 0;
+    outline: none;
+    font-family: "黑体", 'microsoft yahei', Arial;
+}
+.dmd-tend-my .td-slt{position: relative;width:100%;}
+.dmd-tend-my input.td-txt,.dmd-tend-my select.td-txt{width: 100%;}
+.dmd-tend-my .d-s-input input.td-txt{
+    width: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+.header-body-keys{
+    width:100%;
+    margin-top:30px;
+    text-align: center;
+}
+.header-body-keys-list{
+    margin:0 auto;
+    /*width:300px;*/
+    text-align: center;
+    display: inline-block;
+    /*padding-top: 8px;*/
+}
+.header-body-keys li{
+    padding:0px 5px;
+    /*height:10px;*/
+    /*border-right:1px solid #fff;*/
+    /*float: left;*/
+    margin:0 auto;
+    display: inline-block;
+}
+.header-body-keys li:last-of-type{
+    border: 0px;
+}
+.header-body-keys li a{
+    display: inline-block;
+    width:100%;
+    box-sizing: border-box;
+    padding:0px 8px;
+    font-size: 10px;
+    color:#fff;
+    line-height: 18px;
+}
+.header-body-keys-list-active{
+    width:100%;
+    background: rgba(0,0,0,0.7);
+}
+.li-active{
+    width:25%;
+    box-sizing: border-box;
+    float: left;
+}
+.header-body-key-active-fix{
+    border-radius: 0px;
+}
+.keys-line{
+    padding-top:4px!important;
+    display:block;
+    box-sizing: border-box;
+}
+.keys-line div{
+    width:1px;
+    height:10px;
+    background: #fff;
+}
+.header-body-key-active{
+    background: rgba(255,255,255,0.5);
+    border-radius: 9px;
+}
+/*.header-body-keys-list,*/
+/*.header-body-keys li a,*/
+/*.header-body-keys li,*/
+/*.header-body-key-active,*/
+/*.header-body-keys{*/
+    /*transition: all 0.3s ease-in;*/
+    /*-webkit-transition: all 0.3s ease-in;*/
+    /*-o-transition: all 0.3s ease-in;*/
+    /*-moz-transition: all 0.3s ease-in;*/
+/*}*/
+.none{
+    display: none!important;
+}
+.nav-link-fix{
+ line-height: 40px!important;
+    border-radius: 0px;
+}
+.nav-fixed{
+    position:fixed;
+    top:-40px;
+    left:0px;
+    margin-top: 0px;
+    z-index:100;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.nav-fixed.active{
+    top:0px;
+}
+.con-header-body{
+    background: rgba(0,0,0,0.3);
+}
+.bg-active{
+    background: rgba(255,255,255,0.5);
+}
+.bg-none{
+    background: none!important;
+}
+.li-space{
+    width:50%;
+}

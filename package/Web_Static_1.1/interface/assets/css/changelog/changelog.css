@@ -1,0 +1,48 @@
+p{
+    display: block;
+    font-family: "微软雅黑, microsoft yahei, Arial, sans-serif";
+}
+.update-header{
+    margin:0 auto;
+    height:60px;
+    padding: 0 20px;
+}
+.title{
+    font-weight: bold;
+    color: #06c;
+    font-size:30px;
+    line-height: 60px;
+}
+.update-nav{width:100%;background:#f5f5f5;}
+.clear{clear:both;height:0px;}
+.update-nav ul{margin: 0 auto;padding:0 20px; }
+.update-name{ width:100px;display: block;line-height: 40px;font-size: 15px;float:left;text-align: center;color:#666}
+.update-name-active{background: #ffffff;color:#134a4a}
+.none{display: none}
+.update-name:hover{background: #FFFFff;}
+
+.version{
+    font-weight: bold;
+    color: #06c;
+    font-size: 1.5em;
+    line-height: 40px;
+    margin-top: 20px;
+}
+span{
+    color:#666;
+    font-weight:normal;
+    font-size:10px;
+    line-height: 40px;
+}
+.update{
+    color:#666;
+    font-weight:normal;
+    font-size:15px;
+    line-height: 40px;
+}
+.update-content{
+    color:#666;
+    font-weight:normal;
+    font-size:15px;
+    line-height: 20px;
+}

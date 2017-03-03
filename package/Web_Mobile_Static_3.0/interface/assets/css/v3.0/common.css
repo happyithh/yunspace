@@ -1,0 +1,117 @@
+* {margin:0; padding:0;font-family: 微软雅黑,microsoft yahei,Arial,sans-serif}
+li {list-style-type:none;}
+img {border:0 none;}
+button{border: 0}
+a{text-decoration: none; }
+a:focus{outline:none;}
+.pointer { cursor:pointer; }
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+.top{
+    background: #4e6db0;height: 46px;width:100%;min-width: 1180px;z-index: 500;
+}
+.wrapper{
+    width: 1180px;margin: auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*top*/
+.nav{
+    margin: 0 -12px 0 0;
+}
+.nav-list li{
+    float: left;
+}
+.logo{
+    width: 65px;
+    float: left;
+    padding: 13px 0;
+    margin-right: 15px;
+}
+.logo img{
+    width: 100%;
+}
+.nav-list a{
+    color: #fff;
+    line-height: 46px;
+    padding: 0 12px;
+    font-size: 13px;
+    display: inline-block;
+    /*margin: 0 12px;*/
+}
+.top .nav-list li.active a{
+    background: #6a96ef;
+    display: inline-block;
+
+}
+.nav-list i{
+    margin-right: 10px;
+}
+/*头部ICON*/
+.yun-icon:before{
+    background-image: url("img/icon.png");
+    width: 20px; height: 20px;
+    display: inline-block;
+    content: "";
+    margin-right: 8px;
+}
+.icon-1:before{
+    background-position:-25px -126px;
+    vertical-align: -3px;
+}
+
+.icon-2:before{
+    background-position:-4px -126px;
+    vertical-align: -4px;
+}
+/*header2*/
+.top-luc{
+    position: absolute;
+    top: 0;
+    left: 0;right: 0;
+    z-index: 500;
+}
+
+.header-bg{
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+    width: 100%;
+    min-width: 1180px;
+}
+/*pager*/
+.pagers{
+    text-align: center;
+    margin: 45px 0;
+}
+.pagers a {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #DEDADA;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+.pagers a.first {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagers a.active {
+    background-color: #6a96ef;
+    color: #fff;
+}

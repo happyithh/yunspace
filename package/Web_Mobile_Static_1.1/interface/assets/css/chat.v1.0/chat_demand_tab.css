@@ -1,0 +1,21 @@
+.tab-content iframe{
+    /*width:100%; height: 100%;*/
+}
+.tab{
+    width:100%;background: #edeef0;height:44px;left:0px;bottom:0px;position: fixed;border-bottom:1px solid #DDDDDD;border-top: 1px solid #DDDDDD;
+}
+.tab-li{
+    overflow: hidden;*zoom:1;
+}
+.tab-li li{
+    width:25%;float: left;
+}
+.tab-link{
+    width:100%;text-align: center;display: block;
+}
+.tab-icon{
+    line-height: 44px;color:#666;font-size: 25px;
+}
+.tab-active{
+    color:#01c3c3
+}

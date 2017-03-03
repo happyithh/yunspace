@@ -1,0 +1,21 @@
+.site_footer{
+    width:100%;position: fixed;bottom:0px;height:45px;background: #fff;border-top:1px solid #e0e0e0;z-index:1100;
+}
+.site_footer>div{
+    display: -moz-box;display: -webkit-box;display: box;
+}
+.site_footer_tab{
+    -moz-box-flex:1.0;-webkit-box-flex:1.0;box-flex:1.0;text-align: center;box-sizing: border-box;padding-top: 5px;
+}
+.site_footer_tab p:last-of-type{
+    font-size: 12px;line-height: 8px;color:#666666;
+}
+.site_footer_tab span{
+    font-size: 20px;
+}
+.site_footer_tab_p_active{
+    color:#6bb2ff
+}
+.site_footer_tab >a{
+    color:#000;
+}

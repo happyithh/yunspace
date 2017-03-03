@@ -1,0 +1,346 @@
+/*用户中心弹出层的公共白色背景及关闭按钮*/
+.pop_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    z-index:1;
+    left:0;
+    top:0;
+}
+.user-pop-up{
+    display: none;
+    background: #fff;
+    position: absolute;
+    width: 1180px;
+    left: 50%;
+    margin-left: -590px;
+    top:65px;
+    z-index: 9999;
+}
+.user-ppclose{
+    width: 35px;
+    height: 35px;
+    background: url("../img/user-ppclose.png") no-repeat;
+    position: absolute;
+    top:18px;
+    right:18px;
+    cursor: pointer;
+    z-index: 100;
+}
+.edit-box{
+    width: 662px;
+    min-height: 200px;
+}
+.user-pop-up h1{
+    font-size: 22px;
+    line-height: 22px;
+    color: #313136;
+    text-align: center;
+    margin: 40px 0 25px;
+}
+.user-pop-up .title{
+    width: 1070px;
+    height: 50px;
+    background: #f0f0f0;
+    margin: 0 55px;
+}
+.user-pop-up .title h2{
+    margin-left: 35px;
+    line-height: 50px;
+    font-size: 16px;
+    color: 434242;
+    font-weight: normal;
+}
+
+
+/*申请成为供应商*/
+.apply-suppliers{display: none;}
+.suppliers-table{
+    width: 1070px;
+    margin: 30px 55px;
+}
+.suppliers-table td{
+    min-height: 40px;
+    padding-bottom: 15px;
+    vertical-align: top;
+}
+.suppliers-table .td-tit{
+    text-align: right;
+    padding-right: 15px;
+    line-height: 40px;
+    color: #999;
+}
+.suppliers-table .td-tit span{
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.suppliers-table .ipt-txt{
+    width: 340px;
+    padding-left: 5px;
+    height: 38px;
+    border: 1px solid #c0c0c0;
+}
+.suppliers-table .logo-img{
+    width: 119px;
+    height: 106px;
+    overflow: hidden;
+}
+.suppliers-table .logo-choice{
+    height: 32px;
+    margin-top: 10px;
+}
+.suppliers-table .logo-choice input{
+    float: left;
+    width: 118px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 30px;
+    color: #8a8a8a;
+    font-size: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.suppliers-table .logo-choice p{
+    float: left;
+    color: #8a8a8a;
+    line-height: 32px;
+    font-size: 12px;
+}
+.suppliers-table .td-checkbox input{
+    float: left;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    margin-top: 9px;
+    margin-right: 3px;
+}
+.suppliers-table .td-checkbox p{
+    float: left;
+    color: #8a8a8a;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+.suppliers-table .td-checkbox p a{
+    color: #3ad5bb;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.suppliers-table .td-btn{
+    width: 108px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.suppliers-table .td-submit{
+    background: #3ad5bb;
+    color: #fff;
+    border: 1px solid #3ad5bb;
+}
+.suppliers-table .td-reset{
+    background: #fff;
+    color: #9c9c9c;
+    border: 1px solid #ddd;
+}
+
+/*申请成为经纪人*/
+.apply-agents{display: none;}
+.apply-agents-cont{
+    width: 1060px;
+    padding-left: 10px;
+    margin: 30px 55px;
+}
+.apply-agents-cont h3{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.apply-agents-cont>p{
+    color: #313136;
+    line-height: 24px;
+}
+.apply-agents-cont ol{padding-left: 20px;}
+.apply-agents-cont ol li{
+    color: #313136;
+    line-height: 24px;
+}
+.apply-agents-cont ul{margin-left: 12px;}
+.apply-agents-cont ul li{list-style: disc;}
+.recommend-yself{margin: 20px 160px;}
+.recommend-yself p{
+    float: left;
+    width: 130px;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 16px;
+    color: #434242;
+}
+.recommend-yself .r-textarea{
+    float: left;
+    width: 610px;
+}
+.recommend-yself textarea{
+    width: 570px;
+    height: 140px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+.recommend-yself .btn-submit{
+    width: 108px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto;
+}
+
+/*云SPACE供应商介绍及规则*/
+.yun-introrule{
+    display: none;
+    width: 1060px;
+    padding-left: 10px;
+    margin: 30px 55px;
+    position: relative;
+}
+.yun-introrule h3{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.yun-introrule>p{
+    color: #313136;
+    line-height: 24px;
+}
+.page-back-bottom{
+    display: block;
+    width: 108px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 25px auto;
+}
+.pback-tr-wrap{
+    width: 118px;
+    height: 60px;
+    text-align: left;
+    line-height: 70px;
+    position: absolute;
+    top:-25px;
+    right:-40px;
+    background: #fff;
+    z-index: 101;
+}
+.page-back-topright{
+    color: #00c3c3;
+    text-decoration: underline;
+}
+
+/*我的快捷入口*/
+.entrance-pop-up{
+    display: none;
+    padding-bottom: 10px;
+    background: #fff;
+    position: absolute;
+    width: 660px;
+    left: 50%;
+    margin-left: -340px;
+    top:65px;
+    z-index: 9999;
+}
+.entrance-pop-up .user-ppclose{
+    width: 25px;
+    height: 25px;
+    background: url("../img/user-ppclose-sm.png") no-repeat;
+    position: absolute;
+    top:13px;
+    right:18px;
+    cursor: pointer;
+    z-index: 100;
+}
+.ease-entrance .ee-title{
+    width: 100%;
+    height: 50px;
+    background: #f0f0f0;
+}
+.ease-entrance .ee-title h3{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 25px;
+    font-size: 16px;
+    color: #434242;
+    font-weight: normal;
+}
+.entra-ul{
+    width: 570px;
+    margin: 20px auto;
+}
+.entra-ul li{
+    float: left;
+    width: 95px;
+    height: 85px;
+    text-align: center;
+    position: relative;
+}
+/*.entra-ul li:hover{background: #f5f5f5;}*/
+.entra-ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+.entra-ul li a span{
+    display: inline-block;
+    margin-top: 10px;
+}
+.entra-ul li a p{color: #737272;}
+.entra-delete-btn{
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right:14px;
+    top:6px;
+    background: url("../img/icon-tool-close.png") no-repeat;
+    cursor: pointer;
+}
+.entra-add-btn{
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right:14px;
+    top:6px;
+    background: url("../img/icon-tool-add.png") no-repeat;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

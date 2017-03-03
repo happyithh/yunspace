@@ -1,0 +1,420 @@
+p,span,a,button,h1,h2,h3,h4,h5,h6,input{font-family:  "微软雅黑", 'microsoft yahei', Arial}
+i{color:#fd7aae}
+.j-banner{
+    position:relative
+}
+.clear{
+    clear: both;
+}
+.j-banner img{
+    width:100%;height:auto;
+}
+.b-title{
+    position: absolute;top:80px;width:100%;
+}
+.b-title1{
+    line-height: 70px;font-size: 60px;text-align: center;color:#fff;display: block;
+}
+.b-title2{
+    line-height:70px;color:#fff;text-align: center;display: block;font-size: 20px;
+}
+.j-content{
+    width:1180px;margin:0 auto;border-top:3px solid #f1f1f1;margin-top: 80px;position: relative;margin-bottom: 80px;
+}
+.j-c-title{
+    position: absolute;line-height: 30px;color:#01c3c3;background: #fff;width:12%;margin:0 auto;text-align: center;
+    font-size: 20px;top:-15px;left:44%;
+}
+.j-form{
+    padding-top: 60px;width:80%;margin:auto;
+}
+.j-input {
+    float: left;
+    width: 40%;margin-right: 20%;margin-bottom: 30px;
+}
+.j-input label{
+    display: block;width: 100%;padding-left: 10%;box-sizing: border-box;
+}
+.j-input span{
+    display: block;width:28%;float: left;line-height: 30px;
+}
+.j-i-content{
+    width:60%;float: left;line-height: 30px;position:relative;
+}
+.j-input input{
+    display: block;width:107%;float: left;line-height: 30px;padding:0px 5px;box-sizing: border-box;
+}
+.input-select{
+    display: block;width:106%;float: left;line-height: 30px;border: 1px solid #ccc;
+}
+.input-select select{
+   width:100%;float: left;height: 30px;background: #fff;border: 0px;
+}
+.j-input:nth-of-type(even){
+    margin-right:0px;
+}
+.j-input:nth-of-type(even) > label{
+    float: right;
+}
+.j-i-content span{
+    width:100%
+}
+.j-file{
+    padding-left:4%;height:40px;padding-top:5px;box-sizing: border-box;margin-bottom: 30px;position: relative;
+}
+.j-file > span{
+    line-height: 30px;display: block;float: left;width: 11.7%;
+}
+.j-file a{
+    display: block;line-height: 30px;float:left;padding:0px 20px;margin-right: 10px;
+}
+.j-file a:first-of-type{
+    background: #f1f1f1;color:#666;
+}
+.j-file a:nth-of-type(2){
+    background: #01c3c3;color:#fff;
+}
+.j-about{
+    padding-left:4%;margin-top: 20px;position: relative;
+}
+.j-about span{
+    line-height: 30px;display: block;float: left;width: 11.7%;
+}
+.j-about textarea{
+    min-width:50%;min-height: 150px;max-width: 87%;width:87%;
+}
+.j-check{
+    text-align: center;margin-top: 20px;width:80%;
+}
+.input-check{
+    border: 1px solid #666;width:15px;height:15px;float: left;cursor: pointer;
+    margin: 0 auto;margin-right: 10px;
+}
+.j-check a{
+    color:#666;line-height: 20px;font-size: 15px;
+}
+.j-submit{
+    text-align: center;margin-top:20px;
+}
+.j-submit button{
+    line-height: 40px;background:#ff308e;border: 0px;color:#fff;padding: 0px 82px;font-size: 20px;cursor: pointer;
+}
+.j-register{
+    margin-left: 4%;width:95.2%;height:250px;background:#fbfbfb;margin-top: 30px;
+}
+.j-r-title{
+    display: block;font-size: 18px;color:#00c3c2;text-align: center;padding-top: 30px;padding-bottom: 20px;
+}
+.j-r-input{
+    height:40px;width:50%;margin:0 auto;
+}
+
+.j-r-input span{
+    margin-right:10px;line-height: 34px;
+}
+.j-r-input:last-of-type span {
+        display: block;width:20.5%;float: left;
+}
+.j-r-input input{
+    height:20px;padding:5px;width:70.3%;
+}
+.j-s-i-input{
+    border:1px solid #ccc;overflow: hidden;height:34px;
+}
+.j-s-i-input input{
+    width:50%;border: 0px;float: left;box-sizing: border-box;line-height: 30px;height:34px;
+}
+.j-s-i-input a{
+    display: block;text-align: center;width:50%;float: left;line-height: 34px;color:#58595e;background: #f2eeef;
+}
+.block{
+    display: block;
+}
+.cover{
+    position:fixed;left: 0px;top:0px;width:100%;height:100%;z-index:10000;background: rgba(0,0,0,0.5);display: none;
+}
+.tip{
+    width:30%;background: #fff;height:200px;position: fixed;left:50%;margin-left:-15%;top:50%;margin-top:-100px;
+}
+.tip > span{
+    position:absolute;right:5px;top:5px;display: block;width:20px;line-height: 20px;text-align: center;height:20px;color:#575467
+}
+.sub-title{
+    padding-top:50px;line-height: 30px;font-size: 20px;text-align: center;color: #51d6d3;
+}
+.sub-title span{
+    font-size: 20px;color: #51d6d3;
+}
+.sub-p{
+    font-size: 15px;color:#c6c6c6;line-height: 30px;text-align: center;
+}
+.sub-ok{
+    display: block;border: 1px solid #6cd4d5;color:#6cd4d5;width:50%;line-height: 40px;text-align: center;font-size: 20px;
+    margin: auto;margin-top:10px;
+}
+.error-info{
+    color:#ff0000;padding-left:4%;font-weight: bold;text-align: center;line-height: 25px;
+}
+
+.j-l-input{
+    width:50%;height:40px;margin-left:30%;margin-bottom: 10px;
+}
+.j-l-input p{
+    display: block;width:20%;line-height: 30px;float: left;
+}
+.j-r-i-input{
+    width:79%;float: left;
+}
+.j-r-i-input input{
+    width:70%;line-height: 20px;padding:5px;box-sizing: border-box;
+}
+.j-r-i-code{
+    width:69.5%; border:1px solid #ccc ;
+}
+.j-r-i-code input{
+    border: 0px;float: left;width:50%;
+}
+.send-code{
+    width:50%;color:#666;text-align: center;display: block;float: left;line-height: 30px;border: 0px;background: #f1f1f1;
+}
+.file-list{
+    width:80%;float: left;padding-left:11.7%;margin-top:20px;
+}
+.file-list p{
+    display: inline;
+}
+.file-list li{
+    position:relative;float: left;width:100px;height:100px;margin-right:20px;margin-bottom: 20px;
+}
+.file-list li img{
+    width:100px;height:100px;
+}
+.remove-img{
+    position:absolute;display: none;width:20px;border-radius:15px;background: #ddd;line-height: 20px;text-align: center;
+    right:-10px;top:-10px;cursor:pointer;
+}
+/*类型选择*/
+.cate{
+    height:30px;position: relative;
+}
+.c-select{
+    text-align: center;
+}
+.c-select p{
+    display: block!important;width:90%!important;float: left;text-align: left;padding-left: 5px;box-sizing: border-box;color:#a9a9a9
+}
+.c-select span{
+    display: block!important;width:10%!important;float: left;color:#c6c1b6
+}
+.c-list-parent{
+    position:absolute;left:0px;top:30px;width:101%;background: #ddd;display: none;margin-left: -0.5%;z-index:99
+    /*height:90px;overflow: auto;*/
+}
+.c-list-parent li{
+    width:100%;border-bottom: 1px solid #eee;
+}
+.c-list-parent li a{
+     display: block;text-align: center;width:100%;color:#666;position: relative;border-bottom: 1px solid #f5f5f5;
+ }
+.c-list-parent li a span{
+    position: absolute; display: block;text-align: center;width:10%;float: left;right:0px;top:0px;
+}
+.cate-list{
+
+}
+.c-list-son{
+    position:relative;
+    background: #f5f5f5;width: 100%;display: none;height:150px;overflow: auto;
+}
+.c-list-son li{
+    width:100%;
+}
+.c-list-son li a{
+    display: block;width:100%;line-height:30px;text-align: center;border-bottom: 1px solid #fff;color:#a9a9a9;
+}
+.c-list-son li a:hover{
+    background:#01c3c3;color:#fff!important;
+}
+.c-list-grandson{
+    position: absolute;left:0px;top:0px;
+    background: #f8f8f8;width:100%;margin-left: 100%;display: none;
+}
+/*.c-list-son:first-of-type .c-list-grandson:first-of-type{*/
+/*display: block;*/
+/*}*/
+ .c-list-grandson li{
+    border-bottom:1px solid #eee;overflow: hidden;
+}
+.c-l-g-checkbox{
+    width:10px;height:10px;border: 1px solid #CCCCCC;float: left;margin-right:5px;margin-left:5px;margin-top: 9px;
+}
+.c-l-g-input{
+    color:#a9a9a9;
+    width:70%;text-align: center;display: block;float: left;text-align: left;line-height: 30px;padding-left: 5px;box-sizing: border-box;
+}
+.c-l-g-checkbox span{
+    font-size: 12px;line-height: normal;line-height: 10px;
+}
+.pic-tip{
+    width:60%!important;color:#a9a9a9;float: left;
+}
+.pic-tip span:first-of-type{
+    color:#666;font-size: 12px;
+}
+.pic-tip span:nth-of-type(2){
+    font-size: 12px;
+}
+
+.j-i-city{
+    width:60%;float: left;height: 30px;
+}
+.city{
+    height:30px;position: relative;width:48%;float: left;border: 1px solid #ccc;margin-right:4%;box-sizing: border-box;
+}
+.city:nth-of-type(2){
+    margin-right: 0;
+}
+.city-selects{
+    text-align: center;
+}
+.city-selects p{
+    display: block!important;width:80%!important;float: left;text-align: left;padding-left: 5px;box-sizing: border-box;color:#a9a9a9
+}
+.city-selects span{
+    display: block!important;width:20%!important;float: left;color:#c6c1b6
+}
+.select{
+    display: block;width:107%;float: left;line-height: 30px;
+}
+.province-city{
+    position:absolute;left:-1px;top:100%;background: #f5f5f5;width:102%;z-index:99;display: none;height: 400px;overflow: auto;
+}
+.province-city li{
+    width:100%;text-align: center;color:#666;
+}
+.province-city li:hover{
+    background:#01c3c3;color:#fff;cursor: pointer;
+}
+/*加盟协议*/
+.cover2{
+    position:fixed;left: 0px;top:0px;width:100%;height:100%;background: rgba(0,0,0,0.5);z-index:555;display: none;
+}
+.agreement{
+    position: fixed;left:50%;top:-100%;background: #fff;z-index:888;overflow: auto;opacity: 0;display: none;
+    transition:all .4s;-webkit-transition:all .4s;-o-transition:all .4s;-moz-transition:all .4s;border-radius:5px ;
+}
+.close-agreement{
+    position: absolute;right:10px;top:10px;display: block;text-align: center;width:30px;height:30px;
+}
+.close-agreement span{
+    line-height: 30px;font-size: 25px;
+}
+.ct{
+    padding:20px;padding-top:0px;
+}
+.ct p{
+    margin: 0 0 10px;line-height: 20px;font-size: 14px;color:#666;
+}
+.text-title{
+    color:#000!important;
+}
+h2 {
+    font-size: 30px;padding-bottom: 10px;  font-family: inherit;  font-weight: 500;  line-height: 1.1;
+    color: inherit;border-bottom:1px solid #ddd;margin-bottom: 20px;
+}
+.agreement-content{
+    margin: 5% 20px;height:90%;overflow: auto;
+}
+.agreement-content::-webkit-scrollbar
+{
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+}
+.agreement::-webkit-scrollbar
+{
+    width: 0px;
+    height: 6px;
+    margin-right: 10px;
+}
+.agreement-content::-webkit-scrollbar-track-piece
+{
+    background-color: #f5f5f5;
+}
+.agreement-content::-webkit-scrollbar-thumb:vertical
+{
+    height: 10px;
+    width:10px;
+    background-color: #999999;
+    -webkit-border-radius: 6px;
+}
+.province-city::-webkit-scrollbar,.c-list-son::-webkit-scrollbar{
+    width: 6px;
+    margin-right: 10px;
+}
+.province-city::-webkit-scrollbar-track-piece,.c-list-son::-webkit-scrollbar-track-piece
+{
+    background-color: #fff;
+}
+.province-city::-webkit-scrollbar-thumb:vertical,.c-list-son::-webkit-scrollbar-thumb:vertical
+{
+    height: 10px;
+    width:6px;
+    background-color: #dddddd;
+    -webkit-border-radius: 6px;
+}
+.hide{
+    display: none;
+}
+.error-tip{
+    position:absolute;top:0px;left:110%;color:#ff2222;
+}
+/*****
+@media(max-width: 1024px){
+    .j-banner{display: none;}
+    .j-content{width: 100%;margin-top: 30px;margin-bottom: 50px;}
+    .j-c-title{
+        width: 120px;
+        left: 50%;
+        margin-left: -60px;
+    }
+    .j-input{
+        width: 100%;
+        margin-right:0;
+        margin-bottom: 15px;
+    }
+    .j-i-content{width: 65%;}
+    .j-form{width: 95%;padding-top: 30px;}
+    .j-input label{padding-left: 0;}
+    .j-input>span{min-width: 90px;}
+    .j-input input{font-size: 12px;}
+    .j-about{padding: 0;margin-top: 0;}
+    .j-about>span{min-width: 90px;max-width: 120px;}
+    .j-file{padding: 0;margin-bottom: 10px;}
+    .j-file>span{width:28%;max-width: 120px;float: left;min-height: 30px;}
+    .pic-tip{float: left;width: 80% !important;font-size: 12px;margin-left: 22%;}
+    .j-about textarea{padding:5px;max-width:100%;width: 96%;outline: none;min-height: 80px;}
+    .error-tip{top:23px;left:0;font-size: 12px;}
+    .file-list li{width: 55px;height: 55px;margin-right: 8px;margin-bottom: 10px;}
+    .file-list li img{width: 55px;height: 55px;}
+    .file-list{margin-left: 30%;width: 70%;padding-left: 0;margin-bottom: 10px;margin-top:15px;}
+    .city-select p{height:30px;overflow: hidden;}
+
+    .j-register{width: 100%;margin-left: 0;}
+    .j-r-title{padding: 15px 0;}
+    .j-l-input{width: 95%;padding-left: 2%;margin: 6px auto;max-width: 380px;}
+    .j-check{width: 95%;padding-left: 2%;}
+    .j-submit button{padding: 0;display: block;width: 95%;margin: 0 auto;}
+    .j-r-i-input>input{width: 80%;}
+    .j-r-i-code{width: 80%;}
+    .agreement-content{margin: 5% 0;}
+}
+*****/
+
+
+
+
+
+
+
+

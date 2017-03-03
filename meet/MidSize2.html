@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>中型年会</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="daterangepicker/daterangepicker.css" />
+</head>
+<body>
+<div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2 demo">
+            <input type="text" id="config-demo" class="form-control">
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="daterangepicker/daterangepicker.js"></script>
+<script src="daterangepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script>
+
+    $(document).ready(function() {
+        $('#config-demo').daterangepicker({
+            autoApply: true,
+            format: "YYYY-MM-DD",
+            language:  'zh-CN',
+            opens : 'left',
+            locale : {
+                format: moment.localeData().longDateFormat('L'),
+                separator: ' - ',
+            }
+        }, function(start, end, label) { });
+    })
+
+</script>
+</html>

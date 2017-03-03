@@ -1,0 +1,71 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: yl
+ * Date: 15-9-2
+ * Time: 下午2:43
+ * 获取激活列表
+ */
+class OA_Data_Activate{
+    static function handle()
+    {
+        $_REQUEST['action']=empty($_REQUEST['action'])?'list':$_REQUEST['action'];
+        switch ($_REQUEST['action']) {
+            case 'list':
+                self::getActivateDataList();
+                break;
+            default:
+                self::getActivateDataList();
+                break;
+        }
+    }
+    static function getActivateDataList(){
+        //获取待拓展列表
+        $_REQUEST['handle_type']=empty($_REQUEST['handle_type'])?'waiting':$_REQUEST['handle_type'];
+        $condition=$data=array();
+        if(!empty($_REQUEST['vendor_name'])){
+            if(is_numeric($_REQUEST['vendor_name'])){
+                $condition['id']=$_REQUEST['vendor_name'];
+            }else{
+                $condition['vendor_name']=$_REQUEST['vendor_name'];
+            }
+        }
+        if(!empty($_REQUEST['phone'])){
+            $condition['phone']=$_REQUEST['phone'];
+        }
+        if(!empty($_REQUEST['city']) && $_REQUEST['city']!="全部"){
+//            $condition['attr_index']['城市']='+'.$_REQUEST['city'];
+            $condition['city']=$_REQUEST['city'];
+        }
+        switch($_REQUEST['handle_type']){
+            case 'waiting':
+                //获取所有待激活的供应商（status=0,发送短信时间小于等于一天）
+                $condition['status']=0;
+                $condition['create_time >= ?']=time()-(1*24*3600);
+                break;
+            case 'activate':
+                //获取所有已激活的供应商(status=1)
+                $condition['status']=1;
+                break;
+            default:
+                Func_Header::notFound();
+                break;
+        }
+        $data_obj=Data_Mysql_View_Vendor_Expand::page(0,20,'id,username,phone,city,vendor_name,create_time,update_time,admin_id,email',$condition,'ORDER BY update_time DESC');
+        foreach($data_obj['rows'] as $k=>$v){
+            $data['rows'][$k]['id']=$v->id;
+            $data['rows'][$k]['username']=$v->username;
+            $data['rows'][$k]['phone']=$v->phone;
+            $data['rows'][$k]['vendor_name']=$v->vendor_name;
+            $data['rows'][$k]['create_time']=$v->create_time;
+            $data['rows'][$k]['update_time']=$v->update_time;
+            $data['rows'][$k]['admin_id']=$v->admin_id;
+            $data['rows'][$k]['email']=$v->email;
+            $data['rows'][$k]['city']=$v->city;
+        }
+        $data['page']=$data_obj['page'];
+        Tpl_Smarty::assign('_vendor_attr',Data_Config_Vendor_Attr::all());
+        Tpl_Smarty::assign('_data',$data);
+        Tpl_Smarty::display('OA_Static','data_expand/data_activate_list.tpl');
+    }
+}

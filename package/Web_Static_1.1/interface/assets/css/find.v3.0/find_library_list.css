@@ -1,0 +1,45 @@
+.act-doc{
+    width:100%;margin-top: 25px;
+}
+.act-doc-nav{
+    width:100%;height:50px;position: relative;
+}
+.act-doc-nav-li{
+    position: relative;z-index: 1;
+}
+.act-doc-nav-li > li{
+    float: left;width:80px;
+}
+.act-doc-nav-li > li > a{
+    display: block;text-align: center;font-size: 14px;padding-top: 18px;height:30px;
+}
+.act-doc-nav-li-active{
+    border-bottom: 2px solid #00c3c3;color:#00c3c3
+}
+.act-doc-nav-line{
+    width:100%;position: absolute;height:2px;background: #ddd;bottom:0px;left:0px;
+}
+.act-doc-body{
+    width:100%;border: 1px solid #efefef;margin-top:30px;
+}
+.act-doc-body-header,.act-doc-body-list{
+    width:100%;overflow: hidden;border-bottom: 1px dashed #efefef;
+}
+.act-doc-body-header > li{
+    margin-top: 13.5px;margin-bottom: 13.5px;border-right:1px solid #efefef ;float: left;text-align: center;font-size: 13px;
+}
+.act-doc-body-list > li{
+    margin-top: 12.5px;margin-bottom: 12.5px;float: left;text-align: center;font-size: 14px;
+}
+.act-doc-body-list > li > a{
+    color:#0000ff;
+}
+.act-doc-body-list > li > img{
+    width:15px;height:15px;
+}
+.act-doc-body-list > li > span{
+    color:#ddd;
+}
+.act-doc-body-list:hover{
+    background: #f5f5f5;
+}

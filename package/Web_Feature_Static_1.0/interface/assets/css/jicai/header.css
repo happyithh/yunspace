@@ -1,0 +1,106 @@
+.top{ width: 100%; min-width:1180px;height: 40px; line-height: 40px; background-color: #f2f2f2;}
+.top_center{ width: 1180px; margin: auto;}
+.city_guide{ float: left;}
+.city_guide li{ float: left; width: 80px; text-align: center; line-height: 40px;}
+.city_guide li a{ color: #666; display: block; width: 100%;}
+.city_guide li .city_active{ background-color: #fff;}
+.member{ float: right; line-height: 40px;}
+.member li{ float: left;}
+.myorder{color: #666; margin-right: 20px;}
+.mycollect{ color: #666; padding-right: 22px; border-right: 1px solid #666;}
+.service{ float: right;}
+.service li{ float: left; margin-left: 20px;}
+.service li a{ color: #666;}
+/*.weixin-title{ position: relative;}*/
+/*.weixin{ width: 250px; height: 250px; border: 1px solid #ddd; position: absolute; background-color: #fff;*/
+    /*z-index: 33; left: -90px; border-top: 2px solid #ff308d; display: none;}*/
+.weixin img{ margin-top: 35px; margin-left: 35px;}
+.close_icon{ position: absolute; z-index: 444; left: 190px; top: -35px; cursor: pointer;}
+.header3{ width: 1180px; margin:20px auto;}
+.logo1{ float: left; height: 50px;}
+.clear{ clear: both;}
+
+.search{ float: right; margin-top: 6px; position: relative;}
+.search-select1{ float: left; margin-right: 10px; height: 32px; width: 90px; border-radius: 4px; border: 1px solid #ccc; padding-bottom: 1px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); color: #24252f; padding-left: 5px;}
+.search-input{ float: left; width: 260px; border: 1px solid #ccc;height: 32px; line-height: 32px; padding: 0px 8px; border-radius: 4px; position: relative; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);}
+.search-button{ width: 35px; height: 34px; border: 1px solid #24252f; border-radius: 4px;border-bottom-left-radius: 0;border-top-left-radius: 0; background-color: #24252f; cursor: pointer; position: absolute; right: 0px; top: 0px;}
+.search-button img{ margin-top: 4px; vertical-align:inherit;}
+.search_dropdown{ width: 276px; height: auto; overflow: hidden; border: 1px solid #e3e4e6; left: 100px;
+    position: absolute; top: 33px; border-top: none; background-color: #fff; display: none; z-index: 33;}
+.search_dropdown li{ padding: 0px 8px; height: 30px; line-height: 30px; color: #999;}
+.search_dropdown li:hover{ background-color: #f0f0f0;}
+.fleft{ float: left;}
+
+/*banner导航*/
+.guide4_outside{ width: 100%;min-width:1180px; height: 40px; background-color: #24252f;}
+body.ie .guide4_outside{
+    height: 41px!important;
+}
+.guide4{ width: 1180px; margin: auto; position: relative;}
+.guide4_left{ float: left; line-height: 40px;}
+.guide4_left li{ float: left; text-align: center;}
+.guide4_left li a{ color: #fff; font-size: 16px; display: block; padding: 0 25px; box-sizing: content-box;}
+.guide4_left li a:hover{ height: 36px; background-color: #00c3c3; border-top: 4px solid;border-color:#00C3C3;; line-height: 32px;}
+.guide4_left li .hover{ height: 36px; background-color: #00c3c3; border-top: 4px solid;border-color:#00C3C3;; line-height: 32px;}
+.guide4 .guide4_active{ height: 36px; background-color: #e6ecf3; color:#24252f; border-top: 4px solid; border-color:#00C3C3; line-height: 32px;}
+.guide4 .guide4_active:hover{background-color: #e6ecf3;}
+.guide4 li:first-child .guide4_active{ background-color: #00c3c3; color:#fff;}
+.hot{ position: absolute; right: 0px; top: 0px; z-index: 11;}
+.set{ position: relative;}
+.set img{ vertical-align: inherit;}
+.hotline1{ float: right; line-height: 40px; font-size: 16px; color: #fff; margin: 0px; padding: 0px;}
+.hotline1 span{ font-weight: bold; font-size: 16px;}
+.log-outside{ float: right; position: relative; margin-left: 25px;}
+.log{background-color: #00c3c3;}
+.log li{ float: left;line-height: 40px;color: #fff;}
+.log li a{color:#fff;display: inline-block;padding: 0px 15px;font-size: 16px;line-height:38px;border: none;}
+.log-operate{ width:100%; position: absolute; top: 40px; right: 0px; border: 1px solid #ddd;border-top:none;box-sizing: border-box;height: auto;overflow: hidden; background-color: #fff; z-index: 88; display: none;}
+.log-operate li{width:100%;height: 39px; line-height: 39px; border-bottom: 1px solid #ddd; text-align: center;}
+.log-operate li:last-child{ border-bottom: none;}
+.log-operate li a{ color: #24252f; display: block;font-size: 16px;}
+.log-operate li a:hover{ background-color: #00c3c3; color: #fff;}
+.log .login{ padding-right: 15px;color: #fff;}
+.log .register{ padding-left: 5px; color: #fff; margin-left: 10px;}
+/*.dayer1{ width: 100%; height: 100%; position: absolute; z-index: 22; top: 0px; left: 0px; display: none;}*/
+
+
+/*移动版*/
+
+.logo_m{ float: left;}
+.logo_m img{ width: 90px; height: 28px; display: block; padding-top: 5px;}
+.top_select_city{ float: left; margin-left: 15px; margin-top: 3px; width: 60px; height: 30px; border-radius: 4px; border: 1px solid #ccc;
+    box-shadow:0 1px 1px rgba(inset 0,0,0,0.75);}
+.mobile_icon{ float: right; margin-top: 10px;}
+.mobile_search{ float: left; margin-right: 15px; cursor: pointer;}
+.mobile_list{ float: left; cursor: pointer;}
+.dayer_one{ width: 100%; height: 100%; position: absolute; background: rgba(51,51,51,0.75); display: none; top:40px; z-index: 999;}
+.guide_mobile_outside{ position: absolute; right: 0px; top:40px; z-index: 9999; display: none;}
+.guide_mobile li a{ width: 130px; background-color: #24252f; color: #fff; text-align: center; padding: 10px 0px; border-bottom: 1px solid #444; display: block;}
+.guide_mobile li .guide4_active{ background-color: #00c3c3;}
+
+
+@media (max-width: 1024px){
+    .top{ display: none;}
+    .header3{ width: 90%; padding:8px 5%; margin: 0px;}
+    .logo1{display: none;}
+    .search{ position: absolute; top:40px; z-index: 9999; float: none; width: 98%; display: none;}
+    #myform{ display: block; float: none; overflow: hidden; display: block;}
+    .fleft{ width: 100%;}
+    .search-select1{ width: 100%; float: none; margin-right: 0px;}
+    .search-input{ float: none; width: 100%;}
+    .search-button{ top:32px;}
+    .search_dropdown{ width: 100%;}
+    .guide4{ position: inherit!important;}
+    .log-outside{ position: absolute; width: 130px; right: 0px; z-index: 999; top: 280px; display: none;}
+    .log-outside .log li a{ font-size: 12px;}
+    .guide4_outside{ display: none;}
+}
+
+
+@media (min-width: 1024px){
+    .logo_m{ display: none;}
+    .top_select_city{ display: none;}
+    .mobile_icon{ display: none;}
+
+}

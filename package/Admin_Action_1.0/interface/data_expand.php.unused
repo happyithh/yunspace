@@ -1,0 +1,29 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 15-4-14
+ * Time: 下午6:33
+ * yl
+ * 全局标签
+ */
+switch (Core::$urls['action']) {
+    case 'data_list':
+        OA_Data_Expand::handle();
+        break;
+    case 'send_msg':
+        OA_Data_Send_Msg::handle();
+        break;
+    case 'data_activate_list':
+        OA_Data_Activate::handle();
+        break;
+    case 'expand_list':
+        OA_Expand_List::handle(0);
+        break;
+    case 'my_expand_list':
+        OA_Expand_List::handle(1);
+        break;
+    default:
+        Func_Header::notFound();
+        break;
+}

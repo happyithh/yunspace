@@ -1,0 +1,130 @@
+.order{ margin-top: 15px;}
+.order span{ color: #666;}
+.order_name{ background-color: #f6f6f6; border: 1px solid #ddd; margin-top: 30px;}
+.order_pic{ width: 243px; height: 167px; float: left; margin: 20px;}
+.order_pic img{ width: 243px; max-height: 100%;}
+.order_left{ float: left; margin: 20px 0px; width: 600px;}
+.order_title{ font-size: 24px; font-weight: bold;}
+.order_tag{ float: left; color: #666; margin-right: 40px;}
+.tag1{ float: none;}
+.order_price{ font-size: 24px; margin-bottom: 0px; clear: both;}
+.order_right{ float: right; background-color: #fefefe; width: 280px; padding: 20px; border-left: 1px solid #ddd; min-height: 207px; font-size: 15px;}
+.order_information{ font-size: 18px; font-weight: bold; text-align: center; color: #454545;}
+.order_type{ line-height: 32px; margin-bottom: 0px; color: #454545;}
+.order_date{ line-height: 32px; margin-bottom: 0px; color: #454545;}
+.order_remark{ line-height: 32px; margin-bottom: 0px; color: #454545;}
+.booking_step1 ul li{ width: 210px; float: left; text-align: center; padding: 15px 0; background-color: #fff; border: 1px solid #00c3c3; margin: 30px 31px 40px 0px;}
+.booking_step1 ul li:last-child{ margin-right: 0px!important; width: 216px;}
+.booking_step1 ul li span{ width: 40px; height: 40px; line-height: 40px; border-radius: 50%; border:1px solid #00c3c3!important; display: block;text-align: center;margin: auto; color: #00c3c3;}
+.booking_step1 ul  p{ font-size: 16px; margin-top: 10px;  margin-bottom: 0px;}
+.booking_step1 ul .active_order p{ font-size: 16px; margin-top: 10px; color: #00c3c3; margin-bottom: 0px;}
+.booking_step1 ul .active_order{ background-color: #00c3c3; color: #fff;}
+.booking_step1 ul .active_order .active_span{ border:2px solid #fff!important; color: #fff;}
+.booking_step1 ul .active_order .active_p{ color: #fff;}
+.supplement{ position: absolute; margin-top: 30px; width: 210px; text-align: center; color: #999;}
+.booking_step1 ul .active_order .supplement_active{ color: #00c3c3;}
+.order_topic{ height: 50px; border-bottom: 2px solid #00c3c3; line-height: 50px; margin-bottom: 15px; font-size: 18px;}
+.order_t{ height: 50px; border-bottom: 2px solid #24252f; line-height: 50px; margin-bottom: 15px; font-size: 18px;}
+.order_content{ background-color: #f6f6f6; font-size: 14px; line-height: 38px;}
+.order_content_topic{ color: #666;}
+.order_content_main{ color: #337ab7;}
+.order_content .btn_order{ background-color: #d6255e; width: 100%; border-radius: 0px; -webkit-border-radius: 0px; color: #fff; padding: 6px 12px; border:1px solid transparent; height: 50px; font-size: 16px; margin-top: 15px;}
+.order_content .btn_order:hover{ background-color: #c02154; color: #fff; }
+.s_left_c {
+    min-height: 487px;
+}
+.btn_print{ width: 100%; height: 40px; background-color: #24252f; color: #fff; border-radius: 0px; font-size: 14px; float: left; margin-top: 15px;}
+.btn_print:hover,.btn_print:focus{ color: #fff!important;}
+.order_topic li{ float: left; font-size: 15px; width: 120px; text-align: center; cursor: pointer; height: 48px;}
+.order_topic_active{ background-color: #00c3c3; color: #fff;}
+.order_topic li:hover{ background-color: #f6f6f6;}
+.order_topic_active:hover{ background-color: #00c3c3!important;}
+.order_topic li a{display: inline-block;text-decoration: none;color: #666; width: 120px;height: 48px;}
+.order_topic li a:hover{background-color: #f6f6f6;}
+.order_topic .order_topic_active a{color: #fff;}
+.order_topic .order_topic_active a:hover{background-color: #00c3c3!important;}
+.order_process_content{ display: none;}
+.advance_content{ font-size: 16px; line-height: 48px;}
+.pay_content{ margin-bottom: 40px;}
+.pay_summary{ margin-bottom: 20px; color: #999;}
+.pay_btn{ width: 100%; border-radius: 0px;}
+.pay_title{ float: left; font-weight: bold; font-size: 15px;}
+.pay_state{ float: left; font-weight: bold; font-size: 15px; color: #00c3c3; margin-left: 20px;}
+.pay_state1{ float: left; font-weight: bold; font-size: 15px; color: #cc3333; margin-left: 20px;}
+.pay_time{ float: right; font-size: 15px;}
+.pay_t{ padding-right: 15px;}
+.pay_p{ font-size: 30px; font-weight: bold;}
+.pay_table{ width: 100%; line-height: 32px;}
+.pay_table span{ display: inline-block; margin-left: 20px;}
+.comment{ line-height: 48px;}
+.comment span{ color: #666;}
+.comment label{ line-height: normal!important;}
+.clause{ margin-top: 0px; margin-bottom: 0px; color: #999;}
+.term_content{ line-height: 24px; color: #666;}
+.order_handle{ margin: 0px 0px 30px;}
+.order_handle .cancel_input{box-shadow: none;float: right;width: 300px;height: 40px; border-radius: 0px;}
+.order_handle .btn{background-color: #24252f; float: right; width: 140px; height: 40px;line-height: 22px; margin-left: 5px; font-size: 16px; color: #fff; border-radius: 0px;}
+.order_handle .btn:hover,.order_handle button:focus{ color: #fff!important;}
+.btn_confirm{ width: 100%; border-radius: 0px; width: 120px; height: 40px; background-color: #24252f; color: #fff;}
+.btn_confirm:hover,.btn_confirm:focus{ color: #fff!important;}
+.verify{ margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;}
+.verify_left{ float: left;}
+.verify_right{ float: right;}
+.refuse_input{border-radius: 0px; box-shadow: none;display: inline-block; width: 300px; height: 40px;}
+.btn_refuse{ display: inline-block; height: 40px; border: 1px solid #ccc; border-radius: 0px; margin-bottom: 2px; width:80px; background-color: #f6f6f6;}
+.btn_refuse:hover,.btn_refuse:focus{ background-color: #eee;}
+.btn-pass{ display: inline-block; height: 40px; border: 1px solid #ccc; border-radius: 0px; margin-bottom: 2px; width:120px; color: #fff;}
+.bpdate, .bpdate .che{width: 100%!important; float: none!important;}
+@media (max-width: 1024px){
+    .order_pic{ width: 27%; height: auto; margin:20px 3%;}
+    .order_pic img{ max-width: 100%; height: auto;}
+    .order_left{ width: 33.33%;}
+    .order_right{ width: 33.33%; height: 100%;}
+    .order_title{ font-size: 20px;}
+    .order_tag{ margin: 10px 30px 10px 0px;}
+    .order_price{ font-size: 20px;}
+    .order_type{line-height: 28px;}
+    .order_date{line-height: 28px;}
+    .order_remark{line-height: 28px;}
+    .booking_step1{ margin: 10px 0;}
+    .booking_step1 ul li{ width: 19%; margin: 0 0.5%;}
+    .booking_step1 ul li:first-child{ margin-left:0 }
+    .booking_step1 ul li:last-child{  width: 20%; margin: 0 0.5%;margin-right:0 }
+    .supplement{ width: 19%; margin: 30 0.5%;}
+    .order_handle{ margin-top: 70px;}
+    .order_handle button{width: 140px; height: 45px;}
+    .advance_content{ line-height: 36px;}
+    .order_content{ line-height: 30px;}
+    .tag1{ float: left;}
+    .s_left_c {min-height:0;}
+    .booking_step1 ul p{font-size: 12px!important;}
+    .order_left, .order_pic{float:none; width: 100%; padding: 10px; margin: 0}
+    .order_pic img{width: 100%;}
+    .order_name{display: none}
+    h5.order, .bpdate .titp{display: none!important;}
+    .booking_step1{margin-top: 10px}
+}
+
+@media (max-width: 560px){
+    .order_right{ width: 100%; height: auto; border-left: none!important;}
+    .order_handle button{width: 100%; height: 45px;}
+    .verify_left{ width: 100%;}
+    .btn-pass{ width: 100%; height: 50px; font-size:18px;}
+    .verify_right{ width: 100%; margin-top: 30px;}
+    .refuse_input{ width: 100%;}
+    .btn_refuse{ width: 100%; margin-top: 10px;}
+    .order_left{ margin: 2% 0;}
+    .order_topic{ height: auto; border-bottom: none;}
+    .order_topic ul{ height: auto; overflow: auto;}
+    .booking_step1 ul li{ font-size: 12px;}
+    .booking_step1 ul li p{ font-size: 12px;}
+    .booking_step1 ul li span{ width: 30px; height: 30px; line-height: 30px;}
+    .order_tag{ margin: 0px 30px 10px 0px;}
+}
+
+@media (max-width: 320px){
+    .order_pic{ width: 100%; height: auto; margin:0px; float: none; padding: 20px;}
+    .order_pic img{width: 100%; height: auto; float: none;}
+    .order_left{ width: 100%; margin: 0px; float: none; padding: 0 20px 20px;}
+
+}

@@ -1,0 +1,27 @@
+.clear{ clear:both;}
+ul .tab{font-size:16px; color:#fff; cursor:pointer; background-color: #c9c9c9; border-right: solid 6px #f2f2f2;}
+ul .active1{ background-color:#fff; color:#333;}
+ul li a{ color: #333; border-radius:0px 0px 0px 0px;}
+.nav-tabs.nav-justified > li > a { border-radius:0px 0px 0px 0px;}
+.left_us{ float:left; width:840px; margin-right:50px;}
+.left_us .text{ font-size:16px; color:#666666; line-height:28px; margin-top:20px;}
+.left_us hr{ border-top:1px solid #ccc;}
+.left_us .pt30{ padding-top:30px;}
+.right_us { border:1px solid #ebebeb; text-align:center; padding: 10px 0px 20px 0px;}
+.right_us img{ margin: auto;}
+/*.bottom{ padding:20px 0px; background-color:#f3f3f3; border-top:3px solid #dcdcdc; margin-top:60px;}*/
+/*.bottom-item{ width:1170px; margin:auto; text-align:center;}*/
+/*.bottom-item a{ color:#666; padding:0px;}*/
+/*.bottom-item a:hover{ color:#404040;}*/
+.copr{ color:#999; margin:15px 0px 25px;}
+/*.bottom-item a img{ border:1px solid #dedede;}*/
+.tab a {
+    display: block;
+    line-height: 50px;
+    color: #333;
+}
+
+.mb110{ margin-bottom: 110px;}
+
+.justify{ width: 770px; text-align: justify;}
+.justify > span{ display: inline-block; padding-left: 100%; }

@@ -1,0 +1,523 @@
+*{
+    color:#222;
+    font-family: "微软雅黑",microsoft yahei,Arial;
+}
+.none{display: none}
+.baike-city-header{
+    width:100%;
+}
+.city-current,.city-select{
+    width:1180px;
+    margin:0 auto;
+}
+.city-current{
+  /*background: #F5F5F5;*/
+}
+.city-current > p{
+    font-weight: 900;
+    padding: 20px 0px;
+    margin:0 auto;
+    font-size:25px;
+    float: left;
+}
+.city-current p span{
+    font-size:13px;
+}
+.show-city{
+    line-height:22px;
+    position: relative;
+    margin:26px 0px 20px 20px;
+    float: left;
+    cursor: pointer;
+}
+.show-city p{
+    float: left;
+    font-size:12px;
+    border:1px solid #ccc;
+    padding:0px 5px;
+    color:#666;
+}
+.show-city:hover{
+    background: #fafafa;
+}
+.show-city:hover .line-no{
+    display: block;
+}
+.show-city:hover .city-select{
+    display: block;
+}
+.line-no{
+    position: absolute;
+    top:24px;
+    left:1px;
+    width:100%;
+    height:1px;
+    background: #fafafa;
+    z-index:101;
+    display: none;
+}
+.show-city p:before{
+    content:"";
+    display: block;
+    width:20px;
+    height:23px;
+    float: left;
+    position: re;
+    background-image:url('./img/di.png') ;
+    background-repeat:no-repeat ;
+    background-position:2px 2px;
+    background-size:15px 15px ;
+}
+.show-city .city-select{
+    position: absolute;
+    left:0px;
+    top:24px;
+    width:355px;
+    z-index:100;
+    border:1px solid #ccc;
+    background: #fafafa;
+    display: none;
+}
+.city-select .body{
+    width:100%;
+    margin:0 auto;
+    background: none;
+}
+.city-select .label{
+    float: left;
+    font-size:12px;
+    line-height:200%;
+}
+.city-select .list{
+    float: left;
+    max-width:1120px;
+    position: relative;
+    margin:15px 0px;
+    padding:5px;
+}
+.city-select .list li{
+    float: left;
+    margin-right:5px;
+    margin-bottom:10px;
+}
+.city-select .list li a{
+    display: inline-block;
+    font-size:12px;
+    line-height: 200%;
+    padding:0px 10px;
+}
+.city-select .list li a:hover{
+    background:#6b96ef ;
+    color:#fff;
+}
+.city-active{
+    background:#6b96ef ;
+    color:#fff;
+}
+.main-img{
+    width:100%;
+    min-width:1180px;
+    height:410px;
+}
+.rent-bn-list{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.rent-bn-list li{
+    width:100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+}
+.rent-bn-list li .bn-img{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    margin:0 auto;
+}
+.rent-bn-list li .img{
+    position: absolute;
+    left:50%;
+    top:0px;
+    width:1920px;
+    margin-left:-960px;
+    height:auto;
+}
+.rent-bn-list li .img img{
+    display: inline-block;
+    height:410px;
+    min-width: 1000px;
+    width:100%;
+    background: #000;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#fff), to(#000));
+    background: -ms-linear-gradient(top, #fff,  #000);
+    background:-moz-linear-gradient(top,#fff,#000);
+}
+.baike-city-content{
+    width:100%;
+    min-width:1180px;
+}
+.city-des-bg{
+    width:1003px;
+    margin:0 auto;
+    position: relative;
+    padding-bottom:150px;
+    padding-top:35px;
+}
+.city-des{
+    width:770px;
+    margin:0 auto;
+}
+.city-des-bg:after{
+    content:"";
+    display: block;
+    position: absolute;
+    width:100%;
+    height:150px;
+    background-image:url("./img/city_03.png");
+    background-position: -30px 25px;
+    bottom:0px;
+    left:0px;
+}
+.city-des p{
+    width:100%;
+    font-size:18px;
+    line-height: 100%;
+    text-align: center;
+}
+.city-des .body{
+    line-height: 230%;
+    font-size:12px;
+    color:#777;
+    text-align: center;
+    margin-top:20px;
+}
+.hot-city{
+    width:1180px;
+    margin:0 auto;
+    margin-top:40px;
+    margin-bottom:35px;
+    overflow: hidden;
+}
+.hot-city > p{
+    width:100%;
+    text-align: center;
+    font-size:18px;
+
+}
+.hot-city > .body{
+    width:105%;
+    margin-top:30px;
+}
+.hot-city > .body>li{
+    float: left;
+    margin-right:20px;
+    width:279px;
+    height:424px;
+    position: relative;
+
+}
+.hot-city > .body>li>a{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+}
+.hot-city > .body>li>a:hover{
+    box-shadow: 0px 0px 10px 1px  #222;
+}
+.hot-city > .body .img-cover{
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+.hot-city > .body>li>a:before{
+    content:attr(data-cate);
+    display: block;
+    position: absolute;
+    width:60px;
+    line-height: 35px;
+    top:0px;
+    left:50%;
+    margin-left:-17.5px;
+    color:#fff;
+    text-align: center;
+    z-index:2
+}
+.color-one:before{
+    background: #7ea3f1;
+}
+.color-two:before{
+    background: #6de0d9;
+}
+.color-three:before{
+    background: #f6be21;
+}
+.color-four:before{
+    background: #04b8f3;
+}
+.hot-city > .body>li>a>img{
+    display: inline-block;
+    width:100%;
+    height:424px;
+    z-index: 0;
+    background-image:url("./img/loading.gif");
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position: -140px;
+}
+.hot-city .text{
+    position: absolute;
+    left:0px;
+    bottom:40px;
+    width:100%;
+    z-index: 2;
+}
+.hot-city .text>p{
+    position: relative;
+    max-width:80%;
+    margin:0 auto;
+}
+.hot-city .text>p>span{
+    display: block;
+    width:100%;
+    text-align: center;
+    color:#fff;
+    font-size:12px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.hot-city .text>p>.title{
+    font-size:20px;
+    font-weight: 900;
+    margin-bottom:20px;
+}
+.city-map{
+    width:1180px;
+    height:400px;
+    margin:0 auto;
+    background: #ddd;
+    margin-bottom:38px;
+    position: relative;
+}
+.city-map .body{
+    height:100%;
+}
+.city-map .body img{
+    position: absolute;
+    left:0px;
+    top:0px;
+    display: inline-block;
+    /*width:100%;*/
+    /*height:auto;*/
+    /*width:100%;*/
+    /*height:100%;*/
+}
+.city-map .des{
+    width:376px;
+    height:321px;
+    position: absolute;
+    background: transparent;
+    top:37px;
+    left:75px;
+    z-index:10;
+}
+.anchorBL{
+    display:none;
+}
+.city-map .map-cover{
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index:50px;
+    width:100%;
+    height:100%;
+    background: transparent;
+    transition:all 0.3s ease-in;
+    -webkit-transition:all 0.3s ease-in;
+    -o-transition:all 0.3s ease-in;
+    -ms-transition:all 0.3s ease-in;
+    -moz-transition:all 0.3s ease-in;
+}
+.city-map .map-cover:hover{
+    background: rgba(245,245,254,0.2);
+}
+.city-map .des-cover{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: #000;
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+    z-index:-1;
+}
+.city-map .des-text{
+    padding:30px;
+    z-index:2;
+}
+.city-map .des-text .title{
+    font-size:20px;
+    font-weight:bold;
+    padding-bottom:15px;
+    color:#fff;
+}
+.city-map .des-text .article{
+    color:#fff;
+    font-size:12px;
+    line-height:200%;
+    margin-top:15px;
+}
+.des-relative{
+    position: relative;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+.des-relative .line{
+    height:1px;
+    background: #fff;
+    width:37px;
+    position: absolute;
+    top:65px;
+    left:30px;
+}
+.perfect-space{
+    width:1180px;
+    margin:0 auto;
+}
+.perfect-space >p{
+    font-size:20px;
+    width:100%;
+    text-align: center;
+}
+.perfect-space .cate-select{
+    width:715px;
+    margin:0 auto;
+    margin-top:25px;
+    margin-bottom:35px;
+}
+.cate-select .list{
+    width:105%;
+}
+.cate-select .list li{
+    padding:0px 10px;
+    float: left;
+    line-height: 200%;
+    font-size:13px;
+    color:#676767;
+    border:1px solid #fff;
+    cursor: pointer;
+    margin-right:30px;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+}
+.cate-select .list .select-active{
+    color:#7da2f0;
+    border:1px solid #7da2f0;
+}
+.cate-select .list li:hover{
+    color:#7da2f0;
+    border:1px solid #7da2f0;
+}
+.show-img{
+    width:1180px;
+    margin:0 auto;
+    padding-bottom:30px;
+    position: relative;
+    border-bottom: 1px solid #f8f8f8;
+}
+.show-img .list{
+    width:100%;
+    position: relative;
+}
+.show-img .list .item{
+    width:276px;
+    margin-bottom:15px;
+}
+.show-img .list li>a{
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+}
+.show-img .list li>a:hover{
+    box-shadow: 0px 0px 5px 5px #ddd;
+}
+.show-img .list li img{
+    display: inline-block;
+    width:100%;
+    height:auto;
+    min-height:100px;
+    background-image:url("./img/loading.gif");
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position: -1px;
+}
+.show-img .list li p{
+    padding:25px 10px;
+    width:256px;
+    background: #f9f9f9;
+}
+.show-img .list li p>span{
+    display: inline-block;
+    color:#767676;
+    font-size:12px;
+    line-height: 200%;
+}
+.show-img .list li p>.title{
+    font-size:15px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-bottom:10px;
+    color:#222;
+}
+.city-load{
+    width:300px;
+    margin:0 auto;
+    height:50px;
+    margin-top:-29px;
+    background:#fff;
+    /*background:#f5f5f5;*/
+}
+.loading-color .circle{
+    height:15px!important;
+    width:15px!important;
+}
+.control-load{
+    width:100%;
+    position: relative;
+    margin-top:-21px;
+    margin-bottom:50px;
+}
+.control-load .load-more,.control-load .load-all,.control-load .no-data{
+    width:200px;
+    line-height:40px;
+    margin:0 auto;
+    cursor: pointer;
+    background: #fff;
+    text-align: center;
+    color:#989898;
+    z-index:-1;
+}
+.control-load .load-more:hover{
+    color:#aeaefb
+}

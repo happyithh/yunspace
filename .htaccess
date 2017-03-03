@@ -1,0 +1,10 @@
+RewriteEngine On
+ErrorDocument 404 error/404.html
+Options +FollowSymLinks
+RewriteRule ^_Extends/(.*)$ 404
+RewriteRule ^package/(.*)\.php$ 404
+RewriteRule ^(.*)\.tpl$ 404
+RewriteRule ^temp/(.*)$ 404
+RewriteRule ^.git/(.*)$ 404
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php

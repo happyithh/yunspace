@@ -1,0 +1,41 @@
+.space-title{
+    padding: 25px 0 15px;
+}
+.space-title h1{
+    font-size: 20px;
+    text-align: center;
+}
+.space-title p{
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-top: 6px;
+}
+.popup-content{
+    margin-top: 0;
+}
+.popup-content li .content .space-kinds{
+    width: 100%;
+}
+.popup-vendor-join .li-select{
+    height: 120px;
+}
+.popup-vendor-join .li-select select{
+    margin-bottom: 10px;
+}
+.error-tip{
+    margin-left: 6px;color:#ff2222;
+}
+.send-code{
+    float:left;
+    display: block;
+    box-sizing:border-box;
+    width: 26%;
+    height: 100%;
+    background: #01c3c3;
+    border:none;
+    color:#fff;
+    border-radius: 3px;
+    outline: none;
+    font-size: 14px;
+}

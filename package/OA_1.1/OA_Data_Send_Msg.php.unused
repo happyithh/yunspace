@@ -1,0 +1,120 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: yl
+ * Date: 15-9-8
+ * Time: 上午10:35
+ * 数据拓展，发送短信单独入口
+ */
+class OA_Data_Send_Msg
+{
+    static function handle()
+    {
+        $_REQUEST['action'] = empty($_REQUEST['action']) ? 'list' : $_REQUEST['action'];
+        switch ($_REQUEST['action']) {
+            case 'list':
+                self::getDataList();
+                break;
+            case 'send_msg':
+                self::sendActivateMsg();
+                break;
+            default:
+                self::getDataList();
+                break;
+        }
+    }
+
+    static function getDataList()
+    {
+        $children = Data_Mysql_Table_Product_Category::getChildren(Data_Config_Site::$staticConfig['space_id']);
+        $children[] = Data_Config_Site::$staticConfig['space_id'];
+        //获取所有联系方式是手机号，且不在vendor_expand表中的数据
+        Data_Mysql_Table_Vendor_Expand::select();
+        if (!empty($_REQUEST['vendor_name'])) {
+            if(is_numeric($_REQUEST['vendor_name'])){
+                $condition['{table}.id = ?']=$_REQUEST['vendor_name'];
+            }else{
+                $condition['vendor_name']=$_REQUEST['vendor_name'];
+            }
+        }
+        if (!empty($_REQUEST['phone'])) {
+            $condition['{prefix}account.phone = ?'] = $_REQUEST['phone'];
+        }
+        if (!empty($_REQUEST['city'])) {
+            $condition['attr_index']['城市'] = '+' . $_REQUEST['city'];
+        }
+
+        $condition[] = 'LENGTH({prefix}account.phone) = 11';
+        $condition[] = '({prefix}account.phone LIKE "13%" OR {prefix}account.phone LIKE "14%" OR {prefix}account.phone  LIKE "15%" OR {prefix}account.phone LIKE "17%" OR {prefix}account.phone LIKE "18%")';
+        $condition['{table}.status = ?'] = 1;
+        $condition[] = '{prefix}vendor_expand.vendor_id IS NULL ';
+        $condition[] = '{prefix}product_info_update.category_id in (' . implode(',', $children) . ')';
+        $condition[] = '{prefix}product_info_update.status >= 0';
+        $cols = '{table}.id,{table}.city,{table}.vendor_name,{prefix}vendor_expand.vendor_id,{prefix}account.username,{prefix}account.id as account_id,{prefix}account.phone,{prefix}account.attr as account_attr';
+        $table = '{table} LEFT JOIN {prefix}vendor_expand ON {table}.id = {prefix}vendor_expand.vendor_id LEFT JOIN {prefix}account ON {table}.vendor_account_id = {prefix}account.id LEFT JOIN {prefix}product_info_update ON {table}.id = {prefix}product_info_update.vendor_id';
+        $data = Data_Mysql_Table_Vendor_Info::page(0, 20, $cols, $condition, 'GROUP BY {table}.id ORDER BY {table}.update_time DESC', $table);
+        if (!empty($data['rows'])) {
+            foreach ($data['rows'] as $k => $v) {
+                $v['account_attr'] = json_decode($v['account_attr'], 1);
+                $data['rows'][$k]['email'] = empty($v['account_attr']['email']) ? "" : $v['account_attr']['email'];
+            }
+        }
+        Tpl_Smarty::assign('_vendor_attr', Data_Config_Vendor_Attr::all());
+        Tpl_Smarty::assign('_data', $data);
+        Tpl_Smarty::display('OA_Static', 'data_expand/data_send_msg_list.tpl');
+    }
+
+    //发送激活短信，将数据放入激活表中
+    static function sendActivateMsg()
+    {
+        Core::output('');
+        $request = Func_Input::filter(array(
+            'data_arr' => 'array',
+        ));
+        if (empty($request['data_arr'])) {
+            Func_Output::json('error', '', '发送短信参数缺失！！');
+        }
+        $children = Data_Mysql_Table_Product_Category::getChildren(Data_Config_Site::$staticConfig['space_id']);
+        $children[] = Data_Config_Site::$staticConfig['space_id'];
+        foreach ($request['data_arr'] as $k => $v) {
+            $condition_product[] = 'category_id in (' . implode(',', $children) . ')';
+            $condition_product['vendor_id'] = $v['vendor_id'];
+            $condition_product['status'] = 1;
+            $product_info = Data_Mysql_Table_Product_Info::select('id,product_name', $condition_product);
+            if (!empty($product_info[0])) {
+                $account_id = Func_String::encrypt($v['account_id'], "account");
+                $phone = Func_String::encrypt($v['phone'], "phone");
+                $product_id = $product_info[0]['id'];
+                //生成短网址
+                $dwz_data = array(
+                    'account_id' => $v['account_id'],
+                    'access_url' => "http://" . Core::$urls['host'] . "/static/api/common/account/activate.jsonp?account_id=" . $account_id . "&phone=" . $phone . "&product_id=" . $product_id,
+//                    'access_url' => "http://".Core::$urls['host']."/service_info/".$product_info[0]['id'].'.html',
+                    'overdue_time' => 24 * 60,
+                    'is_return_data' => 1
+                );
+                $dwz_rs = Api_Get_Login_DWZ::getLoginLink($dwz_data);
+                if (!empty($dwz_rs['status'])) {
+                    $msg = "云·Space是国内专业的活动场地服务平台,我们将向您的场地【" . $product_info[0]['product_name'] . "】推荐活动需求(10月底正式启用),您可以前往云·Space查看并完善您的场地信息（快速入口： " . $dwz_rs['data']['url'] . " )。24小时之后需输入以下";
+                    //发送短信
+                    Func_Message::sendSMS($v['phone'], array($msg, $dwz_rs['data']['auth_code']), 35370);
+                    //发送邮件
+                    if (!empty($v['email'])) {
+                        Func_Mail::send($v['email'], "云·Space推荐活动邮件通知", $msg . '校验码:' . $dwz_rs['data']['auth_code']);
+                    }
+                }
+                //将数据放入vendor_expand表中
+                $expand_data['account_id'] = $v['account_id'];
+                $expand_data['vendor_id'] = $v['vendor_id'];
+                $expand_data['username'] = $v['username'];
+                $expand_data['phone'] = $v['phone'];
+                $expand_data['email'] = empty($v['email']) ? "" : $v['email'];
+                //删除已在激活列表中当前账号
+                Data_Mysql_Table_Vendor_Expand::delete(array('account_id' => $v['account_id']));
+                Data_Mysql_Table_Vendor_Expand::insert($expand_data);
+            }
+        }
+        Func_Output::json('success', '', '短信和邮件已发送！');
+    }
+}

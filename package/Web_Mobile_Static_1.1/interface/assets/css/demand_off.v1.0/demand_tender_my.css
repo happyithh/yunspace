@@ -1,0 +1,98 @@
+input,textarea,select{-webkit-appearance:none;outline: none;}
+.dmd-tend-my{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.dmd-tend-my table{
+    width: 100%;
+    margin-bottom: 65px;
+}
+.dmd-tend-my td{
+    font-size: 16px;
+    color: #333;
+    min-height: 30px;
+    line-height: 30px;
+    padding: 5px 0;
+}
+.dmd-tend-my .td-slt{
+    width: 100%;
+    padding-left: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 40px;
+    background: #fff;
+    font-size: 16px;
+}
+.dmd-tend-my .td-txt{
+    width: 45%;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    font-size: 15px;
+}
+.span-txt{
+    margin-left: 3px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 40px;
+}
+.dmd-tend-my .td-mark p{
+    display: block;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 10px;
+    background: #fe8f6b;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.dmd-tend-my .td-mark p .icon-close-d{
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url("../../img/demand_tender.v1.0/icon_close-d.png") no-repeat;
+    position: absolute;
+    right: -3px;
+    top:-8px;
+    background-size: 100%;
+}
+.dmd-my-submit{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fe6a3a;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border:none;
+    position: fixed;
+    bottom: 0;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

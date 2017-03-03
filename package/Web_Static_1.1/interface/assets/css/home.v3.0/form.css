@@ -1,0 +1,109 @@
+.cover-body{
+    position: fixed;left:0px;top:0px;width:100%;height:100%;z-index:11000;background: rgba(0,0,0,0.5);
+}
+.demand-body{
+    position:fixed;z-index:11111;margin:0 auto; background: #fff;left:50%;top:-130%;width:500px;padding-bottom: 50px;
+}
+.demand-submit{
+    overflow: auto;width:90%;margin:0 auto;margin-right: 28px;height:90%;margin-top: 10%;position: relative;overflow-x:hidden;
+}
+.demand-close{
+    position: absolute;right:13px;top:16px;cursor: pointer;width:20px;height:20px;text-align: center;line-height: 20px;
+}
+.demand-close span{
+    font-size: 15px;
+}
+.d-s-body{
+    width:80%;height:70%;margin:0 auto;
+}
+.d-s-form{
+    margin-bottom: 10px;position: relative;width:100%
+}
+.d-s-name{
+    width:25%;float: left;line-height: 30px;text-align: left;font-size: 14px;
+}
+.d-s-input{
+    width:73%;border: 1px solid #c4c4c4;float: left;position: relative;height: 30px;margin-left: 1%;
+}
+.d-s-input input{
+    width:100%;box-sizing: border-box;border: 0px;line-height: 30px;padding:0px 15px;font-size: 13px;
+}
+.d-s-input textarea{
+    width:100%;box-sizing: border-box;border: 0px;line-height: 40px;padding:0px 5px;max-height: 80px;
+}
+.d-s-input select{
+    width:100%;box-sizing: border-box;border: 0px;height: 40px;padding:0px 5px;
+}
+.d-s-button{
+    width:100%
+}
+.d-s-button button{
+    display: block;width:70%;margin: 0 auto;line-height: 40px;border: 0px;background: #06e1e1;color:#fff;font-size: 18px;
+    cursor: pointer;
+}
+.d-s-title{
+    line-height: 40px;text-align: center;font-size: 25px;
+}
+.d-s-input-val{
+    line-height: 30px;padding-left:15px;position: relative;
+}
+.per-num{
+    width:100%;position: absolute;left:0px;top:40px;
+}
+.pre-range li{
+    padding-left: 15px!important;
+}
+.p-r-icon{
+    position: absolute;display: inline;right:15px;top:0px;
+}
+.d-s-error{
+    padding-left: 26%;color:#ff0000;
+}
+.p-mao{
+    position: absolute;width: 100%;height:100px;top:-100px;z-index:0!important;
+}
+.submit-success{
+    position: fixed;width:510px;height:300px;background: #fff;left:50%;top:50%;margin-top: -150px;margin-left: -200px;z-index:14000;
+    padding:20px;z-index:13000;
+}
+.success-title{
+    line-height: 40px;font-size: 23px;text-align: center;color:#06e1e3;margin-top: 20px;
+}
+.success-title > span{
+    font-size: 25px;
+}
+.success-con{
+    line-height:30px;font-size: 20px;text-align: center;margin-bottom: 20px;font-size: 15px;color:#858585;
+}
+.success-btn{
+    width:100%;margin: 0 auto;border-top: 1px dashed #ddd;
+}
+.success-btn > p{
+    display: block;text-align: center;width:100%;padding: 20px 0px;
+    color: #999999;
+}
+.home_question > p{
+    padding:10px 0px;padding-left: 130px;font-weight: bold;
+}
+.home_question > lebal{
+    display: block;
+    padding: 10px 0px;padding-left: 155px;
+}
+.success-btn button{
+    line-height: 30px;width:100%;border: 1px solid #000;text-align: center;background: none;
+}
+.success-btn button:hover{
+    background: #000;border: 1px solid #fff;color:#fff;
+}
+.ui-icon{
+    z-index:16000
+}
+.demand-back{
+    text-align: center;color:rgb(69, 229, 227);line-height: 30px;cursor: pointer;
+}
+.date-picker{
+    margin: auto; float: left;position:absolute;left:26%;top:-73px;border:1px solid #777;z-index:14000!important;background: #fff;min-width:250px;
+}
+.date-picker > div{
+    border: 0px!important;
+}

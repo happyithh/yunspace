@@ -1,0 +1,69 @@
+input{outline: none;}
+.clear { clear:both; height:0px; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden; }
+.login_body{ margin-left: -20px; margin-right:-8px;}
+.login_banner img{ width:802px; height:410px; }
+.login_banner{ height:410px; float:left; width: 66%;}
+.login_form{ float:right; height:410px; border:1px solid #ccc; border-radius:3px; padding: 0px 20px; width: 34%; }
+.login_header{ width:100%; height:43px; margin-top: 53px; text-align: center; }
+.login_header h3{ font-size:20px; line-height:43px; }
+.control_form{ width:290px; height:54px;margin-left:22px; margin-bottom:20px;}
+.control_form input{ width:290px; height:54px; border:1px solid #e4e4e4; border-radius:3px; padding:0 10px;}
+.butt_1{ float:right; width:100%; height:54px; background:#24252f; color:#fff; font-size:16px; border:0px; }
+.butt_2{ width:100%; height:48px; background:#3bd5bb; color:#fff; font-size:18px; border:0px; }
+.login-or-remember{ width:100%; height:auto; box-sizing: border-box; -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; padding: 0px 20px; }
+.login-or-remember .forget-password{ float: right;}
+.login-or-remember .forget-password a:hover{ color: #39d6bb; text-decoration:underline; }
+.login-or-remember .remember-username{ float: left; line-height: 20px; }
+.login-or-remember .remember-username label{font-weight: normal; -moz-user-select:none;}
+.login-or-remember .remember-username input{ margin: 0px 10px 0 0; background-color: #fff; }
+.login-or-remember a{ display:block; color:#d3b88f; width:100%; text-align:center; }
+.login-or-remember a:hover{ color: #39d6bb; }
+.show-and-register{ width: 100%; margin-top: 30px; text-align: center; }
+.show-and-register a{ color: #39d6bb !important; font-weight: 600; }
+.show-and-register a:hover{ text-decoration:underline; }
+.reg a{ display:block; width:100%; height:30px; border:1px solid #000000; border-radius:5px; margin-top:15px;
+    margin-left:20px; text-align:center; line-height:30px; }
+.reg a:hover{ border:3px solid #000; }
+.disabled{ background:#00c3c3; font-size:13px; }
+.col-md-4{ padding-left: 25px; padding-right: 25px;}
+.form-group-log{ margin: 15px 20px; height: auto; overflow: hidden;}
+.form-log{ border-radius: 2px; height: 48px; box-shadow: 0px 0px 0px; border: 1px solid #e0e0e0;width:100%;}
+.login_outside{ width: 1170px; margin: auto; }
+.enroll_l{ float: left; margin-right: 5px; width: 47%;}
+.enroll_r{ float: right; margin-left: 5px; width: 47%;}
+.clear{ clear: both;}
+.error{ color:#ff0000; }
+.success{ color:#008000; }
+@media (max-width: 1024px){
+    .login_banner{ display: none;} .login_body{ margin-left: 10px; margin-right: 10px;}
+    .login_form{ height:auto; border:1px solid #ccc; border-radius:3px; padding: 0px 20px 20px;
+        width: 100%; margin-right: 0px; }
+    .login_outside{ width: 100%;}
+}
+
+
+.p-l-input{
+    width:100%;padding:15px;
+}
+.p-l-i-con{
+    border: 1px solid #3bd5bb;height: 46px;border-radius: 2px;
+}
+.p-l-input:nth-of-type(2){
+    padding-top:0px;
+}
+.p-l-i-con p{
+    float: left;width:10%;display: block;text-align: center;
+}
+.p-l-i-con p span{
+    line-height: 46px;font-size: 30px;color:#ddd
+}
+.p-l-i-con input{
+    float: left;width:90%;border: 0px;padding: 5px;;line-height: 32px;
+}
+.code-phone{
+    width:50%!important;float: left;
+}
+.send-code-phone{
+    text-align: center;line-height: 44px;background:#3bd5bb;color:#fff!important;width:40%;float: right;
+}

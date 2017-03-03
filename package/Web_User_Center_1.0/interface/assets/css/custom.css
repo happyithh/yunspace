@@ -1,0 +1,199 @@
+.top_user {
+    background: #ffffff;
+    height: 70px;
+    border-radius: 0;
+    width: 100%;
+}
+
+.logo_fl {
+    line-height: 70px;
+    float: left;
+    width: 20%;
+    padding-left: 18px;
+}
+
+.logo_fl .logo {
+    height: 46px;
+    width: 138px;
+}
+
+.wap_ic {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+}
+
+.wap_ic span {
+    display: inline-block;
+    font-size: 22px;
+    padding: 0 10px
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.phone {
+    float: right;
+    width: 20%;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.search_l {
+    float: left;
+    width: 20%;
+    margin-top: 18px;
+}
+
+.search_r {
+    float: left;
+    width: 435px;
+    margin-top: 18px;
+}
+
+.form-width {
+    width: 260px;
+}
+
+.layer {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+    background-color: #000;
+    display: none;
+    height: 100%;
+    z-index: 99
+}
+
+.top_nav {
+    height: auto;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+#header-input {
+    display: inline-block;
+    width: 271px;
+}
+
+#header-select {
+    display: inline-block;
+    width: 115px;
+}
+
+.down_box {
+    display: block;
+    float: left;
+    margin-right: 10px;;
+}
+
+@media (max-width: 980px) {
+    .down_box{ float: none;}
+}
+
+@media (max-width: 1024px) {
+    .phone {
+        display: none;
+        padding-right: 15px;
+    }
+
+    #search_input {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        z-index: 10000;
+        margin-top: 10px;
+        text-align: right;
+        width:100%;
+    }
+    #header-select, #header-input{
+        width:100%;
+    }
+
+    .top_user {
+        height: 50px;
+    }
+
+    .logo_fl {
+        line-height: 50px;
+    }
+
+    .logo_fl .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .wap_ic {
+        display: block;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .search_l {
+        display: none;
+    }
+
+    .search_r {
+        display: none;
+    }
+
+    .form-width {
+        width: 100%;
+    }
+
+    .top_nav ul {
+        float: none;
+        list-style: none;
+        line-height: 39px;
+        font-family: 微软雅黑, microsoft yahei, Arial, sans-serif;
+        font-size: 16px;
+        color: #fff;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .top_nav ul li {
+        float: none;
+        background-color: #35363a;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 40px;
+        border-bottom: 1px solid #414247;
+    }
+
+    .top_nav ul li a {
+        color: #fff;
+    }
+
+    .top_nav ul li:hover {
+        background-color: #27272b;
+    }
+
+    .top_nav ul li a:hover {
+        text-decoration: none;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    #top_nav2 {
+        display: none !important;
+    }
+}

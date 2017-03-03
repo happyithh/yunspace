@@ -1,0 +1,69 @@
+.header-find-room-ie{
+    /*background: #000;*/
+    /*filter:alpha(opacity=50);*/
+    overflow: visible;
+}
+.cover-body-ie{
+    background: #000;
+    filter:alpha(opacity=50);
+}
+.d-s-input-ie{
+    padding-top: 5px;
+}
+.input-ie9-10{
+    padding-bottom: 13px!important;
+}
+.product-name-title-ie{
+    background:#fff;filter:alpha(opacity=90);
+}
+.input-ie9{
+    padding-bottom:13px!important;
+}
+.product-name-title-ie-active{
+    height:100%;background: #000;filter:alpha(opacity=50);
+}
+/*.cov-ie{*/
+    /*background: #000;filter:alpha(opacity=50);*/
+/*}*/
+/*.rec-img-1-img{*/
+   /*background: url("../../img/home.v3.0/01.jpg");*/
+/*}*/
+/*.rec-img-1-img img{*/
+    /*display: none!important;*/
+/*}*/
+/*.rec-img-2-1{*/
+    /*background: url("../../img/home.v3.0/02.jpg");*/
+/*}*/
+/*.rec-img-2-1 img{*/
+    /*display: none!important;*/
+/*}*/
+/*.rec-img-2-2{*/
+    /*background: url("../../img/home.v3.0/03.jpg");*/
+/*}*/
+/*.rec-img-2-2 img{*/
+    /*display:none!important;*/
+/*}*/
+/*.rec-img-2-3{*/
+    /*background: url("../../img/home.v3.0/04.jpg");*/
+/*}*/
+/*.rec-img-2-3 img{*/
+    /*display: none!important;*/
+/*}*/
+/*.rec-img-3-1 {*/
+    /*background: url("../../img/home.v3.0/05.jpg");*/
+/*}*/
+/*.rec-img-3-1 img{*/
+    /*display:none!important;*/
+/*}*/
+/*.rec-img-3-2{*/
+    /*background: url("../../img/home.v3.0/06.jpg");*/
+/*}*/
+/*.rec-img-3-2 img{*/
+    /*display: none!important;*/
+/*}*/
+.cov-des{
+    filter:alpha(opacity=0)
+}
+.cov-ie{
+    background: #000;filter:alpha(opacity=50)
+}

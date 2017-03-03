@@ -1,0 +1,52 @@
+.party_head{ width: 100%;}
+.party_head img{ max-width: 100%; height: auto; display: block;}
+.content_text{ width: 1180px; margin: 60px auto; text-align: center;}
+.content_text p{ font-size: 14px; color: #414b57; line-height: 32px; margin:20px 0px;}
+.content_text p span{ font-size: 14px; display: inline-block; margin-right: 50px;}
+.content_text p span1{ display: inline-block; font-size: 20px; color: #1b89a0; font-weight: bold; margin-right: 40px;}
+.btn1{ display: inline-block; width: 208px; height: 47px; line-height: 42px; color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: #fff; margin: 20px 20px 20px 0px;}
+.btn1:hover{background-color: #414b57; color: #fff;}
+.content_text ul{ height: auto; overflow: hidden; margin-bottom: 15px;}
+.content_text ul li{ float: left; margin-right: 15px;}
+.content_text ul li:last-child{ margin-right: 0px;}
+.party_back{ background-color: #838383; padding: 20px 0px;}
+.btn2{ display: inline-block; width: 208px; height: 47px; line-height: 42px; color: #fff; border:2px solid #fff; font-size: 18px; font-weight: bold; background-color:#838383; margin:20px 20px 20px 0px;}
+.btn2:hover{background-color: #65dfd5; color: #fff; border-color: #65dfd5;}
+.btn3{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: #eee; margin:20px 20px 20px 0px;}
+.btn3:hover{background-color: #414b57; color: #fff;}
+.roadshow_back{ background-color: #eee; padding: 20px 0px;}
+.video{ width: 100%; background-color: #232429; padding: 40px 0px;}
+.video_content{ width: 1180px; margin: auto;}
+.video_content p{ color:#d73240; font-size: 26px; font-weight: bold;}
+.video_content p span{ font-size: 14px; font-weight: normal; color: #fff;}
+
+
+
+
+/*-------沙龙------*/
+.party_back1{ background-color: #f7f7f7; padding: 20px 0px;}
+.btn5{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: none; margin: 10px 20px 20px 0px;}
+.btn5:hover{background-color: #ea9931; color: #fff; border:2px solid #ea9931; }
+.btn6{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: none; margin:10px 20px 20px 0px;}
+.btn6:hover{background-color: #1bd6b1; color: #fff; border:2px solid #1bd6b1; }
+.btn7{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: none; margin:10px 20px 20px 0px;}
+.btn7:hover{background-color: #ee246d; color: #fff; border:2px solid #ee246d; }
+
+
+
+/*-------年会------*/
+.btn8{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: none; margin: 10px 20px 20px 0px;}
+.btn8:hover{background-color: #36c0d4; color: #fff; border:2px solid #36c0d4; }
+.btn9{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: none; margin:10px 20px 20px 0px;}
+.btn9:hover{background-color: #964a95; color: #fff; border:2px solid #964a95; }
+.btn10{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: none; margin:10px 20px 20px 0px;}
+.btn10:hover{background-color: #cb662d; color: #fff; border:2px solid #cb662d; }
+
+
+/*------会议------*/
+.btn11{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: none; margin: 10px 20px 20px 0px;}
+.btn11:hover{background-color: #4da6f1; color: #fff; border:2px solid #4da6f1; }
+.btn12{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: none; margin:10px 20px 20px 0px;}
+.btn12:hover{background-color: #756f9f; color: #fff; border:2px solid #756f9f; }
+.btn13{ display: inline-block; width: 208px; height: 47px; line-height: 42px;  color: #414b57; border:2px solid #414b57; font-size: 18px; font-weight: bold; background-color: none; margin:10px 20px 20px 0px;}
+.btn13:hover{background-color: #e1135e; color: #fff; border:2px solid #e1135e; }

@@ -1,0 +1,91 @@
+body{
+    width:100%;
+}
+a{text-align: left}
+.content {
+    max-width: 560px;
+    margin: 0 auto;
+    background: #000000;
+}
+.act_strategy_header{
+    width:100%;
+    min-height: 100px;
+    background: #000000;
+}
+.act_strategy_header_list{
+    padding-top: 10px;overflow: hidden;
+}
+.act_strategy_header_list li{
+    width:20%;float: left;
+}
+.act_strategy_list_link{
+    display: block;
+}
+.act_nav_icon{
+    text-align: center;
+}
+.act_nav_icon img{
+    width:25px;height:25px;
+}
+.act_nav_p{
+    text-align: center;line-height: 25px;color:#fff;font-size: 12px;
+}
+.act_strategy_logo{
+    text-align: center;margin-top: 10px;
+}
+.act_strategy_logo img{
+    height:17px;width: auto;
+}
+.back_top{
+    position: fixed;left:86%;bottom: 15px;width:44px;height:44px;background: rgba(245,245,245,0.8);border-radius: 22px;z-index:999;text-align: center;
+}
+.back_top span{
+    line-height: 44px;font-size: 30px;color:#fff;
+}
+.back_top img{
+    width:20px;height:20px;margin-top: 10px;
+}
+
+.none{
+    display: none;
+}
+
+
+.nav-fix{
+    position:fixed;left:4%;top:150px;z-index:99;text-align: center;padding: 3px;background: rgba(255,255,255,0);border-radius: 25px;
+    height:44px;overflow: hidden;display: none;
+    transition:all 0.4s;-webkit-transition:all 0.4s;-o-transition:all 0.4s;-moz-transition:all 0.4s;
+    -ms-transition:all 0.4s;
+}
+.nav-fix-active{
+    background: rgba(255,255,255,0.5);height:289px;
+}
+.nav-point{
+    width:44px;height:44px;text-align: center;line-height: 50px;background: rgba(110,227,127,0.5);color:#f9f4f8;border-radius: 25px;
+}
+.nav-point span{
+    font-size:20px;line-height: 44px;
+}
+.nav-fix-list{
+    border-radius:25px;background: #05fc4b;color:#FFFFff;width:44px;
+}
+.nav-fix-list li{
+    height:100%;margin-top: 5px;width:44px;height:44px;
+}
+.nav-fix-list li img{
+    width:44px;height:44px;
+}
+
+.provide-activity{
+    position: fixed;left:4%;top:30px;z-index:99;text-align: center;padding: 3px;display: none;
+    transition:all 0.4s;-o-transition:all 0.4s;-moz-transition:all 0.4s;-webkit-transition:all 0.4s;
+}
+.provide-activity a{
+    width:44px;height:44px;border-radius: 25px;background: rgba(255,106,58,0.6);color:#FFFFff;display: block;text-align: center;
+}
+.provide-activity .a2{
+    background: rgba(30, 30, 30, 0.6);
+}
+.provide-act span{
+    line-height: 44px;font-size:20px;
+}

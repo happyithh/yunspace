@@ -1,0 +1,98 @@
+
+.main{
+    width:100%;
+}
+.carousel-indicators li{
+    width:50px;
+    height:3px;
+    border-radius: 0px;
+}
+.carousel-indicators .active{
+    width:50px;
+    height:3px;
+    margin:1px;
+}
+.lu{
+    width:100%;
+
+}
+.lux_title{
+    width:100%;
+    display: block;
+    line-height:150px;
+    text-align: center;
+    font-weight:bold;
+    font-size:30px;
+}
+.lux{
+    width:100%;
+}
+.lux_text1{
+    font-size: 20px;
+    color:#000000;
+    text-align: center;
+}
+.lux_code{
+
+    width:80%;
+    margin-left: 18%;
+}
+.lux_span{
+    display: block;
+    width:25%;
+    float:left;
+    text-align: center;
+    line-height: 60px;
+}
+.lux_span span{
+    font-size: 22px;
+    font-weight: bold;
+    color:#fd719f;
+    line-height: 30px;;
+}
+.look{
+    width:30%;
+    margin:0 auto;
+}
+.look_p{
+    display: block;
+    float: left;
+    width:208px;
+    height:44px;
+    border:3px solid #000000;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#000000;
+    margin-left: 65px;
+    margin-right: 30px;
+    margin-top: 3px;
+}
+.look_p1:hover{
+    background: #000000;
+    color:#ffffff
+}
+.look_p2:hover{
+    background: #ffffff;
+    color:#000000
+}
+.look_m {
+    margin-top: 50px;
+}
+.lux_bg1{
+    background: url('../images/qs-bg.jpg');
+}
+.color_w{
+    color:#ffffff;
+}
+.color_b{
+    border:3px solid #ffffff;
+}
+.show_p{
+    font-size:30px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom:0px;
+    padding-left: 141px
+}

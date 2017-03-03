@@ -1,0 +1,219 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: zzc
+ * Date: 15-9-17
+ * Time: 地图搜索
+ */
+class Web_Map_Search
+{
+
+    static function  handle()
+    {
+
+        Tpl_Smarty::assign('searchTags', self::searchTags());
+        Tpl_Smarty::assign('topTagsName', self::topTagsName());
+        Tpl_Smarty::assign('city_area', self::city_area());
+        Tpl_Smarty::assign('distance', self::distance());
+        Tpl_Smarty::assign('demand', Data_Demand_Option_Config::all());
+        self::getSpaceList();
+        Tpl_Smarty::display('Web_Static::map_search.v1.0/map_search.php.tpl');
+    }
+
+    static function  distance()
+    {
+        return array(
+
+            1 => '1公里',
+            3 => '3公里',
+//            4 => '4公里',
+            5 => '5公里',
+            7 => '7公里',
+            10 => '10公里',
+        );
+
+    }
+
+    static function  conditions()
+    {
+        $children = Data_Mysql_Table_Product_Category::getChildren(112);
+        $children[] = 112;
+        $conditions['status =?'] = 1;
+        $conditions[] = 'category_id in (' . implode(',', $children) . ')';
+        //  $conditions[] = 'category_id in (666)';
+
+        $conditions['attr_index'][46] = $_COOKIE['city'];
+        return $conditions;
+    }
+
+    static function  getSpaceList()
+    {
+
+        $conditions = self::conditions();
+
+        $request = Func_Input::filter(array(
+            'orderBy' => 'int'
+        ));
+//        排序方式
+        switch ($request['orderBy']) {
+            case '2':
+                $order = 'ORDER BY order_index DESC';
+                break;
+            case '3':
+                $order = 'ORDER BY update_time DESC';
+                break;
+            default:
+                $order = 'ORDER BY order_index DESC';
+                break;
+        }
+        //查询数据库
+        $list = Data_Mysql_Table_Product_Search::page(0, 0, "id, category_id,geo_lat,geo_lng, vendor_id,vendor_name, product_name, attr_index, logo, addr, order_people_number,order_product_size,update_time,price", $conditions, $order);
+
+        if (!empty($list['rows'])) {
+            $list['rows'] = Api_Map_Search_SpaceList::HandleField($list['rows']);
+        } else {
+            //相关推荐
+            $data = Api_Space_Recommend::handle($conditions);
+
+            Tpl_Smarty::assign('recommend', $data['data']);
+        }
+
+        $coordinate = Api_Map_Search_SpaceList::coordinate($conditions, $order, $list['page']);
+        Tpl_Smarty::assign('coordinate', @json_encode($coordinate));
+        $pageCoordinate = Api_Map_Search_SpaceList::pageCoordinate($list['rows']);
+        Tpl_Smarty::assign('pageCoordinate', json_encode($pageCoordinate));
+        Tpl_Smarty::assign('list', $list);
+
+    }
+
+    /**
+     * @return array
+     * 搜索用到的标签
+     */
+    static function  searchTags()
+    {
+
+        $cache = Data_Mysql_Table_Cache_Array::get('_map_search', $_COOKIE['city'] . 'map');
+        if (!empty($cache)) {
+            return $cache;
+        }
+
+        $menu_data = Data_Mysql_Table_Product_Category::getTreeCache();
+        $menu[0] = '不限';
+        foreach ($menu_data[112] as $k => $v) {
+            $menu[$k] = trim($v);
+        }
+        $product_size[0] = '不限';
+        $service_trade[0] = '不限';
+        $activity_type[0] = '不限';
+        $people[0] = '不限';
+
+        //面积
+        $product_size_data = Data_Mysql_Table_Product_Search::$product_size;
+        foreach ($product_size_data as $k => $v) {
+            $product_size[$k] = trim($v);
+        }
+        //人数
+        $people_data = Data_Demand_Option_Config::get('people');
+        foreach ($people_data as $k => $v) {
+            $people[trim($k)] = trim($v);
+        }
+        $attr = Data_Config_Vendor_Attr::get('attr');
+        //活动类型  49
+        foreach ($attr['活动类型'] as $v) {
+            $activity_type[trim($v)] = trim($v);
+        }
+        //服务行业  9
+        foreach ($attr['服务行业'] as $v) {
+            $service_trade[trim($v)] = trim($v);
+        }
+        $data = array(
+            112 => $menu,
+            8 => $people,
+
+            10 => $product_size,
+            49 => $activity_type,
+            9 => $service_trade,
+        );
+        Data_Mysql_Table_Cache_Array::set('_map_search', $_COOKIE['city'] . 'map', $data);
+        return $data;
+    }
+
+    static function  topTagsName()
+    {
+        $data = array(
+            112 => '场地类型',
+            8 => '适合人数',
+            49 => '活动类型',
+            9 => '服务行业',
+            10 => '场地面积',
+        );
+        return $data;
+    }
+
+
+    static function   city_area()
+    {
+        //TODO::开通城市需要手动新增city_code
+
+        switch ($_COOKIE['city']) {
+            case '北京':
+                $city_code = 110100;
+                break;
+            case '广州':
+                $city_code = 440100;
+                break;
+            case '深圳':
+                $city_code = 440300;
+                break;
+            case '成都':
+                $city_code = 510100;
+                break;
+            case '杭州':
+                $city_code = 330100;
+                break;
+            case '南京':
+                $city_code = 320100;
+                break;
+            case '苏州':
+                $city_code = 320500;
+                break;
+            case '青岛':
+                $city_code = 370200;
+                break;
+            case '武汉':
+                $city_code = 420100;
+                break;
+            case '大连':
+                $city_code = 210200;
+                break;
+            case '西安':
+                $city_code = 610100;
+                break;
+            case '长沙':
+                $city_code = 430100;
+                break;
+            case '昆明':
+                $city_code = 530100;
+                break;
+            case '贵阳':
+                $city_code = 520100;
+                break;
+            case '大理':
+                $city_code = 532901;
+                break;
+            case '丽江':
+                $city_code = 530700;
+                break;
+            case '厦门':
+                $city_code = 350200;
+                break;
+
+            default:
+                $city_code = 310100;
+        };
+        $data = Api_City_Auto_Complete::getCity(array('city_code' => $city_code));
+        return $data['data'];
+    }
+}

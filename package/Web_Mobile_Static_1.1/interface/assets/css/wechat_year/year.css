@@ -1,0 +1,228 @@
+/*初始化*/
+*{ margin: 0; padding: 0;}
+body{color:#24252f;font-size: 14px;font-family: "黑体", 'microsoft yahei', Arial;}
+h1,h2,h3,h4,h5,h6,b,strong{font-size:100%;}
+li{ list-style-type: none;}
+a{text-decoration: none;}
+img {border:none;}
+input,select,button{outline: none;border: none;}
+textarea{border-radius:10px; border: 1px solid #e3e3e3;line-height: 20px;padding:5px;}
+.fl{ float: left;}
+.fr{ float: right;}
+.break {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.clearfix:after{content:'\20';display:block;height:0;clear:both;visibility:hidden;}
+.hide{display:none;}
+body{
+    background: #f0f0f0;
+    max-width: 640px;
+    margin:0 auto;
+    font-family: "黑体";
+    font-size: 14px;
+    padding-bottom: 45px;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner img{width: 100%;height: 100%;}
+.active-expalin-btn{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 76.5px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: #555;
+    font-size: 11px;
+    background:rgba(255,255,255,0.85);
+    border-radius: 5px;
+}
+
+.comn-wrap{margin-top:15px;}
+.comn{
+    margin-bottom:15px;
+    background: #fff;
+}
+.comn-theme-img{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.comn-theme-img img{
+    width: 100%;
+    height: 100%;
+}
+.comn-theme-img .text-bg{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    top: -3px;
+    z-index: 2;
+}
+.comn-theme-img .text{
+    margin-top: 22%;
+    color: #fff;
+}
+.comn-theme-img .text h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+.comn-theme-img .text p{
+    font-size: 13px;
+    text-align: center;
+}
+.comn-theme-vote{
+    width: 100%;
+}
+.vote-numb{
+    height: 20px;
+    text-align: center;
+}
+.vote-numb i{
+    display:inline-block;
+    width: 11px;
+    height: 11px;
+    background: url("../../img/wechat_year/icon_vote.png") no-repeat center;
+    background-size: 100%;
+}
+.vote-numb p{
+    display: inline-block;
+    font-size: 11px;
+    line-height: 16px;
+    color: #fff;
+    vertical-align: middle;
+}
+.vote-btn{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin: 8% auto 10px;
+}
+.btn-gray{background: rgba(153,153,153,0.7);}
+.btn-magenta{background:rgba(250,19,166,0.7);}
+.btn-lightblue{background: rgba(75,219,255,0.7);}
+.btn-yellow{background: rgba(255,192,21,0.7);}
+.btn-deepblue{background: rgba(0,86,216,0.7);}
+
+.comn-list{
+    margin-bottom: 15px;
+    margin-top: -4px;
+    padding: 0 15px;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+.comn-list .cont{
+    width: 100%;
+    height: 65px;
+    display: block;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.comn-list .cont:last-child{border: none;}
+.comn-list .text{
+    line-height: 1.5em;
+    font-size: 16px;
+    color: #323232;
+    width: 70%;
+    text-align: left;
+    margin-top: 8px;
+}
+.comn-list .s-img{
+    width: 65px;
+    height: 65px;
+}
+.comn-list .s-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.consult-btn-wrap{
+    display: none;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+.consult-btn{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background: #fe6a3a;
+}
+/*版权信息*/
+.copy{
+    color: #999;
+    line-height: 1.5em;
+    text-align: center;
+    padding:0 15px 15px;
+    font-size: 11px;
+}
+.year_join_person{
+    width:100%;margin:10px 0px;background: #fff;text-align: center;
+}
+.year_join_person span{
+    color:#fc2e43;line-height: 50px;
+}
+
+
+/*@media (min-width: 320px) {*/
+    /*.banner{height: 142px;}*/
+    /*.comn-theme-img{height: 147px;}*/
+/*}*/
+/*@media (min-width: 375px) {*/
+    /*.banner{height: 167px;}*/
+    /*.comn-theme-img{height: 172px;}*/
+/*}*/
+/*@media (min-width: 384px) {*/
+    /*.banner{height: 171px;}*/
+    /*.comn-theme-img{height: 176px;}*/
+/*}*/
+/*@media (min-width: 414px) {*/
+    /*.banner{height: 184px;}*/
+    /*.comn-theme-img{height: 190px;}*/
+/*}*/
+/*@media (min-width: 480px) {*/
+    /*.banner{height: 100%;}*/
+    /*.comn-theme-img{height: 100%;}*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

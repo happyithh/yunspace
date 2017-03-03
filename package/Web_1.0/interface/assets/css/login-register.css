@@ -1,0 +1,133 @@
+/*登录*/
+.none{
+    display: none;
+}
+.cover-login{
+    width:100%;position: fixed;height: 100%;z-index:13000;
+    left: 0px;top:0px;background: rgba(0,0,0,0.5);display: none;
+}
+.login-modal{
+    width:422px;height:510px;background:rgba(202,175,175,0.5);position: fixed;left:50%; top:-100%;margin-left: -211px;margin-top: -255px;
+    z-index:13050;
+}
+.enter{
+    transition: all .4s;-webkit-transition: all .4s;-o-transition: all .4s;-moz-transition: all .4s;
+}
+.login-modal-active{
+    top:50%;z-index:15000
+}
+.leave-modal{
+    top:200%;
+}
+.l-m-con{
+    width:100%;height:100%;background: #fff;
+}
+.l-m-c-header{
+    width:100%;height:40px;background: #efefef;
+}
+.i-p{
+    float:left;width:20%;line-height: 40px;text-align: center;font-size: 16px;
+}
+.i-close{
+    float:right;width:8%;text-align: center;
+}
+.i-close span{
+    line-height: 40px;font-size: 20px;height: 40px;
+}
+.login-form{
+    width:70%;margin:0 auto;
+}
+.l-f-header{
+    margin-top: 50px;overflow: hidden;
+}
+.l-f-h-title{
+    display: block;width:50%;float: left;font-size: 20px;font-weight: bold;color:#71798c;line-height: 40px;
+}
+.l-f-h-method{
+    display: block;width:50%;float: left;text-align: right;line-height: 40px;color:#9b9b9b;font-size: 13px;
+}
+.l-f-h-method span {
+    color:#71798c;font-size: 15px;
+}
+.l-f-h-method:hover{
+    color:#666;
+}
+
+.l-f-input{
+    border: 1px solid #e0e0e0;height:50px;width:100%;margin-bottom: 20px;
+}
+.l-f-input input{
+    border: 0px;line-height: 48px;width:100%;padding-left: 5%;
+}
+.checkbox{
+    width:15px;height:15px;border: 1px solid #E0E0E0;float:left;  margin-top: 12.5px;margin-right: 5px;text-align: center;line-height: 15px;
+}
+.l-f-footer{
+    overflow: hidden;
+}
+.l-f-footer p{
+    color:#3bd5bb;display: block;float: left;line-height: 19px;margin: 0px;line-height: 40px;
+}
+.l-f-footer a{
+    color:#3bd5bb;display: block;float: right;line-height: 40px;
+}
+.l-f-footer a:hover{
+    color:#666;
+}
+.l-f-s-btn{
+    background: rgb(59, 213, 187);color:#fff;border:0px;width:100%;line-height: 50px;font-size: 20px;
+}
+.l-f-tip{
+    line-height: 50px;color:#666;
+}
+.l-f-tip a{
+    color:#3bd3ba
+}
+.l-f-tip a:hover{
+    color:#666;
+}
+/*手机登录*/
+.i-code{
+    position: absolute;left: 0px;top:0px;width:8%;text-align: center;line-height: 50px;font-size: 20px;color:#9a9a9a!important;
+}
+.l-f-input-code{
+    border: 1px solid #e0e0e0;height:50px;width:100%;margin-bottom: 20px;
+}
+.login-code{
+    width: 68%!important;line-height: 50px;paddding-left:20px!important;float: left;border: 1px solid #e0e0e0!important;
+
+}
+.fast-send-code{
+    display: block;width: 30%;float: right;background:#77cfbf ;line-height: 50px;text-align: center;color: #fff;border: 0px;
+}
+/*注册*/
+.r-f-h-title{
+    text-align: center;display: block;width:100%;float: left;font-size: 15px;font-weight: bold;color:#71798c;line-height: 40px;
+}
+.r-f-input{
+    height:50px;width:100%;margin-bottom: 20px;position: relative;
+}
+.r-f-input input{
+    padding:0px 5px;
+}
+.r-f-i-name{
+    display: block;width:20%;float: left;line-height: 35px;
+}
+.r-f-i-input{
+    width:80%;line-height: 35px;float: left;
+}
+.fast-send-code2{
+    display: block;width:28%;background: #77cfc1;line-height: 39px;color:#fff;float: right;text-align: center;font-size: 13px;
+}
+/*.fast-send-code2:hover{*/
+/*background: #a59797;*/
+/*}*/
+.agree:hover{
+    color:#666
+}
+a:visited{
+    color:#666;
+}
+
+
+

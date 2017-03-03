@@ -1,0 +1,30 @@
+{*<!-- BEGIN SIDEBAR -->*}
+{*<div class="page-sidebar-wrapper">*}
+    {*<div class="page-sidebar navbar-collapse collapse">*}
+        {*<ul class="page-sidebar-menu">*}
+            {*<li class="hidden"></li>*}
+            {*<li class="tab_order">*}
+                {*<a href="{$_home}{$___urls['route']}order">*}
+                    {*<i class="icon-calendar"></i>交易管理*}
+                {*</a></li>*}
+            {*<li class="tab_services" class="hidden">*}
+            {*<a href="{$_home}{$___urls['route']}services">*}
+            {*<i class="icon-wallet"></i>云服务*}
+            {*</a></li>*}
+            {*<li class="tab_collection">*}
+            {*<a href="{$_home}{$___urls['route']}collection">*}
+            {*<i class="icon-heart"></i>云收藏*}
+            {*</a></li>*}
+            {*<li>*}
+                {*<a href="{$_home}{$___urls['route']}">*}
+                    {*<i class="icon-logout"></i>返回*}
+                {*</a></li>*}
+        {*</ul>*}
+    {*</div>*}
+{*</div>*}
+{*<!-- END SIDEBAR -->*}
+{*<script>*}
+    {*$(document).ready(function () {*}
+        {*$('.tab_{$tab_index|default:$___urls['action']}').addClass('active');*}
+    {*});*}
+{*</script>*}

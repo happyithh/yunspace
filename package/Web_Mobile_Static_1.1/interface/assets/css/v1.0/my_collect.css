@@ -1,0 +1,163 @@
+
+body{ background: #eee; }
+a{text-align: left;}
+.collect-wrapper{
+    padding-top: 63px;
+}
+.topline{
+    background-color: #25252f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 5000;
+}
+.topline-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+}
+.topline-center{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-family: 微软雅黑, microsoft yahei, Arial, sans-serif;
+}
+
+/*文章*/
+.article-list{
+    border-bottom:5px solid #f5f5f5;
+}
+.article-li{
+    height:96px;
+    background: #fff;
+    position: relative;
+    padding:8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: 10px solid #f5f5f5;
+}
+.article-li:last-of-type{
+    border-bottom: 0px;
+}
+.article-li a{
+    display: inline-block;
+    min-width: 100%;
+    min-height: 48px;
+}
+.article-li-header{
+    line-height: 150%;
+    font-size: 13px;
+    color: #333;
+    max-width:100%;
+    word-break:break-all;
+}
+.article-li-body-one{
+    width:100%;
+}
+.article-li-body-img{
+    width:100%;
+    margin-top: 5px;
+}
+.article-li-body-img img{
+    display: inline-block;
+    width:31.5%;
+    height:auto;
+    margin-right: 1%;
+}
+.article-li-body-img img:last-of-type{
+    margin-right: 0px
+}
+.article-li-body-two{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.article-li-body-only{
+    width:90px;
+    height:60px;
+    background: #000;
+}
+.article-li-body-only img{
+    width:100%;
+    height:100%;
+}
+.article-li-footer{
+    margin-top: 5px;
+    position: absolute;
+    bottom:8px;
+    left:8px;
+}
+.article-li-footer p:first-of-type,
+.article-li-footer p:nth-of-type(2),
+.article-li-footer p:last-of-type{
+    display: inline-block;
+    font-size:10px;
+    color:#d4d4d4;
+    margin-right: 10px;
+}
+.padding-right{
+    padding-right: 106px;
+}
+
+
+/*空间场地*/
+.list-item{z-index: 2000;position: relative; width: 100%;border-bottom: 1px solid #ddd;}
+.list-item li{ position:relative;margin-top: 13px; background: #fff; height: 120px; width:100%; padding: 15px; padding-left:150px; z-index:2000;box-sizing: border-box; -ms-box-sizing: border-box;
+    -mos-box-sizing: border-box; -webkit-box-sizing: border-box;overflow: hidden}
+.list-item .list-item-left img{ width: 120px;height:90px; position: absolute;left: 15px; top: 15px; margin-right: -135px;}
+.list-item .list-item-right{position: absolute;top:0; left:150px;width: 50%;box-sizing: border-box; -ms-box-sizing: border-box;padding-top:15px;
+    -mos-box-sizing: border-box; -webkit-box-sizing: border-box; overflow: hidden}
+.list-item .name{ font-size: 15px; color: #24252f; line-height: 15px; margin-bottom: 5px;margin-top: 5px;overflow: hidden;text-overflow:ellipsis; white-space:nowrap;width:100%}
+.list-item .name a{ color: #24252f;!important;}
+.list-item .address{ margin-top:15px;font-size: 13px; color: #666; line-height: 20px; margin-bottom: 5px; overflow: hidden;text-overflow:ellipsis; white-space:nowrap;width:100%}
+.list-item .address a{ color: #666;!important;}
+.list-item .price{ font-size: 13px; color: #666; line-height: 20px;margin-top: 10px;overflow: hidden;text-overflow:clip; white-space:nowrap;width:100%}
+.list-item .price span{ color: #00c3c3; font-size: 14px;}
+.list-item .price span1{ font-size: 16px; color: #00c3c3;}
+.list-item .price a{ color: #666;!important}
+.list-item .price span a{ color: #00c3c3;!important;}
+
+
+/*无收藏时*/
+.nocollect{padding: 30px;}
+.nocollect .img-wp{
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+.nocollect .img-wp img{width: 100%;}
+.nocollect h5{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}
+.nocollect p{
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+.nocollect .backindex{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+
+
+/*列表小屏幕*/
+@media (max-width: 320px){
+    .list-item li{height: 100px; padding-left:130px;}
+    .list-item .list-item-right{left:130px;width: 56%;}
+    .list-item .list-item-left img{ width: 100px;height:75px; position: absolute;left: 15px; top: 15px; margin-right: -120px;}
+    .list-item .name{ font-size: 13px;margin-top: 3px;}
+    .list-item .address{ font-size: 11px; margin-top: 10px;}
+    .list-item .price{ margin-top: 5px;}
+    .list-item .price span{ font-size: 12px;}
+    .list-item .price span1{ font-size: 14px;}
+}

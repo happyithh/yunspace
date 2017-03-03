@@ -1,0 +1,113 @@
+body{ position:relative; font-size: 14px; line-height: 28px; color: #555}
+a { color: #555}
+a:active { color: #00c3c3;}
+a:hover {  color: #00c3c3; }
+
+#allmap { width:100%; height:700px; margin-top:4px;}
+
+/*------center------*/
+.content { position: relative;}
+.map1 {width: 100%; color: #000; }
+.map-a{ background:#fff; opacity:0.9; height:75px;width: 100%; display: block; box-shadow:2px 2px 2px 2px #d0cdcc ;}
+.map-search { width: 50%; margin-left: 23%; padding-top: 25px; }
+.sea1 { width:50%;}
+.hb { width: 85%;}
+.hb input { border-radius: 5px; border:1px solid #ccc; padding-left: 15px; font-size: 12px; width:115%; line-height: 30px; color: #666;}
+.hc { width:15%; text-align: center;}
+.hc a { text-align:center; font-size: 14px; }
+.btn-primary { background:#00c3c3; text-align: center; border: none; width:100%; height:32px;line-height:20px; }
+.btn-primary:hover { background: #24252f; border: 0px}
+.sea2 { width:45%; margin-top: 3px;}
+.sea2-a { margin-right: 3%; width: 30%; }
+.sea2-a select { width: 100%; padding-top: 5px; padding-bottom: 5px;padding-left: 5px;}
+.sea2-a select option { padding-left: 5px; margin-top: 5px;}
+
+
+/*------map2------*/
+.map2 { width: 25%; height:778px; position:absolute; right:0px; }
+.map4 { width: 95%; display: block; box-shadow:1px 1px 1px 1px #d0cdcc ;height:778px;  background:#fff;  overflow: auto;}
+.map2-middle ul li { border-bottom: 1px dashed #f2f2f2; padding:3%; width: 100% }
+.m-img { width: 35%; height:0 auto; padding-left: 2% }
+.m-img img { width: 100%;}
+.text1 { width: 60%;}
+.text1 h4 { font-size: 14px; font-weight: bold; line-height:0px;}
+.text1 p { font-size: 12px; margin: 0px;}
+.text1 span { font-size: 14px; font-weight: bold; color:#00c3c3;}
+.map2-middle ul li:hover { background: #f2f2f2;}
+
+
+/*------map3------*/
+.map3 { width: 40%; display: block; box-shadow:0px 2px 2px 2px #d0cdcc; border-radius: 5px; margin-top:30px; position: absolute; left:28%; z-index: 8888; opacity:0.9; background: #f5f5f5; height: 50px;}
+.sea3 { width: 100%; padding-top: 10px; }
+.kw { width: 33%; padding: 0 1% 0 1% ;  color: #000; }
+.text2 { width: 50%; text-align: center; line-height: 30px;}
+
+/*------修改------*/
+#header-input { width: 100%;}
+.down_box1 { width: 30%; display: block; margin-right: 3%; float: left;}
+.down_box2 { width: 45%; display: block;  float: left;}
+.footer { margin-top: -50px;}
+
+
+.sidebar-toggler {
+    border-radius: 4px 0px 0px 4px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin-top:60%;
+    margin-bottom: 10px;
+    width:5%;
+    opacity: 0.9;
+    height: 80px;
+    margin-right: -1px;
+    background-color: #24252f;
+    color: #fff;
+}
+.sidebar-toggler span { display: none;}
+.sidebar-toggler:before {
+    margin: 0px 2px 3px 9px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: FontAwesome;
+    height: auto;
+    content: "\f105";
+    font-weight: 300;
+    text-shadow: none;
+    color: #fff;
+    line-height: 80px;
+}
+.sidebar-toggler.show:before{
+    content: "\f104";
+}
+.pull-right.map4{
+    display: none;
+}
+
+:before {
+    box-sizing: border-box;
+}
+
+/*------@media------*/
+@media ( max-width:1024px){
+    body{max-width: 750px; margin:0 auto;}
+   .map2 { display: none;}
+    .map-search { width:94%; margin: 0 auto; padding-top: 10px; }
+    .map-a{ background: fff; height:60px;width: 100%; display: block; box-shadow:0px 0px 2px 0px #d0cdcc ;}
+    .map3 { width: 90%; display: block; box-shadow:0px 1px 1px 1px #d0cdcc; border-radius: 5px;  position: absolute; margin-top:20px; left: 5%; z-index: 8888;  background: #f5f5f5; height: 50px;}
+    #allmap { width:100%; height:600px; margin-top:4px;}
+    .sea1 { width:50%;}
+    .sea2 { width:48%;}
+    .sea2-a { margin-right: 2%; width: 31%; }
+}
+@media ( max-width:560px){
+    .sea2 { display: none;}
+    .map-search { width:95%; margin: 0 auto; padding-top: 10px; }
+    .map-a{ background: fff; height:60px;width: 100%; display: block; box-shadow:0px 0px 2px 0px #d0cdcc ;}
+    .sea1 { width:100%}
+    .map3{ display: none;}
+    #allmap { width:100%; height:500px; margin-top:4px;}
+}
+@media ( max-width:320px){
+    #allmap { width:100%; height:400px; margin-top:4px;}
+}
+

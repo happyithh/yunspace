@@ -1,0 +1,242 @@
+/*弹窗背景/关闭按钮*/
+.wechat_pop-bg{
+    padding: 25px 0 10px;
+    width: 94%;
+    height: 90%;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    background: #fff;
+    border: 3px solid #f52f4a;
+    box-sizing: border-box;
+    z-index: 111;
+}
+.close{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    background: url("../../img/wechat_year/icon_close.png") no-repeat;
+    cursor: pointer;
+}
+.popup_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.6);
+    z-index:110;
+    left:0;top:0;
+}
+.pop-cont{
+    height: 100%;
+    padding: 0 15px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+/*活动说明*/
+.pop_explan h1{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.pop_explan h3{
+    font-size: 16px;
+    color: #000;
+    line-height: 1.4em;
+    text-align: left;
+    font-weight: normal;
+    margin: 5px 0 20px;
+}
+.pop_explan p{
+    font-size: 15px;
+    color: #000;
+    line-height: 1.6em;
+    margin-bottom: 5px;
+}
+.pop_explan .title{
+    color: #f52f4a;
+    margin-top: 20px;
+}
+.pop_explan ul li{
+    float: none;
+    list-style: disc;
+    margin-left: 40px;
+    line-height: 1.5em;
+}
+
+/*投票成功/温馨提示*/
+.pop_vdrd h1{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    font-weight: normal;
+}
+.pop_vdrd .h1-line{
+    width: 60px;
+    height: 2px;
+    background: #a0a0a0;
+    margin: 5px auto 15px;
+}
+.pop_vdrd .point{
+    line-height: 0.3em;
+    margin: 3px 0 13px;
+}
+.pop_vdrd h2{
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    color: #f52f4a;
+    line-height: 1.5em;
+}
+.pop_vdrd h2 strong{margin-left: 5px;}
+.pop_vdrd>span{
+    display:block;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    padding-top: 5px;
+}
+.pop_vdrd p{
+    color: #999;
+    text-align: center;
+    font-size: 14px;
+}
+.qrcode{
+    width: 100%;
+    margin: 20px auto 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.qrcode img{width: 100%;}
+.qrcode .img2{margin-top: 13px;}
+.pop_reminder h2{
+    margin: 30px 0;
+}
+.pop_reminder>p{margin-top: 20px}
+
+/*立即咨询弹窗-开始*/
+.consult{
+    width: 100%;
+    height: 100%;
+    z-index: 112;
+    overflow-y: scroll;
+}
+.consult h2{
+    font-size: 18px;
+    color: #F7782F;
+}
+.inquiry-ul-contleft li{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ededed;
+    margin-top: 11px;
+    box-sizing: border-box;
+    position: relative;
+}
+.inquiry-ul-contleft li label{
+    font-size: 15px;
+    color: #626262;
+    display: block;
+    padding: 1px 0;
+    font-weight: bold;
+}
+.inquiry-ul-contleft li .fill{
+    width: 100%;
+    font-size: 15px;
+    color: #b9b9b9;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 5px 0;
+}
+.inquiry-ul-contleft .li-textrea{
+    width: 100%;
+}
+.inquiry-ul-contleft .li-textrea textarea{
+    min-height: 50px;
+}
+.consult .inquiry-btn{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px auto;
+    background: #f26617;
+}
+.inquiry-btn:hover{background: #f7782f;}
+.inquiry-btn.invalid{
+    background-color: #A09D9C;
+}
+
+.inquiry-ul-contleft .focused{
+    background-color:#f5f5f5;
+    border:1px solid #dfdcdc;
+    transition:background 0.3s ease;
+    -webkit-transition:background 0.3s ease;
+}
+.inquiry-ul-contleft .focused .fill{
+    background-color:#f5f5f5;
+    color:#626262;
+    transition:background 0.3s ease;
+    -webkit-transition:background 0.3s ease;
+}
+.inquiry-ul-contleft .focused label{color:#b9b9b9;}
+.inquiry-ul-contleft .focused ::-moz-placeholder { color: #626262; }
+.inquiry-ul-contleft .focused ::-webkit-input-placeholder { color:#626262; }
+.inquiry-ul-contleft .focused :-ms-input-placeholder { color:#626262; }
+
+
+.inquiry-ul-contleft .get-code{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 136px;
+    height: 100%;
+    line-height: 52px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+}
+.inquiry-ul-contleft .orange{background: #f36f25;}
+.inquiry-ul-contleft .gray{background: #aaa;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

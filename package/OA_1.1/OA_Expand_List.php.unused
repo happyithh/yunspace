@@ -1,0 +1,117 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: yl
+ * Date: 15-9-2
+ * Time: 下午2:43
+ * 拓展列表
+ */
+class OA_Expand_List{
+    static function handle($type=0)
+    {
+        $_REQUEST['action']=empty($_REQUEST['action'])?'list':$_REQUEST['action'];
+        switch ($_REQUEST['action']) {
+            case 'list':
+                self::getExpandList($type);
+                break;
+            default:
+                self::getExpandList($type);
+                break;
+        }
+    }
+    static function getExpandList($type=0){
+        //获取拓展列表
+        $condition=array();
+        if($type==1){
+            $condition['admin_id']=$_SESSION['administrator']['id'];
+        }
+        $_REQUEST['handle_type']=empty($_REQUEST['handle_type'])?'not_send_msg':$_REQUEST['handle_type'];
+        switch($_REQUEST['handle_type']){
+            case 'no_activate':
+                $condition['status']=0;
+                break;
+            case 'activate':
+                $condition['status']=1;
+                break;
+            case 'not_send_msg':
+                $condition[]="status IS NULL";
+                $condition["log_status >= ?"]=0;
+                break;
+            case 'all':
+                $condition['status >= ?']=0;
+                break;
+        }
+        $request=Func_Input::filter(array(
+            'vendor_name'=>'string',
+            'username'=>'string',
+            'admin_id'=>'int',
+            'phone'=>'phone',
+        ));
+        if(!empty($request['vendor_name'])){
+            if(is_numeric($_REQUEST['vendor_name'])){
+                $condition['id']=$_REQUEST['vendor_name'];
+            }else{
+                $condition['vendor_name']=$_REQUEST['vendor_name'];
+            }
+        }
+        if(!empty($request['username'])){
+            $condition['username']=$request['username'];
+        }
+        if(!empty($request['admin_id'])){
+            $condition['admin_id']=$request['admin_id'];
+        }
+        if(!empty($request['phone'])){
+            $condition['phone']=$request['phone'];
+        }
+        if(!empty($_REQUEST['city'])){
+//            $condition['attr_index']['城市']='+'.$_REQUEST['city'];
+            $condition['city']=$_REQUEST['city'];
+        }
+        $data_obj=Data_Mysql_View_Expand_Log::page(0,20,'id,city,account_id,admin_id,log_status,admin_name,username,phone,status,vendor_name,msg_time,email,create_time,update_time',$condition,'ORDER BY update_time DESC');
+        foreach($data_obj['rows'] as $k=>$v){
+            $data['rows'][$k]['id']=$v->id;
+            $data['rows'][$k]['vendor_id']=$v->id;
+            $data['rows'][$k]['account_id']=$v->account_id;
+            $data['rows'][$k]['username']=$v->username;
+            $data['rows'][$k]['phone']=$v->phone;
+            $data['rows'][$k]['vendor_name']=$v->vendor_name;
+            $data['rows'][$k]['create_time']=$v->create_time;
+            $data['rows'][$k]['update_time']=$v->update_time;
+            $data['rows'][$k]['msg_time']=$v->msg_time;
+            $data['rows'][$k]['admin_id']=$v->admin_id;
+            $data['rows'][$k]['admin_name']=$v->admin_name;
+            $data['rows'][$k]['status']=$v->status;
+            $data['rows'][$k]['email']=$v->email;
+            $data['rows'][$k]['city']=$v->city;
+        }
+        $data['page']=$data_obj['page'];
+        //获取管理员列表
+        $admin_con['{prefix}department_member.department_name = ?']="拓展部";
+        $admin=Api_Administrator_List::getAdminList($admin_con,1);
+        Tpl_Smarty::assign('_vendor_attr',Data_Config_Vendor_Attr::all());
+        Tpl_Smarty::assign('_data',$data);
+        Tpl_Smarty::assign('type',$type);
+        Tpl_Smarty::assign('admin',$admin);
+        Tpl_Smarty::assign('is_admin', Admin_Authority::checkUrl(Core::$urls['route'] . 'send_msg', 0));
+        Tpl_Smarty::display('OA_Static','data_expand/expand_list.tpl');
+    }
+    //分配拓展人(暂无用)
+    static function allocateProductToAdmin(){
+        $request=Func_Input::filter(array(
+            'admin_id'=>'int',
+            'admin_name'=>'string',
+            'product_id'=>'int',
+        ));
+        if(empty($request['admin_id']) || empty($request['product_id'])){
+            Func_Output::json('error','','参数缺失！！');
+        }
+        //获取该场地绑定的账号和供应商
+        $condition['{prefix}product_info.id = ?']=$request['product_id'];
+        $data=Data_Mysql_Table_Vendor_Info::select('{table}.id,{prefix}account.id as account_id',$condition,'',1,'{table} LEFT JOIN {prefix}account ON {table}.vendor_account_id={prefix}account.id LEFT JOIN {prefix}product_info ON {table}.id={prefix}product_info.vendor_id');
+        if(empty($data[0]['id']) || empty($data[0]['account_id'])){
+            Func_Output::json('error','','数据不完整！！');
+        }
+        $expand_data['vendor_id']=$data[0]['id'];
+        $expand_data['account_id']=$data[0]['account_id'];
+    }
+}

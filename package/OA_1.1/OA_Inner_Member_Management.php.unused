@@ -1,0 +1,131 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 15-3-31
+ * Time: 下午2:07
+ */
+class OA_Inner_Member_Management
+{
+    static function handle($department = '市场部')
+    {
+        $_REQUEST['action']=empty($_REQUEST['action'])?'list':$_REQUEST['action'];
+        switch ($_REQUEST['action']) {
+            case 'list':
+                self::handleMemberList($department);
+                break;
+            case 'edit':
+                self::handleMemberEdit($department);
+                break;
+            case 'delete':
+                self::handleMemberDel($department);
+                break;
+            case 'edit_submit':
+                self::handleMemberEditSubmit($department);
+                break;
+            default:
+                self::handleMemberList($department);
+                break;
+        }
+    }
+    static function handleMemberList($department)
+    {
+        $city = empty($_REQUEST['city']) ? '上海' : $_REQUEST['city'];
+        $rs = Api_Administrator_Department_Normal_Api::getMemberList($department, $city);
+        Tpl_Smarty::assign('_data', $rs);
+        Tpl_Smarty::display('OA_Static','inner_management/member_list.tpl');
+    }
+
+    static $teamType = array(
+        '市场部' => array(
+            '商家成长',
+            '供应商拓展',
+            '空间拓展',
+        ),
+        '销售部' => array(
+            'KA',
+            '标准',
+        ),
+        '' => array(
+            '测试',
+        )
+    );
+
+    static function handleMemberEdit($department)
+    {
+        $request = Func_Input::filter(array(
+            'id' => 'int',
+        ));
+        $data = array();
+        if ($request['id']) {
+            $rs = Data_Mysql_Table_Department_Member::select('*', array('id' => $request['id']));
+            if (!empty($rs[0])) {
+                $data = $rs[0];
+                $rs = Data_Mysql_Table_Administrator::select('id, username,phone', $data['admin_id']);
+                if (!empty($rs[0])) {
+                    $data['username'] = $rs[0]['username'];
+                }
+                $team_arr = explode('-', $data['team_name'], 2);
+                $data['is_ka'] = $team_arr[0];
+                $data['team_name'] = @$team_arr[1];
+                $data['data'] = json_decode($data['data'], 1);
+            }
+        }
+        $data['department_name'] = $department;
+        Tpl_Smarty::assign('teams', self::$teamType);
+        Tpl_Smarty::assign('_data', $data);
+        Tpl_Smarty::display('OA_Static','inner_management/member_edit.tpl');
+    }
+
+    static function handleMemberEditSubmit($department)
+    {
+        $request = Func_Input::filter(array(
+            'id' => 'int',
+            'admin_id' => 'int',
+            'team_name' => 'string',
+            'is_ka' => 'string',
+            'level' => 'int',
+            'city' => 'string',
+            'quota_today' => 'int',
+            'data' => 'array',
+        ));
+        if ($request['admin_id'] && $request['quota_today']) {
+            $request['department_name'] = $department;
+            if (!$request['id']) {
+                unset($request['id']);
+            }
+            if (!empty($request['is_ka'])) {
+                $request['team_name'] = $request['is_ka'] . ($request['team_name'] ? ("-" . $request['team_name']) : '');
+            } else {
+                $request['team_name'] = '无' . ($request['team_name'] ? ("-" . $request['team_name']) : '');
+            }
+            unset($request['is_ka']);
+            $r = Data_Mysql_Table_Department_Member::update($request);
+            if (!empty($r[0])) {
+                Func_Header::to(' 操作成功!', '?city=' . $request['city']);
+            } else {
+                Func_Header::back("操作失败, 可能是数据不唯一!");
+            }
+        } else {
+            Func_Header::back("参数异常!");
+        }
+    }
+
+    static function  handleMemberDel($department){
+        $request = Func_Input::filter(array(
+            'id' => 'int',
+        ));
+        if ($request['id']) {
+            $rs = Data_Mysql_Table_Department_Member::delete(array('id' => $request['id'],"department_name"=>$department));
+            if (!empty($rs[0])) {
+                Func_Header::to("删除成功");
+            }else{
+                Func_Header::to("删除失败");
+            }
+        }else{
+            Func_Header::back("参数错误，ID未传");
+        }
+    }
+
+}

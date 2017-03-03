@@ -1,0 +1,683 @@
+*{
+  -webkit-font-smoothing:antialiased;
+  font-family: '微软雅黑'
+}
+.mb15{margin-bottom: 15px;}
+.clear{ clear: both;}
+.content{
+  max-width: 1024px;
+  margin:0 auto;
+}
+
+.con-header{
+  width:100%;
+  height:430px;
+  max-width: 1024px;
+  background: #ddd;
+  position: relative;
+}
+.con-header-body{
+  position: absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.5);
+}
+.con-img{
+    position: relative;
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.con-img .img{
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: -960px;
+    text-align: center;
+}
+.con-img img{
+    width:auto;
+    height:100%;
+    min-width: 640px;
+    min-height: 430px;
+
+}
+.con-title{
+  width:95%;
+  text-align: center;
+  margin:90px auto 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+.con-title span{
+  color:#fff;
+  font-size: 25px;
+}
+.con-des{
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+  margin-top: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+.con-des span{
+  color:#fff;
+  font-size: 13px;
+  line-height: 200%;
+}
+.con-data{
+  width:40%;
+  margin:0 auto;
+  margin-top: 75px;
+}
+.con-date-look,
+.con-date-person{
+  width:50%;
+  display: inline-block;
+  text-align: center;
+}
+.con-date-look span,
+.con-date-person span{
+  color:#fff;
+  font-size: 10px;
+  line-height: 100%;
+}
+.con-date-look span:first-of-type,
+.con-date-person span:first-of-type{
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 15px;
+  line-height: 150%;
+}
+.con-addr{
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    margin-top:60px;
+}
+.baike_m_content{
+    width: 96%;
+    margin: 20px 2%;
+}
+.baike_m_title{
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+    background: url(../../img/encyclopedias/baike_m_title.png) no-repeat center bottom;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.baike_m_t{
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.baike_m_t:last-of-type{
+    margin-bottom: 0px;
+}
+.baike_m_line{
+    width: 100%;
+    height: 1px;
+    background-color: #eaeaea;
+    margin: 20px 0px;
+}
+.baike_m_c_title{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+.baike_m_brand_pic{
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    margin:15px auto;
+}
+.baike_m_brand_pic img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.baike_m_brand_introduce{
+    height: 6em;
+    overflow: hidden;
+    color: #666;
+    font-size: 12px;
+    line-height: 2em;
+}
+/*.baike_m_brand_introduce p{*/
+    /*color: #666;*/
+    /*font-size: 12px;*/
+    /*line-height: 22px;*/
+/*}*/
+.baike_m_icon_down {
+    width: 8%;
+    height: auto;
+    margin: 15px auto 15px auto;
+}
+.baike_m_icon_up {
+    width: 8%;
+    height: auto;
+    margin: 15px auto 15px auto;
+    display: none;
+}
+.baike_m_icon_down img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.baike_m_icon_up img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.baike_m_basics_info{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    margin-top:10px;
+}
+.baike_m_basics_info td{
+    border: solid #fff 1px;
+    width: 24%;
+}
+.baike_m_basics_title{
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #333;
+}
+.baike_m_basics_c{
+    background-color: #f8f8f8;
+    text-align: left;
+    padding: 10px;
+    font-size: 12px;
+    color: #666;
+}
+.baike_m_basics_c1{
+    background-color: #f8f8f8;
+    font-size: 12px;
+    color: #666;
+    padding: 10px;
+}
+.baike_m_icon{
+    width: 100%;
+    margin-bottom: 15px;
+    height: 60px;
+    overflow: hidden;
+}
+.baike_m_icon li{
+    width: 20%;
+    float: left;
+    height: 60px;
+}
+
+#baike_m_icon01{
+    background: url(../../img/encyclopedias/baike_m_icon01.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon02{
+    background: url(../../img/encyclopedias/baike_m_icon02.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon03{
+    background: url(../../img/encyclopedias/baike_m_icon03.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon04{
+    background: url(../../img/encyclopedias/baike_m_icon04.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon05{
+    background: url(../../img/encyclopedias/baike_m_icon05.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon06{
+    background: url(../../img/encyclopedias/baike_m_icon06.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon07{
+    background: url(../../img/encyclopedias/baike_m_icon07.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon08{
+    background: url(../../img/encyclopedias/baike_m_icon08.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon09{
+    background: url(../../img/encyclopedias/baike_m_icon09.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon10{
+    background: url(../../img/encyclopedias/baike_m_icon10.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon11{
+    background: url(../../img/encyclopedias/baike_m_icon11.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon_more{
+    background: url(../../img/encyclopedias/baike_m_icon12.png) no-repeat center;
+    background-size: 30%;
+}
+
+#baike_m_icon01_active{
+    background: url(../../img/encyclopedias/baike_m_icon01_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon02_active{
+    background: url(../../img/encyclopedias/baike_m_icon02_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon03_active{
+    background: url(../../img/encyclopedias/baike_m_icon03_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon04_active{
+    background: url(../../img/encyclopedias/baike_m_icon04_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon05_active{
+    background: url(../../img/encyclopedias/baike_m_icon05_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon06_active{
+    background: url(../../img/encyclopedias/baike_m_icon06_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon07_active{
+    background: url(../../img/encyclopedias/baike_m_icon07_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon08_active{
+    background: url(../../img/encyclopedias/baike_m_icon08_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon09_active{
+    background: url(../../img/encyclopedias/baike_m_icon09_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon10_active{
+    background: url(../../img/encyclopedias/baike_m_icon10_active.png) no-repeat center;
+    background-size: 30%;
+}
+#baike_m_icon11_active{
+    background: url(../../img/encyclopedias/baike_m_icon11_active.png) no-repeat center;
+    background-size: 30%;
+}
+
+.baike_m_c_title1{
+    font-size: 13px;
+    color: #333;
+    margin: 20px 0 5px 0;
+    text-align: left;
+}
+.baike_m_nearby_area li{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eaeaea;
+    float: left;
+}
+.baike_m_nearby_area li:last-of-type{
+    border-bottom: none;
+}
+.baike_m_nearby_pic{
+    width: 35%;
+    float: left;
+    margin-right: 5%;
+}
+.baike_m_nearby_pic img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.baike_m_nearby_word{
+    float: left;
+    height: auto;
+    overflow: hidden;
+    margin-top: 8px;
+    width: 60%;
+}
+.baike_m_nearby_name{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.baike_m_nearby_dis{
+    font-size: 12px;
+    color: #999;
+}
+.baike_m_sitearea{
+    width: 191px;
+    height: 42px;
+    margin: auto;
+    background: url(../../img/encyclopedias/baike_m_sitearea.png) no-repeat;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 42px;
+     text-align: center;
+    padding-left: 5px;
+    margin-top:15px;
+}
+.baike_m_sitedate{
+    width: 191px;
+    height: 42px;
+    margin: auto;
+    background: url(../../img/encyclopedias/baike_m_sitedate.png) no-repeat;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    padding-left: 8px;
+    margin-top:15px;
+}
+.baike_m_rent{
+
+}
+.baike_m_rent li{
+    padding: 15px 0px;
+    border-bottom: 1px solid #eaeaea;
+    color: #666;
+    line-height: 24px;
+    font-size: 12px;
+}
+.baike_m_rent li span{
+    font-size: 14px;
+    color: #333;
+}
+.baike_m_bottom{
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+    padding: 15px 0px;
+}
+.baike_m_bottom_logo{
+
+}
+.baike_m_bottom_logo img{
+    width: 100%;
+    height: auto;
+}
+.baike_m_bottom_word{
+    font-size: 12px;
+    color: #dcdcdc;
+    margin-top: 10px;
+    text-align: center;
+}
+.baike_m_map{
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+}
+#l-map{height:100%;width:100%;}
+.header-body-key-active{
+    background: rgba(255,255,255,0.5);
+    border-radius: 9px;
+}
+.baike_pic{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    height: auto;
+}
+.baike_pic ul{
+    width:102%;
+    height: auto;
+    overflow: hidden;
+}
+.baike_pic ul li{
+    margin-bottom: 2%;
+    margin-right:2%;
+    width:48%;
+    height: 120px;
+    overflow: hidden;
+    float: left;
+}
+.baike_pic ul li img{
+    width: 100%;
+}
+.height{
+    height: auto!important;
+}
+.cover_pic{
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 1111;
+    top: 0px;
+    width: 100%;
+    display: none;
+}
+.cover_pic_one{
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.cover_pic_one_active{
+    opacity: 1!important;
+    z-index:111!important;
+}
+.cover_pic_icon{
+    width: 40px;
+    height: 40px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.cover_pic_icon img{
+    width: 40px;
+    height: 40px;
+}
+.cover_pic ul{
+    margin-bottom: 120px;
+}
+.cover_pic ul li img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.cover_pic ul li{
+    margin-bottom: 30px;
+}
+.none{
+    display: none;
+}
+.con-pic{
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    background: url(../../img/encyclopedias/pic_icon.png);
+    background-size: 100%;
+    text-align: center;
+    padding-top: 25px;
+    cursor: pointer;
+    display: block;
+}
+.con-pic span{
+    font-size: 12px;
+    color: #fff;
+}
+.con-pic img{
+    width: 60px;
+    height: 60px;
+}
+.baike_pic_outside{
+    margin-top: 70px;
+    padding: 0px 2%;
+    margin-bottom: 40px;
+    background:#fff;
+    z-index:1;
+}
+.baike_m_c_title span{
+    font-size: 14px;
+}
+.baike_pic_back{
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    margin: 0px 2%;
+}
+.baike_pic_back a{
+    font-size: 14px;
+    color: #333;
+}
+/*@media (min-width: 374px){*/
+    /*.baike_pic ul li{*/
+        /*height: 130px;*/
+    /*}*/
+    /*.baike_pic{*/
+        /*height: 410px;*/
+    /*}*/
+/*}*/
+.topline{
+    background-color:#25252f;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:50px;
+    z-index:50;
+}
+.topline-center{
+    color:#fff;
+    text-align:center;
+    line-height:50px;
+    font-family:微软雅黑,microsoft yahei,Arial,sans-serif;
+    margin: auto;
+    width:80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.topline-back{
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    height:100%;
+    display: block;
+}
+.pic_size{
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+}
+.topline-word{
+    font-size: 16px;
+    max-width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+}
+.swiper-container{
+    margin-bottom: 180px!important;
+
+}
+.swiper-slide img{
+    /*width:100%;*/
+    height: auto;
+    /*display: block;*/
+    border:0px;
+}
+.loading{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    top: 300px;
+    z-index: 1111;
+}
+.loading img{
+    width: 100%;
+}
+
+/*IP案例*/
+.baike_m_case{
+    margin: 20px auto 45px;
+}
+.baike_m_case>li{
+    width: auto;
+    height: 202px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.baike_m_case>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.baike_m_case>li img{
+    width: 100%;
+    height: 100%;
+}
+.baike_m_case>li>a p{
+    width: 90%;
+    padding: 0 5%;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+.baike_m_case>li .mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+/*底部悬浮工具条*/
+.bottom-nav-area.wch_bk_tool .normal-block{
+    width: 21%;
+}
+.bottom-nav-area.wch_bk_tool .larger-block{
+    width: 37%;
+}
+
+@media (min-width: 415px){
+    .cover_pic_icon{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .swiper-wrapper img{
+        height: 200px;;
+        width: auto!important;
+        display: block;
+        margin: auto;
+    }
+}
+@media (min-width: 414px){
+    .baike_m_case>li{
+        height: 224px;
+    }
+}
+@media (max-width: 321px){
+    .baike_m_case>li{
+        height: 173px;
+    }
+}

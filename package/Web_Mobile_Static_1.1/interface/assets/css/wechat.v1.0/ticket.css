@@ -1,0 +1,292 @@
+body{background: #f5f5f5;color: #333;  }
+.clearfix:after{content:'\20';display:block;height:0;clear:both;visibility:hidden;}
+
+/*订票页面*/
+.ticket-title{
+    text-align: center;
+    padding: 15px 0;
+}
+.ticket-title p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.ticket-title h1{
+    font-size: 20px;
+    color: #bd2e57;
+    line-height: 1.25em;
+}
+.ticket-list{
+    margin: 0 15px;
+}
+.ticket-list li{
+    float: none;
+    min-height: 22px;
+    line-height: 22px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ddd;
+    margin-bottom: 15px;
+}
+.ticket-list-p{
+    float:left;
+    width: 75%;
+}
+.ticket-list-p .ticket-name{
+    float: left;
+    font-size: 16px;
+    width: 70%;
+    word-break: break-all;
+    line-height: 22px;
+    color: #333;
+}
+@media(max-width:320px) {
+    .ticket-list-p{
+        font-size: 12px;
+        width: 68%;
+    }
+    .ticket-list-p .ticket-name{
+        width: 60%;
+    }
+}
+.ticket-list-p span{
+    font-size: 16px;
+    color: #bd2e57;
+    display: inline-block;
+}
+.choose-amount{
+    float: right;
+}
+.choose-amount .btn-rd-ad{
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #17a8d2;
+}
+.choose-amount .btn-reduce{
+    color: #17a8d2;
+    background: #fff;
+}
+.choose-amount .btn-add{
+    color: #fff;
+    background: #17a8d2;
+}
+.choose-amount .buy-num{
+    width: 32px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #17a8d2;
+    padding: 0;
+    text-align: center;
+}
+.ticket-num{
+    width: 100%;
+    padding: 15px 0;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 1px 1px #ddd;
+}
+.ticket-num p {
+    font-size: 16px;
+    line-height: 30px;
+}
+.ticket-num p span{
+    padding: 0 5px;
+    font-size: 18px;
+}
+.ticket-btn-wrap{
+    padding:15px;
+}
+.ticket-btn{
+    width: 47.5%;
+    height: 45px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.ticket-btn:visited{
+    color: #fff!important;
+}
+/*订票支付页面*/
+.ticket-pdg15-container{
+    padding: 10px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ddd;
+}
+.ticket-pay-title{
+    min-height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #c8c8c8;
+}
+.ticket-pay-title h2{
+    font-size: 16px;
+    text-align: center;
+}
+.ticket-pay-title h2 span{
+    color: #666;
+    margin-left:3px;
+}
+.ticket-pay-list{
+    padding:2px 2px 20px;
+    border-bottom: 1px dashed #c8c8c8;
+}
+.ticket-pay-list li{
+    float: none;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 16px;
+}
+.ticket-pay-num{padding: 20px 0;}
+.ticket-pay-num p{font-size:16px;}
+.pay-btn-wrap{
+    padding: 10px 0;
+}
+.ticket-btn-pay{
+    width: 100%;
+    display: block;
+    height: 45px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.ticket-btn-pay:visited{
+    color: #fff;
+}
+@media(max-width:320px) {
+    .ticket-btn-pay{
+        font-size: 16px;
+    }
+}
+
+/*查看票号*/
+.ticket-order-list{padding:0 15px;}
+.ticket-order-list li{
+    float: none;
+    padding:0 10px;
+    margin-bottom:15px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ddd;
+    text-align: center;
+}
+.ticket-order-list li h3{
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px dashed #c8c8c8;
+}
+.ticket-order-list li .order-text{
+    height: 45px;
+    line-height: 45px;
+    color: #666;
+}
+.ticket-order-list li .order-text a:visited{
+    color: #666;
+}
+.ticket-order-list li .code-img{
+    padding: 15px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+@media(max-width:320px) {
+    .ticket-order-list li .code-img{
+        width: 100px;
+        height: 100px;
+    }
+}
+.ticket-order-list li .code-img img{width: 100%;}
+
+/*详情页已支付*/
+.btn-payments-wrap .ticket-btn-pay{
+    width: 31%;
+    float: left;
+}
+.btn-payments-wrap .btn-center{
+    margin: 0 3.5%;
+}
+/*验证页面*/
+.ticket-num-typing{
+    padding: 30px 15px 15px;
+}
+.ticket-num-typing label{
+    width:80px;
+    height:40px;
+    line-height:40px;
+}
+.ticket-num-typing .ipt-typing{
+    width: 68%;
+    height: 30px;
+    line-height: 30px;
+    padding:5px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+}
+.btn-typing{
+    display: block;
+    width: 100%;
+}
+
+/*验证页面-票务详情*/
+.ticket_texted_detail{
+    width: 100%;
+}
+.ticket_texted_detail th{
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 5px;
+}
+.ticket_texted_detail td{
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+}
+.ticket_texted_detail td.detail-title{
+    text-align:left;
+    color: #333;
+    font-size: 16px;
+}
+.texted-detail-btnwrap{
+    padding: 15px 0;
+}
+
+
+
+.col-blue{color:#17a8d2;}
+.col-magenta{color:#bd2e57;}
+.btn-col-magenta{background-color: #bd2e57;}
+.btn-col-magenta:visited{color: #333;}
+.btn-col-blue{background-color: #17a8d2;}
+.btn-col-green{background-color: #17d2b5;}
+.btn-col-grey{background-color: #eee;color: #333;}
+.btn-col-grey:visited{color: #333;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

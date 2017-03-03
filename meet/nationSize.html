@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>全国年会</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="daterangepicker/daterangepicker.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="bg-little-black">
+    <div class="w790 advantage">
+        <p class="title font-regular">云SPACE优势</p>
+        <div class="con">
+            <p class="title2 font-regular">更便捷的预订流程</p>
+            <p class="title3">云SPACE为所有客户提供便捷的一站式解决方案，客户只需通过电话或网站直接下单，
+                即可获得云SPACE从活动场地、活动搭建、设备租赁到报批审批等一系列活动流程的支持。</p>
+        </div>
+        <div  class="con">
+            <p class="title2 font-regular">更有竞争力的价格</p>
+            <p class="title3">为了提供更优质的服务，云SPACE培养了一批具有丰富线下活动经验的活动顾问，针对活动需求进行1V1服务，
+                一切服务都只为您的互动更快速、更安全、更完美的执行。</p>
+        </div>
+        <div  class="con">
+            <p class="title2 font-regular">更贴心的1V1服务</p>
+            <p class="title3">云SPACE通过多年来不断累积，已在业内形成非常可观的品牌声誉，
+                通过云SPACE预定场地，可得到档期优先保留、同行业低价等独家优势服务。</p>
+        </div>
+    </div>
+</div>
+<div class="bg-red">
+    <div class="w1200 city-title">
+        <p>北京站</p>
+    </div>
+</div>
+<div class="w1200">
+    <ul class="city-space-list">
+        <li>
+            <a class="top" href="">
+                <img src="" alt="">
+            </a>
+            <div class="des">
+                <p class="title">798剧场</p>
+                <p>面积：1100平米，可容纳人数：200-300人（固定观众席位150个）</p>
+                <p>简介：798剧场，是北京著名艺术人文厂区“798艺术区”唯一直属剧场，坐落于艺术区中心位置，具有地标意义。是一个容纳当代工业与剧场艺术为一体的多功能艺术空间。</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+<!--一键下单-->
+<div class="w1200 onekeyorder">
+    <h2>一键下单</h2>
+    <ul class="steps clearfix">
+        <li><span>第一步</span>提交年会场地需求</li>
+        <li><span>第二步</span>等待客服人员与您沟通</li>
+        <li><span>第三步</span>预约实地看场</li>
+    </ul>
+    <div class="metform">
+        <ul class="metformul">
+            <li class="clearfix">
+                <span class="red">*</span>
+                <p>您的称呼</p>
+                <input name="username" type="text" placeholder="">
+            </li>
+            <li class="clearfix">
+                <span class="red">*</span>
+                <p>您的联系方式</p>
+                <input name="telphone" type="text" placeholder="">
+            </li>
+            <li class="clearfix">
+                <span class="red">*</span>
+                <p>短信验证码</p>
+                <input name="yzcode" type="text" placeholder="">
+                <a class="btnyzcode" href="javascript:;">获取验证码</a>
+            </li>
+            <li class="select">
+                <span class="red">*</span>
+                <div class="title">年会人数</div>
+                <p id="peoplenumbs"></p>
+                <ul>
+                    <li class="selected">100~500人</li>
+                    <li>100~500人</li>
+                    <li>100~500人</li>
+                    <li>100~500人</li>
+                </ul>
+            </li>
+            <li class="clearfix litime">
+                <span class="red">*</span>
+                <p>年会时间</p>
+                <div class="time">
+                    <input name="time" id="config-demo" type="text" placeholder="">
+                </div>
+            </li>
+        </ul>
+        <div class="btn-group">
+            <button class="formbtn js-submit">提交</button>
+            <a class="qq" href="javascript:;"></a>
+        </div>
+        <p class="hotline">预订热线：400-056-0599</p>
+    </div>
+</div>
+
+
+
+<ul class="sidefu hide">
+    <li class="telp"><img src="img/telpl.png"></li>
+    <li class="qq"><img src="img/qq.png"><p></p></li>
+    <li class="backtop js-backtop"><img src="img/backtop.png"></li>
+</ul>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="daterangepicker/daterangepicker.js"></script>
+<script src="daterangepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="js/base.js"></script>
+</html>

@@ -1,0 +1,386 @@
+.loading-color{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.loading-color>.circle:nth-of-type(1){
+    width:10px;
+    height:10px;
+    background:#ff0000;
+    position: absolute;
+    top:50%;
+    left:0;
+    margin-top:-5px;
+    border-radius: 100%;
+    animation:circle-animate1 2s infinite linear;
+    -webkit-animation:circle-animate1 2s infinite linear;
+    -o-animation:circle-animate1 2s infinite linear;
+    -moz-animation:circle-animate1 2s infinite linear;
+    -ms-animation:circle-animate1 2s infinite linear;
+}
+.loading-color>.circle:nth-of-type(2){
+    width:10px;
+    height:10px;
+    background:#00ff00;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-5px;
+    margin-top:-5px;
+    border-radius: 100%;
+    animation:circle-animate2 2s infinite linear;
+    -webkit-animation:circle-animate2 2s infinite linear;
+    -o-animation:circle-animate2 2s infinite linear;
+    -moz-animation:circle-animate2 2s infinite linear;
+    -ms-animation:circle-animate2 2s infinite linear;
+}
+.loading-color>.circle:last-of-type{
+    width:10px;
+    height:10px;
+    background:#0000ff;
+    position: absolute;
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-radius: 100%;
+    animation:circle-animate3 2s infinite linear;
+    -webkit-animation:circle-animate3 2s infinite linear;
+    -o-animation:circle-animate3 2s infinite linear;
+    -moz-animation:circle-animate3 2s infinite linear;
+    -ms-animation:circle-animate3 2s infinite linear;
+}
+@keyframes circle-animate1 {
+    0%{
+        left:0;
+        background:#ff0000;
+    }
+    25%{
+        left:50%;
+        margin-left:-5px;
+        background:#00ff00;
+    }
+    50%{
+        left:100%;
+        margin-left:-10px;
+        background:#0000ff;
+    }
+    75%{
+        left:50%;
+        margin-left:-5px;
+        background:#ff0000;
+    }
+    100%{
+        left:0;
+        background:#ff0000;
+    }
+}
+@-webkit-keyframes circle-animate1 {
+    0%{
+        left:0;
+        background:#ff0000;
+    }
+    25%{
+        left:50%;
+        margin-left:-5px;
+        background:#00ff00;
+    }
+    50%{
+        left:100%;
+        margin-left:-10px;
+        background:#0000ff;
+    }
+    75%{
+        left:50%;
+        margin-left:-5px;
+        background:#ff0000;
+    }
+    100%{
+        left:0;
+        background:#ff0000;
+    }
+}
+@-o-keyframes circle-animate1 {
+    0%{
+        left:0;
+        background:#ff0000;
+    }
+    25%{
+        left:50%;
+        margin-left:-5px;
+        background:#00ff00;
+    }
+    50%{
+        left:100%;
+        margin-left:-10px;
+        background:#0000ff;
+    }
+    75%{
+        left:50%;
+        margin-left:-5px;
+        background:#ff0000;
+    }
+    100%{
+        left:0;
+        background:#ff0000;
+    }
+}
+@-moz-keyframes circle-animate1 {
+    0%{
+        left:0;
+        background:#ff0000;
+    }
+    25%{
+        left:50%;
+        margin-left:-5px;
+        background:#00ff00;
+    }
+    50%{
+        left:100%;
+        margin-left:-10px;
+        background:#0000ff;
+    }
+    75%{
+        left:50%;
+        margin-left:-5px;
+        background:#ff0000;
+    }
+    100%{
+        left:0;
+        background:#ff0000;
+    }
+}
+@-ms-keyframes circle-animate1 {
+    0%{
+        left:0;
+        background:#ff0000;
+    }
+    25%{
+        left:50%;
+        margin-left:-5px;
+        background:#00ff00;
+    }
+    50%{
+        left:100%;
+        margin-left:-10px;
+        background:#0000ff;
+    }
+    75%{
+        left:50%;
+        margin-left:-5px;
+        background:#ff0000;
+    }
+    100%{
+        left:0;
+        background:#ff0000;
+    }
+}
+@keyframes circle-animate2 {
+    0%{
+        background:#00ff00;
+    }
+    25%{
+        background:#0000ff;
+    }
+    50%{
+        background:#ff0000;
+    }
+    75%{
+        background:#ff0000;
+    }
+    100%{
+        background:#00ff00;
+    }
+}
+@-webkit-keyframes circle-animate2 {
+    0%{
+        background:#00ff00;
+    }
+    25%{
+        background:#0000ff;
+    }
+    50%{
+        background:#ff0000;
+    }
+    75%{
+        background:#ff0000;
+    }
+    100%{
+        background:#00ff00;
+    }
+}
+@-o-keyframes circle-animate2 {
+    0%{
+        background:#00ff00;
+    }
+    25%{
+        background:#0000ff;
+    }
+    50%{
+        background:#ff0000;
+    }
+    75%{
+        background:#ff0000;
+    }
+    100%{
+        background:#00ff00;
+    }
+}
+@-moz-keyframes circle-animate2 {
+    0%{
+        background:#00ff00;
+    }
+    25%{
+        background:#0000ff;
+    }
+    50%{
+        background:#ff0000;
+    }
+    75%{
+        background:#ff0000;
+    }
+    100%{
+        background:#00ff00;
+    }
+}
+@-ms-keyframes circle-animate2 {
+    0%{
+        background:#00ff00;
+    }
+    25%{
+        background:#0000ff;
+    }
+    50%{
+        background:#ff0000;
+    }
+    75%{
+        background:#ff0000;
+    }
+    100%{
+        background:#00ff00;
+    }
+}
+@keyframes circle-animate3 {
+    0%{
+        right:0;
+        background:#0000ff;
+    }
+    25%{
+        right:50%;
+        margin-right:-5px;
+        background:#00ff00;
+    }
+    50%{
+        right:100%;
+        margin-right:-10px;
+        background:#ff0000;
+    }
+    75%{
+        right:50%;
+        margin-right:-5px;
+        background:#ff0000;
+    }
+    100%{
+        right:0;
+        background:#0000ff;
+    }
+}
+@-webkit-keyframes circle-animate3 {
+    0%{
+        right:0;
+        background:#0000ff;
+    }
+    25%{
+        right:50%;
+        margin-right:-5px;
+        background:#00ff00;
+    }
+    50%{
+        right:100%;
+        margin-right:-10px;
+        background:#ff0000;
+    }
+    75%{
+        right:50%;
+        margin-right:-5px;
+        background:#ff0000;
+    }
+    100%{
+        right:0;
+        background:#0000ff;
+    }
+}
+@-o-keyframes circle-animate3 {
+    0%{
+        right:0;
+        background:#0000ff;
+    }
+    25%{
+        right:50%;
+        margin-right:-5px;
+        background:#00ff00;
+    }
+    50%{
+        right:100%;
+        margin-right:-10px;
+        background:#ff0000;
+    }
+    75%{
+        right:50%;
+        margin-right:-5px;
+        background:#ff0000;
+    }
+    100%{
+        right:0;
+        background:#0000ff;
+    }
+}
+@-moz-keyframes circle-animate3 {
+    0%{
+        right:0;
+        background:#0000ff;
+    }
+    25%{
+        right:50%;
+        margin-right:-5px;
+        background:#00ff00;
+    }
+    50%{
+        right:100%;
+        margin-right:-10px;
+        background:#ff0000;
+    }
+    75%{
+        right:50%;
+        margin-right:-5px;
+        background:#ff0000;
+    }
+    100%{
+        right:0;
+        background:#0000ff;
+    }
+}
+@-ms-keyframes circle-animate3 {
+    0%{
+        right:0;
+        background:#0000ff;
+    }
+    25%{
+        right:50%;
+        margin-right:-5px;
+        background:#00ff00;
+    }
+    50%{
+        right:100%;
+        margin-right:-10px;
+        background:#ff0000;
+    }
+    75%{
+        right:50%;
+        margin-right:-5px;
+        background:#ff0000;
+    }
+    100%{
+        right:0;
+        background:#0000ff;
+    }
+}

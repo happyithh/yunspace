@@ -1,0 +1,906 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,label,p,blockquote,table,th,td,a{ margin:0; padding:0;box-sizing: border-box;font-family: "PingFangHK", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif}
+body { background:#f2f2f2; color:#000; font-size:14px;position: relative;width: 100%;height: 100%; font-family: "PingFangHK-Thin", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif!important;}
+table { border-collapse:collapse; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#000; text-decoration:none;display: block;}
+a:hover, a:active, a:focus{color:#000;}
+.img>img{
+    width: 100%;
+    height: 100%;
+}
+ol,ul,li { list-style:none; }
+img{border:none;}
+.logo img{background: none;}
+
+input, textarea, select, button { font-size:14px; outline: none;border: none;display: inline-block;font-family: "PingFangHK-Thin", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif!important;}
+a,button{
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    cursor: pointer;
+}
+body{
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
+a:hover,a:active,a:focus{
+    color: #fff;
+    text-decoration: none;
+}
+
+.fl{float: left;}
+.fr{float: right;}
+
+.hid{display: none;}
+.clearfix:after {content: " "; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.red{color:#e92332;}
+.font-regular{font-family: "PingFangHK-Regular", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif!important;}
+button.bggray{background: #999;}
+.bgyellow{background:#f59914;}
+.bgpurple{background:#350443;}
+.bggreen{background:#00b3b9;}
+.bgred{background:#e92332;}
+.bgbrown{background:#be956a;}
+
+.purple>h2{color: #350443;}
+.green>h2{color: #00b3b9;}
+.red>h2{color: #e92332;}
+.brown>h2{color: #be956a;}
+
+.purple .adg-cont .fl p{background: #350443;}
+.green .adg-cont .fl p{background: #00b3b9;}
+.red .adg-cont .fl p{background: #e92332;}
+.brown .adg-cont .fl p{background: #be956a;}
+
+.display-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.container{padding: 0;}
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.banenr-bar{
+    width: 950px;
+    margin: 1rem auto;
+}
+
+.spacelist li{
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+.spacelist li>h5{
+    font-size: 1rem;
+    margin: 10px 0 10px;
+    text-align: left;
+}
+.spacelist li>h5 a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.spacelist li a:hover,
+.spacelist li a:visited,
+.spacelist li a:active{color: #000;}
+.spacelist li .text{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.spacelist li .pricecont{
+    width: 100%;
+    background: #eee;
+    margin-top: 0.6rem;
+    padding: 0.3rem 0;
+    position: relative;
+}
+.spacelist li .pricecont .left{
+    text-align: center;
+    width: 75%;
+}
+.spacelist li .dis-price{
+    font-size: 16px;
+}
+.spacelist li .dis-price strong{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 3px;
+}
+.spacelist li .dis-price span{
+    font-size: 12px;
+}
+.spacelist li .price{
+    color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.spacelist li .btn-shopping{
+    display: block;
+    width: 85px;
+    height: 100%;
+    background: url("../../img/meeting/hot-item/icon-shopcart.png") no-repeat center #fed20b;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.spacelist{margin: 20px 0 2rem;}
+.spacelist li.explan{
+    position: relative;
+}
+.spacelist li .explan-title{
+    width: 100%;
+    height: 60%;
+    background:#ffd801;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 0;
+    top: -20%;
+}
+.spacelist li .explan-cont{
+    width: 100%;
+    height: 60%;
+    padding: 3% 18% 0;
+    background:#333;
+    font-size: 18px;
+    color: #ffd801;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.spacelist li .explan-cont p{
+    width: 100%;
+    margin: 1rem 0;
+}
+.spacelist li .big-explan-cont p{
+    margin: 0.6rem 0;
+}
+
+/*官网导航颜色改变*/
+.top{background: #272335;}
+.bg-blue{background: #272335 !important;}
+.bg-blue a:hover{color: #ff4229 !important;}
+.yun-icon{max-width: 110px;}
+
+/****公共样式****/
+/*悬浮导航*/
+.sidenav{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 530px;
+    z-index: 10;
+    background:#4a7138;
+}
+.sidenav .sidetitle{
+    padding: 12px 10%;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+.sidenav li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dashed #fff;
+    position: relative;
+}
+.sidenav li>a{
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    text-indent: 25px;
+    position: relative;
+    z-index: 5;
+}
+.sidenav li:after{
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: url("../../img/meeting/hot-item/icon.png") no-repeat;
+    background-position: -93px -20px;
+    position: absolute;
+    left: 6px;
+    top: 12px;
+    z-index: 1;
+}
+.sidenav .backtop{
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+}
+
+/******热卖专题空间详情页面******/
+.hot-location{
+    padding: 20px 15px;
+    font-size: 16px;
+}
+.hot-location>a{
+    float: left;
+    color: #ef4035;
+}
+.hot-location>a:hover{
+    color: #ef4035;
+}
+.hot-location>p{
+    float: left;
+}
+.hot-location>span{
+    display: block;
+    float: left;
+    margin: 0 5px;
+    color: #000;
+}
+.swiper-slide >a{display: inline-block;width: 100%;}
+.swiper-slide img{
+    width: 100%;
+}
+
+.spacetop{margin-bottom: 30px;}
+.spacetop-cont>.title{
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    margin-bottom: 0.3rem;
+}
+.spacetop-cont>.explan{
+    font-size: 18px;
+}
+.price-cont{
+    width: 100%;
+    background: #fff;
+    padding: 0.7rem 0 0.5rem;
+    margin: 10px 0;
+}
+.price-cont .spprice{
+    color:#ef4035;
+    padding-right: 0;
+}
+.price-cont .spprice >p{font-size: 14px;}
+.price-cont .spprice strong{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.price-cont .spprice span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.price-cont .origprice{color:#999;}
+.price-cont .origprice >p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.price-cont .origprice strong{
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.about-spec p{
+    font-size: 16px;
+    line-height: 2.1em;
+}
+.about-spec p span{
+    display: inline-block;
+    color: #999;
+    text-align:justify;
+}
+.spacetop-cont .orderbtn{
+    width: 10rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin-top: 17px;
+    background:#e62b3d;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    top:0;
+    right: 0;
+    z-index: 10;
+}
+.spacetop-cont .orderbtn.position{
+    position: fixed;
+    margin-top: 0;
+    width: 25%;
+    height: 60px;
+    padding: 0 5px;
+    line-height: 60px;
+    font-size: 1rem;
+}
+
+/*空间介绍、套餐详情、预定须知*/
+.spacedtl{padding-bottom: 50px;}
+.spacedtl .navlist{
+    margin-bottom: 28px;
+    z-index: 10;
+    left: 0;
+    padding: 0;
+}
+.spacedtl .navlist.position{
+    position:fixed;
+    top:0;
+}
+.spacedtl .navlist li{
+    height: 60px;
+    line-height: 52px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 2px;
+    background: #f2f2f2;
+}
+.spacedtl .navlist li:last-child{padding-right: 0;}
+.spacedtl .navlist li>a{
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+    color: #000;
+    border-top: 5px solid #ddd;
+}
+.spacedtl .navlist li.current a{
+    color: #e62b3d;
+    background: #fff;
+    border-top: 5px solid #e62b3d;
+}
+
+.spacedtl .title{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    background: #fff;
+    border: 1px solid #e62b3d;
+    border-left-width: 0.67rem;
+    margin-bottom: 20px;
+}
+.spacedtl .title h5{
+    margin-left: 15px;
+    height: 100%;
+    line-height: 40px;
+}
+.spacedtl .title>a{
+    margin-right: 15px;
+    color: #999;
+}
+.spacedtl .title>a span{
+    display: block;
+    float: right;
+    font-family: 宋体;
+    margin-left: 8px;
+    font-size: 24px;
+}
+.spacedtl .text{
+    padding-bottom: 15px;
+}
+.spacedtl .text p{
+    font-size:18px;
+    line-height: 1.5em;
+}
+.spacedtl .text img{
+    width: 100%;
+    margin: 10px 0;
+}
+.spacedtl .place{
+    font-size:18px;
+    line-height: 1.5em;
+    margin: 15px 0;
+}
+.spacedtl .img{margin-bottom: 20px;}
+/****地图****/
+.map{
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 20px;
+}
+
+/*更多套餐推荐*/
+.space-sidebar{
+    background: #fff;
+    padding: 15px 0;
+}
+.space-sidebar .title{
+    font-size: 24px;
+    font-weight: bold;
+    padding:10px 15px 0;
+}
+.space-sidebar li{
+    border-bottom: 1px dashed #ddd;
+    padding: 15px;
+}
+.space-sidebar li:last-child{border: none;}
+.space-sidebar li h5{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.space-sidebar li h5 a:hover{
+    color: #000;
+}
+.space-sidebar li .tabs{
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.space-sidebar li .price{
+    width: 100%;
+    height:40px;
+    line-height: 40px;
+    background:#f4f4f4;
+    font-size:18px;
+    color:#ef4035;
+    text-align:center;
+    margin: 10px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*立即预订弹窗*/
+/*公共表单*/
+.pop-mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 60;
+}
+body .daterangepicker td.active,body .daterangepicker td.active:hover{
+    background: #ff4229;
+}
+.daterangepicker td.in-range{
+    background: #f8efed;
+}
+.close{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: url("../../img/meeting/hot-item/icon-close.png") no-repeat center;
+    background-size: 0.8rem 0.8rem;
+    opacity: 1;
+}
+.onekeyorder{
+    background: #fff;
+    width: 25.3rem;
+    padding: 2rem 1rem 1.5rem;
+    margin: 0 auto;
+    position: fixed;
+    top:1rem;
+    left: 50%;
+    margin-left: -12.65rem;
+    z-index: 100;
+}
+.onekeyorder h2{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.metform{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.metformul>li{
+    width: 100%;
+    height: 2rem;
+    padding: 0 0.5rem;
+    line-height: 2rem;
+    background: #fff;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+    border: 1px solid #1a1a1a;
+}
+.metformul>li span{
+    float: left;
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 0.6rem;
+    margin-right: 3px;
+}
+.metformul>li .title{
+    float: left;
+    color: #666;
+    font-size: 0.8rem;
+}
+.metformul>li p{
+    float: left;
+    font-size: 0.8rem;
+    margin-left: 0;
+    color: #666;
+}
+.metformul>li input{
+    float: left;
+    display: block;
+    width: 6.67rem;
+    height: 100%;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+.metformul>li .yzcode{
+    width: 3rem;
+}
+.metformul>li .time{
+    float: left;
+    width: 98%;
+    padding-left: 4.2rem;
+    height: 100%;
+    background: url("../../img/meeting/date.png") no-repeat right center;
+    background-size: 1.33rem 1.33rem;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.metformul>li .time input{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+.btnyzcode{
+    width: 230px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    background: #ff4229;
+}
+.btnyzcode_new{
+    width: 7rem;
+    height: 2rem;
+    line-height: 2rem;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    background: #ff4229;
+}
+.btn-group{width: 100%;position: relative;}
+.btn-group .formbtn{
+    width: 100%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.8rem;
+    background: #e62b3d;
+}
+.orderphone{
+    width: 100%;
+    height: 1.5rem;
+}
+.orderphone .qqwrap{
+    width: 31%;
+    max-width: 5rem;
+    height: 100%;
+    line-height: 1.5rem;
+    position: relative;
+    background: #e62b3d;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-indent: 0.75rem;
+}
+.orderphone .qq{
+    display: block;
+    width: 1rem;
+    height: 20px;
+    background: url("../../img/meeting/qq.png") no-repeat center;
+    background-size: 20px 20px;
+    position: absolute;
+    top: 0.35rem;
+    left: 0.8rem;
+}
+.orderphone .hotline{
+    width: 69%;
+    height: 100%;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color:#e62b3d;
+    text-align: right;
+}
+/*表单下拉*/
+.select{
+    width: 300px;
+    height: 40px;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+}
+.select:after{
+    content:"";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.6rem;
+    transition: all 0.3s ease-in;
+}
+.metformul>li.select p{
+    width: 100%;
+    height: 2rem;
+    padding:0 15px;
+    line-height: 2rem;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: 4rem;
+}
+.select ul{
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    overflow: hidden;
+    max-height: 0;
+    z-index: 10;
+}
+.select ul li{
+    padding: 0 15px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.select ul li:hover{
+    background: #e0e0e0;
+}
+.select ul li.selected{
+    background: #000;
+    color: #fff;
+}
+@keyframes slide-down{
+    0%{transform: scale(1,0);}
+    25%{transform: scale(1,1.2);}
+    50%{transform: scale(1,0.85);}
+    75%{transform: scale(1,1.05);}
+    100%{transform: scale(1,1);}
+}
+@-webkit-keyframes slide-down{
+    0%{transform: scale(1,0);}
+    25%{transform: scale(1,1.2);}
+    50%{transform: scale(1,0.85);}
+    75%{transform: scale(1,1.05);}
+    100%{transform: scale(1,1);}
+}
+.select.open ul{
+    max-height: 250px;
+    transform-origin: 50% 0;
+    animation: slide-down 0.5s ease-in;
+    -webkit-animation: slide-down 0.5s ease-in;
+    transition: max-height 0.2s ease-out;
+}
+.select.open:after{
+    transform: rotate(-180deg);
+    transition: all 0.3s ease-in;
+}
+
+
+
+
+@media (max-width: 767px) {
+    html {font-size: 20px;}
+    .spacelist li .btn-shopping{
+        background-size: 40px 40px;}
+    .spacelist li.explan{height: 400px !important;}
+    .price-cont .origprice >p{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .onekeyorder{
+        width: 98%;
+        margin-left: 0;
+        left: 1%;
+        padding: 1.2rem 1rem 1rem;
+    }
+    .orderphone .qqwrap{text-indent: 1rem;font-size: 14px;}
+    .orderphone .qq{
+        left: 0.2rem;
+        background-size: 0.8rem 0.8rem;
+    }
+    .spacedtl .navlist.position li{
+        height: 45px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+    .spacetop-cont .orderbtn.position{
+        height: 45px;
+        line-height: 45px;
+        font-size: 15px;
+    }
+    .metformul>li{margin-bottom: 0.8rem;}
+    .onekeyorder h2{margin-bottom: 0.8rem}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    html {font-size: 22px;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    html {font-size: 24px;}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .banner{
+        height: 350px;
+    }
+    .yearbanner{
+        height: 300px;
+    }
+    .banner img{
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-left: -896px;
+    }
+}
+@media (max-width: 991px) {
+    .banenr-bar{width: 100%;}
+    .banenr-bar img{width: 100%;}
+    .spacelist li .explan-title{
+        height: 40%;
+        top: 0;
+    }
+    .spacelist li.explan{height: 380px !important;}
+    .sidenav{width: 80px;}
+    .sidenav .sidetitle{
+        padding: 8px 10% 6px;
+        font-size: 24px;
+    }
+    .sidenav li{
+        height: 32px;
+        line-height: 32px;
+    }
+    .sidenav li>a{
+        font-size: 13px;
+        text-indent: 19px;
+    }
+    .sidenav li:after{
+        left: 3px;
+        top: 8px;
+    }
+    .sidenav .backtop{
+        height: 46px;
+        line-height: 46px;
+        font-size: 15px;
+    }
+    .spacetop-cont .title{margin-top: 10px;line-height: 1.2em;}
+    .spacetop-cont .orderbtn{
+        margin: 10px auto;
+    }
+    .orderphone .qqwrap{text-indent: 0.95rem;}
+    .orderphone .qq{
+        top:0.22rem;
+        left: 0.5rem;
+        background-size: 0.8rem 0.8rem;
+    }
+}
+@media (max-width: 767px) {
+    .orderphone .qqwrap{font-size: 14px;}
+    .orderphone .qq{
+        top: 0.23rem;
+        left: 0.3rem;
+        background-size: 0.7rem 0.7rem;
+    }
+    .orderphone .hotline{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .yun-swiper-prev, .yun-swiper-next{
+        width: 30px;
+        height: 60px;
+        margin-top: -30px;
+    }
+    .yun-swiper-prev span, .yun-swiper-next span{
+        width: 18px;
+        height: 18px;
+        top: 22px;
+    }
+    .yun-swiper-prev span{left: 10px;}
+    .yun-swiper-next span{right: 10px;}
+}
+@media (min-width:768px) and (max-width:1440px){
+    .metformul>li {
+        height: 1.8rem;
+        line-height: 1.8rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.6rem;
+    }
+    .onekeyorder{padding: 1.6rem 1rem 1rem;}
+}
+@media (min-width:1200px) and (max-width: 1440px) {
+    html {font-size: 26px;}
+}
+@media (min-width:1440px){
+    html {font-size: 30px;}
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+    .banner{
+        height: 500px;
+    }
+    .yearbanner{
+        height: 400px;
+    }
+    .banner img{
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-left: -1280px;
+    }
+    .space-carousel{
+        padding-right: 0;
+        padding-left: 0;
+        max-height: 400px;
+        overflow: hidden;
+    }
+    .spacedtl{
+        padding-left: 0;
+    }
+    [class*="span"]{
+        float: none;
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .spacelist li .text,
+    .spacelist li .pricecont .left p,
+    .spacetop-cont>.explan{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .spacetop-cont>.explan{width: 100%;}
+    .spacelist li .text{
+        min-height: 21px;
+    }
+}

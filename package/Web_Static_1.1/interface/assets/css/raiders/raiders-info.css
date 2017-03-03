@@ -1,0 +1,95 @@
+.raiders-info-left{ width: 930px; float: left; margin-right: 30px;}
+.raiders-info-right{ width: 220px; float: right;}
+
+.raiders-info-title{ font-size: 36px; color: #24252f; font-weight: bold; margin-top: -10px;max-width: 900px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.raiders-pags{ margin-top: 30px; padding-bottom: 20px; border-bottom: 1px solid #ddd;}
+.raiders-pags li{ float: left; color: #999; margin-right: 50px; font-size: 12px;}
+.pag1{ font-size: 12px; color: #ff308d;}
+.pag2{ font-size: 12px; color: #666;}
+.pag3{ font-size: 12px; color: #00c3c3;}
+.pag4{ font-size: 12px; color: #44b1e2;}
+.raiders-info-img { padding: 50px 0px; text-align: center;}
+.raiders-info-img img{ width: 415px; height: 335px; border: 4px solid #eee;}
+.raider-info-content{float: left; color: #666; margin-bottom: 40px;padding-top:30px;}
+.raider-info-content p{ line-height: 2em;}
+.raider-info-content img{max-width: 98%;margin: 10px 0;}
+.raiders-info-line{ height: 42px; background-color: #f2f2f2; border:1px solid #f2f2f2;  line-height: 42px;  }
+.raiders-info-more{ margin: 20px 0px 10px; text-align: center;}
+.raiders-info-more a{ color: #ff308d;}
+.raiders-info-share-left{ float: left;}
+.raiders-info-share-right{ float: right;}
+.raider-info-share-text{ float: left; color: #999; line-height: 40px;}
+.raider-info-share-icon{ float: left; margin-left: 10px;}
+.raiders-info-share-right span{ display: block; float: right; margin-left: 20px; color: #999; line-height: 28px; padding-left: 30px;}
+.raiders-info-share-right .nice{ background: url(../../img/raiders-info/icon7.jpg) no-repeat top left;}
+.raiders-info-share-right .bad{ background: url(../../img/raiders-info/icon8.jpg) no-repeat top left;}
+.reading{ margin-top: 50px;}
+.comment{ margin-top: 30px; margin-bottom: 60px;}
+.reading-title{ color: #24252f; font-size: 16px; height: 35px; background: url(../../img/raiders-info/line1.jpg) no-repeat bottom left;}
+.comment-title{ color: #24252f; font-size: 16px; height: 35px; background: url(../../img/raiders-info/line2.jpg) no-repeat bottom left;}
+.reading-content{ margin-top: 30px;}
+.reading-content li{ height: 40px; list-style: square inside; color: #ddd;}
+.reading-content li a{ color: #999;}
+.reading-content li a:hover{ color: #000;}
+.comment-content{ margin-top: 30px; padding-bottom: 20px; border-bottom: 1px dashed #eee;}
+.comment-pic{ float: left; margin-right: 12px;}
+.comment-pic img{ width: 50px; height: 50px;}
+.comment-input{ float: left; width: 856px; border: 1px solid #ccc; padding: 5px;}
+.comment-btn{ width: 88px; height: 32px; border: 1px solid #d2d0d0; background-color: #e9e9e9; float: right; margin-top: 10px;
+    text-align: center; color: #666; font-weight: bold; line-height: 32px;}
+.comment-list li{ padding: 20px 0px; border-bottom: 1px dotted #eee; height: auto; overflow: hidden;}
+.comment-list li:last-child{ border: none;}
+.comment-list-content{ float: left; width: 868px;}
+.comment-list-title{ color: #24252f;}
+.comment-list-detail{ color: #999; margin-top: 20px;}
+.comment-replay{ float: right;}
+.comment-replay a{ color: #2a85c0; display: block; float: right; margin-left: 20px;}
+.comment-replay span{ background: url(../../img/raiders-info/icon9.jpg) no-repeat top left; color: #2a85c0; display: block; float: right; padding-left: 20px;}
+.raider-info-weixin{ text-align: center; font-size: 12px; color: #24252f; margin-top: 60px; line-height: 44px;}
+.package_title{ border-left: 4px solid #ff308d; height: 30px; line-height: 30px; font-size: 16px; font-weight: bold; padding-left: 30px;}
+.package{ border: 1px solid #e8e8e8; margin-top: 10px;}
+.package_name{text-align: center; color: #00c3c3; padding: 20px; border-bottom: 1px solid #e8e8e8;}
+.package_content{ padding:20px;}
+.market_price{ font-size: 14px; color: #8e8e8e; margin-bottom: 0px;}
+.yun_price{ font-size: 14px; color: #8e8e8e; margin-bottom: 0px;}
+.yun_price span{ color: #ff308d; font-size: 24px; font-weight: bold;}
+.discount{ color: #8e8e8e; margin-top: 10px;}
+.discount span{ display: block; width: 50px; height: 16px; background: url("../../img/raiders-info/discount.jpg") no-repeat;
+    margin-left: 6px; float: left; margin-top: 2px; color: #fff; font-size: 12px; text-align: center;}
+.discount_word{ float: left;}
+.enter_set{ height: 45px; line-height: 45px; background-color: #00c3c3; color: #fff; text-align: center; width: 100%; display: block; margin-top: 20px;}
+
+.brand_list_right{ float: right; border: 1px solid #ddd; padding: 20px 15px; margin-top: 20px;}
+.weixin_left{ float: left; padding: 2px; border: 1px solid #dedede;}
+.weixin_left img{ display: block;}
+.weixin_right{ float: left; margin-left: 6px; width: 110px;}
+.weixin_right .weixin_p1{ color: #6e6d6d; font-size: 12px; line-height: 26px; text-align: left; margin-top: 12px; margin-left: 18px;}
+.weixin_right .weixin_p1 span{ padding-right: 10px;}
+.weixin_right .weixin_p2{ color: #6e6d6d; font-size: 12px; line-height: 26px; margin-bottom: 0px;}
+.weixin_right .weixin_p1 span img{ width: 20px; height: 17px;}
+
+.back111 a{ color: #666; font-size: 12px; margin: 3% 3%; width: 94%; display: block;}
+
+@media (max-width: 560px){
+    .containers{ width: 100%!important;}
+    .raiders-info-left{
+       margin:0 3%; width: 94%;  float: none;}
+    .raiders-info-right{ display: none;}
+    .raider-info-content{ padding-top: 0px;}
+    .raiders-info-title{ font-size: 20px; max-width: none; margin-top: 10px;}
+    .raiders-pags{ margin-top: 10px;}
+    .raiders-pags li{ float: none;}
+    .raider-info-content img{ max-width: 100%; height: auto; display: block;}
+    #classify{ display: none;}
+    #meankid{ display: none;}
+    #shafa{ display: none;}
+    .raiders-info-share-left{ float: none; height: auto; overflow: hidden;}
+    .raiders-info-share-right{ float: none; height: auto; overflow: hidden;}
+    .comment-chat{  margin-left: 15px;}
+    .raider-info-share-text{ float: none;}
+    .raider-info-share-icon{ float: none;}
+}
+
+@media (min-width: 560px){
+    .back111{ display: none;}
+}

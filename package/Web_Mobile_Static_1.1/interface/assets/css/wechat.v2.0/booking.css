@@ -1,0 +1,590 @@
+@charset "utf-8";
+
+.popup_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: #000;
+    background:rgba(0, 0, 0, 0.4);
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    z-index:100;
+    left:0;top:0;
+}
+
+/*初始化*/
+body{background:#efefef;color: #24252f;max-width: 640px;margin: 0 auto;}
+.bg-green,.bg-magenta:active{color: #fff;}
+.bg-green,.bg-magenta:visited{color: #fff;}
+.bg-white:active{color: #25252f;}
+.bg-white:visited{color: #25252f;}
+
+/*首页-正在售票*/
+.booking-nav{
+    width: 100%;
+    height:50px;
+    border-bottom: 1px solid #e3e3e3;
+    background: #fff;
+}
+.booking-nav li{
+    float: left;
+    width: 50%;
+    height: 49px;
+}
+.booking-nav li a{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin:10px 0;
+    border-right: 1px solid #e3e3e3;
+    color: #24252f;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.booking-nav .active{border-bottom: 2px solid #00c3c3;}
+.booking-nav .active a{color: #00c3c3;}
+
+.booking-list{width: 100%;background: #fff;}
+.booking-list>a{
+    width: 100%;
+    min-height: 150px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e3e3e3;
+    display: block;
+    color: #686868;
+}
+.booking-list .boki-img{
+    float: left;
+    margin:0 15px;
+    width: 120px;
+    height: 150px;
+}
+.booking-list .boki-img img{
+    width: 100%;
+    height: 100%;
+}
+.booking-list .boki-details{
+    float: left;
+    width: 57%;
+}
+.booking-list .boki-details h2{
+    font-size: 16px;
+    word-break: break-all;
+    line-height: 20px;
+    margin:5px 0 10px;
+    color: #24252f;
+}
+.booking-list .boki-details p{
+    line-height: 1.25em;
+    margin-bottom: 6px;
+}
+.booking-list .ticket-price{margin-top: 5px;}
+.booking-list .ticket-price span{color:#00c3c3;}
+.booking-list .ticket-price strong{
+    color:#00c3c3;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: "Arial";
+}
+@media(max-width:321px) {
+    .booking-list .boki-details{
+        width: 53%;
+    }
+}
+
+/*票务查询*/
+.ticketcheck-list{background: #efefef;}
+.ticketcheck-list .list-a{
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    padding:15px 15px 20px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    border-bottom: 1px solid #e3e3e3;
+    color: #686868;
+    background: #fff;
+}
+.check-list-title{
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 12px;
+}
+.check-list-title p{
+    font-size: 16px;
+    line-height: 1.6em;
+}
+.check-list-cont{margin-top: 15px;}
+.check-list-cont .boki-img{
+    float: left;
+    width: 120px;
+    height: 112px;
+    position: relative;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.check-list-cont .boki-img img{
+    width: 100%;
+    height: 100%;
+}
+.check-list-cont .boki-img span{
+    width: 75px;
+    height: 28.8px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    text-indent: -9999px;
+    background-size: 100% 100%;
+}
+.ck-hvcancel{background: url("../../img/wechat.v2.0/ck-hvcancel.png") no-repeat;}
+.ck-hvnotused{background: url("../../img/wechat.v2.0/ck-hvnotused.png") no-repeat;}
+.ck-hvused{background: url("../../img/wechat.v2.0/ck-hvused.png") no-repeat;}
+.ck-tobepaid{background: url("../../img/wechat.v2.0/ck-tobepaid.png") no-repeat;}
+.ck-papers{background: url("../../img/wechat.v2.0/ck-papers.png") no-repeat;}
+.check-list-cont .boki-details{
+    float: left;
+    width: 57%;
+}
+@media(max-width:321px) {
+    .check-list-cont .boki-details{
+        width: 52%;
+    }
+}
+.check-list-cont h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #24252f;
+}
+.check-list-cont p{line-height: 1.5em;}
+.check-list-cont p .line{margin: 0 5px;}
+.boki-details-btn{width:100%;margin-top: 10px;}
+.boki-details-btn>a{
+    display: block;
+    width: 45%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    box-sizing:border-box;
+}
+
+/*售票详情电子票*/
+.booking-btn{
+    width: 100%;
+    max-width: 640px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    bottom:0;
+}
+.boki-banner{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.boki-dtl-banner{
+    width: 100%;
+    height: 200px;
+    background:#fff;
+    border-bottom: 1px solid #ddd;
+}
+.boki-dtl-img{
+    float: left;
+    width: 110px;
+    height: 150px;
+    margin: 25px 20px 10px;
+}
+.boki-dtl-img img{
+    width: 100%;
+    height: 100%;
+}
+.boki-dtl-title{
+    float: right;
+    color: #fff;
+    margin-right: 30px;
+    margin-top: 60px;
+    width: 48%;
+}
+@media(max-width:321px) {
+    .boki-dtl-title{
+        width: 41%;
+    }
+}
+.boki-dtl-title p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    margin-bottom: 8px;
+}
+.boki-dtl-timeplace{
+    background: #fff;
+    padding: 0 15px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    margin-top: 20px;
+}
+.boki-dtl-timeplace p{
+    width: 100%;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 15px;
+}
+.boki-act-profile{
+    padding: 0 15px 70px;
+    background: #fff;
+    border-top: 1px solid #e3e3e3;
+    margin-top: 15px;
+}
+.boki-act-profile .tit{
+    width: 100%;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.boki-act-profile p{
+    line-height: 1.6em;
+    text-indent: 2em;
+}
+.boki-act-profile .remarks{margin-top: 10px;}
+
+
+/*选票页面*/
+.tkt-choice-title{
+    background: #fff;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 15px;
+}
+.tkt-choice-title h2{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tkt-choice-title p{
+    line-height: 1.25em;
+    color: #666;
+}
+.choice-list{
+    background: #fff;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 0 15px 15px;
+    margin-top: 15px;
+}
+.choice-list .tit{
+    width: 100%;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #666;
+}
+.tkt-choice-time ul{min-width: 300px;}
+.tkt-choice-time li{
+    float: left;
+    width: 29%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    border:1px solid #979797;
+    border-radius: 5px;
+    text-align: center;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;
+    -khtml-user-select: none; user-select: none;
+}
+.tkt-choice-time li.active{
+    background:#00c3c3;
+    color: #fff;
+    border: 1px solid #00c3c3;
+}
+
+.tkt-choice-price ul{min-width: 300px;}
+.tkt-choice-price li{
+    float: left;
+    width:auto;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-height: 20px;
+    line-height: 20px;
+    background: #fff;
+    border:1px solid #979797;
+    border-radius: 5px;
+    /*text-align: left;*/
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;
+    -khtml-user-select: none; user-select: none;
+}
+.tkt-choice-price li.active{
+    background:#00c3c3;
+    color: #fff;
+    border: 1px solid #00c3c3;
+}
+li.hasno{
+    background: #eee;
+    color: #b3b3b3;
+    border:1px solid #ccc  !important;
+}
+@media(min-width:359px) {
+    .tkt-choice-time ul{padding-left: 14px;}
+}
+
+.tkt-choice-num{
+    background: #fff;
+    border-bottom: 1px solid #e3e3e3;
+    height: 30px;
+    line-height: 30px;
+    padding: 15px;
+    margin-top: 15px;
+}
+.tkt-choice-num h2{
+    float: left;
+    font-size: 15px;
+    color: #666;
+}
+.tkt-numb-count{float: right;}
+.tkt-numb-count .btn-rd-ad{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 22px;
+    border: 1px solid #979797;
+    text-align: center;
+    box-sizing: border-box;
+    color: #24252f;
+}
+.tkt-numb-count .buy-num{
+    width: 36px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 18px;
+    color: #999;
+    border: none;
+    text-align: center;
+}
+.tkt-total-money{
+    margin: 15px 15px 75px 0;
+    font-size: 16px;
+}
+.tkt-total-money span{
+    color: #00c3c3;
+    font-size: 20px;
+}
+
+/*待支付*/
+.boki-tobepay-banner{background: #fff;}
+.boki-tobepay-title{
+    float: left;
+    margin-top: 30px;
+    width: 50%;
+}
+.boki-tobepay-title h2{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.boki-tobepay-title p{
+    line-height: 20px;
+    text-align: left;
+}
+
+/*已取消/未使用/已使用*/
+.boki-ck-banner{background: #fff;}
+.ck-timeplace{
+    padding: 0 15px 15px;
+    background: #fff;
+    line-height: 22px;
+}
+.ck-part{
+    background: #fff;
+    padding: 0 15px 15px;
+    border-top: 1px solid #e3e3e3;
+    margin-top: 20px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.ck-part .tit{
+    width: 100%;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 12px 0;
+    font-size: 16px;
+}
+.ck-part-tkt{
+    border-top: 1px solid #e3e3e3;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.ck-part-tkt>p{
+    margin-top: 8px;
+    color: #565656;
+    font-size: 15px;
+    vertical-align: top;
+}
+.ck-part-tkt>p span{display: inline-block;font-size: 15px;}
+.ck-part-tkt>p .state{color: #888;}
+.ck-part-tkt .qr-code{
+    width: 130px;
+    height: 130px;
+}
+.ck-part-tkt .qr-code img{
+    width: 100%;
+    height: 100%;
+}
+.boki-dtl-timeplace{
+    background: #fff;
+    padding: 0 15px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    margin-top: 20px;
+}
+.receiv-msg{margin-bottom: 65px;padding-bottom: 10px;}
+.boki-dtl-timeplace p.msg{
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.score_pay{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display: table;
+    background: rgba(0,0,0,0.5);
+}
+.score_body{
+    display: table-cell;
+    vertical-align: middle;
+    height:100%;
+    width:100%;
+}
+.score_body_main{
+    width:260px;
+    margin:0 auto;
+    background: #fff;
+}
+.score_body_text{
+    padding:0 29px;
+}
+.score_title{
+    border-bottom:1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    line-height:40px ;
+    color:#333;
+}
+.score_body_text p:first-of-type{
+    font-size: 14px;
+    padding:10px 0;
+    line-height:150%;
+}
+.score_body_text p{
+    line-height: 150%;
+    font-size: 12px;
+}
+.score_body_text p:last-of-type{
+    font-size: 15px;
+    margin-top:10px;
+}
+.score_body_text p:last-of-type span{
+    color:#FF9900!important;
+}
+.score_submit{
+    display: inline-block;
+    width:100%;
+    background: #00AAAA;
+    border:0px;
+    color:#fff;
+    line-height:40px ;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.ticket-info{
+    margin-top:10px;
+    margin-bottom: 10px;
+    background: #fff;
+    position: relative;
+    padding-left:95px;
+    padding-top:10px;
+    padding-bottom:10px;
+    z-index: 1px;
+    min-height: 80px;
+}
+.ticket-img{
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:80px;
+    height:80px;
+    z-index:10;
+}
+.ticket-img img{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    background: #000;
+}
+.ticket-info-body .ticket-p{
+    font-size:13px;
+    line-height:200%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.ticket-p span{
+    color:#f99b3b;
+    font-size:16px;
+}
+.ticket-help{
+    position: absolute;
+    right:25px;
+    top:65px;
+    width:20px;
+    height:20px;
+}
+.ticket-help a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+}
+.ticket-help a img{
+    width:100%;
+    height:100%;
+}
+.none{
+    display: none;
+}
+.cover{
+   background:rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0px;
+    top:0px;
+    z-index:11;
+}
+.show{
+    width:80%;
+    left:10%;
+    position: fixed;
+    top:20%;
+    padding: 15px 15px 0 15px ;
+    box-sizing: border-box;
+    z-index:12;
+    background: #fff;
+}
+
+
+
+

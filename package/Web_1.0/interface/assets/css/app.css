@@ -1,0 +1,73 @@
+body{ position:relative;}
+
+.row { margin: -15px; padding: -15px;}
+.fb1 { background-color: #fff; padding-bottom: 60px; width: 100%; margin: 0 auto;   }
+.fb2 { background-color: #efe6db; padding-bottom: 60px; width: 100%; margin: 0 auto;  }
+.fb1 p { width: 860px; margin:0 auto; line-height: 30px; margin-top: 20px;}
+.title1 { text-align: center; margin: 20px 0px;}
+.fb1 span { font-size: 30px; }
+.eh_con .banner {width: inherit; text-align: center}
+.eh_con .banner img {width: inherit; margin: 0 auto }
+.butt { width: 46%; margin: auto; height: 100%; padding-top: 320px;}
+.butt_a { width: 50%;float: left; }
+.butt_b { width: 50%;float: right; }
+.ios { float: right;}
+.er1 { margin: 20px 0px 0px 50px; width: 107px; }
+.er2 { margin: 20px 50px 0px 0px; width: 107px; float: right; }
+.banner1 { background: url("../images/fb1.jpg") no-repeat; width:1440px; height: 600px; margin: 0 auto; }
+.banner2 {background: url("../images/fb2.jpg") no-repeat; width:1180px; height: 860px;  margin: 0 auto;  }
+.banner3 {background: url("../images/fb3.jpg") no-repeat;  width:1180px; height: 772px;  margin: 0 auto;   }
+.banner4 {background: url("../images/fb4.jpg") no-repeat; width:1180px; height: 656px; margin: 0 auto;  }
+.banner5 {background: url("../images/fb5.png") no-repeat;  width: 208px;height: 210px; margin: 0 auto;}
+
+@media(max-width: 1024px) {
+    body{max-width: 750px; margin:0 auto;}
+    .fb1 {  padding-bottom: 30px; }
+    .fb2 { background-color: #fff;padding-bottom: 30px; width: 100%; margin: 0 auto; }
+    .fb1 p { width:100%; font-size: 12px; margin:0 auto; line-height: 30px; margin-top: 20px;}
+    .butt { width: 70%; margin: auto; height: 100%; padding-top: 270px;}
+    .butt_a { width: 45%;float: left; }
+    .butt_b { width: 45%;float: right; }
+    .ios { float: none;}
+    .er1 { display: none; }
+    .er2 { display: none; }
+    .banner1 {background: url("../images/fb1a.jpg") no-repeat; width:100%; height: 378px;     }
+    .banner2 {background: url("../images/fb2a.jpg") no-repeat; width:100%; height: 440px;  }
+    .banner3 {background: url("../images/fb3a.jpg") no-repeat;  width:100%;; height: 473px;   }
+    .banner4 {background: url("../images/fb4a.jpg") no-repeat; width:100%; height: 414px;  }
+}
+@media (max-width: 560px) {
+    .fb1 { padding:20px 0px; }
+    .butt { width: 80%; margin: auto; height: 100%; padding-top: 190px;}
+    .butt_a { width: 45%;float: left; }
+    .butt_b { width: 45%;float: right; }
+    .anz { margin-left: 0px;}
+    .fb2 { background-color: #fff; padding-bottom: 10px; width: 100%; margin: 0 auto;  }
+    .banner1 {background: url("../images/fb1b.jpg") no-repeat; width:100%; height: 274px;   }
+    .banner2 {background: url("../images/fb2b.jpg") no-repeat; width:78%; height: 283px;  }
+    .banner3 {background: url("../images/fb3b.jpg") no-repeat;  width:55%;; height: 330px;   }
+    .banner4 {background: url("../images/fb4b.jpg") no-repeat; width:30%; height: 207px;  }
+}
+@media (max-width: 414px) {
+    .fb1 { padding:10px 0px; }
+    .fb2 { background-color: #fff; padding-bottom: 10px; width: 100%; margin: 0 auto;  }
+    .title1 { text-align: center; margin: 10px 0px;}
+    .butt { width: 80%; margin: auto; height: 100%; padding-top: 130px;}
+    .butt_a { width: 45%;float: left; }
+    .butt_b { width: 45%;float: right; }
+    .banner1 {background: url("../images/fb1b.jpg") no-repeat; width:100%; height: 210px; background-size: 100%  }
+    .banner2 {background: url("../images/fb2b.jpg") no-repeat;width:80%; height:213px;  background-size: 100% }
+    .banner3 {background: url("../images/fb3b.jpg") no-repeat;width:66%;; height:285px;  background-size: 100%}
+    .banner4 {display: none; }
+}
+@media (max-width: 320px) {
+    .butt { width: 75%; margin: auto; height: 100%; padding-top: 110px;}
+    .butt_a { width: 46%;float: left; }
+    .butt_b { width: 46%;float: right; }
+    .fb1 { padding: 10px 0px; }
+    .banner1 {background: url("../images/fb1c.jpg") no-repeat; width:100%; height: 162px;  }
+    .banner2 {background: url("../images/fb2c.jpg") no-repeat; width:80%; height: 160px;  }
+    .banner3 {background: url("../images/fb3c.jpg") no-repeat;  width:70%;; height:185px;   }
+    .banner4 {display: none; }
+}
+

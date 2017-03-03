@@ -1,0 +1,286 @@
+body{min-width: 1330px;}
+/*内容部分*/
+.container{padding: 30px 0;position: relative;overflow: visible;}
+.space-content{width: 885px;}
+
+.inquiry-content{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 6px #e9e9e9;
+    border: 1px solid #ebebeb;
+    position: relative;
+}
+.inquiry-title{padding: 20px 0;}
+.inquiry-title h1{
+    font-size: 30px;
+    color: #211c17;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+.inquiry-title p{
+    font-size: 14px;
+    color: #b9b9b9;
+    text-align: center;
+}
+
+.inquiry-content-left{
+    overflow: hidden;
+    padding: 0 0 35px 35px;
+    width: 870px;
+}
+.inquiry-content .title{
+    margin-bottom: 15px;
+    padding-top: 35px;
+}
+.inquiry-content .title i{
+    float: left;
+    display: block;
+    width: 3px;
+    height: 14px;
+    margin-right: 11px;
+}
+.inquiry-content .title span{
+    float: left;
+    font-size: 12px;
+    color: #f26617;
+    line-height: 14px;
+}
+.icon-msg{background: #f26617;}
+.icon-list{background: #4f9cee;}
+.inquiry-ul-contleft{
+    width: 100%;
+}
+.inquiry-ul-contleft li{
+    float: left;
+    width: 379px;
+    min-height: 46px;
+    padding: 12px;
+    margin-right: 30px;
+    background: #fff;
+    border: 1px solid #ededed;
+    margin-bottom: 11px;
+}
+.inquiry-ul-contleft li label{
+    font-size: 12px;
+    color: #626262;
+    display: block;
+    padding: 3px 0;
+    font-weight: bold;
+}
+.inquiry-ul-contleft li .fill{
+    width: 100%;
+    font-size: 12px;
+    color: #b9b9b9;
+    border: none;
+    outline: none;
+}
+.inquiry-ul-contleft .li-textrea{
+    width: 814px;
+}
+.inquiry-ul-contleft .li-textrea textarea{
+    min-height: 120px;
+}
+.inquiry-btn{
+    display: block;
+    width: 275px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px auto;
+    background: #f26617;
+}
+.inquiry-btn:hover{background: #f7782f;}
+
+
+
+.inquiry-content-right{
+    width: 250px;
+    padding:0 12px;
+    height: 100%;
+    background: #fbfbfb;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.inquiry-content-right .title span{
+    color: #4f9cee;
+}
+
+.inquiry-ul-wrap{width: 230px;height: 80%;padding:0 10px;overflow-y: scroll;}
+.inquiry-ul-contright{height:100%;}
+.inquiry-ul-contright label{
+    display: block;
+    width: 180px;
+    border-bottom: 1px dashed #ddd;
+    padding: 15px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #626262;
+}
+.inquiry-ul-contright label input{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.inq-shadow{
+    width: 240px;
+    height: 10px;
+    background: url("../../img/space_info/shadow.jpg") no-repeat center;
+}
+.shadow-top{margin-bottom: -6px;}
+.shadow-bottom{
+    position: absolute;
+    bottom:35px;
+    left: 50%;
+    margin-left: -120px;
+}
+.inquiry-ul-contleft .focused{
+    background-color:#f5f5f5;
+    border:1px solid #dfdcdc;
+    transition:background 0.3s ease;
+    -webkit-transition:background 0.3s ease;
+}
+.inquiry-ul-contleft .focused .fill{
+    background-color:#f5f5f5;
+    color:#626262;
+    transition:background 0.3s ease;
+    -webkit-transition:background 0.3s ease;
+}
+.inquiry-ul-contleft .focused label{color:#b9b9b9;}
+
+.inquiry-ul-contleft .focused ::-moz-placeholder { color: #626262; }
+.inquiry-ul-contleft .focused ::-webkit-input-placeholder { color:#626262; }
+.inquiry-ul-contleft .focused :-ms-input-placeholder { color:#626262; }
+
+
+
+.close{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 20px;
+    top:20px;
+    background: url("../../img/space_info/icon_close.png") no-repeat;
+    cursor: pointer;
+}
+.popup_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: #000;
+    background:rgba(0, 0, 0, 0.60);
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    z-index:110;
+    left:0;top:0;
+}
+
+/*立即咨询弹窗-开始*/
+.consult{
+    display: none;
+    width: 370px;
+    height: 335px;
+    padding: 30px;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    margin-left: -215px;
+    top:50%;
+    margin-top:-200px;
+    z-index: 112;
+    overflow: hidden;
+}
+.consult .close{
+    right:15px;
+    top:15px;
+}
+.consult h2{
+    font-size: 12px;
+    color: #F7782F;
+    padding: 10px 0;
+}
+.consult-versic h2 span{
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.consult-versic li{
+    width: 344px;
+    margin-bottom: 0;
+}
+.consult-versic li label{
+    font-size: 12px;
+    color: #626262;
+    display: block;
+    padding: 3px 0;
+    font-weight: bold;
+}
+.consult-versic li .fill{
+    float: left;
+    width: 75%;
+    font-size: 12px;
+    color: #b9b9b9;
+    border: none;
+    outline: none;
+    margin-top: 2px;
+}
+.consult-versic li .resend{
+    color: #333;
+    font-size: 12px;
+    border: 0;
+    background: #fff;
+}
+.consult-code{padding:15px 0 20px;}
+.consult-code p{
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+}
+.consult-code .img-w{
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+}
+.consult-code .img-w img{width:100%;height: 100%;}
+.consult-btn{width: 70%;margin: 10px auto 0;}
+.consult-btn button{
+    display: block;
+    border: none;
+    width: 45%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.consult-btn1{background: #ddd;color: #333;}
+.consult-btn2{background: #fe6a3a;color: #fff;}
+/*立即咨询弹窗-结束*/    　　
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

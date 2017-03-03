@@ -1,0 +1,96 @@
+.person-width{
+  width:323px;
+  /*margin:0 auto;
+  margin-top: 30px;*/
+}
+.person-side{
+  width:100%;
+}
+.person-side .side-one,
+.person-side .side-two{
+  margin-bottom: 30px
+}
+.person-side .side-two{
+  margin-top: 30px;
+}
+.person-side .side-one header{
+  border-bottom: 1px solid #f0f0f0;
+}
+.person-side .side-one-p{
+  width:58px;
+  height:30px;
+  border-bottom: 1px solid #090601;
+  position: relative;
+}
+.person-side .side-one-p span{
+  font-size: 14px;
+  color:#333;
+}
+.side-persons{
+  width:100%;
+}
+.side-persons{
+  width:100%;
+}
+.side-persons-list li{
+  width:25%;
+  float: left;
+  margin-top: 30px;
+  overflow: hidden;
+  text-align: center;
+  height:96px;
+  overflow: hidden;
+}
+.side-persons-list  a{
+  display: inline-block;
+}
+.persons-img{
+  width:60px;
+  height:60px;
+  margin:0 auto;
+  border-radius:30px;
+  text-align: center;
+    overflow: hidden;
+}
+.persons-img img{
+  width:100%;
+  height:100%;
+}
+.persons-name{
+  width:100%;
+  text-align: center;
+  margin-top: 12px;
+}
+.persons-name span{
+    width:80px;
+    display: inline-block;
+    overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+  color:#8c96a2;
+  font-size: 12px;
+}
+.footer-img{
+  display: inline-block;
+  width:30px;
+  height:30px;
+  background: url("../../img/v4.0/footer.png")no-repeat;
+  position: absolute;
+  right:-35px;
+  top:-5px;
+}
+.heart-num{
+  width:100%;
+  margin-top: 37px;
+}
+.heart-img{
+  width:100%;
+  text-align: center;
+}
+.heart-p{
+  width:100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.heart-p span{
+  color:#9ea6b0;
+  font-size: 13px;
+}

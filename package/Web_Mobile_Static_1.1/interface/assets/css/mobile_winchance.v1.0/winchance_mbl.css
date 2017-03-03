@@ -1,0 +1,307 @@
+body{max-width: 640px;margin: 0 auto;}
+
+/*焦点图*/
+.show_find{
+    height:270px;position:relative;
+}
+.show_find_body{
+    height:100%;width:100%;
+}
+.show_find_body_list{
+    height:100%;width:100%;
+}
+.show_find_body_li{
+    background:#000;color:#fff;position: relative;overflow: hidden;
+}
+.show_find_body_li img{
+    width:100%;height:100%;
+}
+.show_find_body_li .bg-shadow{
+    background: rgba(0,0,0,0.4);position: absolute;z-index:10;width: 100%;height: 100%;left:0;top:0;
+}
+.show_find_num{
+    position:absolute ;right:15px;bottom:20px;width:40px;height:40px;z-index:10; background:none;
+}
+.show_find_square{
+    transition: all 0.2s;  -webkit-transition: all 0.2s;  -o-transition: all 0.2s;  -moz-transition: all 0.2s;  -ms-transition: all 0.2s;
+    background:#07e1e3;z-index:98;width:30px;height:30px;position: absolute;left:50%;margin-left: -15px;top:50%;margin-top: -15px;border-radius: 5px;
+    transform:rotate(45deg);-webkit-transform:rotate(45deg);-o-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);
+}
+.img_num{
+    text-align: center;font-size: 13px;color:#fff;z-index: 999;position: absolute;left:0px;top:0px;line-height: 40px;width:100%;
+}
+.show_find_body_li_title{
+    position: absolute;left:20px;top:70px;line-height: 30px;font-size: 20px;width:70%;z-index: 10;
+}
+.show_find_body_li_des{
+    position: absolute;left:15px;bottom:20px;line-height:1.6em;font-size: 22px;width:70%;z-index: 10;
+}
+.show_title_active{
+    animation: enter_title 1s ease-out; -webkit-animation: enter_title 1s ease-out; -o-animation: enter_title 1s ease-out; -moz-animation: enter_title 1s ease-out;
+    -ms-animation: enter_title 1s ease-out;
+    left:20px;
+}
+.show_des_active{
+    animation: enter_des 1s ease-out;-webkit-animation: enter_des 1s ease-out;-moz-animation: enter_des 1s ease-out;-o-animation: enter_des 1s ease-out;
+    -ms-animation: enter_des 1s ease-out;
+    left:20px;
+}
+@keyframes enter_title {
+    0%{
+        left:100%;
+        opacity: 0;
+    }
+    80%{
+        left:-5px;
+        opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes enter_title {
+    0%{
+        left:100%;
+        opacity: 0;
+    }
+    80%{
+        left:-5px;
+        opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+@-o-keyframes enter_title {
+    0%{
+        left:100%;  opacity: 0;
+    }
+    80%{
+        left:-5px;  opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+@-ms-keyframes enter_title {
+    0%{
+        left:100%;
+        opacity: 0;
+    }
+    80%{
+        left:-5px;
+        opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+@-moz-keyframes enter_title {
+    0%{
+        left:100%;
+        opacity: 0;
+    }
+    80%{
+        left:-5px;
+        opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+@keyframes enter_des {
+    0%{
+        left:-100%;
+        opacity: 0;
+    }
+    80%{
+        left:30px;
+        opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes enter_des {
+    0%{
+        left:-100%;
+        opacity: 0;
+    }
+    80%{
+        left:30px;
+        opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+@-o-keyframes enter_des {
+    0%{
+        left:-100%;
+        opacity: 0;
+    }
+    80%{
+        left:30px;
+        opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+@-moz-keyframes enter_des {
+    0%{
+        left:-100%;
+        opacity: 0;
+    }
+    80%{
+        left:30px;
+        opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+@-ms-keyframes enter_des {
+    0%{
+        left:-100%;
+        opacity: 0;
+    }
+    80%{
+        left:30px;
+        opacity: 0.7;
+    }
+    100%{
+        left:20px;
+        opacity: 1;
+    }
+}
+
+/*内容*/
+.w-title{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    font-size: 20px;
+    background: #f3f3f3;
+    border-top: 1px solid #e7e7e7;
+}
+.w-title h2{
+    margin-left: 15px;
+    font-weight: normal;
+}
+.w-adg{width: 100%;}
+.w-adg .w-title{color:#fec52d;}
+.w-adg-cont{padding-bottom: 20px;}
+.w-adg-cont h3{
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0 20px;
+    margin: 0 15px;
+}
+.w-adg-cont img{
+    width: 100%;
+}
+.w-act-cont .img{
+    margin: 15px 15px 0;
+}
+.w-act-cont .img img{width: 100%;}
+
+
+.w-act .w-title{color:#f28e8e;}
+.col-ct-tit{
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.col-ct-tit h3{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 6px 15px 8px;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.col-ct-tit p{
+    font-size: 15px;
+    color: #666;
+    padding: 0 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.col-ct-mk{
+    padding:10px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.col-ct-mk span{
+    font-size: 15px;
+    color: #a9a9a9;
+    margin-right: 2px;
+    padding: 2px 7px;
+    border: 1px solid #e5e5e5;
+}
+.w-act-cont>p{
+    font-size: 15px;
+    color: #999;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.w-act-cont>p span{color: #666;}
+.col-ct-btn{
+    padding: 10px 15px;
+    margin: 0 15px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.col-ct-btn .btn{
+    display: block;
+    float: left;
+    width: 49%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+}
+.col-ct-btn .btn-hz{
+    border-right: 1px solid #e7e7e7;
+}
+.col-ct-btn span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.col-ct-btn .icon-hz{
+    background: url("../../img/winchance/icon_tel.png") no-repeat center;
+    background-size: 25px 25px;
+}
+.col-ct-btn .icon-dn{
+    background: url("../../img/winchance/icon_ck.png") no-repeat center;
+    background-size: 25px 25px;
+}
+.load-more{
+    background: #f3f3f3;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 -2px 2px #bbb inset;
+}

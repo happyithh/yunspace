@@ -1,0 +1,179 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: bxy
+ * Date: 2016/5/27
+ * Time: 13:24
+ * 子空间搜索
+ */
+class Web_Mobile_Search_Space_Item extends Web_Global
+{
+
+    // 搜索热门标签
+    function getHotBaikeNameAsTags()
+    {
+        $conditions['baike_status'] = 1;
+        $conditions['city'] = empty($_COOKIE['city']) ? '上海' : $_COOKIE['city'];
+        $conditions['level'] = '4';
+//        Data_Mysql_Table_Search_Space_Item::debug(1);
+        $tags = Data_Mysql_Table_Search_Space_Item::select('baike_name', $conditions, '', 7);
+        return $tags;
+    }
+
+    // 热门场地
+    function getHotBaikeDetail()
+    {
+        $conditions['baike_status'] = 1;
+        $conditions['city'] = '上海';
+        $conditions['baike_logo !=?'] = '';
+        $conditions[] = '(level =4 OR level =3)';
+        $getHomeSpace = Web_HomePage_V4::get('data');
+        if (!empty($getHomeSpace['space']['标题'])) {
+            $conditions[] = "baike_name IN(" . implode('","', explode('，', '"' . $getHomeSpace['space']['标题'] . '"')) . ")";
+        }
+//        Data_Mysql_Table_Search_Space_Item::debug(1);
+        $data = Data_Mysql_Table_Search_Space_Item::select('baike_id,baike_name,addr,baike_logo,baike_size', $conditions, '', 2);
+        if (count($data) < 2) {
+            $conditions_1['baike_status'] = 1;
+            $conditions_1['city'] = empty($_COOKIE['city']) ? '上海' : $_COOKIE['city'];
+            $conditions_1['baike_logo !=?'] = '';
+            $conditions_1[] = '(level =4 OR level =3)';
+            $data_1 = Data_Mysql_Table_Search_Space_Item::select('baike_id,baike_name,addr,baike_logo,baike_size', $conditions_1, '', intval(2 - count($data)));
+            if (!empty($data)) {
+                $data[1] = $data_1[0];
+            } else {
+                $data = $data_1;
+            }
+        }
+        return $data;
+    }
+
+//    // 搜索类型
+//    function type()
+//    {
+//        return Func_Url::str_urlencode($_);
+//    }
+
+    // 搜索结果
+    function getSearchResult()
+    {
+        // 搜索类型
+        $type = Func_Url::str_urlencode($_REQUEST['action']);
+        if (!empty($type)) {
+            $cols = 'baike_name,item_name,addr,min_price,max_price,price_unit,item_id,baike_id,logo,baike_logo';
+
+            $args['q'] = empty($_REQUEST['keyword']) ? '' : $_REQUEST['keyword'];
+            $count_1 = Api_Search_GetBaikeCount::getSearchCount($args);
+            $conditions['item_status !=?'] = -1;
+            $conditions['baike_status'] = 1;
+            $conditions['logo !=?'] = '';
+            $count = 20;
+            if ($type == 'space_name') {
+                $conditions[] = "baike_name like '%" . $_REQUEST['keyword'] . "%'";
+                if (!empty($count_1['data']['name_count'])) {
+                    $count = $count_1['data']['name_count'];
+                }
+//                q($count);
+//                Data_Mysql_Table_Search_Space_Item::debug(1);
+                $result = Data_Mysql_Table_Search_Space_Item::select($cols, $conditions, 'ORDER BY item_update_time DESC', $count);
+            } else {
+                $conditions[] = "addr like '%" . $_REQUEST['keyword'] . "%'";
+                if (!empty($count_1['data']['addr_count'])) {
+                    $count = $count_1['data']['addr_count'];
+                }
+                $result = Data_Mysql_Table_Search_Space_Item::select($cols, $conditions, 'ORDER BY item_update_time DESC', $count);
+            }
+            return $result;
+        }
+
+
+    }
+
+    /**
+     *
+     *
+     * 老页面复制过来的数据
+
+     */
+
+    function  request()
+    {
+        $request = Func_Input::filter(array(
+            'keyword' => 'string',
+            'category_id' => 'int',
+            'filter' => 'array',
+            'size_range' => 'int',
+            'orderBy' => 'int',
+            'nearbymi' => 'string',   //附近距离
+            'baidu_lng' => 'string',  //坐标点
+            'baidu_lat' => 'string',  //坐标点
+            "activity" => "string",   //活动类型
+            "industry" => "string",   //适合行业
+            "adminarea" => "string",   //行政区域
+            "businesscircle" => "string",   //商圈
+        ), $_REQUEST);
+        if (!empty($request['activity'])) {
+            $request['filter'][49] = $request['activity'];
+        }
+        if (!empty($request['industry'])) {
+            $request['filter'][9] = $request['industry'];
+        }
+        if (!empty($request['adminarea']) && !isset($request['nearbymi']) && !isset($request['businesscircle'])) {
+            $request['filter'][4] = $request['adminarea'];
+        }
+        if (!empty($request['businesscircle']) && !isset($request['nearbymi']) && !isset($request['adminarea'])) {
+            $request['filter'][2] = $request['businesscircle'];
+        }
+        if (!empty($request['filter'])) {
+            foreach ($request['filter'] as $k => $v) {
+                if ($v == 'all') {
+                    unset($request['filter'][$k]);
+                }
+            }
+        }
+        return $request;
+    }
+
+    function request_filter()
+    {
+        $request = $this->request();
+        if (isset($request['filter'])) {
+            foreach ($request['filter'] as $k => $v) {
+                $filterAttr = $this->filterAttr();
+                $v = strip_tags($v);
+                if (array_key_exists($v, $filterAttr[$k]['val'])) {
+                    $request['filter'][$k] = $v;
+                } else {
+                    unset($request['filter'][$k]);
+                }
+                if ($v == 'all') {
+                    unset($request['filter'][$k]);
+                }
+            }
+        }
+        return $request;
+    }
+
+    //手机端获取活动类型，行业类型
+    function  getPhoneAttr($type)
+    {
+        $result = Data_Config_Vendor_Attr::get('attr');
+        switch ($type) {
+            case 1:
+                return $result['活动类型'];
+                break;
+            case 2:
+                return $result['服务行业'];
+                break;
+            default:
+                return '';
+                break;
+
+        }
+    }
+    /**
+     *
+     * 老页面复制过来的数据结束
+     * */
+}

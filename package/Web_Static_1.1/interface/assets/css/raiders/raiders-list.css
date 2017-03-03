@@ -1,0 +1,321 @@
+@charset "utf-8";
+/*初始化*/
+body,div,p,a,ul,li,img,span,b,i,dl,dt,dd,table,tr,th,td,h1,h2,h3,h4,h5,h6,input{margin:0;padding:0;}
+body{background:#fff;color:#333;font-size:14px;font-family:"微软雅黑";}
+h1,h2,h3,h4,h5,h6,b,strong{font-size:100%;font-weight:normal;}
+li{list-style:none;}
+img,table,input{border:0;}
+a{text-decoration:none;}
+.clearfix:after{
+    content:'\20';
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.hide{display:none;}
+.fl{float:left;}
+.fr{float:right;}
+
+/*主体部分样式开始*/
+.site_location{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+}
+.site_location a{color: #666;}
+.site_location span{margin: 0 3px;}
+
+/*筛选列表+搜索框*/
+.raiders-title{
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.raiders-title-menu a{
+    display:inline-block;
+    height: 100%;
+    padding:0 20px;
+    background-color: #f6f6f6;
+    color:#999;
+    margin-right: 5px;
+}
+.raiders-title-menu a:hover{
+    color: #333;
+}
+.raiders-title-menu a.active{
+    background-color: #ff308d;
+    color: #fff;
+}
+.raiders-title-menu a.active:hover{
+    color: #fff;
+}
+.raiders-search input{
+    float: left;
+}
+.raiders-search .search-txt{
+    padding-left: 10px;
+    width: 165px;
+    height:33px;
+    line-height: 33px;
+    border: 1px solid #ccc;
+    border-right:0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.raiders-search .search-btn{
+    width: 48px;
+    height:35px;
+    line-height: 35px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor:pointer;
+    background: url("../../img/raiders_list/raiders_icon_block.gif") no-repeat center #000;
+    text-indent: -9999px;
+}
+
+/*活动攻略左侧内容列表*/
+.raiders-main{
+    width: 925px;
+}
+.raiders-menu{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    border-bottom: 2px solid #ddd;
+}
+.raiders-menu a{
+    color: #333;
+    display: inline-block;
+    height:50px;
+    padding:0 15px;
+}
+.raiders-menu a.active{
+    color: #00c3c3;
+    border-bottom: 2px solid #00c3c3;
+}
+.raiders-menu a:hover{
+    color: #00c3c3;
+}
+.raiders-list{margin-top: 16px;}
+.raiders-list li{
+    height: 176px;
+    padding: 16px 0;
+    border-bottom: 1px dashed #eee;
+    overflow: hidden;
+}
+.raiders-list li:hover{
+    background-color: #fbfbfb;
+}
+.raiders-list-img{
+    float: left;
+    display: block;
+    width: 264px;
+    height: 176px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+.raiders-list-img img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease 0s;
+}
+.raiders-list-img img:hover{
+    transform: scale(1.1);
+}
+.raiders-list-txt{
+    float: left;
+    width: 595px;
+    height: 176px;
+    margin-left: 34px;
+    overflow: hidden;
+}
+.raiders-list-txt h1{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.raiders-list-txt h1 a{
+    color: #333;
+    font-size: 22px;
+}
+
+.raiders-list-txt small{
+    display: block;
+    font-size:12px;
+    line-height: 12px;
+    color: #999;
+}
+.raiders-list-txt p{
+    margin-top: 15px;
+    line-height: 30px;
+    position: relative;
+}
+.raiders-list-txt p .raiders-more{
+    display: block;
+    color: #00c3c3;
+    padding-right: 3px;
+    position:absolute;
+    bottom:0;
+    right: 0;
+}
+.raiders-list-txt p .raiders-more:hover{
+    text-decoration: underline;
+}
+
+/*活动攻略右侧推广链接*/
+.raiders-sidebar{
+    width: 220px;
+}
+.raiders-sidebar-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #ddd;
+}
+.raiders-sidebar-title h3{
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+.raiders-sidebar-title p{
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+.raiders-sidebar-cont{margin-bottom: 20px;}
+.raiders-sidebar-cont li{
+    width: 218px;
+    height: 190px;
+    background-color: #fff;
+    box-shadow: 0 0 7px #cecece;
+    border: 1px solid #f5f5f5;
+    margin-top: 16px;
+}
+.raiders-sidebar-cont li:hover{
+    box-shadow: 0 0 7px #999;
+}
+.raiders-sidebar-img{
+    display: block;
+    width: 218px;
+    height: 155px;
+    overflow: hidden;
+    background-color:#f1f1f1;
+}
+.raiders-sidebar-img img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease 0s;
+}
+.raiders-sidebar-img img:hover{
+    transform: scale(1.1);
+}
+.raiders-sidebar-tit{
+    display: block;
+    width: 190px;
+    padding: 0 14px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+    font-size: 13px;
+}
+
+
+/*筛选无结果页面css*/
+.radider_search_no{
+    width: 100%;
+    padding: 110px 0;
+    border: 1px solid #ddd;
+}
+.search_no{width: 670px;margin: 0 auto;}
+.search_no_logo{
+    width: 33%;
+    padding-top: 10px;
+}
+.search_no_logo img{
+    vertical-align: middle;
+    border: 2px solid #FFF;
+    box-shadow: 0px 0px 5px #BBB;
+}
+.search_no_text{
+    width: 67%;
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 48px;
+    box-sizing: border-box;
+}
+
+.bottom-outside{
+    min-width: 1180px;
+}
+
+
+
+/*活动文库css*/
+.library_list_container{ border: 1px solid #efefef; height: auto; overflow: hidden; margin-top: 30px;}
+.library_list_title{ height: 28px; padding: 5px 0px; border-bottom: 1px dashed #efefef; line-height: 30px;}
+.library_type{ width: 80px; border-right:1px solid #e5e5e5; float: left; text-align: center; font-size: 12px; color: #333;}
+.library_name{ width: 470px; border-right: 1px solid #e5e5e5; float: left; padding-left: 10px; font-size: 12px; color: #333;}
+.library_classify{ width: 120px; border-right: 1px solid #e5e5e5; float: left; padding-left: 10px; font-size: 12px; color: #333;}
+.library_download{ width: 90px; border-right: 1px solid #e5e5e5; float: left; padding-left: 10px; font-size: 12px; color: #333;}
+.library_size{ float: left; padding-left: 10px; font-size: 12px; color: #333;}
+.library_list_content1{ height: 30px; padding: 5px 0px; line-height: 30px; background-color: #fff;}
+.library_list_content2{ height: 30px; padding: 5px 0px; line-height: 30px; background-color: #fbfbfb;}
+.library_type_c{ width: 80px; float: left; text-align: center;}
+.library_type_c img{ padding-top: 5px;}
+.library_name_c{ width: 470px; float: left; padding-left: 10px; font-size: 14px; color: #333;}
+.library_name_c span{ font-size: 12px; color: #999; padding-left: 5px;}
+.library_classify_c{ width: 120px; float: left; padding-left: 10px; font-size: 14px; color: #333;}
+.library_download_c{ width: 90px; float: left; padding-left: 10px; font-size: 12px; color: #999;}
+.library_size_c{ float: left; padding-left: 10px; font-size: 12px; color: #999;}
+
+.back111 a{ color: #666; font-size: 12px; margin: 3% 3%; width: 94%; display: block;}
+.no-r-raider{ width: 930px;}
+
+@media (max-width: 560px){
+  .raiders-search{ display: none;}
+    .raiders-sidebar{ display: none;}
+    .raiders-main{ width: 100%;}
+    .container{ width: 100%!important;}
+    .bottom-outside{ min-width: 100%;}
+    .raiders-list-img { margin: auto; height: auto; float: none;}
+    .raiders-list li{ height: auto; overflow: hidden;}
+    .raiders-list-txt{ float: none; height: auto; overflow: hidden; width: 265px; margin: 0 auto!important;}
+    .raiders-menu{ display: none;}
+    .raiders-title-menu{ padding: 0px 5px;}
+    .raiders-title-menu a{ width: 60px; margin-right: 5px; margin-bottom: 10px; text-align: center;}
+    .site_location{ display: none;}
+    .no-r-raider{ width: 90%; margin: 5%;}
+}
+
+.back111{ display: none;}
+@media (max-width: 560px){
+    .back111{ display: block;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

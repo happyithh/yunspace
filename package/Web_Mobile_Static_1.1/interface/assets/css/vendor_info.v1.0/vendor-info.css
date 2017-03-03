@@ -1,0 +1,33 @@
+.clear{ clear: both;}
+.vendor_logo_area{ padding-top: 50px; width: 100%; background-color: #fff; position: relative; height: 125px;}
+.vendor_logo_area hr{ border-top: 1px solid #ddd; height: 0px;}
+.vendor_logo_img{ float: left; width: 120px; height: 90px; margin: 15px;}
+.vendor_logo_img img{ width: 120px; height: 90px;}
+.vendor_name{ margin: 15px 15px 15px 0px; float: left; width: 55%; font-size: 15px;}
+.vendor_name img { margin-top: 15px;}
+.vendor_service{ background-color: #fff; height: auto; overflow: hidden; margin-bottom: 50px;}
+.vendor_service_title{ font-size: 16px; padding: 15px;}
+.vendor_service_content{ padding:15px; border-bottom: 1px dotted #ddd;}
+.vendor_service_left { float: left; width: 120px; height: 90px;}
+.vendor_service_left img{ width: 120px; height: 90px;}
+.vendor_service_right{ float: left; margin-left: 15px; width: 60%;}
+.vendor_service_right .name{ font-size: 15px;}
+.vendor_service_right .adr{ font-size: 12px; color: #666; margin-top: 10px; line-height: 24px;}
+.contact_vendor{ width: 50%; float: left; padding: 7px; height: 100%; text-align: center; background-color: #337ab7; color: #fff; font-size: 14px;}
+.vendor_collect{ width: 46%!important;}
+.contact_vendor_content { height: auto!important; overflow: hidden!important; color: #333;}
+.contact_vendor_title{font-size: 14px;}
+.popup-content .content textarea { width: 100%; box-sizing: border-box; -ms-box-sizing: border-box; -mos-box-sizing: border-box;
+    -webkit-box-sizing: border-box;padding-left: 10px; padding-right: 10px; font-size: 14px; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px;
+    outline: none; line-height: 36px; border: 1px solid #cccccc; }
+.popup-content .fuwuhao_word{ text-align: center; font-size: 14px;}
+.popup-content .fuwuhao_img{ text-align: center; margin-bottom: 10px;}
+
+@media (max-width: 320px){
+    .vendor_logo_img{ float: left; width: 100px; height: 75px; margin: 15px;}
+    .vendor_logo_img img{ width: 100px; height: 75px;}
+    .vendor_name{ margin: 15px 15px 15px 0px; float: left; width: 50%; font-size: 15px;}
+    .vendor_service_left { float: left; width: 100px; height: 75px;}
+    .vendor_service_left img{ width: 100px; height: 75px;}
+    .vendor_collect{ width: 45%!important;}
+}

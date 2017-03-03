@@ -1,0 +1,324 @@
+
+/*------弹窗------*/
+/*公共/统一部分*/
+.order-popup{
+    display: none;
+    width: 480px;
+    padding: 50px 30px;
+    position: fixed;
+    left: 50%;
+    top:18%;
+    margin-left: -270px;
+    background: #fff;
+    z-index: 1000;
+}
+@media(max-width: 1441px){
+    .order-popup{top:15%;}
+}
+.popup-close{
+    width:25px;
+    height:25px;
+    text-align:center;
+    line-height:25px;
+    display:block;
+    color:#555;
+    font-size:28px;
+    cursor:pointer;
+    position:absolute;
+    right:16px;top:8px;
+}
+.popup_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: #000;
+    background:rgba(0, 0, 0, 0.33);
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    z-index:100;
+    left:0;top:0;
+}
+
+
+/*预定下单成功*/
+.order-success h2{
+    font-weight: normal;
+    font-size: 16px;
+    color: #7f7f7f;
+    text-align: center;
+}
+.pop-icon{
+    display: inline-block;
+    width: 14px;
+    height: 22px;
+    background: url("../../img/order_user/icon_succ.png") no-repeat top;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.order-success h2 span{
+    font-size: 24px;
+}
+.order-success p{
+    text-align: center;
+    color: #999;
+    margin: 20px 0;
+}
+.order-success .btn{
+    display: block;
+    width: 138px;
+    height: 38px;
+    line-height: 38px;
+    margin: 35px auto 0;
+    text-align: center;
+}
+
+/*确认合同/确认合同成功*/
+.order-conf h1{
+    text-align: center;
+    font-size: 24px;
+    color: #ff308d;
+    font-weight: normal;
+}
+.secretcode-wp p{
+    color: #999;
+    min-width: 80px;
+    text-align: left;
+    font-size: 12px;
+}
+.secretcode-wp{
+    width: 360px;
+    margin:35px auto 0;
+}
+.secretcode-wp>p{margin-left: 80px;margin-bottom: 6px;}
+.secretcode{
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.secretcode .ipt-txt{
+    float: left;
+    width: 155px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+}
+.secretcode .ipt-submit{
+    float: left;
+    width: 90px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+.order-conf .btn-wrp a{
+    display: block;
+    line-height: 38px;
+}
+.order-conf .btn-wrp{
+    width: 290px;
+    margin: 30px auto 0;
+}
+.order-conf .btn-confirm{
+    width: 133px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #00c3c3;
+    color: #00c3c3;
+    text-align: center;
+}
+.order-conf .btn-confirm:hover{background: #00c3c3;color: #fff;}
+.order-conf .btn-code:hover{text-decoration: underline;}
+.order-conf .gray{
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    margin: 30px 0;
+}
+.conform_assign{margin-left: 45px;}
+.order-confirm3 .btn-code{margin-left: 45px;}
+
+/*线上支付*//*线上支付成功*/
+.payol-ul{
+    margin-left: 58px;
+}
+.payol-ul li{
+    margin-top: 20px;
+}
+.payol-ul li>p{
+    float: left;
+    width: 80px;
+    text-align: right;
+    margin-right: 20px;
+    line-height: 32px;
+}
+.payol-ul li>p span{
+    color: #ff308d;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.payol-ul .ipt-wp{
+    float: left;
+    width: 260px;
+}
+.payol-ul .ipt-wp p{
+    width: 220px;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: #999;
+    text-align: left;
+    font-size: 12px;
+}
+.payol-ul .ipt-txt{
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+}
+.payol-ul select{
+    color: #999;
+    width: 220px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ddd;
+}
+.payol-ul .ipt-submit{
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: none;
+    cursor: pointer;
+}
+.payol-ul .explain-txt{
+    min-width: 320px;
+    text-align: left;
+    font-size: 12px;
+    color: #999;
+    margin-left:20px;
+    margin-top:10px;
+}
+.payol-ul .chose-btn{
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    display:inline-block;
+    text-align: center;
+    background: #acb5b5;
+    color: #fff;
+    border: none;
+    margin-left: 6px;
+}
+.payol-ul .ipt-submit-wp{margin-top:0;}
+.payol-ul .cancel_order{margin-top: 20px;}
+#container{margin-top: -10px;}
+
+.order-conf h1 span{
+    font-size: 16px;
+    color: #666;
+}
+.order-payonline-sucs .gray span{
+    color: #00c3c3;
+    font-weight: bold;
+    margin: 0 3px;
+}
+
+.gocert-btn{
+    display: block;
+    width: 136px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin: 30px auto 0;
+}
+.gocert-btn1{
+    width: 136px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+/*----------商户----------*/
+.ormc-ssfd h1{
+    text-align: center;
+    font-size: 16px;
+    color: #00c3c3;
+    font-weight: normal;
+}
+.ormc-ssfd h1 i{margin-right: 10px;}
+.ormc-ssfd .gray{margin-top: 15px;}
+.ormc-ssfd .gray p{
+    color: #999;
+    line-height: 30px;
+    text-align: center;
+}
+.upld-submit-m{
+    width: 290px;
+    height: 50px;
+    margin:30px auto;
+}
+.upld-submit-m input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.delete-payment .btnwrap{width:300px;margin: 30px auto 0;}
+.warning{
+    display:none;
+    font-size: 12px;
+    color: #f00;
+    margin-top: 5px;
+}
+@media(max-width: 1024px){
+    .payol-ul li>p.p-none{height: 0;line-height: 0;}
+    .order-popup{
+        width: 90%;
+        margin-left: 5%;
+        left: 0;
+        padding: 25px 0 15px;
+        top:20px;
+    }
+    .payol-ul{margin-left: 15px;}
+    .payol-ul li>p{text-align: left;}
+    .payol-ul li{margin-top: 10px;}
+    .payol-ul .ipt-wp p{margin-top: 5px;}
+    .order-table td{
+        padding:10px;
+    }
+    .order-table td .btn{
+        display: block;
+        margin: 10px auto;
+    }
+    .order-conf h1{margin: 0 5%;font-size: 20px;}
+    .secretcode-wp{width: 90%;}
+    .order-conf .btn-wrp{
+        width: 200px;
+        margin: 25px auto 0;
+    }
+    .secretcode .ipt-txt{width: 100px;margin-right: 5px;}
+    .secretcode .ipt-submit{width: 75px;}
+    .secretcode-wp>p{margin-left:55px;}
+    .secretcode-wp p{min-width: 55px;}
+    .delete-payment .btnwrap{width:80%;margin: 30px auto 0;}
+    .gocert-btn{width: 45%;margin-top: 10px;}
+    .order-conf .btn-confirm{width: 45%;margin-top: 10px;}
+    .gocert-btn1{width: 45%;margin-top: 10px;}
+    .order-confirm3 .btn-wrp{ margin: 25px 30px 0;}
+
+}
+
+
+
+
+
+
+
+

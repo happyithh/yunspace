@@ -1,0 +1,355 @@
+.baike-content-sub{
+    width: 100%;
+    margin-bottom: -30px;
+}
+.subspace-sidebar{
+    width: 345px;
+    margin-right: 35px;
+    background: #fafafa;
+    overflow: hidden;
+}
+.subspace-cont{
+    width: 800px;
+    /*padding-bottom:50px;*/
+}
+.padding-bottom{
+    padding-bottom:50px;
+}
+
+/*导航*/
+.subspace-menu{
+    padding: 20px 0;
+    background: #f5f4f4;
+}
+.subspace-menu li{
+    width: 341px;
+    height: 58px;
+    line-height: 58px;
+    border-left: 4px solid #f5f4f4;
+    cursor: pointer;
+    font-size: 12px;
+    color: #666;
+}
+.subspace-menu li p{
+    float: left;
+    margin-left: 30px;
+}
+.subspace-menu li p.size{
+    padding-left: 24px;
+    background: url("img/icon_size_gray.png") no-repeat left center;
+}
+.subspace-menu li p.text{
+    width: 195px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.subspace-menu .current{
+    background: #fff;
+    border-left: 4px solid #c6d8fc;
+    color: #6b96ef;
+    font-weight: bold;
+}
+.subspace-menu .current p.size{
+    background: url("img/icon_size_blue.png") no-repeat left center;
+}
+
+/*侧边栏公共样式*/
+.subspace-sidebar .comn{
+    margin: 20px;
+    border-top: 1px dashed #eaeaea;
+}
+.subspace-sidebar .comn .line{
+    margin: 0 6px;
+    color: #999;
+}
+.subspace-sidebar .comn .sub-title{
+    width: 36px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 12px;
+}
+.subspace-sidebar .comn-title span{
+    font-size: 12px;
+}
+.subspace-sidebar .comn-title i{
+    margin-top: 2px;
+}
+.subspace-sidebar .comn-title{
+    padding-top: 7px;
+}
+
+/*类型*/
+.subspace-type p{
+    font-size: 12px;
+    color: #999;
+    padding: 5px 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.subspace-sidebar .subspace-type{
+    border-top: 0;
+    margin-top: 10px;
+}
+/*容量*/
+.subspace-capacity p{
+    float: left;
+    width: 48%;
+    margin-right: 1%;
+    font-size: 12px;
+    color: #999;
+    padding: 5px 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*标签*/
+.subspace-marks .mark{
+    float: left;
+    display: inline-block;
+    padding: 2px 10px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #ccc;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.subspace-sidebar .subspace-marks .sub-title{
+    margin-bottom: 20px;
+}
+/*配套设施*/
+.subspace-sidebar .comn-baike-facilities{
+    width: 106%;
+}
+.subspace-sidebar .comn-baike-facilities li{
+    margin: 5px 30px 15px 0;
+}
+.subspace-sidebar .comn-baike-facilities li .gray-bg{
+    width: 50px;
+    height: 50px;
+    background: #f5f4f4;
+}
+.subspace-sidebar .comn-baike-facilities li .icon{
+    margin: 5px;
+}
+.subspace-sidebar .comn-baike-facilities li p{
+    margin-top: 10px;
+}
+/*场地简介*/
+.subspace-sidebar .comn-baike-intro>p{
+    color: #999;
+    margin-bottom: 10px;
+}
+
+/***右边内容部分***/
+.subspace-box .cont{
+    display: none;
+}
+.subspace-box .current{
+    display: block;
+}
+.subspace-box .comn-title{
+    position: relative;
+}
+.subspace-box .comn-title span{
+    font-size: 12px;
+}
+.subspace-box .comn-title .price{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    color: #565a5c;
+    font-size: 12px;
+    font-weight: normal;
+}
+.subspace-box .comn-title .price span{
+    float: none;
+    color: #fd3484;
+    font-size: 24px;
+}
+.subspace-box .comn{
+    padding-top: 0;
+}
+/*基本信息*/
+.comn-baike-info{
+    border-top: 1px solid #f1f1f1;
+}
+.comn-baike-info dl{
+    padding: 25px 0;
+    border-bottom: 1px dashed #eaeaea;
+}
+.comn-baike-info dl dt{
+    float: left;
+    width: 100px;
+    font-size: 13px;
+    color: #333;
+    text-align: left;
+    text-indent: 10px;
+    margin-right: 80px;
+}
+.comn-baike-info dl dd{
+    float: left;
+    width: 620px;
+    font-size: 13px;
+    color: #999;
+}
+.comn-baike-info .dl-space-scale p{
+    float: left;
+    width: 155px;
+}
+.comn-baike-info .dl-space-scale p i{
+    float: left;
+    display: inline-block;
+    width: 28px;
+    height: 24px;
+    background-image: url("img/icon_space_design.png");
+    background-repeat: no-repeat;
+}
+.comn-baike-info .dl-space-scale p span{
+    float: left;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.icon-size{
+    background-position: 0 0;
+}
+.icon-hight{
+    background-position: 0 -24px;
+}
+.icon-weight{
+    background-position: 0 -48px;
+}
+.icon-people{
+    background-position: 0 -72px;
+}
+.comn-baike-info .dl-space-intro dd{
+    line-height: 30px;
+}
+
+/*图片展示*/
+.comn-space-img>a{
+    float: left;
+    display: block;
+    margin: 0 1px 1px 0;
+    width: 265px;
+    height: 226px;
+}
+.comn-space-img>a img{
+    width: 100%;
+    height: 100%;
+}
+.space-mask{
+    display: none;
+    width: 265px;
+    height: 226px;
+    background: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=30);
+    z-index: 100;
+    position: fixed;
+}
+
+.pop-img{
+    display: none;
+    width: 750px;
+    padding: 20px;
+    background: #fff;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -395px;
+    z-index: 200;
+}
+.close{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 20px;
+    top:20px;
+    background: url("img/icon_close.png") no-repeat;
+    cursor: pointer;
+}
+.popup_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: #000;
+    background:rgba(0, 0, 0, 0.60);
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    z-index:110;
+    left:0;top:0;
+}
+.pop-img .title{
+    width: 100%;
+    height: 20px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.pop-img .title h3{
+    font-size: 14px;
+    color: #211c17;
+    margin-right: 20px;
+    float: left;
+}
+.pop-img .title p{
+    font-size: 12px;
+    color: #211c17;
+    float: left;
+}
+.pop-img .title p .img_number{
+    font-size: 12px;
+    color: #211c17;
+}
+
+.pop-img .img{
+    width: 100%;
+    height: 500px;
+}
+.pop-img .img img{width: 100%;height: 100%;}
+
+.load-more-btn{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 22px;
+    background-color: #fafafa;
+}
+.load-more-btn:hover{
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

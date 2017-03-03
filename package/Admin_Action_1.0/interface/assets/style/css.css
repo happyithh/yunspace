@@ -1,0 +1,20 @@
+.form-group {
+    margin-bottom: 10px!important;
+}
+body{
+    font-family: "微软雅黑", 'microsoft yahei', Arial, sans-serif;
+}
+body h4{
+    font-weight: bolder;
+}
+.readdata p{ padding:0 }
+.label.label-sm{
+    font-size: 14px;
+    padding: 2px 4px 3px 4px;
+}
+.abtn{ padding: 0; margin-left: 20px}
+.abtn a{display: block; padding: 6px 12px; text-decoration: none}
+.well{
+    margin-bottom: 10px!important;
+}
+.message_time{ padding-left: 15px}
